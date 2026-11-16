@@ -1,0 +1,4 @@
+﻿split,cycles,eligible_products,failed_products,voltage_failures,feedrate_failures,pressure_failures,strict_eol_endpoints,sensor_only_endpoints
+train,8,8061,38,27,8,3,7,0
+validation,3,3325,7,6,1,0,2,0
+test,3,1710,5,5,0,0,0,1
