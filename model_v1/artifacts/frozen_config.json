@@ -1,0 +1,143 @@
+{
+  "seed": 20261116,
+  "hidden": 16,
+  "batch_size": 256,
+  "max_epochs": 35,
+  "patience": 7,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "threads": 4,
+  "training_origin_stride_seconds": 60,
+  "history_minutes": 30,
+  "tcn_dilations": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "tcn_kernel": 3,
+  "selection": "validation eol_60m event hit>=30min then hit>=15min under 0.5 false alarm/observed production hour; then PR-AUC",
+  "test_used_for_selection": false,
+  "model_candidates": [
+    "event_rate",
+    "margin",
+    "logistic",
+    "tcn",
+    "gru"
+  ],
+  "selected_model": "logistic",
+  "model_version": "booth2-1116-8c28624a9ab3",
+  "trained_at": "2026-11-16T17:40:58.640006",
+  "status": "完成正式训练",
+  "thresholds": {
+    "event_rate": {
+      "eol_60m": 1.000001,
+      "adjacent_voltage_60m": 1.000001
+    },
+    "margin": {
+      "eol_60m": 0.19999999999999998,
+      "adjacent_voltage_60m": 0.19999999999999998
+    },
+    "logistic": {
+      "eol_60m": 0.5,
+      "adjacent_voltage_60m": 0.48000000000000004
+    },
+    "tcn": {
+      "eol_60m": 0.22,
+      "adjacent_voltage_60m": 0.26
+    },
+    "gru": {
+      "eol_60m": 0.30000000000000004,
+      "adjacent_voltage_60m": 0.32
+    }
+  },
+  "validation_comparison": [
+    {
+      "total_events": 2,
+      "hit15": 0,
+      "hit30": 0,
+      "missed": 2,
+      "false_alarms": 0,
+      "unknown_alarms": 0,
+      "alarms": 0,
+      "operating_hours": 60.32555555555555,
+      "false_alarms_per_hour": 0.0,
+      "threshold": 1.000001,
+      "name": "event_rate",
+      "pr_auc": 0.02506823006165976,
+      "brier": 0.024461019784212112
+    },
+    {
+      "total_events": 2,
+      "hit15": 2,
+      "hit30": 2,
+      "missed": 0,
+      "false_alarms": 4,
+      "unknown_alarms": 0,
+      "alarms": 7,
+      "operating_hours": 60.32555555555555,
+      "false_alarms_per_hour": 0.06630689039102647,
+      "threshold": 0.19999999999999998,
+      "name": "margin",
+      "pr_auc": 0.2561307188107826,
+      "brier": 0.02145399898290634
+    },
+    {
+      "total_events": 2,
+      "hit15": 2,
+      "hit30": 2,
+      "missed": 0,
+      "false_alarms": 1,
+      "unknown_alarms": 0,
+      "alarms": 3,
+      "operating_hours": 60.32555555555555,
+      "false_alarms_per_hour": 0.016576722597756617,
+      "threshold": 0.5,
+      "name": "logistic",
+      "pr_auc": 0.5958107912917427,
+      "brier": 0.013833780772984028
+    },
+    {
+      "total_events": 2,
+      "hit15": 2,
+      "hit30": 2,
+      "missed": 0,
+      "false_alarms": 2,
+      "unknown_alarms": 0,
+      "alarms": 5,
+      "operating_hours": 60.32555555555555,
+      "false_alarms_per_hour": 0.033153445195513234,
+      "threshold": 0.22,
+      "name": "tcn",
+      "pr_auc": 0.3726674352129219,
+      "brier": 0.02081145904958248
+    },
+    {
+      "total_events": 2,
+      "hit15": 2,
+      "hit30": 2,
+      "missed": 0,
+      "false_alarms": 4,
+      "unknown_alarms": 0,
+      "alarms": 6,
+      "operating_hours": 60.32555555555555,
+      "false_alarms_per_hour": 0.06630689039102647,
+      "threshold": 0.30000000000000004,
+      "name": "gru",
+      "pr_auc": 0.2984411043374979,
+      "brier": 0.019334468990564346
+    }
+  ],
+  "elapsed_seconds": 50.73684879999928,
+  "parameters": {
+    "tcn": 3741,
+    "gru": 2189
+  },
+  "tcn_receptive_field_grid_steps": 31,
+  "tcn_receptive_field_calendar_minutes": 30,
+  "training_origins": 8366,
+  "validation_origins": 20605,
+  "calibration": "Platt on validation only; same validation reused for calibration and model/threshold selection",
+  "test_frozen_at": "2026-11-16T17:40:58.640006",
+  "compute": "CPU torch, 4 threads; GPU not needed for small models"
+}
