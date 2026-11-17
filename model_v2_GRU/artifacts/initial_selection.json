@@ -1,0 +1,446 @@
+{
+  "frozen_at_utc": "2026-11-17T05:37:20.621798+00:00",
+  "selected_model": "gru_16",
+  "model_version": "booth2-v2-20261117T133720",
+  "model_specs": [
+    {
+      "name": "margin",
+      "kind": "margin",
+      "fit_seconds": 0.8787131999997655
+    },
+    {
+      "name": "logistic_c0p03",
+      "kind": "logistic",
+      "C": 0.03,
+      "fit_seconds": 2.7116021000001638
+    },
+    {
+      "name": "logistic_c0p3",
+      "kind": "logistic",
+      "C": 0.3,
+      "fit_seconds": 2.9546090999992884
+    },
+    {
+      "name": "logistic_c3p0",
+      "kind": "logistic",
+      "C": 3.0,
+      "fit_seconds": 3.4040558999995483
+    },
+    {
+      "name": "tcn_8",
+      "kind": "tcn",
+      "hidden": 8,
+      "best_epoch": 8,
+      "epochs_run": 17,
+      "parameters": 1260,
+      "fit_seconds": 14.686685599999691
+    },
+    {
+      "name": "tcn_16",
+      "kind": "tcn",
+      "hidden": 16,
+      "best_epoch": 5,
+      "epochs_run": 14,
+      "parameters": 4436,
+      "fit_seconds": 16.91397110000071
+    },
+    {
+      "name": "gru_8",
+      "kind": "gru",
+      "hidden": 8,
+      "best_epoch": 15,
+      "epochs_run": 24,
+      "parameters": 924,
+      "fit_seconds": 22.639619499999753
+    },
+    {
+      "name": "gru_16",
+      "kind": "gru",
+      "hidden": 16,
+      "best_epoch": 12,
+      "epochs_run": 21,
+      "parameters": 2228,
+      "fit_seconds": 22.663333200000125
+    }
+  ],
+  "thresholds": {
+    "margin": 1.000001,
+    "logistic_c0p03": 1.000001,
+    "logistic_c0p3": 1.000001,
+    "logistic_c3p0": 1.000001,
+    "tcn_8": 1.000001,
+    "tcn_16": 1.000001,
+    "gru_8": 1.000001,
+    "gru_16": 0.9500000000000001
+  },
+  "policies": {
+    "margin": {
+      "head": "engineering_margin",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "logistic_c0p03": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "logistic_c0p3": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "logistic_c3p0": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "tcn_8": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "tcn_16": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "gru_8": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001
+    },
+    "gru_16": {
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 0.9500000000000001
+    }
+  },
+  "validation_results": {
+    "margin": {
+      "model": "margin",
+      "head": "engineering_margin",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "logistic_c0p03": {
+      "model": "logistic_c0p03",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "logistic_c0p3": {
+      "model": "logistic_c0p3",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "logistic_c3p0": {
+      "model": "logistic_c3p0",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "tcn_8": {
+      "model": "tcn_8",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "tcn_16": {
+      "model": "tcn_16",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "gru_8": {
+      "model": "gru_8",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 1.000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 0,
+        "event_success_rate": 0.0,
+        "late": 0,
+        "missed": 2,
+        "unmet20": 2,
+        "false_alarms": 0,
+        "false_alarms_per_hour": 0.0,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 0,
+        "alarms": 0,
+        "operating_hours": 52.783055555555556,
+        "threshold": 1.000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": null,
+        "median_excess_minutes": null,
+        "max_excess_minutes": null,
+        "excess_coverage_events": 0,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        0,
+        0,
+        0.0,
+        0,
+        1.000001
+      ]
+    },
+    "gru_16": {
+      "model": "gru_16",
+      "head": "y_eol_30m",
+      "head_index": 0,
+      "threshold": 0.9500000000000001,
+      "metrics": {
+        "total_events": 2,
+        "hit20": 1,
+        "event_success_rate": 0.5,
+        "late": 1,
+        "missed": 0,
+        "unmet20": 1,
+        "false_alarms": 4,
+        "false_alarms_per_hour": 0.07578189549466106,
+        "unknown_alarms": 0,
+        "post_event_alarms": 0,
+        "matched_alarms": 2,
+        "alarms": 6,
+        "operating_hours": 52.783055555555556,
+        "threshold": 0.9500000000000001,
+        "matching_window_minutes": 60.0,
+        "mean_excess_minutes": 35.8,
+        "median_excess_minutes": 35.8,
+        "max_excess_minutes": 35.8,
+        "excess_coverage_events": 1,
+        "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+      },
+      "selection_key": [
+        true,
+        1,
+        -4,
+        -35.8,
+        -1,
+        0.9500000000000001
+      ]
+    }
+  },
+  "history_minutes": 60,
+  "seed": 20261117,
+  "protocol_sha256": "15c733a3655bd148a3ab24660d39ecea8267a1be5015aa4842c2cf2ac57c42d3",
+  "data_sha256": {
+    "anchors.csv.gz": "f4dd740b31f8a569c020e13da79f096b1bf4ba6876b04afe16fc5a551ce270df",
+    "cycles.csv": "e1c529ce156608e130576c28feffbcae8992840fd00a3db31f6e975650f9992f",
+    "events.csv": "1226081ade0d7cee2d1795eec897105977d117de3cba6c88330f1686f19346ba",
+    "products.csv.gz": "d544dbd31b5299455b1d5e71994b27b0616683dae84bea31fac6205923950d68",
+    "split_summary.csv": "3697f1259e6de5f952b2f2fcf32309afe146efe6f1357eb2038429aecc931a29",
+    "targets.csv.gz": "c67584f6354bedd3a56a76936d426567def4f5cd636a1e4a7b9b920ea78767df"
+  },
+  "source_sha256": {
+    "evaluation.py": "97353ab178c89c0d6203c9533fc853f0a49523cf3107adb480a48f655ddba591",
+    "modeling.py": "e89c5413a156fafa7abc886ea0b082411bf1c8de604d7ba67653f20da7c19c57",
+    "prepare.py": "19451e75f797deba4b74736860ef80ac7f6eace82b9747d3d61d059a1cab54a0",
+    "train.py": "e35e04962dcf36652931929cfc28f3e851c3430c9c1d2c88941896d106ab71dc"
+  },
+  "alarm_policy": {
+    "confirm_origins": 2,
+    "max_confirm_gap_seconds": 90,
+    "release_seconds": 600,
+    "cooldown_seconds": 1800
+  },
+  "fitted_file_sha256": {
+    "models\\gru_16\\best.pt": "55e24d5a26c67ca1bf07f2adfe134c46af86fa1837c644159c6bfa1778e17a09",
+    "models\\gru_16\\last.pt": "59fdfc34adb45e0fcc35c2e4e75776607d434af04f415353a56d585bbae3f66a",
+    "models\\gru_8\\best.pt": "69cc8fca4f98d66263ae1b857178eb8dd7850b9828d912661eed37f530375cb7",
+    "models\\gru_8\\last.pt": "b9ee81b6b7f71a19016443ddd62dbfa84ff0238bf0b2dd0548aec50bf2b51432",
+    "models\\logistic_c0p03\\model.joblib": "169c5fe9a076b7f42a9fea46a9f0b549fd093adc4f753919898739b92f0b02cf",
+    "models\\logistic_c0p3\\model.joblib": "e11fa3c0b4d4a487d7b654ed7af7795f9d285f60e99e9730d9a18d8b6cd2e8d9",
+    "models\\logistic_c3p0\\model.joblib": "09e764fb8174415541b1054fa76dd798da14baadbf39dfa7eac5b753763aa2d7",
+    "models\\tcn_16\\best.pt": "7d4d46c3d4ccc606e3303bb8a4edcfeee451ae461602cc9c56222f0f212e1660",
+    "models\\tcn_16\\last.pt": "03484e0ff6a13f7e929ab802d6adf8ed625a50189f5296cf0549dc3857662d00",
+    "models\\tcn_8\\best.pt": "84183a4db24fd4f516807b1f7e8ebf37a5c1d96e5b6302dd7521c48aab60d74d",
+    "models\\tcn_8\\last.pt": "95b1b405e53b3b561e5c48e507be60f4d93c4715580a9e9afe4288219ec1e67e"
+  },
+  "preprocessor_sha256": "58ed14bc02204c308c85eb6cbe1b586bacb9486f94dc81957b12018877cd32f0",
+  "test_used_for_selection": false
+}

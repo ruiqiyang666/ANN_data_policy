@@ -1,0 +1,36 @@
+{
+  "model": "logistic_c3p0",
+  "head": "y_eol_30m",
+  "head_index": 0,
+  "threshold": 1.000001,
+  "metrics": {
+    "total_events": 2,
+    "hit20": 0,
+    "event_success_rate": 0.0,
+    "late": 0,
+    "missed": 2,
+    "unmet20": 2,
+    "false_alarms": 0,
+    "false_alarms_per_hour": 0.0,
+    "unknown_alarms": 0,
+    "post_event_alarms": 0,
+    "matched_alarms": 0,
+    "alarms": 0,
+    "operating_hours": 52.783055555555556,
+    "threshold": 1.000001,
+    "matching_window_minutes": 60.0,
+    "mean_excess_minutes": null,
+    "median_excess_minutes": null,
+    "max_excess_minutes": null,
+    "excess_coverage_events": 0,
+    "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+  },
+  "selection_key": [
+    true,
+    0,
+    0,
+    0.0,
+    0,
+    1.000001
+  ]
+}

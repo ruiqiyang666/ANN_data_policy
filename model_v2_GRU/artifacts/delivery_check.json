@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-11-17T15:14:04",
+  "selected_model": "gru_16",
+  "model_version": "booth2-v2-20261117T134358",
+  "frozen_verification_passed": true,
+  "original_source_files_sha256_unchanged": true,
+  "independent_time_audit": {
+    "endpoint_count": 10,
+    "anchor_target_rows": 81235,
+    "first_failed_product_start_matches_1117": true,
+    "whole_cycle_split": true,
+    "30_45_60min_targets_recomputed_and_match": true
+  },
+  "unit_tests": 26,
+  "unit_tests_passed": true,
+  "replay": {
+    "origins": 31216,
+    "max_absolute_score_error": 1.4342090606800362e-06,
+    "score_match": true,
+    "alarm_times_match": true,
+    "emitted_alarms": 4,
+    "passed": true
+  },
+  "test_result": {
+    "total_events": 3,
+    "hit20": 2,
+    "missed": 1,
+    "false_alarms": 0,
+    "post_event_alarms": 2,
+    "operating_hours": 91.33027777777778
+  },
+  "share_html": {
+    "file": "model_v2_results.html",
+    "sha256": "02ce089d90f814aff7149a28fa49b8ac14b905cbd7fad6fca351aed472eade8e",
+    "static_check": {
+      "passed": true,
+      "attachment_count": 4,
+      "case_count": 3,
+      "model_count": 12,
+      "external_dependencies": 0,
+      "all_saved_scores_unchanged": true,
+      "script_count": 1,
+      "duplicate_ids": 0
+    },
+    "dom_script_check": {
+      "passed": true,
+      "method": "jsdom DOM/script verification, not rendered-browser QA",
+      "case_switches": 3,
+      "model_switches": 12,
+      "training_curves": 4,
+      "script_errors": 0
+    }
+  },
+  "browser_preview_this_review": {
+    "performed": false,
+    "reason": "Browser tool blocks file: URLs; no bypass attempted. Static and jsdom checks above are not visual browser verification."
+  },
+  "prior_agent_browser_check": {
+    "reported_at": "2026-11-17T14:52:03.198526",
+    "reported_page_sha256": "97aa98ec857a7f73440b7e1713d98b9bcfd5dd33ad21a12f839733893c3b0d59",
+    "current_canonical_page_sha256": "42e2932de1874d1d9162ccc96fda1cd14ea49780596aa0d0ec1bb7192d531f4f",
+    "note": "Earlier agent-reported check retained as history; not a fresh visual check of the sharing file."
+  },
+  "changed_scope": [
+    "README and pinned dependencies",
+    "standalone report with embedded attachments",
+    "report-generation source excluded by original frozen source manifest",
+    "reproduce.py copies data instead of making hardlinks",
+    "Git ignore and exact-byte checkout attributes"
+  ],
+  "frozen_model_data_predictions_or_thresholds_changed": false,
+  "new_training_performed": false,
+  "site_connected": false,
+  "portability": "Standalone HTML needs only a browser. Saved frozen runtime was checked on Windows/Python3.13; Linux frozen-manifest path normalization still requires adaptation and verification."
+}

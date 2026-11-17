@@ -1,0 +1,36 @@
+{
+  "model": "gru_16",
+  "head": "y_eol_30m",
+  "head_index": 0,
+  "threshold": 0.9500000000000001,
+  "metrics": {
+    "total_events": 2,
+    "hit20": 1,
+    "event_success_rate": 0.5,
+    "late": 1,
+    "missed": 0,
+    "unmet20": 1,
+    "false_alarms": 4,
+    "false_alarms_per_hour": 0.07578189549466106,
+    "unknown_alarms": 0,
+    "post_event_alarms": 0,
+    "matched_alarms": 2,
+    "alarms": 6,
+    "operating_hours": 52.783055555555556,
+    "threshold": 0.9500000000000001,
+    "matching_window_minutes": 60.0,
+    "mean_excess_minutes": 35.8,
+    "median_excess_minutes": 35.8,
+    "max_excess_minutes": 35.8,
+    "excess_coverage_events": 1,
+    "note": "excess统计仅覆盖提前至少20分钟达标事件；不是剩余寿命MAE。"
+  },
+  "selection_key": [
+    true,
+    1,
+    -4,
+    -35.8,
+    -1,
+    0.9500000000000001
+  ]
+}

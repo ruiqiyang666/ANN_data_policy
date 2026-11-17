@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-11-17T05:35:50.980505+00:00",
+  "frozen_utc": "2026-11-17T05:43:58.506682+00:00",
+  "elapsed_seconds": 89.73640720000003,
+  "host": "LAPTOP-V5ODTON8",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.2",
+  "torch": "2.9.1+cpu",
+  "numpy": "2.2.3",
+  "pandas": "2.2.3",
+  "sklearn": "1.9.1",
+  "device": "cpu",
+  "threads": 4,
+  "sampled_training_origins": 7612,
+  "validation_origins": 18043,
+  "server_execution": false,
+  "site_connected": false,
+  "selected_model": "gru_16",
+  "initial_selected_model": "gru_16",
+  "extension_fit_seconds": 35.536297800000284
+}

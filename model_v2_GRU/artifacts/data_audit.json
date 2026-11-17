@@ -1,0 +1,225 @@
+{
+  "created_at": "2026-11-17T13:34:07.041653",
+  "source_target_files_read": [],
+  "endpoint_policy": "First product START of final consecutive voltage-failure run; 2026-11-17 audit",
+  "input_columns": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Station_1",
+    "Station_2",
+    "Feedrate_1",
+    "Feedrate_2",
+    "Press._Hopper_1",
+    "Press._Hopper_2",
+    "Voltage_mean60s",
+    "Voltage_std60s"
+  ],
+  "never_input": [
+    "anchor_id",
+    "timestamp",
+    "cycle_id",
+    "split",
+    "observation_horizon_seconds",
+    "remaining_seconds",
+    "failure",
+    "full_product_means",
+    "future_maintenance",
+    "Gun_ID",
+    "Gun_Hours",
+    "Ignitions"
+  ],
+  "source_feature_anchors": 85179,
+  "retained_anchors": 81235,
+  "start_confirmation_seconds": 3,
+  "target_counts": {
+    "train": {
+      "y_eol_30m": {
+        "eligible": 31516,
+        "positive": 539
+      },
+      "y_eol_45m": {
+        "eligible": 31365,
+        "positive": 784
+      },
+      "y_eol_60m": {
+        "eligible": 31281,
+        "positive": 1025
+      },
+      "y_pre20_40m": {
+        "eligible": 31418,
+        "positive": 351
+      }
+    },
+    "validation": {
+      "y_eol_30m": {
+        "eligible": 17880,
+        "positive": 242
+      },
+      "y_eol_45m": {
+        "eligible": 17820,
+        "positive": 336
+      },
+      "y_eol_60m": {
+        "eligible": 17794,
+        "positive": 394
+      },
+      "y_pre20_40m": {
+        "eligible": 17841,
+        "positive": 156
+      }
+    },
+    "test": {
+      "y_eol_30m": {
+        "eligible": 30680,
+        "positive": 331
+      },
+      "y_eol_45m": {
+        "eligible": 30360,
+        "positive": 520
+      },
+      "y_eol_60m": {
+        "eligible": 30157,
+        "positive": 700
+      },
+      "y_pre20_40m": {
+        "eligible": 30463,
+        "positive": 234
+      }
+    }
+  },
+  "clock_audit": {
+    "clock_rows": 4484371,
+    "unknown_clock_rows": 1,
+    "missing_intervals": 18,
+    "isolated_missing_seconds": 4788,
+    "barrier_gap_rule": "diff(timestamp_seconds)>2; same tolerance as source training_data.py; no interpolation"
+  },
+  "event_opportunities": [
+    {
+      "event_id": "T001",
+      "cycle_id": "L000",
+      "time": "2026-09-15T12:24:27",
+      "deadline_20m": "2026-09-15T12:04:27",
+      "last_existing_opportunity": "2026-09-15T12:03:10",
+      "opportunity_lead_minutes": 21.283333333333335
+    },
+    {
+      "event_id": "T002",
+      "cycle_id": "L001",
+      "time": "2026-09-20T07:48:23",
+      "deadline_20m": "2026-09-20T07:28:23",
+      "last_existing_opportunity": "2026-09-20T07:28:20",
+      "opportunity_lead_minutes": 20.05
+    },
+    {
+      "event_id": "T004",
+      "cycle_id": "L002",
+      "time": "2026-09-29T15:35:55",
+      "deadline_20m": "2026-09-29T15:15:55",
+      "last_existing_opportunity": "2026-09-29T15:15:50",
+      "opportunity_lead_minutes": 20.083333333333332
+    },
+    {
+      "event_id": "T005",
+      "cycle_id": "L003",
+      "time": "2026-10-06T13:04:01",
+      "deadline_20m": "2026-10-06T12:44:01",
+      "last_existing_opportunity": "2026-10-06T12:39:50",
+      "opportunity_lead_minutes": 24.183333333333334
+    },
+    {
+      "event_id": "T006",
+      "cycle_id": "L004",
+      "time": "2026-10-09T08:23:43",
+      "deadline_20m": "2026-10-09T08:03:43",
+      "last_existing_opportunity": "2026-10-09T08:03:40",
+      "opportunity_lead_minutes": 20.05
+    },
+    {
+      "event_id": "T007",
+      "cycle_id": "L005",
+      "time": "2026-10-14T17:37:38",
+      "deadline_20m": "2026-10-14T17:17:38",
+      "last_existing_opportunity": "2026-10-14T17:17:30",
+      "opportunity_lead_minutes": 20.133333333333333
+    },
+    {
+      "event_id": "T009",
+      "cycle_id": "L006",
+      "time": "2026-10-15T11:58:24",
+      "deadline_20m": "2026-10-15T11:38:24",
+      "last_existing_opportunity": "2026-10-15T11:38:00",
+      "opportunity_lead_minutes": 20.4
+    },
+    {
+      "event_id": "T010",
+      "cycle_id": "L008",
+      "time": "2026-10-28T08:25:39",
+      "deadline_20m": "2026-10-28T08:05:39",
+      "last_existing_opportunity": "2026-10-28T08:05:30",
+      "opportunity_lead_minutes": 20.15
+    },
+    {
+      "event_id": "T011",
+      "cycle_id": "L009",
+      "time": "2026-11-01T13:33:02",
+      "deadline_20m": "2026-11-01T13:13:02",
+      "last_existing_opportunity": "2026-11-01T13:13:00",
+      "opportunity_lead_minutes": 20.033333333333335
+    },
+    {
+      "event_id": "T012",
+      "cycle_id": "L012",
+      "time": "2026-11-10T13:28:30",
+      "deadline_20m": "2026-11-10T13:08:30",
+      "last_existing_opportunity": "2026-11-10T13:04:00",
+      "opportunity_lead_minutes": 24.5
+    }
+  ],
+  "split_policy": "L000-L004 train; L005-L007 validation; L008-L013 test",
+  "historical_holdout_exposure": "10/28 and 11/1 used by V1 validation; 11/10 also inspected previously; this is expanded historical holdout, not first-unseen prospective data",
+  "censoring": "Natural EOL unobserved for L007,L010,L011,L013. Fully observed future windows may be negatives; insufficient future follow-up remains NaN. Post-EOL anchors remain available for replay but core targets are NaN.",
+  "replay_limit": "Benchmark opportunities inherit offline complete-product/process eligibility and 3s start confirmation. They are not a full raw asynchronous PLC replay. No synthetic standby origins are added.",
+  "notes": [
+    "The original 60s trailing voltage statistics reset at maintenance/gaps/excluded intervals; no full-product voltage mean is used.",
+    "Product failures preserve original site overrides, uncertain mask, full rotation/reversal segmentation and thresholds.",
+    "No pressure or feed EOLs are relabeled as electrode failures; pressure run is a separate diagnostic event.",
+    "Calendar timestamps are device local wall-clock; Working Hours is not a countdown."
+  ],
+  "source_files": [
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\features_10s.csv.gz",
+      "bytes": 5884702,
+      "sha256": "a4bb2161755780f5799461577ad58596115422398f44eb4da69b9e1bb9fc1b8e"
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\products.csv",
+      "bytes": 8465937,
+      "sha256": "ebbbe2a09e6f4ff63d1c5eb6c05d82a51ce02247c61e1e42ff24f7dcc2d0a84f"
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\electrode_cycles.csv",
+      "bytes": 5948,
+      "sha256": "e5b88539d0dbf4d6fdb6e9e8c9cd0552f60572137d1a8f59a9f1fb1a55dda61c"
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Desktop\\大三第一学期\\JJ\\11_17数据处理\\预测事件时间核对.csv",
+      "bytes": 3952,
+      "sha256": "4f3763522666eb279fcc3dff4a11bdfa17aedc34e7fd5a602d2bf3b3b030d665"
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Desktop\\大三第一学期\\JJ\\11_16数据处理\\本地核查材料\\传感器计时与转台状态.npz",
+      "bytes": 6841232,
+      "sha256": "fa13b78e77d317f1bbdd387efc3dab732995ce2da014966eae298f0432b85786"
+    }
+  ],
+  "output_files": {
+    "anchors.csv.gz": "f4dd740b31f8a569c020e13da79f096b1bf4ba6876b04afe16fc5a551ce270df",
+    "cycles.csv": "e1c529ce156608e130576c28feffbcae8992840fd00a3db31f6e975650f9992f",
+    "events.csv": "1226081ade0d7cee2d1795eec897105977d117de3cba6c88330f1686f19346ba",
+    "products.csv.gz": "d544dbd31b5299455b1d5e71994b27b0616683dae84bea31fac6205923950d68",
+    "split_summary.csv": "3697f1259e6de5f952b2f2fcf32309afe146efe6f1357eb2038429aecc931a29",
+    "targets.csv.gz": "c67584f6354bedd3a56a76936d426567def4f5cd636a1e4a7b9b920ea78767df"
+  }
+}

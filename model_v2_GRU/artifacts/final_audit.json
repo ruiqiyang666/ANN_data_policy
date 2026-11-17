@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source_files_unchanged": [
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\features_10s.csv.gz",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\products.csv",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Documents\\ChatGPT\\强生\\ANN_data_policy_待上传\\training_data\\electrode_cycles.csv",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Desktop\\大三第一学期\\JJ\\11_17数据处理\\预测事件时间核对.csv",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\杨睿奇\\Desktop\\大三第一学期\\JJ\\11_16数据处理\\本地核查材料\\传感器计时与转台状态.npz",
+      "unchanged": true
+    }
+  ],
+  "selected_model": "gru_16",
+  "test_events": 3,
+  "test_hit20": 2,
+  "test_false_alarms": 0,
+  "test_post_event_alarms": 2,
+  "test_unknown_alarms": 0,
+  "all_products": 13181,
+  "eligible_products": 13096,
+  "nov1": "No pre-event matched alarm; post-event emissions retained separately; counted as missed pre-event warning, not a successful or <20min advance warning.",
+  "source_targets_read": []
+}

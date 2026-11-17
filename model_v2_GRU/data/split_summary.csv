@@ -1,0 +1,4 @@
+﻿split,cycles,products,eligible_products,production_hours,failed_products,voltage_failed_products,feed_failed_products,pressure_failed_products,eol_events,censored_cycles,feature_anchors
+train,5,5184,5150,93.42611111111111,27,19,5,3,5,0,31976
+validation,3,2911,2911,52.783055555555556,11,8,3,0,2,1,18043
+test,6,5086,5035,91.33027777777778,12,11,1,0,3,3,31216
