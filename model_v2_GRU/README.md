@@ -71,7 +71,7 @@
 
 `.gitattributes`用于避免Git自动转换冻结文件换行而导致哈希变化；`.gitignore`排除缓存、虚拟环境和新实验目录。
 
-## 同事如何核验、重新训练
+## 如何核验、重新训练
 
 以下为**Windows／PowerShell、Python 3.13、CPU**的已用环境。不需要复制原作者的虚拟环境。先进入你下载或克隆得到的 `model_v2` 文件夹，再执行：
 
@@ -118,8 +118,3 @@ $modelPython = (Resolve-Path '..\.venv-model-v2\Scripts\python.exe').Path
 
 线上保留Gun_ID、Gun_Hours、Ignitions的未来接入能力；历史缺少这些字段时，不能从事后登记回填作输入。本批冻结清单包含Windows路径分隔符，交付核验按Windows完成；在Linux ANN服务器上直接使用这批冻结权重前需先适配清单路径并复核。详见 [部署说明](docs/deployment.md)。
 
-## 上传GitHub
-
-在已获准存放现场数据的Private仓库中，将本目录上传为仓库根下的 `model_v2/`，与 `model_v1/` 并列。压缩包是传递用：**先解压，再上传里面的 `model_v2` 文件夹**；GitHub不会自动把ZIP展开成代码目录。
-
-包内保留复现所需的已处理数据、代码、全部候选权重和结果证据；浏览器缓存、截图、虚拟环境、密码和原始大文件不在上传包中。
