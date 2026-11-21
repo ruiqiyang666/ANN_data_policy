@@ -1,0 +1,36 @@
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:25:55+0000", "model": "logistic", "fit": "f1", "train_windows": 40677, "train_events": 4, "status": "trained", "seconds": 2.37607438582927}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:25:58+0000", "model": "histgb", "fit": "f1", "train_windows": 40677, "train_events": 4, "status": "trained", "seconds": 2.365116238594055}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:26:09+0000", "model": "extra_trees", "fit": "f1", "train_windows": 40677, "train_events": 4, "status": "trained", "seconds": 10.55048275180161}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:26:18+0000", "model": "logistic", "fit": "f2", "train_windows": 62424, "train_events": 9, "status": "trained", "seconds": 8.952741421759129}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:26:24+0000", "model": "histgb", "fit": "f2", "train_windows": 62424, "train_events": 9, "status": "trained", "seconds": 5.577626798301935}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:27:17+0000", "model": "extra_trees", "fit": "f2", "train_windows": 62424, "train_events": 9, "status": "trained", "seconds": 53.28665962163359}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:27:27+0000", "model": "logistic", "fit": "f3", "train_windows": 76405, "train_events": 9, "status": "trained", "seconds": 8.865613942034543}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:27:33+0000", "model": "histgb", "fit": "f3", "train_windows": 76405, "train_events": 9, "status": "trained", "seconds": 5.815631527453661}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:28:34+0000", "model": "extra_trees", "fit": "f3", "train_windows": 76405, "train_events": 9, "status": "trained", "seconds": 60.6804210357368}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:28:49+0000", "model": "logistic", "fit": "f4", "train_windows": 103942, "train_events": 10, "status": "trained", "seconds": 14.859888954088092}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:28:56+0000", "model": "histgb", "fit": "f4", "train_windows": 103942, "train_events": 10, "status": "trained", "seconds": 6.7203778037801385}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:30:31+0000", "model": "extra_trees", "fit": "f4", "train_windows": 103942, "train_events": 10, "status": "trained", "seconds": 94.09699280094355}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:30:46+0000", "model": "logistic", "fit": "f5", "train_windows": 122385, "train_events": 10, "status": "trained", "seconds": 14.904042198322713}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:30:59+0000", "model": "histgb", "fit": "f5", "train_windows": 122385, "train_events": 10, "status": "trained", "seconds": 12.28550726082176}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:33:15+0000", "model": "extra_trees", "fit": "f5", "train_windows": 122385, "train_events": 10, "status": "trained", "seconds": 135.47450201027095}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:33:37+0000", "model": "logistic", "fit": "f6", "train_windows": 156981, "train_events": 10, "status": "trained", "seconds": 21.89334339275956}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:33:52+0000", "model": "histgb", "fit": "f6", "train_windows": 156981, "train_events": 10, "status": "trained", "seconds": 14.82332084607333}
+{"stage": "v4_risk_fit", "updated_at": "2026-11-11T18:37:58+0000", "model": "extra_trees", "fit": "f6", "train_windows": 156981, "train_events": 10, "status": "trained", "seconds": 244.86620983947068}
+/usr/local/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=10', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+{"stage": "v4_final_refit", "updated_at": "2026-11-11T18:38:52+0000", "model": "logistic", "train_windows": 170929, "train_events": 10}
+{"stage": "v4_final_refit", "updated_at": "2026-11-11T18:39:04+0000", "model": "histgb", "train_windows": 170929, "train_events": 10}
+{"stage": "v4_final_refit", "updated_at": "2026-11-11T18:41:48+0000", "model": "extra_trees", "train_windows": 170929, "train_events": 10}
+{"stage": "v4_risk_complete", "updated_at": "2026-11-11T18:41:48+0000", "task": "hopper_pressure"}

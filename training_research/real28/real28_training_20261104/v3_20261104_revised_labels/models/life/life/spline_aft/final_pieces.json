@@ -1,0 +1,38 @@
+{
+  "name": "spline_aft",
+  "fit": "final",
+  "task": "pieces",
+  "train_windows": 17406,
+  "seconds": 30.557804100000794,
+  "metrics": {
+    "windows": 9347,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R007",
+        "windows": 340,
+        "mean_interval_distance": 6.679411764705883,
+        "mean_log_interval_distance": 0.4872281845091864,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 4.8,
+        "overestimate_fraction": 0.2735294117647059,
+        "model_interval_overlap_fraction": 0.8205882352941176
+      }
+    ],
+    "macro_interval_distance": 6.679411764705883,
+    "macro_log_interval_distance": 0.4872281845091864,
+    "median_prediction_quantiles": [
+      0.0,
+      104.0,
+      1037.0,
+      3622.399999999998,
+      10459.0
+    ],
+    "censor_median_below_observed_lower_fraction": 0.24691906295103808,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

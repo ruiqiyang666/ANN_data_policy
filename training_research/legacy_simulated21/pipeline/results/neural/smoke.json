@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "resources": {
+    "rss_gb": 2.292156219482422,
+    "gpu_allocated_gb": 0.017818927764892578,
+    "gpu_reserved_gb": 0.025390625,
+    "gpu_temp_c": 55,
+    "minimum_available_ram_gb": 14.88711166381836
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "test_windows": 34572,
+  "pretest_freeze_sha256": "cfe090d56e00258573223396a2f31641d97704b2629fb454137d628561029e96",
+  "primary_risk_model": "hist_tree",
+  "risk_models": {
+    "logistic": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.03255918012153247,
+        "roc_auc": 0.7378453881698248,
+        "brier": 0.0068620323741923235,
+        "log_loss": 0.03718613642751023
+      },
+      "alarms": {
+        "threshold": 0.2936804734857744,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 2,
+        "events_alerted_before_product_start": 2,
+        "event_recall_observable": 0.2222222222222222,
+        "event_recall_all": 0.2222222222222222,
+        "alert_episodes": 13,
+        "false_alert_episodes": 11,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 11.454356126345019,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    },
+    "hist_tree": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.029819870351083026,
+        "roc_auc": 0.5486205268761749,
+        "brier": 0.006430551287250181,
+        "log_loss": 0.041510556297884665
+      },
+      "alarms": {
+        "threshold": 0.14672265371676207,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 1,
+        "events_alerted_before_product_start": 1,
+        "event_recall_observable": 0.1111111111111111,
+        "event_recall_all": 0.1111111111111111,
+        "alert_episodes": 8,
+        "false_alert_episodes": 7,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 7.289135716765012,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    },
+    "b0_tcn": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.031597669861963745,
+        "roc_auc": 0.5153454947470428,
+        "brier": 0.006402679719030857,
+        "log_loss": 0.03924935912669564
+      },
+      "alarms": {
+        "threshold": 0.1147085651755333,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 2,
+        "events_alerted_before_product_start": 2,
+        "event_recall_observable": 0.2222222222222222,
+        "event_recall_all": 0.2222222222222222,
+        "alert_episodes": 24,
+        "false_alert_episodes": 22,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 22.908712252690037,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    },
+    "b1_ssl_tcn": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.020991472244901756,
+        "roc_auc": 0.6891992567668735,
+        "brier": 0.006795657332986593,
+        "log_loss": 0.03942421198393662
+      },
+      "alarms": {
+        "threshold": 0.29533734917640686,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 0,
+        "events_alerted_before_product_start": 0,
+        "event_recall_observable": 0.0,
+        "event_recall_all": 0.0,
+        "alert_episodes": 8,
+        "false_alert_episodes": 8,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 8.330440819160014,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    },
+    "b1_ssl_tcn_seed43": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.03159033625922335,
+        "roc_auc": 0.6778079717679548,
+        "brier": 0.006653754971921444,
+        "log_loss": 0.04313812761269673
+      },
+      "alarms": {
+        "threshold": 0.13624265789985657,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 0,
+        "events_alerted_before_product_start": 0,
+        "event_recall_observable": 0.0,
+        "event_recall_all": 0.0,
+        "alert_episodes": 7,
+        "false_alert_episodes": 7,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 7.289135716765012,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    },
+    "b1_ssl_tcn_seed44": {
+      "windows": {
+        "n": 34572,
+        "positives": 224,
+        "prevalence": 0.006479231748235567,
+        "average_precision": 0.028632372431186753,
+        "roc_auc": 0.7530041778269477,
+        "brier": 0.0065373703837394714,
+        "log_loss": 0.03894522995324339
+      },
+      "alarms": {
+        "threshold": 0.1235988661646843,
+        "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration",
+        "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state",
+        "total_events_in_retained_time_partition": 9,
+        "events_with_observable_prediction_windows": 9,
+        "events_alerted": 2,
+        "events_alerted_before_product_start": 2,
+        "event_recall_observable": 0.2222222222222222,
+        "event_recall_all": 0.2222222222222222,
+        "alert_episodes": 16,
+        "false_alert_episodes": 14,
+        "observable_powered_landmark_hours": 96.03333333333333,
+        "false_alerts_per_100_observable_powered_hours": 14.578271433530023,
+        "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"
+      }
+    }
+  },
+  "neural_multitask": {
+    "b0_tcn": {
+      "future_type": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.531623539843161,
+          "brier": 0.2721993625164032,
+          "independent_events": 3
+        },
+        "feedrate": {
+          "positive_windows": 149,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.7033325599276784,
+          "brier": 0.3947664201259613,
+          "independent_events": 6
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_event_windows": 224,
+          "average_precision": null,
+          "brier": 0.018623536452651024,
+          "independent_events": 0
+        }
+      },
+      "current_last_completed_product": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_windows": 34458,
+          "average_precision": 0.13066206460374366,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "feedrate": {
+          "positive_windows": 42,
+          "evaluated_windows": 34458,
+          "average_precision": 0.03155154306440546,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_windows": 34458,
+          "average_precision": null,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        }
+      },
+      "conditional_eta_all_positive_windows_mae_seconds": 68.98083032880511,
+      "conditional_eta_event_macro_mae_seconds": 62.535307647146205,
+      "eta_evaluation_scope": "all true event windows including unalerted events; does not imply useful advance warning",
+      "eta_by_event": [
+        {
+          "event_id": "EV0054",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 74.96017354329427
+        },
+        {
+          "event_id": "EV0055",
+          "windows": 16,
+          "conditional_eta_mae_seconds": 34.030312061309814
+        },
+        {
+          "event_id": "EV0056",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 87.32449035644531
+        },
+        {
+          "event_id": "EV0057",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 86.0294926961263
+        },
+        {
+          "event_id": "EV0058",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 74.65620676676433
+        },
+        {
+          "event_id": "EV0059",
+          "windows": 15,
+          "conditional_eta_mae_seconds": 26.208128865559896
+        },
+        {
+          "event_id": "EV0060",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 74.40924453735352
+        },
+        {
+          "event_id": "EV0061",
+          "windows": 14,
+          "conditional_eta_mae_seconds": 30.538736615862167
+        },
+        {
+          "event_id": "EV0062",
+          "windows": 29,
+          "conditional_eta_mae_seconds": 74.66098338160022
+        }
+      ]
+    },
+    "b1_ssl_tcn": {
+      "future_type": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.3330685026504919,
+          "brier": 0.3194098472595215,
+          "independent_events": 3
+        },
+        "feedrate": {
+          "positive_windows": 149,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.6220434153390276,
+          "brier": 0.6117169260978699,
+          "independent_events": 6
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_event_windows": 224,
+          "average_precision": null,
+          "brier": 0.04211918264627457,
+          "independent_events": 0
+        }
+      },
+      "current_last_completed_product": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_windows": 34458,
+          "average_precision": 0.4713620180713546,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "feedrate": {
+          "positive_windows": 42,
+          "evaluated_windows": 34458,
+          "average_precision": 0.013633128828266741,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_windows": 34458,
+          "average_precision": null,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        }
+      },
+      "conditional_eta_all_positive_windows_mae_seconds": 65.12870449679238,
+      "conditional_eta_event_macro_mae_seconds": 58.71583621925169,
+      "eta_evaluation_scope": "all true event windows including unalerted events; does not imply useful advance warning",
+      "eta_by_event": [
+        {
+          "event_id": "EV0054",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 71.0222178141276
+        },
+        {
+          "event_id": "EV0055",
+          "windows": 16,
+          "conditional_eta_mae_seconds": 25.850173950195312
+        },
+        {
+          "event_id": "EV0056",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 80.07555948893229
+        },
+        {
+          "event_id": "EV0057",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 76.55908610026042
+        },
+        {
+          "event_id": "EV0058",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 59.43002700805664
+        },
+        {
+          "event_id": "EV0059",
+          "windows": 15,
+          "conditional_eta_mae_seconds": 20.19951604207357
+        },
+        {
+          "event_id": "EV0060",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 87.3667828877767
+        },
+        {
+          "event_id": "EV0061",
+          "windows": 14,
+          "conditional_eta_mae_seconds": 32.77410888671875
+        },
+        {
+          "event_id": "EV0062",
+          "windows": 29,
+          "conditional_eta_mae_seconds": 75.16505379512392
+        }
+      ]
+    },
+    "b1_ssl_tcn_seed43": {
+      "future_type": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.30850592388609616,
+          "brier": 0.31912583112716675,
+          "independent_events": 3
+        },
+        "feedrate": {
+          "positive_windows": 149,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.613407912504671,
+          "brier": 0.6224862337112427,
+          "independent_events": 6
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_event_windows": 224,
+          "average_precision": null,
+          "brier": 0.022768570110201836,
+          "independent_events": 0
+        }
+      },
+      "current_last_completed_product": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_windows": 34458,
+          "average_precision": 0.49159154733512056,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "feedrate": {
+          "positive_windows": 42,
+          "evaluated_windows": 34458,
+          "average_precision": 0.009386054028397059,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_windows": 34458,
+          "average_precision": null,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        }
+      },
+      "conditional_eta_all_positive_windows_mae_seconds": 69.12736099106925,
+      "conditional_eta_event_macro_mae_seconds": 62.77519445363632,
+      "eta_evaluation_scope": "all true event windows including unalerted events; does not imply useful advance warning",
+      "eta_by_event": [
+        {
+          "event_id": "EV0054",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 78.72444661458333
+        },
+        {
+          "event_id": "EV0055",
+          "windows": 16,
+          "conditional_eta_mae_seconds": 33.60408926010132
+        },
+        {
+          "event_id": "EV0056",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 80.54576670328775
+        },
+        {
+          "event_id": "EV0057",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 77.0997100830078
+        },
+        {
+          "event_id": "EV0058",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 73.03540420532227
+        },
+        {
+          "event_id": "EV0059",
+          "windows": 15,
+          "conditional_eta_mae_seconds": 29.0224858601888
+        },
+        {
+          "event_id": "EV0060",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 82.25241673787436
+        },
+        {
+          "event_id": "EV0061",
+          "windows": 14,
+          "conditional_eta_mae_seconds": 29.885778154645646
+        },
+        {
+          "event_id": "EV0062",
+          "windows": 29,
+          "conditional_eta_mae_seconds": 80.80665246371565
+        }
+      ]
+    },
+    "b1_ssl_tcn_seed44": {
+      "future_type": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.6855737970498014,
+          "brier": 0.1722935438156128,
+          "independent_events": 3
+        },
+        "feedrate": {
+          "positive_windows": 149,
+          "evaluated_event_windows": 224,
+          "average_precision": 0.7184405035659056,
+          "brier": 0.5222137570381165,
+          "independent_events": 6
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_event_windows": 224,
+          "average_precision": null,
+          "brier": 0.1626167595386505,
+          "independent_events": 0
+        }
+      },
+      "current_last_completed_product": {
+        "voltage": {
+          "positive_windows": 75,
+          "evaluated_windows": 34458,
+          "average_precision": 0.6423437471284682,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "feedrate": {
+          "positive_windows": 42,
+          "evaluated_windows": 34458,
+          "average_precision": 0.01750142533795575,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        },
+        "hopper_pressure": {
+          "positive_windows": 0,
+          "evaluated_windows": 34458,
+          "average_precision": null,
+          "label_meaning": "most recent available completed-product result, not independently annotated instantaneous physical state",
+          "result_available_in_input": true
+        }
+      },
+      "conditional_eta_all_positive_windows_mae_seconds": 67.38992316382271,
+      "conditional_eta_event_macro_mae_seconds": 61.85767475803976,
+      "eta_evaluation_scope": "all true event windows including unalerted events; does not imply useful advance warning",
+      "eta_by_event": [
+        {
+          "event_id": "EV0054",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 75.67750193277995
+        },
+        {
+          "event_id": "EV0055",
+          "windows": 16,
+          "conditional_eta_mae_seconds": 37.162017822265625
+        },
+        {
+          "event_id": "EV0056",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 79.0004669189453
+        },
+        {
+          "event_id": "EV0057",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 77.9210215250651
+        },
+        {
+          "event_id": "EV0058",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 65.00125401814779
+        },
+        {
+          "event_id": "EV0059",
+          "windows": 15,
+          "conditional_eta_mae_seconds": 33.425384521484375
+        },
+        {
+          "event_id": "EV0060",
+          "windows": 30,
+          "conditional_eta_mae_seconds": 82.25493494669597
+        },
+        {
+          "event_id": "EV0061",
+          "windows": 14,
+          "conditional_eta_mae_seconds": 31.886925833565847
+        },
+        {
+          "event_id": "EV0062",
+          "windows": 29,
+          "conditional_eta_mae_seconds": 74.38956530340786
+        }
+      ]
+    }
+  },
+  "lifetime": {
+    "physical": {
+      "hours": {
+        "windows": 34325,
+        "possible_cycles": 3,
+        "event_windows": 1073,
+        "weak_endpoints": 1,
+        "group_mean_interval_censor_nll": 0.4601447982003537,
+        "confirmed_natural_failure_mae": null,
+        "independent_interval_coverage": null,
+        "prediction_median_min": 22.674390004895002,
+        "prediction_median_max": 23.855809415109384,
+        "per_weak_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "median_distance_to_weak_interval": 21.284645208896492,
+            "mean_distance_to_weak_interval": 21.253844002305,
+            "model_interval_overlap_fraction": 0.0,
+            "mean_model_interval_width": 121.62643647224303,
+            "mean_true_lower": 1.490866728797763,
+            "mean_true_upper": 1.5092000621310968,
+            "mean_prediction": 22.763044064436095
+          }
+        ]
+      },
+      "pieces": {
+        "windows": 34325,
+        "possible_cycles": 3,
+        "event_windows": 1073,
+        "weak_endpoints": 1,
+        "group_mean_interval_censor_nll": 0.4162193744636598,
+        "confirmed_natural_failure_mae": null,
+        "independent_interval_coverage": null,
+        "prediction_median_min": 1015.0,
+        "prediction_median_max": 1068.0,
+        "per_weak_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "median_distance_to_weak_interval": 947.0,
+            "mean_distance_to_weak_interval": 948.3653308480895,
+            "model_interval_overlap_fraction": 0.0,
+            "mean_model_interval_width": 5266.787511649581,
+            "mean_true_lower": 69.53122087604847,
+            "mean_true_upper": 70.53122087604847,
+            "mean_prediction": 1018.8965517241379
+          }
+        ]
+      }
+    },
+    "frozen_tcn": {
+      "hours": {
+        "windows": 34325,
+        "possible_cycles": 3,
+        "event_windows": 1073,
+        "weak_endpoints": 1,
+        "group_mean_interval_censor_nll": 0.46206568415609023,
+        "confirmed_natural_failure_mae": null,
+        "independent_interval_coverage": null,
+        "prediction_median_min": 22.329357262252778,
+        "prediction_median_max": 24.828223437046635,
+        "per_weak_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "median_distance_to_weak_interval": 21.121232745432856,
+            "mean_distance_to_weak_interval": 21.092068487160393,
+            "model_interval_overlap_fraction": 0.0,
+            "mean_model_interval_width": 120.39929919899967,
+            "mean_true_lower": 1.490866728797763,
+            "mean_true_upper": 1.5092000621310968,
+            "mean_prediction": 22.601268549291493
+          }
+        ]
+      },
+      "pieces": {
+        "windows": 34325,
+        "possible_cycles": 3,
+        "event_windows": 1073,
+        "weak_endpoints": 1,
+        "group_mean_interval_censor_nll": 0.4180450880586018,
+        "confirmed_natural_failure_mae": null,
+        "independent_interval_coverage": null,
+        "prediction_median_min": 999.0,
+        "prediction_median_max": 1112.0,
+        "per_weak_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "median_distance_to_weak_interval": 940.0,
+            "mean_distance_to_weak_interval": 941.1071761416589,
+            "model_interval_overlap_fraction": 0.0,
+            "mean_model_interval_width": 5212.52935694315,
+            "mean_true_lower": 69.53122087604847,
+            "mean_true_upper": 70.53122087604847,
+            "mean_prediction": 1011.6383970177073
+          }
+        ]
+      }
+    }
+  },
+  "independent_calibration": false,
+  "production_ready": false,
+  "true_natural_failures_confirmed": 0,
+  "current_positive_window_counts": {
+    "voltage": 75,
+    "feedrate": 42,
+    "hopper_pressure": 0
+  }
+}

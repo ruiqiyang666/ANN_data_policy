@@ -1,0 +1,17 @@
+{
+  "voltage": {
+    "positive_windows": 515,
+    "eta_normalization": "same all-date candidate transform",
+    "deployed": false
+  },
+  "feedrate": {
+    "positive_windows": 706,
+    "eta_normalization": "same all-date candidate transform",
+    "deployed": false
+  },
+  "hopper_pressure": {
+    "positive_windows": 285,
+    "eta_normalization": "same all-date candidate transform",
+    "deployed": false
+  }
+}

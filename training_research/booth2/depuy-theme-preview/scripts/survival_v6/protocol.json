@@ -1,0 +1,21 @@
+{
+  "version": "booth2-v6-20261120-1",
+  "purpose": "Research follow-up after v5 error analysis; all historical cycles previously inspected; not a new blind test",
+  "candidates": ["km_landmark", "km_age", "ipcw_hgb6", "ipcw_hgb32", "cqrnn6", "cqrnn32", "mix6", "mix32", "rsf32"],
+  "outer": "14 leave-one-whole-cycle-out folds and the same three forward blocks as v5",
+  "inner": "three deterministic complete-cycle groups; fit preprocessing and censoring distribution on training only",
+  "selection": "inner cycle-macro MAE + 0.5 * last2h MAE; baselines eligible",
+  "forward_blocks": [["L005", "L006", "L007"], ["L008", "L009", "L010"], ["L011", "L012", "L013"]],
+  "sampling": "one origin per processing minute with equal total cycle weight; RSF additionally every fifth sampled origin and duration rounded upward to 0.1h for bounded memory",
+  "quantiles": [0.1, 0.5, 0.9],
+  "cdf_horizons_processing_hours": [0.3333333333333333, 0.6666666666666666, 1, 1.5, 2, 3, 4, 6, 8, 12, 16, 24],
+  "ipcw": "training marginal censoring KM, G floor 0.1; assumption-dependent",
+  "cqrnn": "Portnoy hard-EM weights with nearest predicted quantile; 19 monotone quantiles, 12 tanh units, 350 epochs, AdamW 0.015/0.03, two seeds 17/43; raw-hour check loss divided by 10; ystar=max(80,2*max training observed/censored duration)",
+  "mixture": "two lognormal components, 8 tanh units, shared learned scales, exact censored mixture likelihood; two seeds; 300 epochs AdamW 0.012/0.04; inspired by DSM, not a reproduction",
+  "ipcw_hgb": "five quantiles, max_leaf_nodes=7,max_iter=120,min_samples_leaf=100,l2=10,lr=.05, no row-random early stopping",
+  "rsf": "80 trees,max_depth=5,min_samples_leaf=25,max_features=.7,seed=20261120; right tail quantiles beyond identifiable support reported at support+24h with separate unresolved fraction",
+  "warning": "Separate wall-clock y_eol_60m head: logistic6 and HGB32, inner OOF threshold selection; never interpret processing-hour CDF as wall-clock probability",
+  "alarm_false_budget_per_hour": 0.05,
+  "alarm_threshold_grid": [0.05,0.1,0.15,0.2,0.25,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.95,1.000001],
+  "limits": ["Only 10 observed EOL cycles", "Historical offline product eligibility is not validated for live deployment", "Unknown historical timezone", "No automatic model promotion"]
+}

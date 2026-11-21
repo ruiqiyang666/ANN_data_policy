@@ -1,0 +1,21 @@
+{
+  "name": "gru",
+  "fit": "final",
+  "train_windows": 104551,
+  "evaluation_windows": 12983,
+  "seconds": 47.440045800001826,
+  "metrics": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.020459792502768304,
+    "event_macro_ap": 0.011579563506838532,
+    "roc_auc": 0.7137645750924275,
+    "brier": 0.027575789019465446
+  },
+  "epochs": 6,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "600770edd98077c8ff4012f44ce7b4804c93a0f8159322624f869514f9a0789e"
+}

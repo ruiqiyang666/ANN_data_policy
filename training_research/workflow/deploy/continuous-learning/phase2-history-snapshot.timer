@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Phase2 history snapshot at 02:10 Shanghai time
+
+[Timer]
+OnCalendar=*-*-* 02:10:00 Asia/Shanghai
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

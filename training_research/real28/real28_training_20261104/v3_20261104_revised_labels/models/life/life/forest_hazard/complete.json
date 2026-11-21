@@ -1,0 +1,240 @@
+{
+  "name": "forest_hazard",
+  "status": "trained",
+  "real_algorithm_family": "forest_hazard",
+  "constant_is_control_not_counted": false,
+  "forward_cycle_macro_log_distance": 1.8409730547307157,
+  "forward_cycle_macro_hour_distance": 393441.6045842688,
+  "fits": [
+    {
+      "name": "forest_hazard",
+      "fit": "cycle1",
+      "task": "hours",
+      "train_windows": 13060,
+      "seconds": 3.7829941999989387,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 786879.3012475247,
+            "mean_log_interval_distance": 2.6894204471760266,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2388.558175169268,
+            "overestimate_fraction": 0.5844346549192364,
+            "model_interval_overlap_fraction": 0.6505139500734214
+          }
+        ],
+        "macro_interval_distance": 786879.3012475247,
+        "macro_log_interval_distance": 2.6894204471760266,
+        "median_prediction_quantiles": [
+          0.40315953572693,
+          2.979469195681662,
+          15.425343070443667,
+          100468.49967908906,
+          22180410.687561512
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0.3805328298720369,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "fit": "cycle1",
+      "task": "pieces",
+      "train_windows": 13060,
+      "seconds": 3.895661200000177,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 170029752.60212573,
+            "mean_log_interval_distance": 3.3981799756570807,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 55519.944444444445,
+            "overestimate_fraction": 0.5045101741136984,
+            "model_interval_overlap_fraction": 0.6308649744773093
+          }
+        ],
+        "macro_interval_distance": 170029752.60212573,
+        "macro_log_interval_distance": 3.3981799756570807,
+        "median_prediction_quantiles": [
+          18.0,
+          116.0,
+          417.0,
+          1368666156.0,
+          1386273667.0
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0.36465981399902103,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "fit": "cycle2",
+      "task": "hours",
+      "train_windows": 15467,
+      "seconds": 6.328900800002884,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 3.9079210129067716,
+            "mean_log_interval_distance": 0.9925256622854048,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.4178411004706306,
+            "overestimate_fraction": 0.7897980143786375,
+            "model_interval_overlap_fraction": 0.6980486134885313
+          }
+        ],
+        "macro_interval_distance": 3.9079210129067716,
+        "macro_log_interval_distance": 0.9925256622854048,
+        "median_prediction_quantiles": [
+          0.07034251493623017,
+          2.643351430771759,
+          7.361770796654055,
+          17.83268972074757,
+          36.45990553452274
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5140023337222871,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "fit": "cycle2",
+      "task": "pieces",
+      "train_windows": 15467,
+      "seconds": 6.388561600000685,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 181.1968503937008,
+            "mean_log_interval_distance": 0.9403220163844264,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 98.05555555555556,
+            "overestimate_fraction": 0.7415268743580965,
+            "model_interval_overlap_fraction": 0.8093118794933242
+          }
+        ],
+        "macro_interval_distance": 181.1968503937008,
+        "macro_log_interval_distance": 0.9403220163844264,
+        "median_prediction_quantiles": [
+          6.0,
+          93.0,
+          379.0,
+          1105.0,
+          2396.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5091015169194866,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "fit": "final",
+      "task": "hours",
+      "train_windows": 17406,
+      "seconds": 8.186681099999987,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 18.434617093857035,
+            "mean_log_interval_distance": 3.444884872568752,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 16.271302456246282,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.8764705882352941
+          }
+        ],
+        "macro_interval_distance": 18.434617093857035,
+        "macro_log_interval_distance": 3.444884872568752,
+        "median_prediction_quantiles": [
+          0.9721088902637233,
+          20.438676153182215,
+          33.354112000869506,
+          35.87045429231141,
+          37.50345169475778
+        ],
+        "censor_median_below_observed_lower_fraction": 0.009437104474297768,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "fit": "final",
+      "task": "pieces",
+      "train_windows": 17406,
+      "seconds": 9.582457600001362,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1558.9705882352941,
+            "mean_log_interval_distance": 4.4926609677866445,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2154.4222222222224,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.3764705882352941
+          }
+        ],
+        "macro_interval_distance": 1558.9705882352941,
+        "macro_log_interval_distance": 4.4926609677866445,
+        "median_prediction_quantiles": [
+          102.0,
+          1085.0,
+          1322.0,
+          1903.0,
+          6755.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.013211946264016877,
+        "median_tail_extrapolation_fraction": 0.004707392746335723,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    }
+  ],
+  "all_optimizers_converged": true,
+  "history_period_accessed": false
+}

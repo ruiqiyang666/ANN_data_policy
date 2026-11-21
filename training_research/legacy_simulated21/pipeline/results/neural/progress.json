@@ -1,0 +1,11 @@
+{
+  "stage": "capacity_blend",
+  "architecture": "capacity_noise",
+  "epoch": 0,
+  "rss_gb": 1.09,
+  "available_ram_gb": 12.89,
+  "gpu_allocated_gb": 0.01,
+  "gpu_reserved_gb": 0.02,
+  "gpu_temp_c": 56,
+  "updated": 1791385911.9938445
+}

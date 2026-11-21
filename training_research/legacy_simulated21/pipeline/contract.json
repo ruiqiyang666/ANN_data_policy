@@ -1,0 +1,240 @@
+{
+  "fields": [
+    {
+      "key": "gun_current",
+      "excel_header": "电流（A）",
+      "name": "电流",
+      "unit": "A",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "power_supply_voltage",
+      "excel_header": "电源端电压（V）",
+      "name": "电源端电压",
+      "unit": "V",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "gun_voltage",
+      "excel_header": "喷枪端电压（V）",
+      "name": "喷枪端电压",
+      "unit": "V",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "net_power",
+      "excel_header": "净功率（kW）",
+      "name": "净功率",
+      "unit": "kW",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "primary_gas_flow",
+      "excel_header": "主工艺气体流量（NLPM）",
+      "name": "主工艺气体流量",
+      "unit": "NLPM",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "secondary_gas_flow",
+      "excel_header": "副工艺气体流量（NLPM）",
+      "name": "副工艺气体流量",
+      "unit": "NLPM",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "shroud_gas_flow",
+      "excel_header": "保护气流量（NLPM）",
+      "name": "保护气流量",
+      "unit": "NLPM",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "cooling_gas_flow",
+      "excel_header": "冷却气体流量（NLPM）",
+      "name": "冷却气体流量",
+      "unit": "NLPM",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "cooling_water_flow",
+      "excel_header": "冷却水流量（L/min）",
+      "name": "冷却水流量",
+      "unit": "L/min",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "cooling_water_conductivity",
+      "excel_header": "冷却水电导率（µS/cm）",
+      "name": "冷却水电导率",
+      "unit": "µS/cm",
+      "type": "number",
+      "assumption": true
+    },
+    {
+      "key": "kerosene_back_pressure",
+      "excel_header": "煤油背压（bar）",
+      "name": "煤油背压",
+      "unit": "bar",
+      "type": "number",
+      "assumption": true
+    },
+    {
+      "key": "air_jet",
+      "excel_header": "Air jet 气流辅助装置（bar（假设））",
+      "name": "Air jet 气流辅助装置",
+      "unit": "bar",
+      "type": "number",
+      "assumption": true
+    },
+    {
+      "key": "silvent_air_knife",
+      "excel_header": "Silvent 气刀（bar（假设））",
+      "name": "Silvent 气刀",
+      "unit": "bar",
+      "type": "number",
+      "assumption": true
+    },
+    {
+      "key": "feeder_carrier_gas",
+      "excel_header": "送粉器载气（NLPM）",
+      "name": "送粉器载气",
+      "unit": "NLPM",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "powder_tank_pressure",
+      "excel_header": "送粉器料斗压力（bar）",
+      "name": "送粉器料斗压力",
+      "unit": "bar",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "feeder_vibrator_pressure",
+      "excel_header": "送粉器振动器压力（bar）",
+      "name": "送粉器振动器压力",
+      "unit": "bar",
+      "type": "number",
+      "assumption": true
+    },
+    {
+      "key": "feeder_disk_speed",
+      "excel_header": "送粉器转盘转速（rpm）",
+      "name": "送粉器转盘转速",
+      "unit": "rpm",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "feeder_stirrer_speed",
+      "excel_header": "送粉器搅拌器转速（rpm）",
+      "name": "送粉器搅拌器转速",
+      "unit": "rpm",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "powder_feed_rate",
+      "excel_header": "送粉器粉末流量（g/min）",
+      "name": "送粉器粉末流量",
+      "unit": "g/min",
+      "type": "number",
+      "assumption": false
+    },
+    {
+      "key": "operation_state",
+      "excel_header": "机器状态",
+      "name": "机器状态",
+      "unit": "",
+      "type": "string",
+      "assumption": false
+    },
+    {
+      "key": "machine_message",
+      "excel_header": "信息/警告/报警及状态消息",
+      "name": "信息/警告/报警及状态消息",
+      "unit": "",
+      "type": "string",
+      "assumption": false
+    }
+  ],
+  "states": [
+    "startup_purge",
+    "ignition_settle",
+    "feed_prepare",
+    "spraying",
+    "powder_clear",
+    "exchange",
+    "shutdown_purge",
+    "cooling",
+    "standby",
+    "maintenance"
+  ],
+  "energized_states": [
+    "ignition_settle",
+    "feed_prepare",
+    "spraying",
+    "powder_clear",
+    "exchange"
+  ],
+  "version": "phase2-21ch-1hz-20261005",
+  "sample_seconds": 1,
+  "history_seconds": 60,
+  "forecast_seconds": 60,
+  "anomaly_horizon_seconds": 300,
+  "training_stride_seconds": 60,
+  "metadata": {
+    "timestamp": "ISO8601 with timezone",
+    "gun_id": "integer sequential installed gun",
+    "seq": "integer global sequence, exactly +1 each second"
+  },
+  "features": "19 x [current, trailing60 mean, trailing60 std, slope] + 10 state one-hot + capped state age + neutral SIM_STATE flag. 88 causal features.",
+  "forbidden_features": [
+    "y_*",
+    "gun_id",
+    "workpiece_id",
+    "replacement_events",
+    "future_values",
+    "diagnostic_message_text"
+  ],
+  "message_policy": "Ingest all messages. Only neutral SIM_STATE prefix flag used; fault text never used.",
+  "ordering_policy": "Reject duplicate/late/retired IDs. Reset on gap, gun change, invalid input or heartbeat silence >3s.",
+  "missing_policy": "All 21 fields required. No zero filling. Warmup requires 60 valid contiguous seconds.",
+  "unit_policy": "Canonical units only. Reject explicitly mismatching declared units.",
+  "split_policy": "Whole guns: (gun_id-1)%10 <6 train; 6-7 calibration; 8-9 test. Censored tail replay only. Reference residual thirds partitioned consistently.",
+  "outputs": [
+    "rul_hours",
+    "rul_pieces",
+    "rul_interval_hours",
+    "rul_interval_pieces",
+    "pressure_60s",
+    "pressure_trend",
+    "gun_health",
+    "tank_health",
+    "anomaly_type",
+    "anomaly_probability",
+    "next_anomaly_type",
+    "anomaly_300s_probability",
+    "predicted_anomaly_eta_s",
+    "warning_level",
+    "warning_reasons",
+    "root_candidates",
+    "sigma_deviations",
+    "input_parameters",
+    "model_version",
+    "latency_ms"
+  ],
+  "root_method": "Parameter-group ablation against training state baseline. Normalized positive selected-class probability reduction. Model explanation, not physical causality.",
+  "scope": "Local synthetic output workflow. No server access. Not production accuracy or ANN architecture selection."
+}

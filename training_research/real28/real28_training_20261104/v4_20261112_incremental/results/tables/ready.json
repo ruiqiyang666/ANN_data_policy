@@ -1,0 +1,9 @@
+{
+  "source_manifest_sha256": "891ab4d6ae31b0bb2ce2b36459a5ae67f372135411b5370fce27df7c2a159049",
+  "feature_sha256": "8e2fbcc07ce7ac31008d295c6c003ab4bdc400d5734ea287e33d30cdb5e81e59",
+  "features": 292,
+  "raw_rows": 5869518,
+  "main_csv": 1635,
+  "rows_through_20261023": 5402169,
+  "confirmed_natural_failures": 0
+}

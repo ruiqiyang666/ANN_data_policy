@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "research_only_not_approved",
+  "auto_publish": false,
+  "units": "processing_hours",
+  "warning_units": "wall_clock_60min",
+  "models": [
+    "km_landmark",
+    "km_age",
+    "ipcw_hgb6",
+    "ipcw_hgb32",
+    "cqrnn6",
+    "cqrnn32",
+    "mix6",
+    "mix32",
+    "rsf32"
+  ],
+  "warnings": [
+    "warn_logit6",
+    "warn_hgb32"
+  ],
+  "runtime": "train.predict_model; trusted local joblib only after digest verification",
+  "files": {
+    "mix6.joblib": "96cac69e66c914b6f4ba1cfbe056531955ec1e28360e6dbe7935d37dd920786e",
+    "rsf32.joblib": "ebed3abdeba48327acaeb6585afc47292118ef0199422af6f22ce799f8320d6d",
+    "ipcw_hgb6.json": "9ec774a29eeada5a68d0c00539252d62d20af75e9056414907a5cc596bd47fad",
+    "km_landmark.joblib": "9a06a784cefcf3fcfecfca4a28f145cb2a08bae4b32b50c3cf4cf231c66d584b",
+    "km_landmark.json": "0b8cf27c895863597e71ac051672708094bde041375ee1572d6ac149d49ae5c7",
+    "cqrnn6.joblib": "7ef7a95fe6a53933ea2cd9aa60c5a9970e5c5b8758f2b358a13d5f056d3f884d",
+    "km_age.json": "6bfba9b9eee0c2e748802d47d7161d164c13d8cf949450f49f2ee05f4153c342",
+    "cqrnn6.json": "296ea620a64a8bebff4de1ad81e19510d0cc270d21955b9c3420fd7a422ca928",
+    "cqrnn32.joblib": "95f5d6587f83fcaf739f2e30ec43593d919ecc36143d90f081b617cfd046e371",
+    "mix6.json": "e6d55f0feebbe301eeaeca2be25109f6e40680a0dd441ce4443b2ff6e0b70858",
+    "km_age.joblib": "9a3e625c7d760cd7acf702d4b7cc94d14853df8c1b0d7b9939a0fbd84a1f19fc",
+    "ipcw_hgb6.joblib": "c25222715112365815cc38d2e35472fa3bd061bb636b65a95997d3a585910069",
+    "mix32.json": "17081cf71e861f8501eb1b7bef51ce05be712ff513813deb6c530c2cb442c129",
+    "cqrnn32.json": "761c7666c5b15badee9ce11611a139cf5d21b57e9a1462b9609c5673bfd140c7",
+    "ipcw_hgb32.joblib": "3edfc03cddc2797a706655eb0137351be7c9b8be8c8fbf25181149a5be3e3c8b",
+    "warn_hgb32.joblib": "cd76ee56a6b5664941a074a9ca9f10a17bd9f2c3460e2ae8931758f37e5f8d54",
+    "ipcw_hgb32.json": "eff24991517bf972a4fc3320fdb1a3f41ac614059f04846c21c708f3125b2686",
+    "warn_logit6.joblib": "2abdddbc65cf016d946c4107d44e1a77f2eae06b2e98bb7fe4c9c5cb932e8740",
+    "mix32.joblib": "137c2006db54aa85829ac47d853e5520f5930f7fa3a214f653e8a017b057d361",
+    "rsf32.json": "7be725b2115c75adce6c7350426bc52c6c35b0da11868e069fe895778af377cb"
+  }
+}

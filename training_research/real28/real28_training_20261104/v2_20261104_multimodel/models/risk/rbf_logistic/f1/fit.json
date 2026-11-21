@@ -1,0 +1,21 @@
+{
+  "name": "rbf_logistic",
+  "fit": "f1",
+  "train_windows": 40987,
+  "evaluation_windows": 22034,
+  "seconds": 1.4748700999989524,
+  "metrics": {
+    "n": 22003,
+    "positive_windows": 353,
+    "events": 12,
+    "prevalence": 0.01604326682725083,
+    "average_precision": 0.08445801189398539,
+    "event_macro_ap": 0.05073098957936814,
+    "roc_auc": 0.6918993254780863,
+    "brier": 0.01590276437467465
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "73ff31c878098529a5857da8b6cf73f81c46d9776810aeeb164a52977d4cf175"
+}

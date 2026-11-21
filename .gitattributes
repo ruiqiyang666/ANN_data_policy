@@ -1,0 +1,15 @@
+training_research/**/*.ckpt filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.gz filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.joblib filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.npz filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.onnx filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.parquet filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.pickle filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.pt filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.pth filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+training_research/**/*.ubj filter=lfs diff=lfs merge=lfs -text
+"training_research/SOURCE_MANIFEST.json" filter=lfs diff=lfs merge=lfs -text
+"training_research/real28/real28_training_20261104/data/20261104_v1/products.csv" filter=lfs diff=lfs merge=lfs -text
+"training_research/booth2/model-v5-20261120/data/products.csv" filter=lfs diff=lfs merge=lfs -text

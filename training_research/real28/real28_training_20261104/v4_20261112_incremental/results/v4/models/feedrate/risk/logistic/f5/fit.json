@@ -1,0 +1,10 @@
+{
+  "train_windows": 122354,
+  "train_positive_windows": 535,
+  "train_events": 25,
+  "first_timestamp": "2026-08-15T10:27:10",
+  "last_timestamp": "2026-10-09T16:56:20",
+  "status": "trained",
+  "seconds": 36.81258839275688,
+  "model_sha256": "57d53013d44dc2807b9bf6be790ebed5b9c7d9a2db6c2de7b72f0fe86f56b48f"
+}

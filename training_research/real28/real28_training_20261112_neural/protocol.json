@@ -1,0 +1,52 @@
+{
+  "architecture": [
+    292,
+    64,
+    32,
+    1
+  ],
+  "activation": "relu",
+  "output": "sigmoid",
+  "epochs": 30,
+  "batch_size": 512,
+  "seed": 42,
+  "alpha": 0.01,
+  "learning_rate": 0.001,
+  "early_stopping": false,
+  "folds": [
+    {
+      "name": "f1",
+      "train_end": "2026-09-01",
+      "validation_end": "2026-09-08"
+    },
+    {
+      "name": "f2",
+      "train_end": "2026-09-08",
+      "validation_end": "2026-09-15"
+    },
+    {
+      "name": "f3",
+      "train_end": "2026-09-15",
+      "validation_end": "2026-09-30"
+    },
+    {
+      "name": "f4",
+      "train_end": "2026-10-04",
+      "validation_end": "2026-10-10"
+    },
+    {
+      "name": "f5",
+      "train_end": "2026-10-10",
+      "validation_end": "2026-10-24"
+    },
+    {
+      "name": "f6",
+      "train_end": "2026-10-27",
+      "validation_end": "2026-11-02"
+    }
+  ],
+  "holdout": "historical week already inspected in v4; no new blind claim",
+  "selection": "User requests neural display; no algorithm chosen by holdout performance",
+  "heads": "Three independent MLP risks; existing conditional ETA heads and weak-label AFT lifetime retained",
+  "input": "28 measured channels represented by 292 causal features; only train rows fit imputation/scaling"
+}

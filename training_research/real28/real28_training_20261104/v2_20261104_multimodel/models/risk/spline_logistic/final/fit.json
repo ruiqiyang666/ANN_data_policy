@@ -1,0 +1,21 @@
+{
+  "name": "spline_logistic",
+  "fit": "final",
+  "train_windows": 104551,
+  "evaluation_windows": 12983,
+  "seconds": 3.2281399999992573,
+  "metrics": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.07244466151169657,
+    "event_macro_ap": 0.0420286361672522,
+    "roc_auc": 0.898325534096883,
+    "brier": 0.01249229664068842
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "cdfd69dfa3a6e93c674eec17cff029903f7f4e701ab2cbe1aba7965fb65cf69e"
+}

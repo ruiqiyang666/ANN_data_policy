@@ -1,0 +1,10 @@
+{
+  "stage": "v2_complete",
+  "updated_at": "2026-11-04T20:23:42+0800",
+  "risk_methods": 9,
+  "lifetime_methods": 7,
+  "risk_choice": "extra_trees",
+  "life_choice": null,
+  "production_ready": false,
+  "report": "D:\\Learning\\GC\\IPP\\Phase2\\real28_training_20261104\\v2_20261104_multimodel\\多模型训练结果.md"
+}

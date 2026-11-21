@@ -1,0 +1,4674 @@
+{
+  "version": "phase2-21ch-1hz-20261005",
+  "algorithm": "ExtraTrees baseline models, not a selected ANN architecture",
+  "training_stride_seconds": 60,
+  "sampling_seconds": 1,
+  "forecast_seconds": 60,
+  "anomaly_horizon_seconds": 300,
+  "splits": {
+    "train": {
+      "rows": 206065,
+      "guns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        151,
+        152
+      ]
+    },
+    "calibration": {
+      "rows": 70183,
+      "guns": [
+        7,
+        8,
+        17,
+        18,
+        27,
+        28,
+        37,
+        38,
+        47,
+        48,
+        57,
+        58,
+        67,
+        68,
+        77,
+        78,
+        87,
+        88,
+        97,
+        98,
+        107,
+        108,
+        117,
+        118,
+        127,
+        128,
+        137,
+        138,
+        147,
+        148
+      ]
+    },
+    "test": {
+      "rows": 57734,
+      "guns": [
+        9,
+        10,
+        19,
+        20,
+        29,
+        30,
+        39,
+        40,
+        49,
+        50,
+        59,
+        60,
+        69,
+        70,
+        79,
+        80,
+        89,
+        90,
+        99,
+        100,
+        109,
+        110,
+        119,
+        120,
+        129,
+        130,
+        139,
+        140,
+        149,
+        150
+      ]
+    }
+  },
+  "features": 88,
+  "metrics": {
+    "y_rul_hours": {
+      "mae": 4.547416542498435,
+      "r2": 0.5799628553855829,
+      "rows": 57041
+    },
+    "y_rul_pieces": {
+      "mae": 316.9815409781293,
+      "r2": 0.5800032900247116,
+      "rows": 57041
+    },
+    "y_gun_health": {
+      "mae": 10.430676667332584,
+      "r2": 0.7326761983591024,
+      "rows": 57734
+    },
+    "y_tank_health": {
+      "mae": 4.148689893180354,
+      "r2": 0.9228332219612703,
+      "rows": 57734
+    },
+    "y_pressure_60s": {
+      "mae": 0.04770590598642781,
+      "r2": 0.6027050735682152,
+      "rows": 57734
+    }
+  },
+  "anomaly": {
+    "accuracy": 0.9067966882599509,
+    "macro_f1": 0.7932697988244514,
+    "false_positive_rate": 0.09811434152204944,
+    "confusion": [
+      [
+        48020,
+        10,
+        45,
+        1069,
+        4076,
+        24
+      ],
+      [
+        1,
+        991,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        847,
+        0,
+        0,
+        0
+      ],
+      [
+        34,
+        0,
+        0,
+        803,
+        68,
+        0
+      ],
+      [
+        24,
+        0,
+        0,
+        18,
+        856,
+        0
+      ],
+      [
+        9,
+        0,
+        1,
+        0,
+        0,
+        836
+      ]
+    ]
+  },
+  "forecast": {
+    "macro_f1": 0.7654531031134666,
+    "event_count": 699,
+    "warned_before_onset": 648
+  },
+  "root_top3_hit": 0.8367483296213808,
+  "conformal_nominal": 0.9,
+  "conformal_half_width": [
+    9.392912471236396,
+    653.6111329424643
+  ],
+  "conformal_test_coverage": [
+    0.8454269735804071,
+    0.844708192352869
+  ],
+  "baselines": {
+    "rul_train_median_mae": 8.388642472568465,
+    "pressure_persistence_mae": 0.04756874553402481
+  },
+  "gun_warning_events": [
+    {
+      "gun_id": 9,
+      "warning_lead_wall_hours": 38.79138888888889,
+      "available_wall_hours": 38.824444444444445,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 10,
+      "warning_lead_wall_hours": 23.01861111111111,
+      "available_wall_hours": 23.535,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 19,
+      "warning_lead_wall_hours": 18.979166666666668,
+      "available_wall_hours": 19.245555555555555,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 20,
+      "warning_lead_wall_hours": 36.72694444444444,
+      "available_wall_hours": 36.81,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 29,
+      "warning_lead_wall_hours": 38.02027777777778,
+      "available_wall_hours": 38.086666666666666,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 30,
+      "warning_lead_wall_hours": 38.95055555555555,
+      "available_wall_hours": 39.30027777777778,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 39,
+      "warning_lead_wall_hours": 45.21111111111111,
+      "available_wall_hours": 45.6275,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 40,
+      "warning_lead_wall_hours": 6.873333333333333,
+      "available_wall_hours": 6.989722222222222,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 49,
+      "warning_lead_wall_hours": 21.056944444444444,
+      "available_wall_hours": 21.506666666666668,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 50,
+      "warning_lead_wall_hours": 22.894444444444446,
+      "available_wall_hours": 23.2775,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 59,
+      "warning_lead_wall_hours": 41.42166666666667,
+      "available_wall_hours": 41.90472222222222,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 60,
+      "warning_lead_wall_hours": 41.761944444444445,
+      "available_wall_hours": 41.895,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 69,
+      "warning_lead_wall_hours": 40.284444444444446,
+      "available_wall_hours": 40.48416666666667,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 70,
+      "warning_lead_wall_hours": 40.84111111111111,
+      "available_wall_hours": 40.8575,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 79,
+      "warning_lead_wall_hours": 22.67111111111111,
+      "available_wall_hours": 23.154166666666665,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 80,
+      "warning_lead_wall_hours": 5.707777777777777,
+      "available_wall_hours": 6.1075,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 89,
+      "warning_lead_wall_hours": 44.891666666666666,
+      "available_wall_hours": 44.908055555555556,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 90,
+      "warning_lead_wall_hours": 38.7575,
+      "available_wall_hours": 39.24055555555555,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 99,
+      "warning_lead_wall_hours": 18.246944444444445,
+      "available_wall_hours": 18.696666666666665,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 100,
+      "warning_lead_wall_hours": 6.4752777777777775,
+      "available_wall_hours": 6.525,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 109,
+      "warning_lead_wall_hours": 7.6225,
+      "available_wall_hours": 8.13888888888889,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 110,
+      "warning_lead_wall_hours": 34.64055555555556,
+      "available_wall_hours": 34.65694444444444,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 119,
+      "warning_lead_wall_hours": 20.965555555555557,
+      "available_wall_hours": 21.26527777777778,
+      "reached_24h": false
+    },
+    {
+      "gun_id": 120,
+      "warning_lead_wall_hours": 44.185,
+      "available_wall_hours": 44.36805555555556,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 129,
+      "warning_lead_wall_hours": 39.5725,
+      "available_wall_hours": 39.58888888888889,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 130,
+      "warning_lead_wall_hours": 39.423611111111114,
+      "available_wall_hours": 39.906666666666666,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 139,
+      "warning_lead_wall_hours": 42.66138888888889,
+      "available_wall_hours": 42.87777777777778,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 140,
+      "warning_lead_wall_hours": 40.809444444444445,
+      "available_wall_hours": 40.8425,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 149,
+      "warning_lead_wall_hours": 39.382777777777775,
+      "available_wall_hours": 39.8325,
+      "reached_24h": true
+    },
+    {
+      "gun_id": 150,
+      "warning_lead_wall_hours": 42.11833333333333,
+      "available_wall_hours": 42.451388888888886,
+      "reached_24h": true
+    }
+  ],
+  "anomaly_warning_events": [
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1070792,
+      "lead_seconds": 58
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1073298,
+      "lead_seconds": 104
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1076641,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 9,
+      "kind": 2,
+      "onset_seq": 1081462,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1087632,
+      "lead_seconds": 98
+    },
+    {
+      "gun_id": 9,
+      "kind": 2,
+      "onset_seq": 1094314,
+      "lead_seconds": 240
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1097305,
+      "lead_seconds": 231
+    },
+    {
+      "gun_id": 9,
+      "kind": 5,
+      "onset_seq": 1103874,
+      "lead_seconds": 140
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1106614,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 9,
+      "kind": 5,
+      "onset_seq": 1109375,
+      "lead_seconds": 181
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1112024,
+      "lead_seconds": 130
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1118269,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1120909,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1128087,
+      "lead_seconds": 113
+    },
+    {
+      "gun_id": 9,
+      "kind": 5,
+      "onset_seq": 1134656,
+      "lead_seconds": 82
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1141099,
+      "lead_seconds": 225
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1148309,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 9,
+      "kind": 2,
+      "onset_seq": 1153808,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 9,
+      "kind": 2,
+      "onset_seq": 1158200,
+      "lead_seconds": 166
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1160325,
+      "lead_seconds": 251
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1165367,
+      "lead_seconds": 73
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1168734,
+      "lead_seconds": 200
+    },
+    {
+      "gun_id": 9,
+      "kind": 5,
+      "onset_seq": 1173577,
+      "lead_seconds": 63
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1176328,
+      "lead_seconds": 174
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1180098,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1187017,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 9,
+      "kind": 5,
+      "onset_seq": 1189930,
+      "lead_seconds": 156
+    },
+    {
+      "gun_id": 9,
+      "kind": 3,
+      "onset_seq": 1195158,
+      "lead_seconds": 164
+    },
+    {
+      "gun_id": 9,
+      "kind": 4,
+      "onset_seq": 1198245,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 9,
+      "kind": 1,
+      "onset_seq": 1205911,
+      "lead_seconds": 117
+    },
+    {
+      "gun_id": 10,
+      "kind": 3,
+      "onset_seq": 1211811,
+      "lead_seconds": 82
+    },
+    {
+      "gun_id": 10,
+      "kind": 1,
+      "onset_seq": 1217610,
+      "lead_seconds": 121
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1224066,
+      "lead_seconds": 157
+    },
+    {
+      "gun_id": 10,
+      "kind": 4,
+      "onset_seq": 1230774,
+      "lead_seconds": 265
+    },
+    {
+      "gun_id": 10,
+      "kind": 1,
+      "onset_seq": 1236457,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1242068,
+      "lead_seconds": 159
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1244896,
+      "lead_seconds": 167
+    },
+    {
+      "gun_id": 10,
+      "kind": 1,
+      "onset_seq": 1252366,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 10,
+      "kind": 5,
+      "onset_seq": 1256837,
+      "lead_seconds": 168
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1260863,
+      "lead_seconds": 234
+    },
+    {
+      "gun_id": 10,
+      "kind": 1,
+      "onset_seq": 1266171,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1271135,
+      "lead_seconds": 126
+    },
+    {
+      "gun_id": 10,
+      "kind": 3,
+      "onset_seq": 1273508,
+      "lead_seconds": 159
+    },
+    {
+      "gun_id": 10,
+      "kind": 4,
+      "onset_seq": 1279427,
+      "lead_seconds": 138
+    },
+    {
+      "gun_id": 10,
+      "kind": 2,
+      "onset_seq": 1282587,
+      "lead_seconds": 178
+    },
+    {
+      "gun_id": 10,
+      "kind": 1,
+      "onset_seq": 1285464,
+      "lead_seconds": 175
+    },
+    {
+      "gun_id": 10,
+      "kind": 3,
+      "onset_seq": 1290830,
+      "lead_seconds": 261
+    },
+    {
+      "gun_id": 19,
+      "kind": 4,
+      "onset_seq": 2359901,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 19,
+      "kind": 4,
+      "onset_seq": 2362836,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 19,
+      "kind": 5,
+      "onset_seq": 2366508,
+      "lead_seconds": 140
+    },
+    {
+      "gun_id": 19,
+      "kind": 5,
+      "onset_seq": 2370078,
+      "lead_seconds": 50
+    },
+    {
+      "gun_id": 19,
+      "kind": 1,
+      "onset_seq": 2376127,
+      "lead_seconds": 219
+    },
+    {
+      "gun_id": 19,
+      "kind": 5,
+      "onset_seq": 2382621,
+      "lead_seconds": 113
+    },
+    {
+      "gun_id": 19,
+      "kind": 3,
+      "onset_seq": 2387536,
+      "lead_seconds": 168
+    },
+    {
+      "gun_id": 19,
+      "kind": 3,
+      "onset_seq": 2392058,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 19,
+      "kind": 5,
+      "onset_seq": 2394812,
+      "lead_seconds": 184
+    },
+    {
+      "gun_id": 19,
+      "kind": 5,
+      "onset_seq": 2399490,
+      "lead_seconds": 62
+    },
+    {
+      "gun_id": 19,
+      "kind": 3,
+      "onset_seq": 2405422,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 19,
+      "kind": 1,
+      "onset_seq": 2411367,
+      "lead_seconds": 239
+    },
+    {
+      "gun_id": 19,
+      "kind": 4,
+      "onset_seq": 2413747,
+      "lead_seconds": 99
+    },
+    {
+      "gun_id": 19,
+      "kind": 4,
+      "onset_seq": 2416206,
+      "lead_seconds": 158
+    },
+    {
+      "gun_id": 19,
+      "kind": 1,
+      "onset_seq": 2422035,
+      "lead_seconds": 107
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2430259,
+      "lead_seconds": 199
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2436188,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2439921,
+      "lead_seconds": 201
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2446453,
+      "lead_seconds": 73
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2451158,
+      "lead_seconds": 98
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2453378,
+      "lead_seconds": 98
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2457166,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2460066,
+      "lead_seconds": 186
+    },
+    {
+      "gun_id": 20,
+      "kind": 2,
+      "onset_seq": 2467659,
+      "lead_seconds": 159
+    },
+    {
+      "gun_id": 20,
+      "kind": 2,
+      "onset_seq": 2472111,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2478109,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 20,
+      "kind": 4,
+      "onset_seq": 2485113,
+      "lead_seconds": 213
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2489749,
+      "lead_seconds": 169
+    },
+    {
+      "gun_id": 20,
+      "kind": 5,
+      "onset_seq": 2494054,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2496410,
+      "lead_seconds": 170
+    },
+    {
+      "gun_id": 20,
+      "kind": 4,
+      "onset_seq": 2500275,
+      "lead_seconds": 75
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2507636,
+      "lead_seconds": 236
+    },
+    {
+      "gun_id": 20,
+      "kind": 4,
+      "onset_seq": 2513938,
+      "lead_seconds": 118
+    },
+    {
+      "gun_id": 20,
+      "kind": 5,
+      "onset_seq": 2520235,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2523740,
+      "lead_seconds": 200
+    },
+    {
+      "gun_id": 20,
+      "kind": 2,
+      "onset_seq": 2528386,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 20,
+      "kind": 2,
+      "onset_seq": 2530647,
+      "lead_seconds": 147
+    },
+    {
+      "gun_id": 20,
+      "kind": 1,
+      "onset_seq": 2533291,
+      "lead_seconds": 151
+    },
+    {
+      "gun_id": 20,
+      "kind": 5,
+      "onset_seq": 2540484,
+      "lead_seconds": 204
+    },
+    {
+      "gun_id": 20,
+      "kind": 3,
+      "onset_seq": 2547395,
+      "lead_seconds": 155
+    },
+    {
+      "gun_id": 20,
+      "kind": 5,
+      "onset_seq": 2549924,
+      "lead_seconds": 44
+    },
+    {
+      "gun_id": 20,
+      "kind": 4,
+      "onset_seq": 2555764,
+      "lead_seconds": 244
+    },
+    {
+      "gun_id": 29,
+      "kind": 4,
+      "onset_seq": 3673855,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3681487,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 29,
+      "kind": 5,
+      "onset_seq": 3684350,
+      "lead_seconds": 118
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3689791,
+      "lead_seconds": 99
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3695407,
+      "lead_seconds": 255
+    },
+    {
+      "gun_id": 29,
+      "kind": 5,
+      "onset_seq": 3701134,
+      "lead_seconds": 162
+    },
+    {
+      "gun_id": 29,
+      "kind": 5,
+      "onset_seq": 3703348,
+      "lead_seconds": 156
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3708155,
+      "lead_seconds": 223
+    },
+    {
+      "gun_id": 29,
+      "kind": 2,
+      "onset_seq": 3712583,
+      "lead_seconds": 211
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3718420,
+      "lead_seconds": 168
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3723884,
+      "lead_seconds": 232
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3728816,
+      "lead_seconds": 244
+    },
+    {
+      "gun_id": 29,
+      "kind": 5,
+      "onset_seq": 3736372,
+      "lead_seconds": 60
+    },
+    {
+      "gun_id": 29,
+      "kind": 4,
+      "onset_seq": 3742191,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3746460,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 29,
+      "kind": 5,
+      "onset_seq": 3753338,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3760844,
+      "lead_seconds": 112
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3765273,
+      "lead_seconds": 221
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3769609,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3774276,
+      "lead_seconds": 224
+    },
+    {
+      "gun_id": 29,
+      "kind": 4,
+      "onset_seq": 3779858,
+      "lead_seconds": 166
+    },
+    {
+      "gun_id": 29,
+      "kind": 3,
+      "onset_seq": 3785750,
+      "lead_seconds": 118
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3791817,
+      "lead_seconds": 245
+    },
+    {
+      "gun_id": 29,
+      "kind": 4,
+      "onset_seq": 3796725,
+      "lead_seconds": 113
+    },
+    {
+      "gun_id": 29,
+      "kind": 1,
+      "onset_seq": 3803780,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 29,
+      "kind": 4,
+      "onset_seq": 3807364,
+      "lead_seconds": 132
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3813464,
+      "lead_seconds": 127
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3819185,
+      "lead_seconds": 208
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3823123,
+      "lead_seconds": 6
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3825677,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3830148,
+      "lead_seconds": 191
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3833337,
+      "lead_seconds": 260
+    },
+    {
+      "gun_id": 30,
+      "kind": 2,
+      "onset_seq": 3837661,
+      "lead_seconds": 204
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3842209,
+      "lead_seconds": 72
+    },
+    {
+      "gun_id": 30,
+      "kind": 5,
+      "onset_seq": 3844668,
+      "lead_seconds": 71
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3848239,
+      "lead_seconds": 162
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3854144,
+      "lead_seconds": 127
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3856588,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3859589,
+      "lead_seconds": 112
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3864048,
+      "lead_seconds": 131
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3866382,
+      "lead_seconds": 245
+    },
+    {
+      "gun_id": 30,
+      "kind": 2,
+      "onset_seq": 3873115,
+      "lead_seconds": 78
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3877169,
+      "lead_seconds": 52
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3884577,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3891682,
+      "lead_seconds": 45
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3895137,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 30,
+      "kind": 3,
+      "onset_seq": 3902129,
+      "lead_seconds": 172
+    },
+    {
+      "gun_id": 30,
+      "kind": 2,
+      "onset_seq": 3909594,
+      "lead_seconds": 137
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3913557,
+      "lead_seconds": 200
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3915765,
+      "lead_seconds": 68
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3922972,
+      "lead_seconds": 75
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3926387,
+      "lead_seconds": 190
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3930051,
+      "lead_seconds": 134
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3932606,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 30,
+      "kind": 2,
+      "onset_seq": 3938381,
+      "lead_seconds": 184
+    },
+    {
+      "gun_id": 30,
+      "kind": 1,
+      "onset_seq": 3941462,
+      "lead_seconds": 145
+    },
+    {
+      "gun_id": 30,
+      "kind": 4,
+      "onset_seq": 3946109,
+      "lead_seconds": 232
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5088371,
+      "lead_seconds": 138
+    },
+    {
+      "gun_id": 39,
+      "kind": 1,
+      "onset_seq": 5092535,
+      "lead_seconds": 222
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5099615,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 39,
+      "kind": 2,
+      "onset_seq": 5104918,
+      "lead_seconds": 125
+    },
+    {
+      "gun_id": 39,
+      "kind": 2,
+      "onset_seq": 5109708,
+      "lead_seconds": 235
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5114781,
+      "lead_seconds": 28
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5122005,
+      "lead_seconds": 52
+    },
+    {
+      "gun_id": 39,
+      "kind": 2,
+      "onset_seq": 5125553,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 39,
+      "kind": 2,
+      "onset_seq": 5130497,
+      "lead_seconds": 264
+    },
+    {
+      "gun_id": 39,
+      "kind": 1,
+      "onset_seq": 5133294,
+      "lead_seconds": 121
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5138139,
+      "lead_seconds": 226
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5144744,
+      "lead_seconds": 231
+    },
+    {
+      "gun_id": 39,
+      "kind": 2,
+      "onset_seq": 5150328,
+      "lead_seconds": 235
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5154437,
+      "lead_seconds": 84
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5159523,
+      "lead_seconds": 70
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5166481,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5172515,
+      "lead_seconds": 102
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5178005,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5184247,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 39,
+      "kind": 1,
+      "onset_seq": 5190759,
+      "lead_seconds": 226
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5193574,
+      "lead_seconds": 161
+    },
+    {
+      "gun_id": 39,
+      "kind": 4,
+      "onset_seq": 5199580,
+      "lead_seconds": 107
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5206316,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5210865,
+      "lead_seconds": 112
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5216448,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 39,
+      "kind": 3,
+      "onset_seq": 5223254,
+      "lead_seconds": 141
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5230227,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5232851,
+      "lead_seconds": 78
+    },
+    {
+      "gun_id": 39,
+      "kind": 1,
+      "onset_seq": 5240522,
+      "lead_seconds": 189
+    },
+    {
+      "gun_id": 39,
+      "kind": 5,
+      "onset_seq": 5246039,
+      "lead_seconds": 126
+    },
+    {
+      "gun_id": 40,
+      "kind": 5,
+      "onset_seq": 5253705,
+      "lead_seconds": 88
+    },
+    {
+      "gun_id": 40,
+      "kind": 5,
+      "onset_seq": 5258920,
+      "lead_seconds": 23
+    },
+    {
+      "gun_id": 40,
+      "kind": 1,
+      "onset_seq": 5262012,
+      "lead_seconds": 235
+    },
+    {
+      "gun_id": 40,
+      "kind": 1,
+      "onset_seq": 5266926,
+      "lead_seconds": 49
+    },
+    {
+      "gun_id": 40,
+      "kind": 1,
+      "onset_seq": 5271351,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 40,
+      "kind": 4,
+      "onset_seq": 5273783,
+      "lead_seconds": 126
+    },
+    {
+      "gun_id": 49,
+      "kind": 1,
+      "onset_seq": 6430785,
+      "lead_seconds": 129
+    },
+    {
+      "gun_id": 49,
+      "kind": 1,
+      "onset_seq": 6437895,
+      "lead_seconds": 219
+    },
+    {
+      "gun_id": 49,
+      "kind": 1,
+      "onset_seq": 6443923,
+      "lead_seconds": 127
+    },
+    {
+      "gun_id": 49,
+      "kind": 4,
+      "onset_seq": 6447071,
+      "lead_seconds": 95
+    },
+    {
+      "gun_id": 49,
+      "kind": 4,
+      "onset_seq": 6451511,
+      "lead_seconds": 95
+    },
+    {
+      "gun_id": 49,
+      "kind": 3,
+      "onset_seq": 6455648,
+      "lead_seconds": 32
+    },
+    {
+      "gun_id": 49,
+      "kind": 1,
+      "onset_seq": 6462996,
+      "lead_seconds": 240
+    },
+    {
+      "gun_id": 49,
+      "kind": 2,
+      "onset_seq": 6469369,
+      "lead_seconds": 73
+    },
+    {
+      "gun_id": 49,
+      "kind": 5,
+      "onset_seq": 6471950,
+      "lead_seconds": 14
+    },
+    {
+      "gun_id": 49,
+      "kind": 4,
+      "onset_seq": 6476779,
+      "lead_seconds": 223
+    },
+    {
+      "gun_id": 49,
+      "kind": 2,
+      "onset_seq": 6484396,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 49,
+      "kind": 2,
+      "onset_seq": 6491637,
+      "lead_seconds": 81
+    },
+    {
+      "gun_id": 49,
+      "kind": 2,
+      "onset_seq": 6496553,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 49,
+      "kind": 3,
+      "onset_seq": 6499964,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 50,
+      "kind": 3,
+      "onset_seq": 6509946,
+      "lead_seconds": 70
+    },
+    {
+      "gun_id": 50,
+      "kind": 3,
+      "onset_seq": 6512305,
+      "lead_seconds": 149
+    },
+    {
+      "gun_id": 50,
+      "kind": 1,
+      "onset_seq": 6515900,
+      "lead_seconds": 144
+    },
+    {
+      "gun_id": 50,
+      "kind": 2,
+      "onset_seq": 6518670,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 50,
+      "kind": 5,
+      "onset_seq": 6523380,
+      "lead_seconds": 64
+    },
+    {
+      "gun_id": 50,
+      "kind": 2,
+      "onset_seq": 6527898,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 50,
+      "kind": 4,
+      "onset_seq": 6534643,
+      "lead_seconds": 167
+    },
+    {
+      "gun_id": 50,
+      "kind": 3,
+      "onset_seq": 6538056,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 50,
+      "kind": 2,
+      "onset_seq": 6543504,
+      "lead_seconds": 88
+    },
+    {
+      "gun_id": 50,
+      "kind": 5,
+      "onset_seq": 6546572,
+      "lead_seconds": 156
+    },
+    {
+      "gun_id": 50,
+      "kind": 1,
+      "onset_seq": 6552117,
+      "lead_seconds": 181
+    },
+    {
+      "gun_id": 50,
+      "kind": 5,
+      "onset_seq": 6557077,
+      "lead_seconds": 101
+    },
+    {
+      "gun_id": 50,
+      "kind": 4,
+      "onset_seq": 6563918,
+      "lead_seconds": 42
+    },
+    {
+      "gun_id": 50,
+      "kind": 1,
+      "onset_seq": 6567731,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 50,
+      "kind": 2,
+      "onset_seq": 6574489,
+      "lead_seconds": 173
+    },
+    {
+      "gun_id": 50,
+      "kind": 4,
+      "onset_seq": 6579808,
+      "lead_seconds": 32
+    },
+    {
+      "gun_id": 50,
+      "kind": 5,
+      "onset_seq": 6582919,
+      "lead_seconds": 83
+    },
+    {
+      "gun_id": 50,
+      "kind": 3,
+      "onset_seq": 6588551,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 59,
+      "kind": 3,
+      "onset_seq": 7566639,
+      "lead_seconds": 143
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7568894,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7575619,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7579339,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7586247,
+      "lead_seconds": 131
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7590452,
+      "lead_seconds": 136
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7593054,
+      "lead_seconds": 158
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7597968,
+      "lead_seconds": 152
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7600561,
+      "lead_seconds": 105
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7607417,
+      "lead_seconds": 121
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7613120,
+      "lead_seconds": 124
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7616741,
+      "lead_seconds": 205
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7620664,
+      "lead_seconds": 108
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7624987,
+      "lead_seconds": 231
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7627731,
+      "lead_seconds": 275
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7632761,
+      "lead_seconds": 145
+    },
+    {
+      "gun_id": 59,
+      "kind": 3,
+      "onset_seq": 7639769,
+      "lead_seconds": 73
+    },
+    {
+      "gun_id": 59,
+      "kind": 3,
+      "onset_seq": 7646552,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7650860,
+      "lead_seconds": 244
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7654453,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7659820,
+      "lead_seconds": 144
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7662690,
+      "lead_seconds": 134
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7666275,
+      "lead_seconds": 119
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7670829,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7676661,
+      "lead_seconds": 185
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7679873,
+      "lead_seconds": 97
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7687549,
+      "lead_seconds": 93
+    },
+    {
+      "gun_id": 59,
+      "kind": 1,
+      "onset_seq": 7690505,
+      "lead_seconds": 229
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7693699,
+      "lead_seconds": 63
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7698413,
+      "lead_seconds": 97
+    },
+    {
+      "gun_id": 59,
+      "kind": 5,
+      "onset_seq": 7703029,
+      "lead_seconds": 33
+    },
+    {
+      "gun_id": 59,
+      "kind": 3,
+      "onset_seq": 7705882,
+      "lead_seconds": 186
+    },
+    {
+      "gun_id": 59,
+      "kind": 4,
+      "onset_seq": 7709068,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 59,
+      "kind": 2,
+      "onset_seq": 7711416,
+      "lead_seconds": 140
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7719429,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7722199,
+      "lead_seconds": 86
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7728011,
+      "lead_seconds": 78
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7731146,
+      "lead_seconds": 93
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7734182,
+      "lead_seconds": 189
+    },
+    {
+      "gun_id": 60,
+      "kind": 2,
+      "onset_seq": 7740486,
+      "lead_seconds": 253
+    },
+    {
+      "gun_id": 60,
+      "kind": 2,
+      "onset_seq": 7743659,
+      "lead_seconds": 126
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7747166,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7751432,
+      "lead_seconds": 99
+    },
+    {
+      "gun_id": 60,
+      "kind": 4,
+      "onset_seq": 7758737,
+      "lead_seconds": 204
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7765731,
+      "lead_seconds": 118
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7772434,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7775864,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7778595,
+      "lead_seconds": 22
+    },
+    {
+      "gun_id": 60,
+      "kind": 4,
+      "onset_seq": 7782935,
+      "lead_seconds": 222
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7785056,
+      "lead_seconds": 243
+    },
+    {
+      "gun_id": 60,
+      "kind": 4,
+      "onset_seq": 7789505,
+      "lead_seconds": 192
+    },
+    {
+      "gun_id": 60,
+      "kind": 4,
+      "onset_seq": 7795553,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 60,
+      "kind": 2,
+      "onset_seq": 7799172,
+      "lead_seconds": 199
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7805391,
+      "lead_seconds": 178
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7812311,
+      "lead_seconds": 198
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7816109,
+      "lead_seconds": 156
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7819482,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7823150,
+      "lead_seconds": 117
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7827182,
+      "lead_seconds": 189
+    },
+    {
+      "gun_id": 60,
+      "kind": 4,
+      "onset_seq": 7834050,
+      "lead_seconds": 97
+    },
+    {
+      "gun_id": 60,
+      "kind": 1,
+      "onset_seq": 7838797,
+      "lead_seconds": 104
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7844445,
+      "lead_seconds": 52
+    },
+    {
+      "gun_id": 60,
+      "kind": 5,
+      "onset_seq": 7848452,
+      "lead_seconds": 39
+    },
+    {
+      "gun_id": 60,
+      "kind": 3,
+      "onset_seq": 7853319,
+      "lead_seconds": 166
+    },
+    {
+      "gun_id": 60,
+      "kind": 2,
+      "onset_seq": 7859147,
+      "lead_seconds": 54
+    },
+    {
+      "gun_id": 60,
+      "kind": 2,
+      "onset_seq": 7865991,
+      "lead_seconds": 238
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8815453,
+      "lead_seconds": 234
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8821561,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8828852,
+      "lead_seconds": 73
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8833413,
+      "lead_seconds": 254
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8836936,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8843481,
+      "lead_seconds": 182
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8848009,
+      "lead_seconds": 210
+    },
+    {
+      "gun_id": 69,
+      "kind": 4,
+      "onset_seq": 8852311,
+      "lead_seconds": 192
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8855763,
+      "lead_seconds": 224
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8863055,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8865999,
+      "lead_seconds": 140
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8869688,
+      "lead_seconds": 169
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8873078,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8875649,
+      "lead_seconds": 190
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8880281,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 69,
+      "kind": 2,
+      "onset_seq": 8883742,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8886682,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8893779,
+      "lead_seconds": 200
+    },
+    {
+      "gun_id": 69,
+      "kind": 4,
+      "onset_seq": 8898904,
+      "lead_seconds": 105
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8903250,
+      "lead_seconds": 71
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8907608,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8911703,
+      "lead_seconds": 64
+    },
+    {
+      "gun_id": 69,
+      "kind": 4,
+      "onset_seq": 8916575,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 69,
+      "kind": 2,
+      "onset_seq": 8920556,
+      "lead_seconds": 97
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8922850,
+      "lead_seconds": 171
+    },
+    {
+      "gun_id": 69,
+      "kind": 1,
+      "onset_seq": 8926626,
+      "lead_seconds": 227
+    },
+    {
+      "gun_id": 69,
+      "kind": 2,
+      "onset_seq": 8929700,
+      "lead_seconds": 181
+    },
+    {
+      "gun_id": 69,
+      "kind": 4,
+      "onset_seq": 8934378,
+      "lead_seconds": 179
+    },
+    {
+      "gun_id": 69,
+      "kind": 4,
+      "onset_seq": 8941701,
+      "lead_seconds": 182
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8944172,
+      "lead_seconds": 193
+    },
+    {
+      "gun_id": 69,
+      "kind": 3,
+      "onset_seq": 8947412,
+      "lead_seconds": 133
+    },
+    {
+      "gun_id": 69,
+      "kind": 5,
+      "onset_seq": 8953672,
+      "lead_seconds": 93
+    },
+    {
+      "gun_id": 69,
+      "kind": 2,
+      "onset_seq": 8957125,
+      "lead_seconds": 66
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 8962704,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 8965629,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 8969112,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 8974235,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 8981272,
+      "lead_seconds": 43
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 8988416,
+      "lead_seconds": 107
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 8995503,
+      "lead_seconds": 174
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 8998507,
+      "lead_seconds": 58
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 9003719,
+      "lead_seconds": 230
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 9007862,
+      "lead_seconds": 173
+    },
+    {
+      "gun_id": 70,
+      "kind": 4,
+      "onset_seq": 9015541,
+      "lead_seconds": 112
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9018651,
+      "lead_seconds": 42
+    },
+    {
+      "gun_id": 70,
+      "kind": 3,
+      "onset_seq": 9023135,
+      "lead_seconds": 146
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9030072,
+      "lead_seconds": 63
+    },
+    {
+      "gun_id": 70,
+      "kind": 4,
+      "onset_seq": 9034051,
+      "lead_seconds": 202
+    },
+    {
+      "gun_id": 70,
+      "kind": 4,
+      "onset_seq": 9037910,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9045004,
+      "lead_seconds": 55
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9052169,
+      "lead_seconds": 80
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 9059369,
+      "lead_seconds": 80
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 9062089,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 70,
+      "kind": 4,
+      "onset_seq": 9065274,
+      "lead_seconds": 165
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9071857,
+      "lead_seconds": 28
+    },
+    {
+      "gun_id": 70,
+      "kind": 5,
+      "onset_seq": 9075524,
+      "lead_seconds": 95
+    },
+    {
+      "gun_id": 70,
+      "kind": 3,
+      "onset_seq": 9082530,
+      "lead_seconds": 201
+    },
+    {
+      "gun_id": 70,
+      "kind": 1,
+      "onset_seq": 9088789,
+      "lead_seconds": 160
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 9095146,
+      "lead_seconds": 157
+    },
+    {
+      "gun_id": 70,
+      "kind": 2,
+      "onset_seq": 9100882,
+      "lead_seconds": 13
+    },
+    {
+      "gun_id": 70,
+      "kind": 3,
+      "onset_seq": 9105167,
+      "lead_seconds": 158
+    },
+    {
+      "gun_id": 79,
+      "kind": 3,
+      "onset_seq": 10204081,
+      "lead_seconds": 158
+    },
+    {
+      "gun_id": 79,
+      "kind": 1,
+      "onset_seq": 10206453,
+      "lead_seconds": 130
+    },
+    {
+      "gun_id": 79,
+      "kind": 4,
+      "onset_seq": 10211611,
+      "lead_seconds": 188
+    },
+    {
+      "gun_id": 79,
+      "kind": 5,
+      "onset_seq": 10218267,
+      "lead_seconds": 64
+    },
+    {
+      "gun_id": 79,
+      "kind": 2,
+      "onset_seq": 10225400,
+      "lead_seconds": 237
+    },
+    {
+      "gun_id": 79,
+      "kind": 4,
+      "onset_seq": 10228480,
+      "lead_seconds": 77
+    },
+    {
+      "gun_id": 79,
+      "kind": 3,
+      "onset_seq": 10230603,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 79,
+      "kind": 2,
+      "onset_seq": 10235337,
+      "lead_seconds": 214
+    },
+    {
+      "gun_id": 79,
+      "kind": 2,
+      "onset_seq": 10241893,
+      "lead_seconds": 110
+    },
+    {
+      "gun_id": 79,
+      "kind": 3,
+      "onset_seq": 10247173,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 79,
+      "kind": 5,
+      "onset_seq": 10249920,
+      "lead_seconds": 37
+    },
+    {
+      "gun_id": 79,
+      "kind": 1,
+      "onset_seq": 10254078,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 79,
+      "kind": 2,
+      "onset_seq": 10258703,
+      "lead_seconds": 180
+    },
+    {
+      "gun_id": 79,
+      "kind": 4,
+      "onset_seq": 10261401,
+      "lead_seconds": 238
+    },
+    {
+      "gun_id": 79,
+      "kind": 5,
+      "onset_seq": 10268607,
+      "lead_seconds": 124
+    },
+    {
+      "gun_id": 79,
+      "kind": 4,
+      "onset_seq": 10271603,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 79,
+      "kind": 3,
+      "onset_seq": 10274641,
+      "lead_seconds": 218
+    },
+    {
+      "gun_id": 79,
+      "kind": 2,
+      "onset_seq": 10279859,
+      "lead_seconds": 216
+    },
+    {
+      "gun_id": 79,
+      "kind": 3,
+      "onset_seq": 10282512,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 80,
+      "kind": 4,
+      "onset_seq": 10290342,
+      "lead_seconds": 170
+    },
+    {
+      "gun_id": 80,
+      "kind": 1,
+      "onset_seq": 10292955,
+      "lead_seconds": 203
+    },
+    {
+      "gun_id": 80,
+      "kind": 2,
+      "onset_seq": 10298247,
+      "lead_seconds": 155
+    },
+    {
+      "gun_id": 80,
+      "kind": 1,
+      "onset_seq": 10302294,
+      "lead_seconds": 182
+    },
+    {
+      "gun_id": 80,
+      "kind": 4,
+      "onset_seq": 10305596,
+      "lead_seconds": 64
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11336492,
+      "lead_seconds": 223
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11340447,
+      "lead_seconds": 218
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11344932,
+      "lead_seconds": 83
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11349038,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11355186,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11361868,
+      "lead_seconds": 219
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11364423,
+      "lead_seconds": 134
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11370349,
+      "lead_seconds": 240
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11373712,
+      "lead_seconds": 123
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11379203,
+      "lead_seconds": 94
+    },
+    {
+      "gun_id": 89,
+      "kind": 3,
+      "onset_seq": 11384565,
+      "lead_seconds": 176
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11391965,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11398349,
+      "lead_seconds": 160
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11404980,
+      "lead_seconds": 71
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11411875,
+      "lead_seconds": 66
+    },
+    {
+      "gun_id": 89,
+      "kind": 3,
+      "onset_seq": 11415501,
+      "lead_seconds": 152
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11422417,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11427928,
+      "lead_seconds": 159
+    },
+    {
+      "gun_id": 89,
+      "kind": 3,
+      "onset_seq": 11433515,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11437598,
+      "lead_seconds": 49
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11441609,
+      "lead_seconds": 40
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11449009,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11456430,
+      "lead_seconds": 221
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11461656,
+      "lead_seconds": 167
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11469207,
+      "lead_seconds": 158
+    },
+    {
+      "gun_id": 89,
+      "kind": 2,
+      "onset_seq": 11473637,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 89,
+      "kind": 1,
+      "onset_seq": 11476724,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11482359,
+      "lead_seconds": 50
+    },
+    {
+      "gun_id": 89,
+      "kind": 4,
+      "onset_seq": 11487123,
+      "lead_seconds": 194
+    },
+    {
+      "gun_id": 89,
+      "kind": 3,
+      "onset_seq": 11490508,
+      "lead_seconds": 159
+    },
+    {
+      "gun_id": 89,
+      "kind": 5,
+      "onset_seq": 11493016,
+      "lead_seconds": 147
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11501013,
+      "lead_seconds": 179
+    },
+    {
+      "gun_id": 90,
+      "kind": 4,
+      "onset_seq": 11508451,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11512751,
+      "lead_seconds": 157
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11519381,
+      "lead_seconds": 67
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11524402,
+      "lead_seconds": 168
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11530666,
+      "lead_seconds": 72
+    },
+    {
+      "gun_id": 90,
+      "kind": 1,
+      "onset_seq": 11538024,
+      "lead_seconds": 170
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11543730,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11549428,
+      "lead_seconds": 114
+    },
+    {
+      "gun_id": 90,
+      "kind": 4,
+      "onset_seq": 11555838,
+      "lead_seconds": 224
+    },
+    {
+      "gun_id": 90,
+      "kind": 4,
+      "onset_seq": 11558520,
+      "lead_seconds": 146
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11563976,
+      "lead_seconds": 82
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11568675,
+      "lead_seconds": 101
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11571044,
+      "lead_seconds": 10
+    },
+    {
+      "gun_id": 90,
+      "kind": 1,
+      "onset_seq": 11578458,
+      "lead_seconds": 224
+    },
+    {
+      "gun_id": 90,
+      "kind": 1,
+      "onset_seq": 11585794,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 90,
+      "kind": 1,
+      "onset_seq": 11589941,
+      "lead_seconds": 247
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11593588,
+      "lead_seconds": 54
+    },
+    {
+      "gun_id": 90,
+      "kind": 4,
+      "onset_seq": 11596468,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11599472,
+      "lead_seconds": 118
+    },
+    {
+      "gun_id": 90,
+      "kind": 1,
+      "onset_seq": 11605705,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 90,
+      "kind": 2,
+      "onset_seq": 11612532,
+      "lead_seconds": 218
+    },
+    {
+      "gun_id": 90,
+      "kind": 2,
+      "onset_seq": 11618120,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11623887,
+      "lead_seconds": 53
+    },
+    {
+      "gun_id": 90,
+      "kind": 3,
+      "onset_seq": 11628844,
+      "lead_seconds": 210
+    },
+    {
+      "gun_id": 90,
+      "kind": 5,
+      "onset_seq": 11636193,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 99,
+      "kind": 5,
+      "onset_seq": 12790080,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 99,
+      "kind": 4,
+      "onset_seq": 12795179,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 99,
+      "kind": 3,
+      "onset_seq": 12800085,
+      "lead_seconds": 223
+    },
+    {
+      "gun_id": 99,
+      "kind": 3,
+      "onset_seq": 12802662,
+      "lead_seconds": 160
+    },
+    {
+      "gun_id": 99,
+      "kind": 3,
+      "onset_seq": 12810098,
+      "lead_seconds": 156
+    },
+    {
+      "gun_id": 99,
+      "kind": 4,
+      "onset_seq": 12815230,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 99,
+      "kind": 4,
+      "onset_seq": 12821230,
+      "lead_seconds": 68
+    },
+    {
+      "gun_id": 99,
+      "kind": 5,
+      "onset_seq": 12824358,
+      "lead_seconds": 76
+    },
+    {
+      "gun_id": 99,
+      "kind": 5,
+      "onset_seq": 12827487,
+      "lead_seconds": 25
+    },
+    {
+      "gun_id": 99,
+      "kind": 5,
+      "onset_seq": 12833850,
+      "lead_seconds": 28
+    },
+    {
+      "gun_id": 99,
+      "kind": 4,
+      "onset_seq": 12837499,
+      "lead_seconds": 257
+    },
+    {
+      "gun_id": 99,
+      "kind": 4,
+      "onset_seq": 12845010,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 99,
+      "kind": 3,
+      "onset_seq": 12849902,
+      "lead_seconds": 120
+    },
+    {
+      "gun_id": 100,
+      "kind": 4,
+      "onset_seq": 12857576,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 100,
+      "kind": 5,
+      "onset_seq": 12859764,
+      "lead_seconds": 105
+    },
+    {
+      "gun_id": 100,
+      "kind": 2,
+      "onset_seq": 12867214,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 100,
+      "kind": 4,
+      "onset_seq": 12872127,
+      "lead_seconds": 168
+    },
+    {
+      "gun_id": 109,
+      "kind": 2,
+      "onset_seq": 14039607,
+      "lead_seconds": 74
+    },
+    {
+      "gun_id": 109,
+      "kind": 2,
+      "onset_seq": 14042170,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 109,
+      "kind": 2,
+      "onset_seq": 14046235,
+      "lead_seconds": 222
+    },
+    {
+      "gun_id": 109,
+      "kind": 5,
+      "onset_seq": 14053056,
+      "lead_seconds": 203
+    },
+    {
+      "gun_id": 109,
+      "kind": 4,
+      "onset_seq": 14056278,
+      "lead_seconds": 125
+    },
+    {
+      "gun_id": 109,
+      "kind": 2,
+      "onset_seq": 14059900,
+      "lead_seconds": 87
+    },
+    {
+      "gun_id": 109,
+      "kind": 5,
+      "onset_seq": 14064527,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14070616,
+      "lead_seconds": 216
+    },
+    {
+      "gun_id": 110,
+      "kind": 5,
+      "onset_seq": 14074745,
+      "lead_seconds": 25
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14081762,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14085994,
+      "lead_seconds": 114
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14093011,
+      "lead_seconds": 171
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14097004,
+      "lead_seconds": 144
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14102957,
+      "lead_seconds": 157
+    },
+    {
+      "gun_id": 110,
+      "kind": 2,
+      "onset_seq": 14107028,
+      "lead_seconds": 88
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14112942,
+      "lead_seconds": 182
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14116012,
+      "lead_seconds": 132
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14120068,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14124320,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 110,
+      "kind": 2,
+      "onset_seq": 14127346,
+      "lead_seconds": 186
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14131273,
+      "lead_seconds": 93
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14136078,
+      "lead_seconds": 218
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14140123,
+      "lead_seconds": 243
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14145636,
+      "lead_seconds": 176
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14151842,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14155253,
+      "lead_seconds": 133
+    },
+    {
+      "gun_id": 110,
+      "kind": 2,
+      "onset_seq": 14160325,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14167134,
+      "lead_seconds": 134
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14173087,
+      "lead_seconds": 87
+    },
+    {
+      "gun_id": 110,
+      "kind": 3,
+      "onset_seq": 14175716,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 110,
+      "kind": 2,
+      "onset_seq": 14180668,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 110,
+      "kind": 4,
+      "onset_seq": 14183920,
+      "lead_seconds": 240
+    },
+    {
+      "gun_id": 110,
+      "kind": 1,
+      "onset_seq": 14189531,
+      "lead_seconds": 151
+    },
+    {
+      "gun_id": 119,
+      "kind": 2,
+      "onset_seq": 15301388,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 119,
+      "kind": 5,
+      "onset_seq": 15306569,
+      "lead_seconds": 109
+    },
+    {
+      "gun_id": 119,
+      "kind": 2,
+      "onset_seq": 15310616,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 119,
+      "kind": 2,
+      "onset_seq": 15315268,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 119,
+      "kind": 4,
+      "onset_seq": 15318188,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 119,
+      "kind": 5,
+      "onset_seq": 15323666,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 119,
+      "kind": 4,
+      "onset_seq": 15327887,
+      "lead_seconds": 127
+    },
+    {
+      "gun_id": 119,
+      "kind": 5,
+      "onset_seq": 15331913,
+      "lead_seconds": 193
+    },
+    {
+      "gun_id": 119,
+      "kind": 3,
+      "onset_seq": 15338336,
+      "lead_seconds": 136
+    },
+    {
+      "gun_id": 119,
+      "kind": 3,
+      "onset_seq": 15345069,
+      "lead_seconds": 89
+    },
+    {
+      "gun_id": 119,
+      "kind": 2,
+      "onset_seq": 15347933,
+      "lead_seconds": 133
+    },
+    {
+      "gun_id": 119,
+      "kind": 3,
+      "onset_seq": 15355363,
+      "lead_seconds": 183
+    },
+    {
+      "gun_id": 119,
+      "kind": 4,
+      "onset_seq": 15358680,
+      "lead_seconds": 20
+    },
+    {
+      "gun_id": 119,
+      "kind": 4,
+      "onset_seq": 15364124,
+      "lead_seconds": 244
+    },
+    {
+      "gun_id": 119,
+      "kind": 3,
+      "onset_seq": 15367214,
+      "lead_seconds": 94
+    },
+    {
+      "gun_id": 119,
+      "kind": 3,
+      "onset_seq": 15371518,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 120,
+      "kind": 4,
+      "onset_seq": 15379670,
+      "lead_seconds": 78
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15383828,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15386043,
+      "lead_seconds": 91
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15393281,
+      "lead_seconds": 129
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15396464,
+      "lead_seconds": 72
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15403378,
+      "lead_seconds": 266
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15407822,
+      "lead_seconds": 210
+    },
+    {
+      "gun_id": 120,
+      "kind": 3,
+      "onset_seq": 15411396,
+      "lead_seconds": 64
+    },
+    {
+      "gun_id": 120,
+      "kind": 3,
+      "onset_seq": 15417606,
+      "lead_seconds": 214
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15421920,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15428946,
+      "lead_seconds": 154
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15434474,
+      "lead_seconds": 162
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15441523,
+      "lead_seconds": 71
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15446832,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 120,
+      "kind": 4,
+      "onset_seq": 15450223,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15453118,
+      "lead_seconds": 86
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15458961,
+      "lead_seconds": 49
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15462071,
+      "lead_seconds": 99
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15465461,
+      "lead_seconds": 129
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15467953,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15472605,
+      "lead_seconds": 193
+    },
+    {
+      "gun_id": 120,
+      "kind": 3,
+      "onset_seq": 15477489,
+      "lead_seconds": 157
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15480454,
+      "lead_seconds": 242
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15485253,
+      "lead_seconds": 121
+    },
+    {
+      "gun_id": 120,
+      "kind": 4,
+      "onset_seq": 15490540,
+      "lead_seconds": 128
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15498062,
+      "lead_seconds": 210
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15503794,
+      "lead_seconds": 122
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15510049,
+      "lead_seconds": 137
+    },
+    {
+      "gun_id": 120,
+      "kind": 2,
+      "onset_seq": 15513487,
+      "lead_seconds": 215
+    },
+    {
+      "gun_id": 120,
+      "kind": 4,
+      "onset_seq": 15517233,
+      "lead_seconds": 61
+    },
+    {
+      "gun_id": 120,
+      "kind": 3,
+      "onset_seq": 15523178,
+      "lead_seconds": 66
+    },
+    {
+      "gun_id": 120,
+      "kind": 1,
+      "onset_seq": 15525356,
+      "lead_seconds": 144
+    },
+    {
+      "gun_id": 120,
+      "kind": 5,
+      "onset_seq": 15527683,
+      "lead_seconds": 131
+    },
+    {
+      "gun_id": 120,
+      "kind": 4,
+      "onset_seq": 15534686,
+      "lead_seconds": 234
+    },
+    {
+      "gun_id": 129,
+      "kind": 2,
+      "onset_seq": 16684752,
+      "lead_seconds": 152
+    },
+    {
+      "gun_id": 129,
+      "kind": 4,
+      "onset_seq": 16690248,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 129,
+      "kind": 2,
+      "onset_seq": 16693551,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16700859,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16707573,
+      "lead_seconds": 173
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16714597,
+      "lead_seconds": 57
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16718640,
+      "lead_seconds": 20
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16721645,
+      "lead_seconds": 145
+    },
+    {
+      "gun_id": 129,
+      "kind": 1,
+      "onset_seq": 16728047,
+      "lead_seconds": 187
+    },
+    {
+      "gun_id": 129,
+      "kind": 2,
+      "onset_seq": 16735435,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 129,
+      "kind": 4,
+      "onset_seq": 16740481,
+      "lead_seconds": 141
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16745083,
+      "lead_seconds": 243
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16747644,
+      "lead_seconds": 104
+    },
+    {
+      "gun_id": 129,
+      "kind": 2,
+      "onset_seq": 16751395,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16758305,
+      "lead_seconds": 85
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16762392,
+      "lead_seconds": 32
+    },
+    {
+      "gun_id": 129,
+      "kind": 4,
+      "onset_seq": 16766690,
+      "lead_seconds": 130
+    },
+    {
+      "gun_id": 129,
+      "kind": 1,
+      "onset_seq": 16769167,
+      "lead_seconds": 147
+    },
+    {
+      "gun_id": 129,
+      "kind": 4,
+      "onset_seq": 16776013,
+      "lead_seconds": 153
+    },
+    {
+      "gun_id": 129,
+      "kind": 1,
+      "onset_seq": 16783143,
+      "lead_seconds": 203
+    },
+    {
+      "gun_id": 129,
+      "kind": 2,
+      "onset_seq": 16788536,
+      "lead_seconds": 256
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16795906,
+      "lead_seconds": 126
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16798782,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 129,
+      "kind": 1,
+      "onset_seq": 16802530,
+      "lead_seconds": 150
+    },
+    {
+      "gun_id": 129,
+      "kind": 5,
+      "onset_seq": 16809686,
+      "lead_seconds": 106
+    },
+    {
+      "gun_id": 129,
+      "kind": 3,
+      "onset_seq": 16815804,
+      "lead_seconds": 104
+    },
+    {
+      "gun_id": 129,
+      "kind": 1,
+      "onset_seq": 16821912,
+      "lead_seconds": 92
+    },
+    {
+      "gun_id": 130,
+      "kind": 5,
+      "onset_seq": 16828682,
+      "lead_seconds": 170
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16833508,
+      "lead_seconds": 196
+    },
+    {
+      "gun_id": 130,
+      "kind": 5,
+      "onset_seq": 16837573,
+      "lead_seconds": 121
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16842622,
+      "lead_seconds": 190
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16849375,
+      "lead_seconds": 163
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16853989,
+      "lead_seconds": 217
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16860147,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 130,
+      "kind": 5,
+      "onset_seq": 16866067,
+      "lead_seconds": 115
+    },
+    {
+      "gun_id": 130,
+      "kind": 3,
+      "onset_seq": 16872569,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 130,
+      "kind": 3,
+      "onset_seq": 16875404,
+      "lead_seconds": 152
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16879294,
+      "lead_seconds": 142
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16885706,
+      "lead_seconds": 254
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16890807,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16898363,
+      "lead_seconds": 131
+    },
+    {
+      "gun_id": 130,
+      "kind": 2,
+      "onset_seq": 16903097,
+      "lead_seconds": 125
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16909644,
+      "lead_seconds": 72
+    },
+    {
+      "gun_id": 130,
+      "kind": 4,
+      "onset_seq": 16913414,
+      "lead_seconds": 242
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16918586,
+      "lead_seconds": 194
+    },
+    {
+      "gun_id": 130,
+      "kind": 3,
+      "onset_seq": 16922240,
+      "lead_seconds": 248
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16928852,
+      "lead_seconds": 80
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16933808,
+      "lead_seconds": 236
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16936869,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16944240,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16947473,
+      "lead_seconds": 101
+    },
+    {
+      "gun_id": 130,
+      "kind": 3,
+      "onset_seq": 16953932,
+      "lead_seconds": 80
+    },
+    {
+      "gun_id": 130,
+      "kind": 5,
+      "onset_seq": 16959733,
+      "lead_seconds": 61
+    },
+    {
+      "gun_id": 130,
+      "kind": 1,
+      "onset_seq": 16962628,
+      "lead_seconds": 136
+    },
+    {
+      "gun_id": 130,
+      "kind": 3,
+      "onset_seq": 16967534,
+      "lead_seconds": 242
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18106243,
+      "lead_seconds": 76
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18111942,
+      "lead_seconds": 195
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18114759,
+      "lead_seconds": 192
+    },
+    {
+      "gun_id": 139,
+      "kind": 2,
+      "onset_seq": 18119398,
+      "lead_seconds": 211
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18124567,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18131511,
+      "lead_seconds": 204
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18138799,
+      "lead_seconds": 52
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18145952,
+      "lead_seconds": 125
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18148340,
+      "lead_seconds": 113
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18153190,
+      "lead_seconds": 223
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18160043,
+      "lead_seconds": 116
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18163858,
+      "lead_seconds": 91
+    },
+    {
+      "gun_id": 139,
+      "kind": 4,
+      "onset_seq": 18169157,
+      "lead_seconds": 230
+    },
+    {
+      "gun_id": 139,
+      "kind": 2,
+      "onset_seq": 18172560,
+      "lead_seconds": 93
+    },
+    {
+      "gun_id": 139,
+      "kind": 4,
+      "onset_seq": 18175531,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18178638,
+      "lead_seconds": 51
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18182111,
+      "lead_seconds": 164
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18184638,
+      "lead_seconds": 171
+    },
+    {
+      "gun_id": 139,
+      "kind": 2,
+      "onset_seq": 18189902,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 139,
+      "kind": 4,
+      "onset_seq": 18192866,
+      "lead_seconds": 239
+    },
+    {
+      "gun_id": 139,
+      "kind": 4,
+      "onset_seq": 18196701,
+      "lead_seconds": 174
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18201366,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18207761,
+      "lead_seconds": 134
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18213979,
+      "lead_seconds": 112
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18219871,
+      "lead_seconds": 4
+    },
+    {
+      "gun_id": 139,
+      "kind": 4,
+      "onset_seq": 18225602,
+      "lead_seconds": 95
+    },
+    {
+      "gun_id": 139,
+      "kind": 5,
+      "onset_seq": 18228305,
+      "lead_seconds": 98
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18234595,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 139,
+      "kind": 3,
+      "onset_seq": 18236919,
+      "lead_seconds": 132
+    },
+    {
+      "gun_id": 139,
+      "kind": 2,
+      "onset_seq": 18239197,
+      "lead_seconds": 130
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18241910,
+      "lead_seconds": 203
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18245032,
+      "lead_seconds": 205
+    },
+    {
+      "gun_id": 139,
+      "kind": 1,
+      "onset_seq": 18247657,
+      "lead_seconds": 130
+    },
+    {
+      "gun_id": 139,
+      "kind": 2,
+      "onset_seq": 18255007,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 140,
+      "kind": 3,
+      "onset_seq": 18264095,
+      "lead_seconds": 246
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18269280,
+      "lead_seconds": 211
+    },
+    {
+      "gun_id": 140,
+      "kind": 1,
+      "onset_seq": 18273256,
+      "lead_seconds": 227
+    },
+    {
+      "gun_id": 140,
+      "kind": 5,
+      "onset_seq": 18275935,
+      "lead_seconds": 26
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18281197,
+      "lead_seconds": 68
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18284622,
+      "lead_seconds": 133
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18291769,
+      "lead_seconds": 200
+    },
+    {
+      "gun_id": 140,
+      "kind": 1,
+      "onset_seq": 18296641,
+      "lead_seconds": 92
+    },
+    {
+      "gun_id": 140,
+      "kind": 3,
+      "onset_seq": 18303432,
+      "lead_seconds": 163
+    },
+    {
+      "gun_id": 140,
+      "kind": 1,
+      "onset_seq": 18310976,
+      "lead_seconds": 147
+    },
+    {
+      "gun_id": 140,
+      "kind": 2,
+      "onset_seq": 18316258,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 140,
+      "kind": 5,
+      "onset_seq": 18321377,
+      "lead_seconds": 48
+    },
+    {
+      "gun_id": 140,
+      "kind": 1,
+      "onset_seq": 18328825,
+      "lead_seconds": 236
+    },
+    {
+      "gun_id": 140,
+      "kind": 3,
+      "onset_seq": 18334298,
+      "lead_seconds": 189
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18338398,
+      "lead_seconds": 209
+    },
+    {
+      "gun_id": 140,
+      "kind": 2,
+      "onset_seq": 18343121,
+      "lead_seconds": 192
+    },
+    {
+      "gun_id": 140,
+      "kind": 1,
+      "onset_seq": 18350558,
+      "lead_seconds": 69
+    },
+    {
+      "gun_id": 140,
+      "kind": 5,
+      "onset_seq": 18358077,
+      "lead_seconds": 148
+    },
+    {
+      "gun_id": 140,
+      "kind": 5,
+      "onset_seq": 18362180,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 140,
+      "kind": 3,
+      "onset_seq": 18364930,
+      "lead_seconds": 161
+    },
+    {
+      "gun_id": 140,
+      "kind": 2,
+      "onset_seq": 18371882,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18377254,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 140,
+      "kind": 2,
+      "onset_seq": 18384759,
+      "lead_seconds": 190
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18388101,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18394784,
+      "lead_seconds": 15
+    },
+    {
+      "gun_id": 140,
+      "kind": 3,
+      "onset_seq": 18398662,
+      "lead_seconds": 53
+    },
+    {
+      "gun_id": 140,
+      "kind": 4,
+      "onset_seq": 18401692,
+      "lead_seconds": 143
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19476221,
+      "lead_seconds": 216
+    },
+    {
+      "gun_id": 149,
+      "kind": 4,
+      "onset_seq": 19482838,
+      "lead_seconds": 233
+    },
+    {
+      "gun_id": 149,
+      "kind": 4,
+      "onset_seq": 19485818,
+      "lead_seconds": 153
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19492940,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19499821,
+      "lead_seconds": 176
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19505967,
+      "lead_seconds": 202
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19510831,
+      "lead_seconds": 266
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19518157,
+      "lead_seconds": 212
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19523260,
+      "lead_seconds": 215
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19526508,
+      "lead_seconds": 103
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19529612,
+      "lead_seconds": 207
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19535411,
+      "lead_seconds": 66
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19538336,
+      "lead_seconds": 111
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19545330,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 149,
+      "kind": 5,
+      "onset_seq": 19552703,
+      "lead_seconds": 78
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19559505,
+      "lead_seconds": 100
+    },
+    {
+      "gun_id": 149,
+      "kind": 4,
+      "onset_seq": 19564733,
+      "lead_seconds": 228
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19569470,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 149,
+      "kind": 4,
+      "onset_seq": 19572694,
+      "lead_seconds": 209
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19576651,
+      "lead_seconds": 26
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19581113,
+      "lead_seconds": 108
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19587356,
+      "lead_seconds": 171
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19592474,
+      "lead_seconds": 69
+    },
+    {
+      "gun_id": 149,
+      "kind": 2,
+      "onset_seq": 19598521,
+      "lead_seconds": 176
+    },
+    {
+      "gun_id": 149,
+      "kind": 4,
+      "onset_seq": 19605059,
+      "lead_seconds": 234
+    },
+    {
+      "gun_id": 149,
+      "kind": 5,
+      "onset_seq": 19610170,
+      "lead_seconds": 5
+    },
+    {
+      "gun_id": 149,
+      "kind": 3,
+      "onset_seq": 19612630,
+      "lead_seconds": 185
+    },
+    {
+      "gun_id": 149,
+      "kind": 1,
+      "onset_seq": 19616060,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19620803,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19626738,
+      "lead_seconds": 96
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19630435,
+      "lead_seconds": 253
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19633982,
+      "lead_seconds": 80
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19637124,
+      "lead_seconds": 222
+    },
+    {
+      "gun_id": 150,
+      "kind": 3,
+      "onset_seq": 19641582,
+      "lead_seconds": 180
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19647618,
+      "lead_seconds": 216
+    },
+    {
+      "gun_id": 150,
+      "kind": 3,
+      "onset_seq": 19652517,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19657790,
+      "lead_seconds": 188
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19663723,
+      "lead_seconds": null
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19669656,
+      "lead_seconds": 234
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19672222,
+      "lead_seconds": 40
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19675093,
+      "lead_seconds": 91
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19681378,
+      "lead_seconds": 136
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19688724,
+      "lead_seconds": 162
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19695597,
+      "lead_seconds": 75
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19698445,
+      "lead_seconds": 163
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19702203,
+      "lead_seconds": 141
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19707539,
+      "lead_seconds": 197
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19713774,
+      "lead_seconds": 252
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19716948,
+      "lead_seconds": 246
+    },
+    {
+      "gun_id": 150,
+      "kind": 3,
+      "onset_seq": 19719537,
+      "lead_seconds": 135
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19722711,
+      "lead_seconds": 189
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19725736,
+      "lead_seconds": 94
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19730466,
+      "lead_seconds": 264
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19734637,
+      "lead_seconds": 175
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19740357,
+      "lead_seconds": 75
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19746966,
+      "lead_seconds": 144
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19752459,
+      "lead_seconds": 177
+    },
+    {
+      "gun_id": 150,
+      "kind": 4,
+      "onset_seq": 19754996,
+      "lead_seconds": 74
+    },
+    {
+      "gun_id": 150,
+      "kind": 5,
+      "onset_seq": 19762385,
+      "lead_seconds": 143
+    },
+    {
+      "gun_id": 150,
+      "kind": 2,
+      "onset_seq": 19764998,
+      "lead_seconds": 116
+    },
+    {
+      "gun_id": 150,
+      "kind": 1,
+      "onset_seq": 19769883,
+      "lead_seconds": 201
+    }
+  ],
+  "seconds": 112.50669431686401,
+  "root_method": "Grouped ablation of current/mean/std/slope against training-only same-state baseline; normalized positive change in selected anomaly probability; no causal proof.",
+  "limitations": [
+    "Synthetic-only holdout; public residual source is limited.",
+    "Root contribution is model sensitivity, not causal proof.",
+    "24h warning is impossible for lifetimes observed less than 24 wall hours.",
+    "No production or business benefit claim."
+  ],
+  "acceptance": {
+    "RUL MAE < 5h": true,
+    "RUL R2 > 0.85": false,
+    "异常准确率 > 90%": true,
+    "异常宏平均F1 > 0.88": false,
+    "异常误报率 < 15%": true,
+    "Top-3命中 > 85%": false,
+    "全部测试枪预警 >= 24h": false
+  }
+}

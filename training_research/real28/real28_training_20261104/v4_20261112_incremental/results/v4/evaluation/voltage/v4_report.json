@@ -1,0 +1,2588 @@
+{
+  "task": "voltage",
+  "selected_algorithm": "extra_trees",
+  "folds": {
+    "f1": {
+      "train_end": "2026-09-01",
+      "validation_end": "2026-09-08",
+      "validation_windows": 22034,
+      "validation_events": 2,
+      "validation_first": "2026-09-01T07:13:20",
+      "validation_last": "2026-09-07T17:51:20",
+      "models": {
+        "logistic": {
+          "train_windows": 40948,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 1.0961111839860678,
+          "model_sha256": "5f8c32fe327b950790c6b6325a832b77b0046ec7bbf61c802a23d02bc0e12ea9"
+        },
+        "histgb": {
+          "train_windows": 40948,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 2.5162629364058375,
+          "model_sha256": "c6733b13fe14b2ebda03055efe55c0867d1f2268b24f40377feae3301a0068e4"
+        },
+        "extra_trees": {
+          "train_windows": 40948,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 5.981090914458036,
+          "model_sha256": "9d5aac18d2b779ee95a6f7cd69f940d737044415af2511cf055bde2b03fae960"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 21967,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.002731369781945646,
+            "average_precision": 0.004977438257718818,
+            "event_macro_ap": 0.0027303378671686297,
+            "roc_auc": 0.677164072366519,
+            "brier": 0.002732632250696061
+          },
+          "eta_mae_s_all_positive_windows": 110.20832678414033,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "histgb": {
+          "ranking": {
+            "n": 21967,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.002731369781945646,
+            "average_precision": 0.021873331653699903,
+            "event_macro_ap": 0.017147301588706202,
+            "roc_auc": 0.7262922049268878,
+            "brier": 0.0027310582875427394
+          },
+          "eta_mae_s_all_positive_windows": 110.20832678414033,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 21967,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.002731369781945646,
+            "average_precision": 0.00879613003614012,
+            "event_macro_ap": 0.006665575912713613,
+            "roc_auc": 0.7301547450586571,
+            "brier": 0.0038145071480548427
+          },
+          "eta_mae_s_all_positive_windows": 110.20832678414033,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 21967,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.002731369781945646,
+            "average_precision": 0.12374810178704651,
+            "event_macro_ap": 0.10987443178314978,
+            "roc_auc": 0.9204618767212915,
+            "brier": 0.003245513764376976
+          },
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        }
+      },
+      "prevalence_baseline_ap": 0.002731369781945646
+    },
+    "f2": {
+      "train_end": "2026-09-08",
+      "validation_end": "2026-09-15",
+      "validation_windows": 14001,
+      "validation_events": 3,
+      "validation_first": "2026-09-09T13:28:00",
+      "validation_last": "2026-09-14T20:44:10",
+      "models": {
+        "logistic": {
+          "train_windows": 62915,
+          "train_positive_windows": 90,
+          "train_events": 3,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 2.621452547609806,
+          "model_sha256": "6376f4da0d8c67fea38608c17cbdb62760b9c6cee34a8ea88952b8dd954e4cfe"
+        },
+        "histgb": {
+          "train_windows": 62915,
+          "train_positive_windows": 90,
+          "train_events": 3,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 3.656028893776238,
+          "model_sha256": "4f8743bb5a417d91bfe723e4125198bf059a9bc6bf38f0de022ba203ce363dff"
+        },
+        "extra_trees": {
+          "train_windows": 62915,
+          "train_positive_windows": 90,
+          "train_events": 3,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 32.95389600005001,
+          "model_sha256": "6b03e8f147e39f711a19d92f78ee9b802427e860faa856924b604ae9be811a80"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13924,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.006463659867854065,
+            "average_precision": 0.006407796829685983,
+            "event_macro_ap": 0.0027352274700144417,
+            "roc_auc": 0.4888916999983935,
+            "brier": 0.009953889740568543
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.67777777777778,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_004",
+              "type": "voltage",
+              "event_at": "2026-09-14T12:05:00",
+              "product_start": "2026-09-14T12:05:00",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T12:05:30",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_005",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:26:58",
+              "product_start": "2026-09-14T14:26:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T14:27:32",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_006",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:38:51",
+              "product_start": "2026-09-14T14:38:51",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T14:39:57",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 87.80743240152607,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 2,
+            "detected_events": 0,
+            "missed_events": 2,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 61.019444444444446,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13924,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.006463659867854065,
+            "average_precision": 0.00824213043346269,
+            "event_macro_ap": 0.004494090172706574,
+            "roc_auc": 0.5625387531524585,
+            "brier": 0.006781347102832667
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 74,
+            "false_alerts": 73,
+            "observable_powered_hours": 38.67777777777778,
+            "false_alerts_per_100_hours": 188.73886814133868,
+            "threshold": 0.008526995195604832,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_004",
+              "type": "voltage",
+              "event_at": "2026-09-14T12:05:00",
+              "product_start": "2026-09-14T12:05:00",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T12:05:30",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_005",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:26:58",
+              "product_start": "2026-09-14T14:26:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T14:27:32",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_006",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:38:51",
+              "product_start": "2026-09-14T14:38:51",
+              "alert_at": "2026-09-14T14:37:50",
+              "lead_to_result_s": 127.0,
+              "lead_to_product_start_s": 61.0,
+              "first_result_at": "2026-09-14T14:39:57",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-09T21:02:00.000000000",
+            "2026-09-10T09:16:10.000000000",
+            "2026-09-10T09:36:20.000000000",
+            "2026-09-10T10:18:30.000000000",
+            "2026-09-10T12:05:20.000000000",
+            "2026-09-10T12:20:30.000000000",
+            "2026-09-10T12:27:50.000000000",
+            "2026-09-10T12:48:20.000000000",
+            "2026-09-10T12:53:40.000000000",
+            "2026-09-10T13:04:00.000000000",
+            "2026-09-10T13:19:40.000000000",
+            "2026-09-10T14:56:20.000000000",
+            "2026-09-10T15:06:50.000000000",
+            "2026-09-11T07:26:30.000000000",
+            "2026-09-11T07:31:30.000000000",
+            "2026-09-11T07:51:10.000000000",
+            "2026-09-11T08:12:20.000000000",
+            "2026-09-11T08:21:20.000000000",
+            "2026-09-11T08:30:00.000000000",
+            "2026-09-11T08:45:30.000000000",
+            "2026-09-11T08:51:40.000000000",
+            "2026-09-11T08:57:30.000000000",
+            "2026-09-11T09:13:30.000000000",
+            "2026-09-11T09:38:10.000000000",
+            "2026-09-11T09:45:40.000000000",
+            "2026-09-11T09:59:10.000000000",
+            "2026-09-11T10:04:20.000000000",
+            "2026-09-11T10:16:00.000000000",
+            "2026-09-11T10:24:50.000000000",
+            "2026-09-11T10:37:40.000000000",
+            "2026-09-11T10:49:30.000000000",
+            "2026-09-11T11:47:40.000000000",
+            "2026-09-11T11:54:30.000000000",
+            "2026-09-11T12:06:00.000000000",
+            "2026-09-11T14:49:20.000000000",
+            "2026-09-11T15:30:40.000000000",
+            "2026-09-11T15:49:50.000000000",
+            "2026-09-11T16:13:00.000000000",
+            "2026-09-11T16:27:30.000000000",
+            "2026-09-11T17:03:20.000000000",
+            "2026-09-11T18:23:50.000000000",
+            "2026-09-11T18:30:20.000000000",
+            "2026-09-11T18:36:20.000000000",
+            "2026-09-12T07:15:20.000000000",
+            "2026-09-12T07:23:10.000000000",
+            "2026-09-12T08:02:20.000000000",
+            "2026-09-12T08:12:00.000000000",
+            "2026-09-12T08:27:00.000000000",
+            "2026-09-12T09:09:50.000000000",
+            "2026-09-12T09:22:40.000000000",
+            "2026-09-12T10:15:20.000000000",
+            "2026-09-12T10:20:50.000000000",
+            "2026-09-12T10:26:30.000000000",
+            "2026-09-12T10:43:40.000000000",
+            "2026-09-14T11:50:50.000000000",
+            "2026-09-14T12:05:10.000000000",
+            "2026-09-14T12:30:00.000000000",
+            "2026-09-14T12:36:30.000000000",
+            "2026-09-14T12:42:00.000000000",
+            "2026-09-14T12:48:30.000000000",
+            "2026-09-14T12:54:20.000000000",
+            "2026-09-14T13:06:00.000000000",
+            "2026-09-14T13:16:40.000000000",
+            "2026-09-14T13:24:10.000000000",
+            "2026-09-14T13:32:30.000000000",
+            "2026-09-14T13:45:30.000000000",
+            "2026-09-14T13:54:00.000000000",
+            "2026-09-14T14:02:50.000000000",
+            "2026-09-14T14:08:20.000000000",
+            "2026-09-14T14:13:20.000000000",
+            "2026-09-14T14:29:50.000000000",
+            "2026-09-14T14:37:50.000000000",
+            "2026-09-14T14:43:10.000000000",
+            "2026-09-14T14:55:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 87.80743240152607,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 2,
+            "detected_events": 1,
+            "missed_events": 1,
+            "event_recall": 0.5,
+            "alerts": 9,
+            "false_alerts": 8,
+            "observable_powered_hours": 61.019444444444446,
+            "false_alerts_per_100_hours": 13.1105749533391,
+            "threshold": 0.008526995195604832
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13924,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.006463659867854065,
+            "average_precision": 0.04140884345864379,
+            "event_macro_ap": 0.021791263122681568,
+            "roc_auc": 0.9041949785552503,
+            "brier": 0.006330897196095021
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 19,
+            "false_alerts": 18,
+            "observable_powered_hours": 38.67777777777778,
+            "false_alerts_per_100_hours": 46.53835104854927,
+            "threshold": 0.014750025341737359,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_004",
+              "type": "voltage",
+              "event_at": "2026-09-14T12:05:00",
+              "product_start": "2026-09-14T12:05:00",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T12:05:30",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_005",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:26:58",
+              "product_start": "2026-09-14T14:26:58",
+              "alert_at": "2026-09-14T14:26:30",
+              "lead_to_result_s": 62.0,
+              "lead_to_product_start_s": 28.0,
+              "first_result_at": "2026-09-14T14:27:32",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_006",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:38:51",
+              "product_start": "2026-09-14T14:38:51",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T14:39:57",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-10T10:19:40.000000000",
+            "2026-09-10T12:16:10.000000000",
+            "2026-09-11T08:24:50.000000000",
+            "2026-09-11T09:34:40.000000000",
+            "2026-09-11T09:45:10.000000000",
+            "2026-09-11T09:54:00.000000000",
+            "2026-09-11T15:39:40.000000000",
+            "2026-09-14T11:50:20.000000000",
+            "2026-09-14T12:05:10.000000000",
+            "2026-09-14T12:48:30.000000000",
+            "2026-09-14T13:34:40.000000000",
+            "2026-09-14T13:41:00.000000000",
+            "2026-09-14T13:46:00.000000000",
+            "2026-09-14T13:55:20.000000000",
+            "2026-09-14T14:06:00.000000000",
+            "2026-09-14T14:26:30.000000000",
+            "2026-09-14T14:43:10.000000000",
+            "2026-09-14T14:59:10.000000000",
+            "2026-09-14T15:11:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 87.80743240152607,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 2,
+            "detected_events": 1,
+            "missed_events": 1,
+            "event_recall": 0.5,
+            "alerts": 6,
+            "false_alerts": 5,
+            "observable_powered_hours": 61.019444444444446,
+            "false_alerts_per_100_hours": 8.194109345836937,
+            "threshold": 0.014750025341737359
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13924,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.006463659867854065,
+            "average_precision": 0.01431030101437913,
+            "event_macro_ap": 0.00922167362312732,
+            "roc_auc": 0.4827678987358039,
+            "brier": 0.01459165999256999
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 2,
+            "missed_events": 1,
+            "event_recall": 0.6666666666666666,
+            "alerts": 19,
+            "false_alerts": 17,
+            "observable_powered_hours": 38.67777777777778,
+            "false_alerts_per_100_hours": 43.95288710140764,
+            "threshold": 0.2085237306951969,
+            "detected_before_product_start": 2
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_004",
+              "type": "voltage",
+              "event_at": "2026-09-14T12:05:00",
+              "product_start": "2026-09-14T12:05:00",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-14T12:05:30",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_005",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:26:58",
+              "product_start": "2026-09-14T14:26:58",
+              "alert_at": "2026-09-14T14:26:50",
+              "lead_to_result_s": 42.0,
+              "lead_to_product_start_s": 8.0,
+              "first_result_at": "2026-09-14T14:27:32",
+              "failed_products": 2
+            },
+            {
+              "event_id": "voltage_006",
+              "type": "voltage",
+              "event_at": "2026-09-14T14:38:51",
+              "product_start": "2026-09-14T14:38:51",
+              "alert_at": "2026-09-14T14:34:20",
+              "lead_to_result_s": 337.0,
+              "lead_to_product_start_s": 271.0,
+              "first_result_at": "2026-09-14T14:39:57",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-10T10:19:40.000000000",
+            "2026-09-10T10:27:00.000000000",
+            "2026-09-10T12:55:40.000000000",
+            "2026-09-10T13:03:10.000000000",
+            "2026-09-10T13:09:10.000000000",
+            "2026-09-10T13:23:40.000000000",
+            "2026-09-10T13:40:00.000000000",
+            "2026-09-10T14:43:00.000000000",
+            "2026-09-10T14:48:30.000000000",
+            "2026-09-11T09:20:40.000000000",
+            "2026-09-11T09:34:10.000000000",
+            "2026-09-11T09:51:00.000000000",
+            "2026-09-11T10:24:50.000000000",
+            "2026-09-14T11:50:20.000000000",
+            "2026-09-14T12:50:00.000000000",
+            "2026-09-14T13:36:10.000000000",
+            "2026-09-14T14:26:50.000000000",
+            "2026-09-14T14:34:20.000000000",
+            "2026-09-14T15:01:00.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 2,
+            "detected_events": 2,
+            "missed_events": 0,
+            "event_recall": 1.0,
+            "alerts": 6,
+            "false_alerts": 4,
+            "observable_powered_hours": 61.019444444444446,
+            "false_alerts_per_100_hours": 6.55528747666955,
+            "threshold": 0.2085237306951969
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.006463659867854065
+    },
+    "f3": {
+      "train_end": "2026-09-15",
+      "validation_end": "2026-09-30",
+      "validation_windows": 27580,
+      "validation_events": 3,
+      "validation_first": "2026-09-15T07:23:40",
+      "validation_last": "2026-09-29T17:27:10",
+      "models": {
+        "logistic": {
+          "train_windows": 76839,
+          "train_positive_windows": 180,
+          "train_events": 6,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 8.113250663504004,
+          "model_sha256": "abefc01c6f9958a829e614c03a45f59cd14d5099d0137ea4e3f0d4681750663d"
+        },
+        "histgb": {
+          "train_windows": 76839,
+          "train_positive_windows": 180,
+          "train_events": 6,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 6.033775065094233,
+          "model_sha256": "358287190ab2761538973125c34619e9d75ff8ce0904ad19da38557146f00d16"
+        },
+        "extra_trees": {
+          "train_windows": 76839,
+          "train_positive_windows": 180,
+          "train_events": 6,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 37.57288558315486,
+          "model_sha256": "f43e721421e2f758d43589a6cf3bc93e8f43299b51b0b6cdfec94cc80d3fac5a"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 27415,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.0032828743388655843,
+            "average_precision": 0.04575462244683003,
+            "event_macro_ap": 0.04196529400693072,
+            "roc_auc": 0.7860026430822405,
+            "brier": 0.0032696417957551204
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 76.15277777777777,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_007",
+              "type": "voltage",
+              "event_at": "2026-09-15T12:24:27",
+              "product_start": "2026-09-15T12:24:27",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T12:25:01",
+              "failed_products": 5
+            },
+            {
+              "event_id": "voltage_008",
+              "type": "voltage",
+              "event_at": "2026-09-20T07:48:58",
+              "product_start": "2026-09-20T07:48:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-20T07:49:28",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_009",
+              "type": "voltage",
+              "event_at": "2026-09-29T15:35:55",
+              "product_start": "2026-09-29T15:35:55",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-29T15:36:29",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 70.23356621722131,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 0,
+            "missed_events": 5,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 99.69722222222222,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 27415,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.0032828743388655843,
+            "average_precision": 0.08388146836895317,
+            "event_macro_ap": 0.05833029999167367,
+            "roc_auc": 0.9014841923350615,
+            "brier": 0.0032230689729830938
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 8,
+            "false_alerts": 7,
+            "observable_powered_hours": 76.15277777777777,
+            "false_alerts_per_100_hours": 9.192048148823638,
+            "threshold": 0.01639487496424251,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_007",
+              "type": "voltage",
+              "event_at": "2026-09-15T12:24:27",
+              "product_start": "2026-09-15T12:24:27",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T12:25:01",
+              "failed_products": 5
+            },
+            {
+              "event_id": "voltage_008",
+              "type": "voltage",
+              "event_at": "2026-09-20T07:48:58",
+              "product_start": "2026-09-20T07:48:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-20T07:49:28",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_009",
+              "type": "voltage",
+              "event_at": "2026-09-29T15:35:55",
+              "product_start": "2026-09-29T15:35:55",
+              "alert_at": "2026-09-29T15:35:20",
+              "lead_to_result_s": 69.0,
+              "lead_to_product_start_s": 35.0,
+              "first_result_at": "2026-09-29T15:36:29",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-15T12:17:30.000000000",
+            "2026-09-15T12:24:50.000000000",
+            "2026-09-18T12:44:40.000000000",
+            "2026-09-18T12:50:00.000000000",
+            "2026-09-28T10:19:20.000000000",
+            "2026-09-28T10:54:50.000000000",
+            "2026-09-28T11:06:30.000000000",
+            "2026-09-29T15:35:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 70.23356621722131,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 1,
+            "missed_events": 4,
+            "event_recall": 0.2,
+            "alerts": 12,
+            "false_alerts": 11,
+            "observable_powered_hours": 99.69722222222222,
+            "false_alerts_per_100_hours": 11.033406703630437,
+            "threshold": 0.01639487496424251
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 27415,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.0032828743388655843,
+            "average_precision": 0.19476854997624157,
+            "event_macro_ap": 0.13700709805004843,
+            "roc_auc": 0.9839725526075023,
+            "brier": 0.003172386992592277
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 76.15277777777777,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.037577236048919646,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_007",
+              "type": "voltage",
+              "event_at": "2026-09-15T12:24:27",
+              "product_start": "2026-09-15T12:24:27",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T12:25:01",
+              "failed_products": 5
+            },
+            {
+              "event_id": "voltage_008",
+              "type": "voltage",
+              "event_at": "2026-09-20T07:48:58",
+              "product_start": "2026-09-20T07:48:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-20T07:49:28",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_009",
+              "type": "voltage",
+              "event_at": "2026-09-29T15:35:55",
+              "product_start": "2026-09-29T15:35:55",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-29T15:36:29",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 70.23356621722131,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 2,
+            "missed_events": 3,
+            "event_recall": 0.4,
+            "alerts": 4,
+            "false_alerts": 2,
+            "observable_powered_hours": 99.69722222222222,
+            "false_alerts_per_100_hours": 2.0060739461146246,
+            "threshold": 0.037577236048919646
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 27415,
+            "positive_windows": 90,
+            "events": 3,
+            "prevalence": 0.0032828743388655843,
+            "average_precision": 0.1284942727247143,
+            "event_macro_ap": 0.11387802098518114,
+            "roc_auc": 0.7575388838060384,
+            "brier": 0.004254385781004558
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 5,
+            "false_alerts": 4,
+            "observable_powered_hours": 76.15277777777777,
+            "false_alerts_per_100_hours": 5.252598942184935,
+            "threshold": 0.20731688360737485,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_007",
+              "type": "voltage",
+              "event_at": "2026-09-15T12:24:27",
+              "product_start": "2026-09-15T12:24:27",
+              "alert_at": "2026-09-15T12:22:30",
+              "lead_to_result_s": 151.0,
+              "lead_to_product_start_s": 117.0,
+              "first_result_at": "2026-09-15T12:25:01",
+              "failed_products": 5
+            },
+            {
+              "event_id": "voltage_008",
+              "type": "voltage",
+              "event_at": "2026-09-20T07:48:58",
+              "product_start": "2026-09-20T07:48:58",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-20T07:49:28",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_009",
+              "type": "voltage",
+              "event_at": "2026-09-29T15:35:55",
+              "product_start": "2026-09-29T15:35:55",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-29T15:36:29",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-15T12:22:30.000000000",
+            "2026-09-15T13:44:00.000000000",
+            "2026-09-20T07:22:50.000000000",
+            "2026-09-20T07:49:10.000000000",
+            "2026-09-28T10:44:30.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 4,
+            "missed_events": 1,
+            "event_recall": 0.8,
+            "alerts": 23,
+            "false_alerts": 19,
+            "observable_powered_hours": 99.69722222222222,
+            "false_alerts_per_100_hours": 19.057702488088935,
+            "threshold": 0.20731688360737485
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0032828743388655843
+    },
+    "f4": {
+      "train_end": "2026-10-04",
+      "validation_end": "2026-10-10",
+      "validation_windows": 18473,
+      "validation_events": 4,
+      "validation_first": "2026-10-04T15:35:20",
+      "validation_last": "2026-10-09T16:56:20",
+      "models": {
+        "logistic": {
+          "train_windows": 104254,
+          "train_positive_windows": 270,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 12.351462010294199,
+          "model_sha256": "c23ea81683d28cab01c90f1134e9095c69fca86a1d63204ab31e0c5e4f63b2c6"
+        },
+        "histgb": {
+          "train_windows": 104254,
+          "train_positive_windows": 270,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 10.407281400635839,
+          "model_sha256": "0da1b1a2095806a205be8d8210fa8600439cd8b8ef2b2c4e384609cef897f155"
+        },
+        "extra_trees": {
+          "train_windows": 104254,
+          "train_positive_windows": 270,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 70.33315660897642,
+          "model_sha256": "d153ea1521cdc95e52a112476434ac1ff469d1d0cc7ae6ea94f32ee9e9a75b54"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 18280,
+            "positive_windows": 119,
+            "events": 4,
+            "prevalence": 0.0065098468271334795,
+            "average_precision": 0.03048394157558988,
+            "event_macro_ap": 0.024282519069477645,
+            "roc_auc": 0.6398654610789859,
+            "brier": 0.006460541671875103
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 0,
+            "missed_events": 4,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 50.77777777777778,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.016791441803440946,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_010",
+              "type": "voltage",
+              "event_at": "2026-10-06T11:59:11",
+              "product_start": "2026-10-06T11:59:11",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T11:59:41",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_011",
+              "type": "voltage",
+              "event_at": "2026-10-06T12:57:44",
+              "product_start": "2026-10-06T12:57:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T12:58:49",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_012",
+              "type": "voltage",
+              "event_at": "2026-10-09T07:56:38",
+              "product_start": "2026-10-09T07:56:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T07:57:43",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_013",
+              "type": "voltage",
+              "event_at": "2026-10-09T08:22:49",
+              "product_start": "2026-10-09T08:22:49",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T08:23:19",
+              "failed_products": 5
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 81.98908826567823,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 8,
+            "detected_events": 1,
+            "missed_events": 7,
+            "event_recall": 0.125,
+            "alerts": 22,
+            "false_alerts": 21,
+            "observable_powered_hours": 175.85,
+            "false_alerts_per_100_hours": 11.941996019334661,
+            "threshold": 0.016791441803440946
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 18280,
+            "positive_windows": 119,
+            "events": 4,
+            "prevalence": 0.0065098468271334795,
+            "average_precision": 0.28807198293078395,
+            "event_macro_ap": 0.15707561102174772,
+            "roc_auc": 0.9825984575868781,
+            "brier": 0.006291040425172375
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 1,
+            "missed_events": 3,
+            "event_recall": 0.25,
+            "alerts": 4,
+            "false_alerts": 3,
+            "observable_powered_hours": 50.77777777777778,
+            "false_alerts_per_100_hours": 5.908096280087527,
+            "threshold": 0.034013502536877516,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_010",
+              "type": "voltage",
+              "event_at": "2026-10-06T11:59:11",
+              "product_start": "2026-10-06T11:59:11",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T11:59:41",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_011",
+              "type": "voltage",
+              "event_at": "2026-10-06T12:57:44",
+              "product_start": "2026-10-06T12:57:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T12:58:49",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_012",
+              "type": "voltage",
+              "event_at": "2026-10-09T07:56:38",
+              "product_start": "2026-10-09T07:56:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T07:57:43",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_013",
+              "type": "voltage",
+              "event_at": "2026-10-09T08:22:49",
+              "product_start": "2026-10-09T08:22:49",
+              "alert_at": "2026-10-09T08:20:30",
+              "lead_to_result_s": 169.0,
+              "lead_to_product_start_s": 139.0,
+              "first_result_at": "2026-10-09T08:23:19",
+              "failed_products": 5
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-06T10:55:30.000000000",
+            "2026-10-06T12:08:30.000000000",
+            "2026-10-06T12:52:40.000000000",
+            "2026-10-09T08:20:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 81.98908826567823,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 8,
+            "detected_events": 3,
+            "missed_events": 5,
+            "event_recall": 0.375,
+            "alerts": 21,
+            "false_alerts": 18,
+            "observable_powered_hours": 175.85,
+            "false_alerts_per_100_hours": 10.235996588001138,
+            "threshold": 0.034013502536877516
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 18280,
+            "positive_windows": 119,
+            "events": 4,
+            "prevalence": 0.0065098468271334795,
+            "average_precision": 0.2775973914174344,
+            "event_macro_ap": 0.10882059883745823,
+            "roc_auc": 0.9897867301757991,
+            "brier": 0.0061203216332477335
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 3,
+            "missed_events": 1,
+            "event_recall": 0.75,
+            "alerts": 7,
+            "false_alerts": 4,
+            "observable_powered_hours": 50.77777777777778,
+            "false_alerts_per_100_hours": 7.87746170678337,
+            "threshold": 0.03969505399441745,
+            "detected_before_product_start": 3
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_010",
+              "type": "voltage",
+              "event_at": "2026-10-06T11:59:11",
+              "product_start": "2026-10-06T11:59:11",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T11:59:41",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_011",
+              "type": "voltage",
+              "event_at": "2026-10-06T12:57:44",
+              "product_start": "2026-10-06T12:57:44",
+              "alert_at": "2026-10-06T12:54:20",
+              "lead_to_result_s": 269.0,
+              "lead_to_product_start_s": 204.0,
+              "first_result_at": "2026-10-06T12:58:49",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_012",
+              "type": "voltage",
+              "event_at": "2026-10-09T07:56:38",
+              "product_start": "2026-10-09T07:56:38",
+              "alert_at": "2026-10-09T07:55:00",
+              "lead_to_result_s": 163.0,
+              "lead_to_product_start_s": 98.0,
+              "first_result_at": "2026-10-09T07:57:43",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_013",
+              "type": "voltage",
+              "event_at": "2026-10-09T08:22:49",
+              "product_start": "2026-10-09T08:22:49",
+              "alert_at": "2026-10-09T08:19:30",
+              "lead_to_result_s": 229.0,
+              "lead_to_product_start_s": 199.0,
+              "first_result_at": "2026-10-09T08:23:19",
+              "failed_products": 5
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-06T10:56:20.000000000",
+            "2026-10-06T11:24:20.000000000",
+            "2026-10-06T12:08:50.000000000",
+            "2026-10-06T12:48:10.000000000",
+            "2026-10-06T12:54:20.000000000",
+            "2026-10-09T07:55:00.000000000",
+            "2026-10-09T08:19:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 81.98908826567823,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 8,
+            "detected_events": 4,
+            "missed_events": 4,
+            "event_recall": 0.5,
+            "alerts": 13,
+            "false_alerts": 9,
+            "observable_powered_hours": 175.85,
+            "false_alerts_per_100_hours": 5.117998294000569,
+            "threshold": 0.03969505399441745
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 18280,
+            "positive_windows": 119,
+            "events": 4,
+            "prevalence": 0.0065098468271334795,
+            "average_precision": 0.4127382532221846,
+            "event_macro_ap": 0.2321270541329832,
+            "roc_auc": 0.9929459146689346,
+            "brier": 0.009722630557130183
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 1,
+            "missed_events": 3,
+            "event_recall": 0.25,
+            "alerts": 11,
+            "false_alerts": 10,
+            "observable_powered_hours": 50.77777777777778,
+            "false_alerts_per_100_hours": 19.693654266958426,
+            "threshold": 0.1578591731032874,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_010",
+              "type": "voltage",
+              "event_at": "2026-10-06T11:59:11",
+              "product_start": "2026-10-06T11:59:11",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T11:59:41",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_011",
+              "type": "voltage",
+              "event_at": "2026-10-06T12:57:44",
+              "product_start": "2026-10-06T12:57:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-06T12:58:49",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_012",
+              "type": "voltage",
+              "event_at": "2026-10-09T07:56:38",
+              "product_start": "2026-10-09T07:56:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T07:57:43",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_013",
+              "type": "voltage",
+              "event_at": "2026-10-09T08:22:49",
+              "product_start": "2026-10-09T08:22:49",
+              "alert_at": "2026-10-09T08:21:30",
+              "lead_to_result_s": 109.0,
+              "lead_to_product_start_s": 79.0,
+              "first_result_at": "2026-10-09T08:23:19",
+              "failed_products": 5
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-06T10:54:20.000000000",
+            "2026-10-06T11:21:20.000000000",
+            "2026-10-06T12:02:50.000000000",
+            "2026-10-08T14:15:00.000000000",
+            "2026-10-08T14:24:00.000000000",
+            "2026-10-09T07:28:00.000000000",
+            "2026-10-09T07:36:50.000000000",
+            "2026-10-09T07:44:40.000000000",
+            "2026-10-09T07:59:30.000000000",
+            "2026-10-09T08:21:30.000000000",
+            "2026-10-09T09:08:40.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 8,
+            "detected_events": 6,
+            "missed_events": 2,
+            "event_recall": 0.75,
+            "alerts": 35,
+            "false_alerts": 29,
+            "observable_powered_hours": 175.85,
+            "false_alerts_per_100_hours": 16.491327836224055,
+            "threshold": 0.1578591731032874
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0065098468271334795
+    },
+    "f5": {
+      "train_end": "2026-10-10",
+      "validation_end": "2026-10-24",
+      "validation_windows": 34596,
+      "validation_events": 2,
+      "validation_first": "2026-10-10T07:17:20",
+      "validation_last": "2026-10-23T13:57:00",
+      "models": {
+        "logistic": {
+          "train_windows": 122534,
+          "train_positive_windows": 389,
+          "train_events": 13,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 11.925980328582227,
+          "model_sha256": "c0e75bc4481937b28754cffab758c185af16ff3ff03764d0182c51e0a01f402b"
+        },
+        "histgb": {
+          "train_windows": 122534,
+          "train_positive_windows": 389,
+          "train_events": 13,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 7.55187726393342,
+          "model_sha256": "0afa6d4a30db44f82f93a2b7899f9b32007d8ad721f5fdfd6cf207f83a603025"
+        },
+        "extra_trees": {
+          "train_windows": 122534,
+          "train_positive_windows": 389,
+          "train_events": 13,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 104.40855326224118,
+          "model_sha256": "5ec152214c8f5a49b4553f5ba6644ab087c6501763fc720c29dea5fa8b18d772"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 34457,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.0017413007516614912,
+            "average_precision": 0.015725361217833758,
+            "event_macro_ap": 0.011626668415138645,
+            "roc_auc": 0.9099194697211966,
+            "brier": 0.001749429479114735
+          },
+          "alarms": {
+            "events": 2,
+            "detected_events": 0,
+            "missed_events": 2,
+            "event_recall": 0.0,
+            "alerts": 12,
+            "false_alerts": 12,
+            "observable_powered_hours": 95.71388888888889,
+            "false_alerts_per_100_hours": 12.537365411962737,
+            "threshold": 0.023246305865729684,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_014",
+              "type": "voltage",
+              "event_at": "2026-10-14T17:37:38",
+              "product_start": "2026-10-14T17:37:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-14T17:38:43",
+              "failed_products": 7
+            },
+            {
+              "event_id": "voltage_015",
+              "type": "voltage",
+              "event_at": "2026-10-15T11:58:24",
+              "product_start": "2026-10-15T11:58:24",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-15T11:58:58",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-14T07:29:40.000000000",
+            "2026-10-14T14:58:50.000000000",
+            "2026-10-14T15:16:40.000000000",
+            "2026-10-14T15:22:40.000000000",
+            "2026-10-14T15:59:20.000000000",
+            "2026-10-14T16:06:00.000000000",
+            "2026-10-14T16:18:20.000000000",
+            "2026-10-14T17:38:10.000000000",
+            "2026-10-15T11:30:40.000000000",
+            "2026-10-20T07:30:40.000000000",
+            "2026-10-20T07:43:20.000000000",
+            "2026-10-20T07:50:40.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 69.00838146931103,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 12,
+            "detected_events": 1,
+            "missed_events": 11,
+            "event_recall": 0.08333333333333333,
+            "alerts": 22,
+            "false_alerts": 21,
+            "observable_powered_hours": 226.62777777777777,
+            "false_alerts_per_100_hours": 9.266295687985684,
+            "threshold": 0.023246305865729684
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 34457,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.0017413007516614912,
+            "average_precision": 0.05666135784524956,
+            "event_macro_ap": 0.054321224657750716,
+            "roc_auc": 0.8850435115465497,
+            "brier": 0.0019872040262571967
+          },
+          "alarms": {
+            "events": 2,
+            "detected_events": 1,
+            "missed_events": 1,
+            "event_recall": 0.5,
+            "alerts": 25,
+            "false_alerts": 24,
+            "observable_powered_hours": 95.71388888888889,
+            "false_alerts_per_100_hours": 25.074730823925474,
+            "threshold": 0.0836977096492433,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_014",
+              "type": "voltage",
+              "event_at": "2026-10-14T17:37:38",
+              "product_start": "2026-10-14T17:37:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-14T17:38:43",
+              "failed_products": 7
+            },
+            {
+              "event_id": "voltage_015",
+              "type": "voltage",
+              "event_at": "2026-10-15T11:58:24",
+              "product_start": "2026-10-15T11:58:24",
+              "alert_at": "2026-10-15T11:54:40",
+              "lead_to_result_s": 258.0,
+              "lead_to_product_start_s": 224.0,
+              "first_result_at": "2026-10-15T11:58:58",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-13T19:14:00.000000000",
+            "2026-10-14T07:29:20.000000000",
+            "2026-10-14T07:57:00.000000000",
+            "2026-10-14T08:03:00.000000000",
+            "2026-10-14T08:09:20.000000000",
+            "2026-10-14T12:51:10.000000000",
+            "2026-10-14T13:13:50.000000000",
+            "2026-10-14T14:24:00.000000000",
+            "2026-10-14T14:34:50.000000000",
+            "2026-10-14T15:00:40.000000000",
+            "2026-10-14T15:22:00.000000000",
+            "2026-10-14T16:06:40.000000000",
+            "2026-10-14T16:37:50.000000000",
+            "2026-10-14T16:50:00.000000000",
+            "2026-10-14T16:59:20.000000000",
+            "2026-10-15T08:41:10.000000000",
+            "2026-10-15T11:54:40.000000000",
+            "2026-10-19T13:29:10.000000000",
+            "2026-10-19T13:41:00.000000000",
+            "2026-10-20T07:51:20.000000000",
+            "2026-10-20T08:01:20.000000000",
+            "2026-10-20T08:38:30.000000000",
+            "2026-10-20T08:47:00.000000000",
+            "2026-10-20T08:56:40.000000000",
+            "2026-10-20T09:03:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 69.00838146931103,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 12,
+            "detected_events": 4,
+            "missed_events": 8,
+            "event_recall": 0.3333333333333333,
+            "alerts": 18,
+            "false_alerts": 14,
+            "observable_powered_hours": 226.62777777777777,
+            "false_alerts_per_100_hours": 6.177530458657123,
+            "threshold": 0.0836977096492433
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 34457,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.0017413007516614912,
+            "average_precision": 0.28208304613487384,
+            "event_macro_ap": 0.27081523176919103,
+            "roc_auc": 0.9249685050052815,
+            "brier": 0.0016820296119558153
+          },
+          "alarms": {
+            "events": 2,
+            "detected_events": 1,
+            "missed_events": 1,
+            "event_recall": 0.5,
+            "alerts": 5,
+            "false_alerts": 4,
+            "observable_powered_hours": 95.71388888888889,
+            "false_alerts_per_100_hours": 4.179121803987579,
+            "threshold": 0.06605116281318121,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_014",
+              "type": "voltage",
+              "event_at": "2026-10-14T17:37:38",
+              "product_start": "2026-10-14T17:37:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-14T17:38:43",
+              "failed_products": 7
+            },
+            {
+              "event_id": "voltage_015",
+              "type": "voltage",
+              "event_at": "2026-10-15T11:58:24",
+              "product_start": "2026-10-15T11:58:24",
+              "alert_at": "2026-10-15T11:55:00",
+              "lead_to_result_s": 238.0,
+              "lead_to_product_start_s": 204.0,
+              "first_result_at": "2026-10-15T11:58:58",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-14T07:30:50.000000000",
+            "2026-10-14T07:35:50.000000000",
+            "2026-10-14T16:06:40.000000000",
+            "2026-10-14T17:38:00.000000000",
+            "2026-10-15T11:55:00.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 69.00838146931103,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 12,
+            "detected_events": 7,
+            "missed_events": 5,
+            "event_recall": 0.5833333333333334,
+            "alerts": 20,
+            "false_alerts": 13,
+            "observable_powered_hours": 226.62777777777777,
+            "false_alerts_per_100_hours": 5.736278283038757,
+            "threshold": 0.06605116281318121
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 34457,
+            "positive_windows": 60,
+            "events": 2,
+            "prevalence": 0.0017413007516614912,
+            "average_precision": 0.17882275160911298,
+            "event_macro_ap": 0.17767929535882485,
+            "roc_auc": 0.7945758351018984,
+            "brier": 0.002616541929442265
+          },
+          "alarms": {
+            "events": 2,
+            "detected_events": 0,
+            "missed_events": 2,
+            "event_recall": 0.0,
+            "alerts": 12,
+            "false_alerts": 12,
+            "observable_powered_hours": 95.71388888888889,
+            "false_alerts_per_100_hours": 12.537365411962737,
+            "threshold": 0.20242409926666863,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_014",
+              "type": "voltage",
+              "event_at": "2026-10-14T17:37:38",
+              "product_start": "2026-10-14T17:37:38",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-14T17:38:43",
+              "failed_products": 7
+            },
+            {
+              "event_id": "voltage_015",
+              "type": "voltage",
+              "event_at": "2026-10-15T11:58:24",
+              "product_start": "2026-10-15T11:58:24",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-15T11:58:58",
+              "failed_products": 4
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-14T07:30:20.000000000",
+            "2026-10-14T07:35:50.000000000",
+            "2026-10-14T12:41:10.000000000",
+            "2026-10-14T12:51:40.000000000",
+            "2026-10-14T13:00:50.000000000",
+            "2026-10-14T13:06:40.000000000",
+            "2026-10-14T15:16:50.000000000",
+            "2026-10-14T15:52:40.000000000",
+            "2026-10-14T15:59:10.000000000",
+            "2026-10-14T16:05:10.000000000",
+            "2026-10-15T08:38:50.000000000",
+            "2026-10-15T11:50:30.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 12,
+            "detected_events": 7,
+            "missed_events": 5,
+            "event_recall": 0.5833333333333334,
+            "alerts": 43,
+            "false_alerts": 36,
+            "observable_powered_hours": 226.62777777777777,
+            "false_alerts_per_100_hours": 15.885078322261172,
+            "threshold": 0.20242409926666863
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0017413007516614912
+    },
+    "f6": {
+      "train_end": "2026-10-27",
+      "validation_end": "2026-11-02",
+      "validation_windows": 13948,
+      "validation_events": 3,
+      "validation_first": "2026-10-27T07:20:10",
+      "validation_last": "2026-11-01T15:15:00",
+      "models": {
+        "logistic": {
+          "train_windows": 156991,
+          "train_positive_windows": 449,
+          "train_events": 15,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 21.48118570074439,
+          "model_sha256": "3f1ab483f901c00dfcf775f75cf93c27b62a5558767ac87085983d4829d4fd00"
+        },
+        "histgb": {
+          "train_windows": 156991,
+          "train_positive_windows": 449,
+          "train_events": 15,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 11.81839693710208,
+          "model_sha256": "02e546164960c8093b0bd26a51cdaf74e560094570767e8e067ceb42c60f9f34"
+        },
+        "extra_trees": {
+          "train_windows": 156991,
+          "train_positive_windows": 449,
+          "train_events": 15,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 135.93026307877153,
+          "model_sha256": "4ab97b0d50da86f135c4aa1de2e5c8d1f6de2d6df7ca074d37bcb82ed4c9150b"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13847,
+            "positive_windows": 66,
+            "events": 3,
+            "prevalence": 0.004766375388170723,
+            "average_precision": 0.2975373633183686,
+            "event_macro_ap": 0.17980041290492801,
+            "roc_auc": 0.9833378410767568,
+            "brier": 0.004663241885452297
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 5,
+            "false_alerts": 5,
+            "observable_powered_hours": 38.46388888888889,
+            "false_alerts_per_100_hours": 12.99920560410197,
+            "threshold": 0.01216260582888044,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_016",
+              "type": "voltage",
+              "event_at": "2026-10-28T08:25:39",
+              "product_start": "2026-10-28T08:25:39",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-28T08:26:44",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_017",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:30:06",
+              "product_start": "2026-11-01T13:30:06",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-11-01T13:30:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_018",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:33:02",
+              "product_start": "2026-11-01T13:33:02",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-11-01T13:34:07",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-28T07:52:40.000000000",
+            "2026-10-28T07:58:40.000000000",
+            "2026-10-28T08:04:30.000000000",
+            "2026-10-28T08:19:10.000000000",
+            "2026-10-31T11:00:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 90.91702421210357,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 14,
+            "detected_events": 2,
+            "missed_events": 12,
+            "event_recall": 0.14285714285714285,
+            "alerts": 45,
+            "false_alerts": 43,
+            "observable_powered_hours": 322.34166666666664,
+            "false_alerts_per_100_hours": 13.339882629714847,
+            "threshold": 0.01216260582888044
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13847,
+            "positive_windows": 66,
+            "events": 3,
+            "prevalence": 0.004766375388170723,
+            "average_precision": 0.6289469840100186,
+            "event_macro_ap": 0.5451018834594602,
+            "roc_auc": 0.9935957059895817,
+            "brier": 0.0032650475402310796
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 2,
+            "missed_events": 1,
+            "event_recall": 0.6666666666666666,
+            "alerts": 10,
+            "false_alerts": 8,
+            "observable_powered_hours": 38.46388888888889,
+            "false_alerts_per_100_hours": 20.798728966563154,
+            "threshold": 0.04521288179486932,
+            "detected_before_product_start": 2
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_016",
+              "type": "voltage",
+              "event_at": "2026-10-28T08:25:39",
+              "product_start": "2026-10-28T08:25:39",
+              "alert_at": "2026-10-28T08:23:20",
+              "lead_to_result_s": 204.0,
+              "lead_to_product_start_s": 139.0,
+              "first_result_at": "2026-10-28T08:26:44",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_017",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:30:06",
+              "product_start": "2026-11-01T13:30:06",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-11-01T13:30:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_018",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:33:02",
+              "product_start": "2026-11-01T13:33:02",
+              "alert_at": "2026-11-01T13:32:50",
+              "lead_to_result_s": 77.0,
+              "lead_to_product_start_s": 12.0,
+              "first_result_at": "2026-11-01T13:34:07",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-28T07:37:30.000000000",
+            "2026-10-28T07:55:00.000000000",
+            "2026-10-28T08:04:40.000000000",
+            "2026-10-28T08:23:20.000000000",
+            "2026-10-31T10:54:00.000000000",
+            "2026-10-31T11:05:30.000000000",
+            "2026-10-31T11:17:00.000000000",
+            "2026-11-01T09:58:10.000000000",
+            "2026-11-01T13:19:10.000000000",
+            "2026-11-01T13:32:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 90.91702421210357,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 14,
+            "detected_events": 5,
+            "missed_events": 9,
+            "event_recall": 0.35714285714285715,
+            "alerts": 43,
+            "false_alerts": 38,
+            "observable_powered_hours": 322.34166666666664,
+            "false_alerts_per_100_hours": 11.78873348672475,
+            "threshold": 0.04521288179486932
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13847,
+            "positive_windows": 66,
+            "events": 3,
+            "prevalence": 0.004766375388170723,
+            "average_precision": 0.7154988514584677,
+            "event_macro_ap": 0.45785921928805945,
+            "roc_auc": 0.9991622193929718,
+            "brier": 0.003701970433163495
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 3,
+            "false_alerts": 2,
+            "observable_powered_hours": 38.46388888888889,
+            "false_alerts_per_100_hours": 5.199682241640788,
+            "threshold": 0.06423689872316114,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_016",
+              "type": "voltage",
+              "event_at": "2026-10-28T08:25:39",
+              "product_start": "2026-10-28T08:25:39",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-28T08:26:44",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_017",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:30:06",
+              "product_start": "2026-11-01T13:30:06",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-11-01T13:30:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_018",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:33:02",
+              "product_start": "2026-11-01T13:33:02",
+              "alert_at": "2026-11-01T13:32:50",
+              "lead_to_result_s": 77.0,
+              "lead_to_product_start_s": 12.0,
+              "first_result_at": "2026-11-01T13:34:07",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-28T08:19:30.000000000",
+            "2026-11-01T13:24:40.000000000",
+            "2026-11-01T13:32:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 90.91702421210357,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 14,
+            "detected_events": 8,
+            "missed_events": 6,
+            "event_recall": 0.5714285714285714,
+            "alerts": 25,
+            "false_alerts": 17,
+            "observable_powered_hours": 322.34166666666664,
+            "false_alerts_per_100_hours": 5.273907086166335,
+            "threshold": 0.06423689872316114
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13847,
+            "positive_windows": 66,
+            "events": 3,
+            "prevalence": 0.004766375388170723,
+            "average_precision": 0.6491912929599428,
+            "event_macro_ap": 0.41790126428311064,
+            "roc_auc": 0.9987444285390733,
+            "brier": 0.006925154072893742
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 6,
+            "false_alerts": 5,
+            "observable_powered_hours": 38.46388888888889,
+            "false_alerts_per_100_hours": 12.99920560410197,
+            "threshold": 0.20828521903235808,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "voltage_016",
+              "type": "voltage",
+              "event_at": "2026-10-28T08:25:39",
+              "product_start": "2026-10-28T08:25:39",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-28T08:26:44",
+              "failed_products": 4
+            },
+            {
+              "event_id": "voltage_017",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:30:06",
+              "product_start": "2026-11-01T13:30:06",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-11-01T13:30:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "voltage_018",
+              "type": "voltage",
+              "event_at": "2026-11-01T13:33:02",
+              "product_start": "2026-11-01T13:33:02",
+              "alert_at": "2026-11-01T13:32:50",
+              "lead_to_result_s": 77.0,
+              "lead_to_product_start_s": 12.0,
+              "first_result_at": "2026-11-01T13:34:07",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-28T07:54:10.000000000",
+            "2026-10-28T08:03:10.000000000",
+            "2026-10-28T08:09:10.000000000",
+            "2026-10-28T08:16:40.000000000",
+            "2026-11-01T13:20:50.000000000",
+            "2026-11-01T13:32:50.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 14,
+            "detected_events": 8,
+            "missed_events": 6,
+            "event_recall": 0.5714285714285714,
+            "alerts": 58,
+            "false_alerts": 50,
+            "observable_powered_hours": 322.34166666666664,
+            "false_alerts_per_100_hours": 15.511491429900987,
+            "threshold": 0.20828521903235808
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.004766375388170723
+    }
+  },
+  "blind": {
+    "fold": "f6",
+    "rows": 13948,
+    "partition_rows": 13948,
+    "rows_equal_new_partition": true,
+    "old_v3": {
+      "selected_algorithm": "extra_trees",
+      "isolated_logistic": {
+        "ranking": {
+          "n": 13847,
+          "positive_windows": 66,
+          "events": 3,
+          "prevalence": 0.004766375388170723,
+          "average_precision": 0.3946206244629117,
+          "event_macro_ap": 0.2276340269203898,
+          "roc_auc": 0.9782067097211136,
+          "brier": 0.004687512313275037
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.46388888888889,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.016791440994839556,
+          "detected_before_product_start": 0
+        },
+        "event_records": [
+          {
+            "event_id": "voltage_016",
+            "type": "voltage",
+            "event_at": "2026-10-28T08:25:39",
+            "product_start": "2026-10-28T08:25:39",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-28T08:26:44",
+            "failed_products": 4
+          },
+          {
+            "event_id": "voltage_017",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:30:06",
+            "product_start": "2026-11-01T13:30:06",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-11-01T13:30:40",
+            "failed_products": 1
+          },
+          {
+            "event_id": "voltage_018",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:33:02",
+            "product_start": "2026-11-01T13:33:02",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-11-01T13:34:07",
+            "failed_products": 2
+          }
+        ],
+        "alert_timestamps": [],
+        "eta_mae_s_all_positive_windows": 89.66256175677215,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "logistic",
+        "frozen_v3_threshold": 0.016791440994839556,
+        "model_sha256": "af5ff9b8245f17937925bf6f11af28dad11438d3394c5bdf44a38a9031c59c53",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_histgb": {
+        "ranking": {
+          "n": 13847,
+          "positive_windows": 66,
+          "events": 3,
+          "prevalence": 0.004766375388170723,
+          "average_precision": 0.11706423288299245,
+          "event_macro_ap": 0.05522451097637059,
+          "roc_auc": 0.9799229505709441,
+          "brier": 0.004638062543672197
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 1,
+          "missed_events": 2,
+          "event_recall": 0.3333333333333333,
+          "alerts": 6,
+          "false_alerts": 5,
+          "observable_powered_hours": 38.46388888888889,
+          "false_alerts_per_100_hours": 12.99920560410197,
+          "threshold": 0.0340135025368774,
+          "detected_before_product_start": 1
+        },
+        "event_records": [
+          {
+            "event_id": "voltage_016",
+            "type": "voltage",
+            "event_at": "2026-10-28T08:25:39",
+            "product_start": "2026-10-28T08:25:39",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-28T08:26:44",
+            "failed_products": 4
+          },
+          {
+            "event_id": "voltage_017",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:30:06",
+            "product_start": "2026-11-01T13:30:06",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-11-01T13:30:40",
+            "failed_products": 1
+          },
+          {
+            "event_id": "voltage_018",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:33:02",
+            "product_start": "2026-11-01T13:33:02",
+            "alert_at": "2026-11-01T13:32:50",
+            "lead_to_result_s": 77.0,
+            "lead_to_product_start_s": 12.0,
+            "first_result_at": "2026-11-01T13:34:07",
+            "failed_products": 2
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-31T10:44:10.000000000",
+          "2026-10-31T10:54:00.000000000",
+          "2026-10-31T11:04:40.000000000",
+          "2026-11-01T09:35:40.000000000",
+          "2026-11-01T13:25:00.000000000",
+          "2026-11-01T13:32:50.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 89.66256175677215,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "histgb",
+        "frozen_v3_threshold": 0.0340135025368774,
+        "model_sha256": "dcc760b08a6fe238adfe4dcfacfda7eab862e0fa86e4910f38e3d6db83af4797",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_extra_trees": {
+        "ranking": {
+          "n": 13847,
+          "positive_windows": 66,
+          "events": 3,
+          "prevalence": 0.004766375388170723,
+          "average_precision": 0.6077239185471989,
+          "event_macro_ap": 0.35700471906308184,
+          "roc_auc": 0.9987103456009923,
+          "brier": 0.004459993530019644
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 2,
+          "missed_events": 1,
+          "event_recall": 0.6666666666666666,
+          "alerts": 2,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.46388888888889,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.03969505399441784,
+          "detected_before_product_start": 2
+        },
+        "event_records": [
+          {
+            "event_id": "voltage_016",
+            "type": "voltage",
+            "event_at": "2026-10-28T08:25:39",
+            "product_start": "2026-10-28T08:25:39",
+            "alert_at": "2026-10-28T08:20:50",
+            "lead_to_result_s": 354.0,
+            "lead_to_product_start_s": 289.0,
+            "first_result_at": "2026-10-28T08:26:44",
+            "failed_products": 4
+          },
+          {
+            "event_id": "voltage_017",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:30:06",
+            "product_start": "2026-11-01T13:30:06",
+            "alert_at": "2026-11-01T13:30:00",
+            "lead_to_result_s": 40.0,
+            "lead_to_product_start_s": 6.0,
+            "first_result_at": "2026-11-01T13:30:40",
+            "failed_products": 1
+          },
+          {
+            "event_id": "voltage_018",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:33:02",
+            "product_start": "2026-11-01T13:33:02",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-11-01T13:34:07",
+            "failed_products": 2
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-28T08:20:50.000000000",
+          "2026-11-01T13:30:00.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 89.66256175677215,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "extra_trees",
+        "frozen_v3_threshold": 0.03969505399441784,
+        "model_sha256": "427ddb98c6521f04b4407d587f021e2b1c24b11fc8840d08de0c0a078949fd90",
+        "trained_through": "2026-09-29"
+      },
+      "full_refit": {
+        "ranking": {
+          "n": 13847,
+          "positive_windows": 66,
+          "events": 3,
+          "prevalence": 0.004766375388170723,
+          "average_precision": 0.7154988514584677,
+          "event_macro_ap": 0.45785921928805945,
+          "roc_auc": 0.9991622193929718,
+          "brier": 0.004252701447214113
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 1,
+          "missed_events": 2,
+          "event_recall": 0.3333333333333333,
+          "alerts": 3,
+          "false_alerts": 2,
+          "observable_powered_hours": 38.46388888888889,
+          "false_alerts_per_100_hours": 5.199682241640788,
+          "threshold": 0.03969505399441784,
+          "detected_before_product_start": 1
+        },
+        "event_records": [
+          {
+            "event_id": "voltage_016",
+            "type": "voltage",
+            "event_at": "2026-10-28T08:25:39",
+            "product_start": "2026-10-28T08:25:39",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-28T08:26:44",
+            "failed_products": 4
+          },
+          {
+            "event_id": "voltage_017",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:30:06",
+            "product_start": "2026-11-01T13:30:06",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-11-01T13:30:40",
+            "failed_products": 1
+          },
+          {
+            "event_id": "voltage_018",
+            "type": "voltage",
+            "event_at": "2026-11-01T13:33:02",
+            "product_start": "2026-11-01T13:33:02",
+            "alert_at": "2026-11-01T13:32:50",
+            "lead_to_result_s": 77.0,
+            "lead_to_product_start_s": 12.0,
+            "first_result_at": "2026-11-01T13:34:07",
+            "failed_products": 2
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-28T08:19:30.000000000",
+          "2026-11-01T13:24:50.000000000",
+          "2026-11-01T13:32:50.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 90.91702440331574,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "extra_trees",
+        "frozen_v3_threshold": 0.03969505399441784,
+        "model_sha256": "97f8c39f9d1ec9ab6e60c7906caedc04657c8c1b28dfbef4dd997a78e2de2b3a",
+        "trained_through": "2026-10-23",
+        "note": "v3 attached no validation score to this refit; frozen calibration/threshold of the same algorithm applied as declared"
+      }
+    }
+  },
+  "final": {
+    "logistic": {
+      "train_windows": 170838,
+      "train_positive_windows": 515,
+      "train_events": 18,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 25.22711044549942,
+      "model_sha256": "605677ee547486b3cb04c7eec902aa25038236177405615e7ce758259f6f6094",
+      "threshold": 0.025680943633994043,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 17,
+        "detected_events": 2,
+        "missed_events": 15,
+        "event_recall": 0.11764705882352941,
+        "alerts": 38,
+        "false_alerts": 36,
+        "observable_powered_hours": 360.80555555555554,
+        "false_alerts_per_100_hours": 9.977673415967358,
+        "threshold": 0.025680943633994043
+      },
+      "pooled_oof": {
+        "n": 129890,
+        "positive_windows": 485,
+        "events": 17,
+        "prevalence": 0.0037339287089075373,
+        "average_precision": 0.01596870563772978,
+        "event_macro_ap": 0.003583590931063579,
+        "roc_auc": 0.6591452631931158,
+        "brier": 0.0037066382496067714
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 17,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "histgb": {
+      "train_windows": 170838,
+      "train_positive_windows": 515,
+      "train_events": 18,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 13.401807519607246,
+      "model_sha256": "2c2c5325de216a73c9fe69912b0b7e4bae353879598ec4933e0c5e9fbe22867c",
+      "threshold": 0.050128480773849175,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 17,
+        "detected_events": 7,
+        "missed_events": 10,
+        "event_recall": 0.4117647058823529,
+        "alerts": 53,
+        "false_alerts": 46,
+        "observable_powered_hours": 360.80555555555554,
+        "false_alerts_per_100_hours": 12.749249364847179,
+        "threshold": 0.050128480773849175
+      },
+      "pooled_oof": {
+        "n": 129890,
+        "positive_windows": 485,
+        "events": 17,
+        "prevalence": 0.0037339287089075373,
+        "average_precision": 0.11660039259853695,
+        "event_macro_ap": 0.07178242277823978,
+        "roc_auc": 0.808961802572201,
+        "brier": 0.003500645035035308
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 17,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "extra_trees": {
+      "train_windows": 170838,
+      "train_positive_windows": 515,
+      "train_events": 18,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 180.38288836553693,
+      "model_sha256": "42c57913e2f55e5b066c588e2a65ff45e3ebfc6dccc3de6208a2a65263828a82",
+      "threshold": 0.08788538684496375,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 17,
+        "detected_events": 9,
+        "missed_events": 8,
+        "event_recall": 0.5294117647058824,
+        "alerts": 28,
+        "false_alerts": 19,
+        "observable_powered_hours": 360.80555555555554,
+        "false_alerts_per_100_hours": 5.26599430287166,
+        "threshold": 0.08788538684496375
+      },
+      "pooled_oof": {
+        "n": 129890,
+        "positive_windows": 485,
+        "events": 17,
+        "prevalence": 0.0037339287089075373,
+        "average_precision": 0.22908372934753146,
+        "event_macro_ap": 0.08672936749115989,
+        "roc_auc": 0.9375144366145287,
+        "brier": 0.0033874075201645267
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 17,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    }
+  },
+  "partition_counts": {
+    "0": {
+      "windows": 104661,
+      "positive_windows": 270,
+      "events": 9
+    },
+    "1": {
+      "windows": 12983,
+      "positive_windows": 60,
+      "events": 2
+    },
+    "2": {
+      "windows": 5490,
+      "positive_windows": 59,
+      "events": 2
+    },
+    "3": {
+      "windows": 34596,
+      "positive_windows": 60,
+      "events": 2
+    },
+    "4": {
+      "windows": 13948,
+      "positive_windows": 66,
+      "events": 3
+    }
+  },
+  "episodes_total": 18,
+  "finished_at": "2026-11-11T18:38:29+0000",
+  "production_ready": false
+}

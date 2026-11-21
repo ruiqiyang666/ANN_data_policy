@@ -1,0 +1,84 @@
+{
+  "outer_folds": 14,
+  "forward_blocks": 3,
+  "rows": 81235,
+  "observed_cycles": 10,
+  "independent_recomputed_errors": {
+    "aft_linear6": {
+      "mae": 5.351049209447913,
+      "last2h": 3.4704922736898083
+    },
+    "aft_xgb6": {
+      "mae": 5.5319965174786505,
+      "last2h": 4.077763883472401
+    },
+    "aft_xgb23": {
+      "mae": 5.297746125155226,
+      "last2h": 4.087156088948467
+    },
+    "pch_linear6": {
+      "mae": 5.393492374292966,
+      "last2h": 4.305791770953408
+    },
+    "pch_mlp6": {
+      "mae": 5.44437752825454,
+      "last2h": 4.135775522680616
+    },
+    "pch_mlp23": {
+      "mae": 5.245265120180098,
+      "last2h": 3.9929072241960997
+    }
+  },
+  "held_out_runtime_parity": {
+    "aft_linear6": {
+      "cdf_max_abs": 2.9792221245550365e-08,
+      "quantile_hours_max_abs": 5.294422464885429e-06
+    },
+    "aft_xgb6": {
+      "cdf_max_abs": 2.9773280174616445e-08,
+      "quantile_hours_max_abs": 3.796776297804172e-06
+    },
+    "aft_xgb23": {
+      "cdf_max_abs": 2.9789933742030428e-08,
+      "quantile_hours_max_abs": 3.763655030297741e-06
+    },
+    "pch_linear6": {
+      "cdf_max_abs": 1.2255783732317838e-07,
+      "quantile_hours_max_abs": 4.583457140938663e-06
+    },
+    "pch_mlp6": {
+      "cdf_max_abs": 1.1967624885533823e-07,
+      "quantile_hours_max_abs": 4.00535759581544e-06
+    },
+    "pch_mlp23": {
+      "cdf_max_abs": 1.7201552193757408e-07,
+      "quantile_hours_max_abs": 4.935077681622602e-06
+    }
+  },
+  "final_runtime_parity": {
+    "aft_linear6": {
+      "cdf_max_abs": 2.9799750556058768e-08,
+      "quantile_hours_max_abs": 6.9778658939867455e-06
+    },
+    "aft_xgb6": {
+      "cdf_max_abs": 2.9799988032763736e-08,
+      "quantile_hours_max_abs": 3.713475251743148e-06
+    },
+    "aft_xgb23": {
+      "cdf_max_abs": 2.9798576717254832e-08,
+      "quantile_hours_max_abs": 3.77847904076134e-06
+    },
+    "pch_linear6": {
+      "cdf_max_abs": 1.6238632516429874e-07,
+      "quantile_hours_max_abs": 5.802742478522305e-06
+    },
+    "pch_mlp6": {
+      "cdf_max_abs": 1.539167578945566e-07,
+      "quantile_hours_max_abs": 3.0252456504342717e-06
+    },
+    "pch_mlp23": {
+      "cdf_max_abs": 1.9516271576591748e-07,
+      "quantile_hours_max_abs": 4.880397412421189e-06
+    }
+  }
+}

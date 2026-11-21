@@ -1,0 +1,38 @@
+{
+  "name": "constant",
+  "fit": "cycle1",
+  "task": "hours",
+  "train_windows": 13060,
+  "seconds": 0.2046416000011959,
+  "metrics": {
+    "windows": 14301,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R004",
+        "windows": 14301,
+        "mean_interval_distance": 15.869484239386312,
+        "mean_log_interval_distance": 1.3956220570688296,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 4.385785257900305,
+        "overestimate_fraction": 0.11348856723306062,
+        "model_interval_overlap_fraction": 0.9973428431578212
+      }
+    ],
+    "macro_interval_distance": 15.869484239386312,
+    "macro_log_interval_distance": 1.3956220570688296,
+    "median_prediction_quantiles": [
+      4.519951924566971,
+      4.519951924566971,
+      4.519951924566971,
+      4.519951924566971,
+      4.519951924566971
+    ],
+    "censor_median_below_observed_lower_fraction": null,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

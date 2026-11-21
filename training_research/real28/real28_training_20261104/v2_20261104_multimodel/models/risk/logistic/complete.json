@@ -1,0 +1,83 @@
+{
+  "name": "logistic",
+  "algorithm_family": "logistic",
+  "fold_scores": [
+    {
+      "n": 22003,
+      "positive_windows": 353,
+      "events": 12,
+      "prevalence": 0.01604326682725083,
+      "average_precision": 0.0990148649285148,
+      "event_macro_ap": 0.08427761904913167,
+      "roc_auc": 0.4841020876813064,
+      "brier": 0.030544114451501264
+    },
+    {
+      "n": 13981,
+      "positive_windows": 392,
+      "events": 20,
+      "prevalence": 0.028038051641513483,
+      "average_precision": 0.10212045095798111,
+      "event_macro_ap": 0.014623179774472856,
+      "roc_auc": 0.7094716464847769,
+      "brier": 0.04216553920397791
+    },
+    {
+      "n": 27580,
+      "positive_windows": 225,
+      "events": 8,
+      "prevalence": 0.008158085569253081,
+      "average_precision": 0.016002105946882242,
+      "event_macro_ap": 0.0029282117049490557,
+      "roc_auc": 0.7309834886979834,
+      "brier": 0.06439796179810331
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.033943003509517865,
+  "pooled_oof": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.028147197155439178,
+    "event_macro_ap": 0.0038638218186517357,
+    "roc_auc": 0.5581498045496275,
+    "brier": 0.04778922566671209
+  },
+  "oof_calibrated": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.02815413818261568,
+    "event_macro_ap": 0.0038662321663577416,
+    "roc_auc": 0.5581771036978941,
+    "brier": 0.015000027908702838
+  },
+  "development_alarm_policy": {
+    "events": 40,
+    "detected_events": 4,
+    "missed_events": 36,
+    "event_recall": 0.1,
+    "alerts": 28,
+    "false_alerts": 24,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 13.592599584670568,
+    "threshold": 0.03444985231083142
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.02708745582927017,
+    "event_macro_ap": 0.021643495845442753,
+    "roc_auc": 0.5949317889983367,
+    "brier": 0.07054181144897476
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

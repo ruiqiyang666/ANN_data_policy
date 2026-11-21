@@ -1,0 +1,21 @@
+{
+  "task": "feedrate",
+  "status": "trained_research_candidate",
+  "algorithm": "histgb",
+  "main_fits": 1,
+  "train_windows": 156855,
+  "event_or_weak_endpoint_count": 31,
+  "first_timestamp": "2026-08-15T10:27:10",
+  "last_timestamp": "2026-10-23T13:57:00",
+  "seconds": 10.003175900001224,
+  "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+  "validation_metrics": null,
+  "previous_validation_scores_do_not_apply_to_this_refit": true,
+  "output_status": "raw weighted score; calibration on future data not yet verified for this refit",
+  "production_ready": false,
+  "artifact_sha256": {
+    "auxiliary.joblib": "feffbaf5dccab1258a91fa76ab30ac1d97c14f87ae74563cee84a9dbef839dae",
+    "model.joblib": "5878f864b0ec471f2810a17ce9550027cbd771d0845087605b3245348064663d",
+    "preprocess.joblib": "e126079f837e457755c8ff2331d9110f605a3b842c69d0eb0496d992c2529a4f"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_files": 3151,
+  "python_files": 163,
+  "source_errors": [],
+  "secret_findings": [],
+  "checks": {
+    "learning_cycle_regression": "10 tests passed on this package",
+    "v6_math_checks": "PASS",
+    "v6_km_support_check": "PASS",
+    "scope": "Copied-source syntax and file integrity; no real-data retraining, no new validation score, no live deployment"
+  },
+  "weight_coverage": {
+    "all_saved_checkpoint_hashes_covered": true,
+    "extra_variants": [
+      ".tmp/depuy-dashboard-latest-d03db8d/runtime/synthetic-training/runs/run-20261110-154626-8248ab95/artifacts/模型.joblib",
+      ".tmp/depuy-dashboard-latest-d03db8d/runtime/synthetic-training/runs/run-20261110-154626-8248ab95/artifacts/neural/active.pt"
+    ],
+    "unique_checkpoint_hashes": 807
+  }
+}

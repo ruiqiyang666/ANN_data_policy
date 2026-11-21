@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Learning\GC\IPP\Phase2\real28_training_20261104\src\build_windows.py", line 205, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Learning\GC\IPP\Phase2\real28_training_20261104\src\build_windows.py", line 157, in main
+    next_low_ids=np.r_[low.product_id.to_numpy(),''][next_low]
+                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frank\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_index_tricks_impl.py", line 387, in __getitem__
+    raise ValueError("special directives must be the "
+                     "first entry.")
+ValueError: special directives must be the first entry.

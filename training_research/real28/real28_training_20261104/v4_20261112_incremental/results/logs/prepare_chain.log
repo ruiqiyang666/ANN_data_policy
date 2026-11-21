@@ -1,0 +1,9 @@
+[02:18:06] start windows
+[02:18:23] windows exit=0
+[02:18:23] start lifelabels
+[02:18:25] lifelabels exit=0
+[02:18:25] start grid
+[02:18:57] grid exit=0
+[02:18:57] start prepv4
+[02:19:15] prepv4 exit=0
+[02:19:15] PREPARE CHAIN DONE

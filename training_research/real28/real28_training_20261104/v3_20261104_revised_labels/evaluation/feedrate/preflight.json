@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "checks": [
+    "300-second horizon, 30-second bins, partial followup censoring",
+    "Future-value poisoning leaves causal rolling history unchanged; unpowered zeros excluded",
+    "R009 ordinary wait removed as censor; R011 weak sustained endpoint retained; R007 onset interval expanded; zero confirmed natural failures",
+    "voltage: before-product-start positives, episode isolation and outcome-availability purge",
+    "feedrate: before-product-start positives, episode isolation and outcome-availability purge",
+    "hopper_pressure: before-product-start positives, episode isolation and outcome-availability purge",
+    "2h history matches direct causal raw slices; all 28 inputs retained; train-only preprocessing",
+    "TCN/GRU/patch Transformer finite CUDA forward and backward"
+  ],
+  "folds": {
+    "voltage/f1": {
+      "train_windows": 41046,
+      "validation_windows": 22034,
+      "train_events": 1,
+      "validation_events": 2
+    },
+    "voltage/f2": {
+      "train_windows": 63080,
+      "validation_windows": 14001,
+      "train_events": 3,
+      "validation_events": 3
+    },
+    "voltage/f3": {
+      "train_windows": 77081,
+      "validation_windows": 27580,
+      "train_events": 6,
+      "validation_events": 3
+    },
+    "feedrate/f1": {
+      "train_windows": 41046,
+      "validation_windows": 22034,
+      "train_events": 1,
+      "validation_events": 6
+    },
+    "feedrate/f2": {
+      "train_windows": 63080,
+      "validation_windows": 14001,
+      "train_events": 7,
+      "validation_events": 11
+    },
+    "feedrate/f3": {
+      "train_windows": 77081,
+      "validation_windows": 27580,
+      "train_events": 18,
+      "validation_events": 4
+    },
+    "hopper_pressure/f1": {
+      "train_windows": 41046,
+      "validation_windows": 22034,
+      "train_events": 4,
+      "validation_events": 5
+    },
+    "hopper_pressure/f2": {
+      "train_windows": 63080,
+      "validation_windows": 14001,
+      "train_events": 9,
+      "validation_events": 0
+    },
+    "hopper_pressure/f3": {
+      "train_windows": 77081,
+      "validation_windows": 27580,
+      "train_events": 9,
+      "validation_events": 1
+    }
+  },
+  "features": 292,
+  "sha256": "f826df7060e4683919574ed10b32395f617ee2cf7ae82f74590188749a2e7b11",
+  "checked_at": "2026-11-04T22:18:42+0800"
+}

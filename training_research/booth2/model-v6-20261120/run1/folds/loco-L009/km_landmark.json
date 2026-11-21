@@ -1,0 +1,29 @@
+{
+  "family": "km_landmark",
+  "features": [],
+  "training_cycles": [
+    "L000",
+    "L001",
+    "L002",
+    "L003",
+    "L004",
+    "L005",
+    "L006",
+    "L007",
+    "L008",
+    "L010",
+    "L011",
+    "L012",
+    "L013"
+  ],
+  "details": {
+    "unresolved": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "history": null,
+  "artifact": "km_landmark.joblib",
+  "sha256": "b4bb0f6248beea21d2bcc7068dec28d14d4bbcdc444bd7947cb72ec0c519d4d3"
+}

@@ -1,0 +1,247 @@
+{
+  "name": "stage_lognormal_r01",
+  "status": "trained",
+  "real_algorithm_family": "lognormal_aft",
+  "initialization_variant_not_extra_family": true,
+  "fits": [
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "cycle1",
+      "task": "hours",
+      "train_windows": 13060,
+      "seconds": 0.29640590000053635,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 11.911976358025642,
+            "mean_log_interval_distance": 0.8893369394909807,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 6.2660205936133595,
+            "overestimate_fraction": 0.2306831690091602,
+            "model_interval_overlap_fraction": 0.9602824977274317
+          }
+        ],
+        "macro_interval_distance": 11.911976358025642,
+        "macro_log_interval_distance": 0.8893369394909807,
+        "median_prediction_quantiles": [
+          0.1745265015817407,
+          3.531724948182996,
+          9.749989509601766,
+          15.546574716022448,
+          17.579198640807356
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "cycle1",
+      "task": "pieces",
+      "train_windows": 13060,
+      "seconds": 0.28855980000298587,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 530.8729459478358,
+            "mean_log_interval_distance": 0.8948778667149025,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 279.8777777777778,
+            "overestimate_fraction": 0.23746591147472204,
+            "model_interval_overlap_fraction": 0.9602125725473744
+          }
+        ],
+        "macro_interval_distance": 530.8729459478358,
+        "macro_log_interval_distance": 0.8948778667149025,
+        "median_prediction_quantiles": [
+          8.0,
+          163.0,
+          438.0,
+          684.0,
+          770.0
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "cycle2",
+      "task": "hours",
+      "train_windows": 15467,
+      "seconds": 0.335334999999759,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 2.441674063876692,
+            "mean_log_interval_distance": 0.8589595031725081,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.031834666071079,
+            "overestimate_fraction": 0.42725094145840464,
+            "model_interval_overlap_fraction": 0.9366655255049641
+          }
+        ],
+        "macro_interval_distance": 2.441674063876692,
+        "macro_log_interval_distance": 0.8589595031725081,
+        "median_prediction_quantiles": [
+          0.01414472455488265,
+          1.289166452129389,
+          3.521928966740155,
+          6.242996732672376,
+          7.57308117606646
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7294049008168028,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "cycle2",
+      "task": "pieces",
+      "train_windows": 15467,
+      "seconds": 0.39189190000251983,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 110.88360150633345,
+            "mean_log_interval_distance": 0.8072599598833806,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 88.81111111111112,
+            "overestimate_fraction": 0.3981513180417665,
+            "model_interval_overlap_fraction": 0.9356384799726121
+          }
+        ],
+        "macro_interval_distance": 110.88360150633345,
+        "macro_log_interval_distance": 0.8072599598833806,
+        "median_prediction_quantiles": [
+          1.0,
+          61.0,
+          160.0,
+          274.0,
+          326.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6900816802800467,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "final",
+      "task": "hours",
+      "train_windows": 17406,
+      "seconds": 0.4066165000003821,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.19750063196743375,
+            "mean_log_interval_distance": 0.44419298889253367,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.12818459932271736,
+            "overestimate_fraction": 0.27058823529411763,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.19750063196743375,
+        "macro_log_interval_distance": 0.44419298889253367,
+        "median_prediction_quantiles": [
+          0.023929238522358995,
+          1.0224082794055311,
+          3.2916209248214288,
+          6.137462971832471,
+          7.192416991700645
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9300544021316753,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_lognormal_r01",
+      "fit": "final",
+      "task": "pieces",
+      "train_windows": 17406,
+      "seconds": 0.3949819000008574,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 9.323529411764707,
+            "mean_log_interval_distance": 0.6761276984067219,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 13.344444444444445,
+            "overestimate_fraction": 0.6441176470588236,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 9.323529411764707,
+        "macro_log_interval_distance": 0.6761276984067219,
+        "median_prediction_quantiles": [
+          1.0,
+          49.0,
+          154.0,
+          282.0,
+          326.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9292772288220273,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    }
+  ],
+  "forward_cycle_macro_log_distance": 0.8741482213317444,
+  "forward_cycle_macro_hour_distance": 7.176825210951167,
+  "all_optimizers_converged": true,
+  "history_period_accessed": false,
+  "features": [
+    "product_voltage_mean",
+    "matched_long_peak_drop",
+    "powered_Voltage_slope_per_hour_300s",
+    "powered_Voltage_std_300s"
+  ],
+  "penalty": 0.1
+}

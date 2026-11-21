@@ -1,0 +1,174 @@
+loco-L000 km_landmark complete
+loco-L001 km_landmark complete
+loco-L005 km_landmark complete
+loco-L003 km_landmark complete
+loco-L002 km_landmark complete
+loco-L004 km_landmark complete
+loco-L000 km_age complete
+loco-L001 km_age complete
+loco-L003 km_age complete
+loco-L005 km_age complete
+loco-L002 km_age complete
+loco-L004 km_age complete
+loco-L000 ipcw_hgb6 complete
+loco-L005 ipcw_hgb6 complete
+loco-L001 ipcw_hgb6 complete
+loco-L002 ipcw_hgb6 complete
+loco-L003 ipcw_hgb6 complete
+loco-L004 ipcw_hgb6 complete
+loco-L000 ipcw_hgb32 complete
+loco-L005 ipcw_hgb32 complete
+loco-L001 ipcw_hgb32 complete
+loco-L002 ipcw_hgb32 complete
+loco-L003 ipcw_hgb32 complete
+loco-L004 ipcw_hgb32 complete
+loco-L000 cqrnn6 complete
+loco-L005 cqrnn6 complete
+loco-L001 cqrnn6 complete
+loco-L002 cqrnn6 complete
+loco-L003 cqrnn6 complete
+loco-L004 cqrnn6 complete
+loco-L005 cqrnn32 complete
+loco-L000 cqrnn32 complete
+loco-L001 cqrnn32 complete
+loco-L005 mix6 complete
+loco-L002 cqrnn32 complete
+loco-L003 cqrnn32 complete
+loco-L000 mix6 complete
+loco-L004 cqrnn32 complete
+loco-L001 mix6 complete
+loco-L005 mix32 complete
+loco-L002 mix6 complete
+loco-L003 mix6 complete
+loco-L000 mix32 complete
+loco-L004 mix6 complete
+loco-L001 mix32 complete
+loco-L002 mix32 complete
+loco-L003 mix32 complete
+loco-L004 mix32 complete
+loco-L005 rsf32 complete
+loco-L000 rsf32 complete
+loco-L006 km_landmark complete
+loco-L006 km_age complete
+loco-L001 rsf32 complete
+loco-L003 rsf32 complete
+loco-L002 rsf32 complete
+loco-L004 rsf32 complete
+loco-L007 km_landmark complete
+loco-L007 km_age complete
+loco-L008 km_landmark complete
+loco-L006 ipcw_hgb6 complete
+loco-L008 km_age complete
+loco-L009 km_landmark complete
+loco-L010 km_landmark complete
+loco-L009 km_age complete
+loco-L010 km_age complete
+loco-L011 km_landmark complete
+loco-L011 km_age complete
+loco-L007 ipcw_hgb6 complete
+loco-L008 ipcw_hgb6 complete
+loco-L009 ipcw_hgb6 complete
+loco-L010 ipcw_hgb6 complete
+loco-L011 ipcw_hgb6 complete
+loco-L006 ipcw_hgb32 complete
+loco-L007 ipcw_hgb32 complete
+loco-L008 ipcw_hgb32 complete
+loco-L006 cqrnn6 complete
+loco-L009 ipcw_hgb32 complete
+loco-L010 ipcw_hgb32 complete
+loco-L011 ipcw_hgb32 complete
+loco-L007 cqrnn6 complete
+loco-L008 cqrnn6 complete
+loco-L006 cqrnn32 complete
+loco-L009 cqrnn6 complete
+loco-L010 cqrnn6 complete
+loco-L011 cqrnn6 complete
+loco-L006 mix6 complete
+loco-L007 cqrnn32 complete
+loco-L006 mix32 complete
+loco-L008 cqrnn32 complete
+loco-L009 cqrnn32 complete
+loco-L007 mix6 complete
+loco-L010 cqrnn32 complete
+loco-L008 mix6 complete
+loco-L011 cqrnn32 complete
+loco-L009 mix6 complete
+loco-L007 mix32 complete
+loco-L010 mix6 complete
+loco-L008 mix32 complete
+loco-L011 mix6 complete
+loco-L009 mix32 complete
+loco-L006 rsf32 complete
+loco-L010 mix32 complete
+loco-L011 mix32 complete
+loco-L007 rsf32 complete
+loco-L012 km_landmark complete
+loco-L012 km_age complete
+loco-L013 km_landmark complete
+loco-L008 rsf32 complete
+loco-L013 km_age complete
+loco-L009 rsf32 complete
+loco-L010 rsf32 complete
+loco-L012 ipcw_hgb6 complete
+loco-L011 rsf32 complete
+forward-0 km_landmark complete
+forward-0 km_age complete
+forward-1 km_landmark complete
+forward-1 km_age complete
+loco-L013 ipcw_hgb6 complete
+forward-2 km_landmark complete
+forward-2 km_age complete
+forward-0 ipcw_hgb6 complete
+forward-1 ipcw_hgb6 complete
+forward-2 ipcw_hgb6 complete
+loco-L012 ipcw_hgb32 complete
+forward-0 ipcw_hgb32 complete
+loco-L013 ipcw_hgb32 complete
+loco-L012 cqrnn6 complete
+forward-1 ipcw_hgb32 complete
+forward-0 cqrnn6 complete
+forward-0 cqrnn32 complete
+forward-2 ipcw_hgb32 complete
+forward-1 cqrnn6 complete
+loco-L013 cqrnn6 complete
+forward-0 mix6 complete
+loco-L012 cqrnn32 complete
+forward-0 mix32 complete
+forward-1 cqrnn32 complete
+loco-L012 mix6 complete
+forward-2 cqrnn6 complete
+forward-0 rsf32 complete
+loco-L013 cqrnn32 complete
+forward-1 mix6 complete
+loco-L012 mix32 complete
+loco-L013 mix6 complete
+forward-1 mix32 complete
+forward-2 cqrnn32 complete
+loco-L013 mix32 complete
+forward-2 mix6 complete
+forward-1 rsf32 complete
+loco-L012 rsf32 complete
+forward-2 mix32 complete
+loco-L013 rsf32 complete
+forward-2 rsf32 complete
+loco km_landmark {'mae': 5.9155, 'last2h': 8.8251, 'last1h': 9.32, 'bias2h': 8.8251, 'coverage': 0.772, 'width': 19.6769, 'brier1h': 0.0822, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2145, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2616, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4109}
+loco km_age {'mae': 8.2157, 'last2h': 10.4597, 'last1h': 10.4597, 'bias2h': 10.4597, 'coverage': 0.5194, 'width': 13.6629, 'brier1h': 0.0921, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2384, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2881, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4052}
+loco ipcw_hgb6 {'mae': 5.7734, 'last2h': 4.8937, 'last1h': 3.8695, 'bias2h': 4.7571, 'coverage': 0.5016, 'width': 9.2599, 'brier1h': 0.0824, 'ipcw_clipped1h': 0.0, 'brier4h': 0.221, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2664, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4561}
+loco ipcw_hgb32 {'mae': 4.7381, 'last2h': 3.9419, 'last1h': 3.5541, 'bias2h': 3.8605, 'coverage': 0.3917, 'width': 7.7823, 'brier1h': 0.08, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2254, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2311, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.414}
+loco cqrnn6 {'mae': 8.0927, 'last2h': 6.4093, 'last1h': 5.9554, 'bias2h': 6.3947, 'coverage': 0.2319, 'width': 8.9147, 'brier1h': 0.099, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2509, 'ipcw_clipped4h': 0.0, 'brier8h': 0.3062, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.369}
+loco cqrnn32 {'mae': 17.5386, 'last2h': 9.1428, 'last1h': 9.826, 'bias2h': 8.8714, 'coverage': 0.1257, 'width': 6.391, 'brier1h': 0.1004, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2225, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2838, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.2094}
+loco mix6 {'mae': 6.4223, 'last2h': 4.4918, 'last1h': 3.5929, 'bias2h': 4.4387, 'coverage': 0.4469, 'width': 13.2632, 'brier1h': 0.0812, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2383, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2555, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.386}
+loco mix32 {'mae': 6.4581, 'last2h': 2.829, 'last1h': 2.0909, 'bias2h': 2.4742, 'coverage': 0.3038, 'width': 10.7953, 'brier1h': 0.1126, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2225, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2331, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3707}
+loco rsf32 {'mae': 5.3424, 'last2h': 3.9901, 'last1h': 3.0613, 'bias2h': 3.8911, 'coverage': 0.597, 'width': 11.885, 'brier1h': 0.0762, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2175, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2176, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3138}
+loco nested_selected {'mae': 4.7416, 'last2h': 3.5938, 'last1h': 3.2159, 'bias2h': 3.4631, 'coverage': 0.3846, 'width': 8.036, 'brier1h': 0.082, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2243, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2225, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4208}
+forward km_landmark {'mae': 6.3402, 'last2h': 7.6622, 'last1h': 8.1519, 'bias2h': 7.6622, 'coverage': 0.6618, 'width': 17.4317, 'brier1h': 0.0931, 'ipcw_clipped1h': 0.0, 'brier4h': 0.1996, 'ipcw_clipped4h': 0.0, 'brier8h': 0.1962, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4112}
+forward km_age {'mae': 9.1809, 'last2h': 12.9294, 'last1h': 12.9294, 'bias2h': 12.9294, 'coverage': 0.4178, 'width': 14.0268, 'brier1h': 0.1101, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2645, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2862, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3685}
+forward ipcw_hgb6 {'mae': 6.492, 'last2h': 5.5673, 'last1h': 4.8906, 'bias2h': 5.2548, 'coverage': 0.4157, 'width': 8.9683, 'brier1h': 0.0931, 'ipcw_clipped1h': 0.0, 'brier4h': 0.231, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2177, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3786}
+forward ipcw_hgb32 {'mae': 5.6594, 'last2h': 4.7473, 'last1h': 4.1106, 'bias2h': 4.6253, 'coverage': 0.324, 'width': 7.7367, 'brier1h': 0.0867, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2195, 'ipcw_clipped4h': 0.0, 'brier8h': 0.1911, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3723}
+forward cqrnn6 {'mae': 8.6137, 'last2h': 7.3898, 'last1h': 6.5962, 'bias2h': 7.2919, 'coverage': 0.2089, 'width': 6.2768, 'brier1h': 0.0992, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2761, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2517, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4323}
+forward cqrnn32 {'mae': 8.4495, 'last2h': 5.4241, 'last1h': 4.9079, 'bias2h': 5.2523, 'coverage': 0.0224, 'width': 3.007, 'brier1h': 0.1067, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2787, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2873, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.2786}
+forward mix6 {'mae': 7.3791, 'last2h': 5.5624, 'last1h': 3.8317, 'bias2h': 5.3193, 'coverage': 0.2974, 'width': 13.8264, 'brier1h': 0.0916, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2507, 'ipcw_clipped4h': 0.0, 'brier8h': 0.221, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.4915}
+forward mix32 {'mae': 8.4434, 'last2h': 4.9295, 'last1h': 4.2185, 'bias2h': 4.6435, 'coverage': 0.1831, 'width': 10.703, 'brier1h': 0.1081, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2656, 'ipcw_clipped4h': 0.0, 'brier8h': 0.2598, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.2565}
+forward rsf32 {'mae': 5.0775, 'last2h': 4.052, 'last1h': 3.3817, 'bias2h': 3.9265, 'coverage': 0.4924, 'width': 10.6038, 'brier1h': 0.0786, 'ipcw_clipped1h': 0.0, 'brier4h': 0.1914, 'ipcw_clipped4h': 0.0, 'brier8h': 0.1546, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3028}
+forward nested_selected {'mae': 5.6594, 'last2h': 4.7473, 'last1h': 4.1106, 'bias2h': 4.6253, 'coverage': 0.324, 'width': 7.7367, 'brier1h': 0.0867, 'ipcw_clipped1h': 0.0, 'brier4h': 0.2195, 'ipcw_clipped4h': 0.0, 'brier8h': 0.1911, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.3723}
+COMPLETED

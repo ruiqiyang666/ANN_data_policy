@@ -1,0 +1,357 @@
+[
+  {
+    "file": "models/feedrate/all_dates/bundle.joblib",
+    "bytes": 338478,
+    "sha256": "c2aa29ac6cf362172fe10504a3a0afe3b09b4f6e0a4ba61c220a8400370ab4ec"
+  },
+  {
+    "file": "models/feedrate/f6/bundle.joblib",
+    "bytes": 338308,
+    "sha256": "2b7680a818957d1c25a5d5871b463aa7329cddf030c024d5963117c31ff21be3"
+  },
+  {
+    "file": "models/feedrate/f6/export.joblib",
+    "bytes": 338696,
+    "sha256": "891c2bec44751efe930c1dbbfed5e8e531f61586ca46e4ab89c531f6584ee7da"
+  },
+  {
+    "file": "models/feedrate/f3/bundle.joblib",
+    "bytes": 337999,
+    "sha256": "1480675728ce0e41823e29e1f08c2f29ecf06767ac0110fe6cd9330739e9ed89"
+  },
+  {
+    "file": "models/feedrate/f3/export.joblib",
+    "bytes": 338147,
+    "sha256": "5a819699162bd4f4c81139aebdadc06bb1013b022a281f089af79848c5d777bd"
+  },
+  {
+    "file": "models/feedrate/f5/bundle.joblib",
+    "bytes": 337862,
+    "sha256": "fb4e22cd7149cf51fbb86ec86dbf301a2849ce91573103025911122262860612"
+  },
+  {
+    "file": "models/feedrate/f5/export.joblib",
+    "bytes": 338239,
+    "sha256": "da73ec5cf0f5ef4ceac19562ac1043c1dbca0fc8c6564e09049d742683eb9c90"
+  },
+  {
+    "file": "models/feedrate/f2/bundle.joblib",
+    "bytes": 337251,
+    "sha256": "ccea81308d6972570b8b9a04b1c11dd9c7a2533f7e0121a3cbed20f81c06ad34"
+  },
+  {
+    "file": "models/feedrate/f2/export.joblib",
+    "bytes": 337637,
+    "sha256": "d7f28d0a708030f2f6d4c3ce944933efa48121cc603a1c3a33d388a30555d4d3"
+  },
+  {
+    "file": "models/feedrate/f4/bundle.joblib",
+    "bytes": 339157,
+    "sha256": "5201206739ac15a4b8ab673a7e1eb9335c3a11854decf196ff6ed99124f147c8"
+  },
+  {
+    "file": "models/feedrate/f4/export.joblib",
+    "bytes": 339543,
+    "sha256": "74291b4020f30d93949e68f144f2efc73e3d371094cf59f03ff01938a7b40858"
+  },
+  {
+    "file": "models/feedrate/f1/bundle.joblib",
+    "bytes": 340442,
+    "sha256": "661270ee0d3bf12a2876a73fd54185d59135ed56da06bd3687a2b21aa20568a1"
+  },
+  {
+    "file": "models/feedrate/f1/export.joblib",
+    "bytes": 340554,
+    "sha256": "71008ae0350752dc97d233f94e2884e073ea99bfd3a3198969baaf9d8407e58c"
+  },
+  {
+    "file": "models/voltage/all_dates/bundle.joblib",
+    "bytes": 339499,
+    "sha256": "ea4f0caca2a0e4c3640c9946e158ade17cc568a76a45bed284a2fca1eee99cf5"
+  },
+  {
+    "file": "models/voltage/f6/bundle.joblib",
+    "bytes": 338863,
+    "sha256": "8da0f94516313b4fb9ba7a7185cfd092acf64aee904891b6c784a8e71617c213"
+  },
+  {
+    "file": "models/voltage/f6/export.joblib",
+    "bytes": 339253,
+    "sha256": "0bf6d735774e3323f414cd3e2180fd1c8b2e27cfccce7c66c80bfe07bf996dee"
+  },
+  {
+    "file": "models/voltage/f3/bundle.joblib",
+    "bytes": 339199,
+    "sha256": "22f41a660bfae2f7b87024a745f3b5cd33d1ee0627614df74c9578504dae711c"
+  },
+  {
+    "file": "models/voltage/f3/export.joblib",
+    "bytes": 339348,
+    "sha256": "ef2d02f1d0cb8c284132f06ac4e675e704c3a7a68e43c4c79195fe73f36b8062"
+  },
+  {
+    "file": "models/voltage/f5/bundle.joblib",
+    "bytes": 339137,
+    "sha256": "bc041a64830150242e02d1252ea230acfea76d35d3e97f1414dd8e7788e7ec86"
+  },
+  {
+    "file": "models/voltage/f5/export.joblib",
+    "bytes": 339522,
+    "sha256": "2786a8e08b58a18be6b9a19397a32b315e2dcfc49762ee0578e235508b0b682b"
+  },
+  {
+    "file": "models/voltage/f2/bundle.joblib",
+    "bytes": 337437,
+    "sha256": "97a58b184360e26ee5093adf58afc69f156332276e132f41e3dcc2529482ade9"
+  },
+  {
+    "file": "models/voltage/f2/export.joblib",
+    "bytes": 337815,
+    "sha256": "2d9b55c3ba8cbc5164ec0588f793defe9c52fa868f5c54243619cd09ee1a7fb5"
+  },
+  {
+    "file": "models/voltage/f4/bundle.joblib",
+    "bytes": 338466,
+    "sha256": "953b840baf36567070a4789ca652b292a2287b0475742538cf96e7b8cc383746"
+  },
+  {
+    "file": "models/voltage/f4/export.joblib",
+    "bytes": 338867,
+    "sha256": "2c337b07c92a2ba3a6e846bd931f631b94d723e28e584b44a2eab7054939169f"
+  },
+  {
+    "file": "models/voltage/f1/bundle.joblib",
+    "bytes": 337157,
+    "sha256": "7eefae2852cc0bf80da469e99574976cf831201fcd6e9f591ff879689179fe6d"
+  },
+  {
+    "file": "models/voltage/f1/export.joblib",
+    "bytes": 337259,
+    "sha256": "6e27cef87c99bf05e3872b3ac3c1efc3156dc1a9264a1414711a4d22feb57028"
+  },
+  {
+    "file": "models/hopper_pressure/all_dates/bundle.joblib",
+    "bytes": 339143,
+    "sha256": "3c3c13769fae3c6fe6b706605f2cb8b0810a07684b8961a5996bd8161f1d23c3"
+  },
+  {
+    "file": "models/hopper_pressure/f6/bundle.joblib",
+    "bytes": 338745,
+    "sha256": "3fbeefb73f2048ca9dc07bcd3624429fdf4c945b160105a2f1aa3d771e8bf551"
+  },
+  {
+    "file": "models/hopper_pressure/f6/export.joblib",
+    "bytes": 339128,
+    "sha256": "7ddc6d1d4e559718d11c63df284fd40a400d7c1cecffbf94b077d3781b5b6d7d"
+  },
+  {
+    "file": "models/hopper_pressure/f3/bundle.joblib",
+    "bytes": 338070,
+    "sha256": "309ce81280a1de5c798b7f0c36fbd15d5f69f0eb853abcbf0f95c5b4aa6a8693"
+  },
+  {
+    "file": "models/hopper_pressure/f3/export.joblib",
+    "bytes": 338453,
+    "sha256": "32e2ae306dcd577496f80ee4c2e78a4dc875f22e4af510ccce9f0eb7bfe6b0a8"
+  },
+  {
+    "file": "models/hopper_pressure/f5/bundle.joblib",
+    "bytes": 339811,
+    "sha256": "8298f829ab02af972bb7dbdcd62eb444fdf752c4f0ce6417c55b18a596109928"
+  },
+  {
+    "file": "models/hopper_pressure/f5/export.joblib",
+    "bytes": 340199,
+    "sha256": "cef62ebd83f70646a3e40a8dd05a7af8fc7716f92963a19dae4b780cc9da2440"
+  },
+  {
+    "file": "models/hopper_pressure/f2/bundle.joblib",
+    "bytes": 337927,
+    "sha256": "a3d7dbfd3210bb7c5b800984ff73a0e102684fe9e5a61240f1b0c619a06b36f4"
+  },
+  {
+    "file": "models/hopper_pressure/f2/export.joblib",
+    "bytes": 338330,
+    "sha256": "8573ceb365dcc532d3daa1c4e00e40e56767e4d68799ae429b2e814f6b6340c6"
+  },
+  {
+    "file": "models/hopper_pressure/f4/bundle.joblib",
+    "bytes": 339973,
+    "sha256": "c0df6e041a767469fb3812ca1c0f09512333b6438f4f37bee04d11eb5f39ab33"
+  },
+  {
+    "file": "models/hopper_pressure/f4/export.joblib",
+    "bytes": 340351,
+    "sha256": "7fd9b8c7c270f2b2a8bdd22afbc9bfaffcc44072db8b99f0c4ab197a886446e2"
+  },
+  {
+    "file": "models/hopper_pressure/f1/bundle.joblib",
+    "bytes": 337603,
+    "sha256": "d40eb32f12c1920018d78eb3dc89a06cbeed28e428b3a9f80de2be09a7dd6077"
+  },
+  {
+    "file": "models/hopper_pressure/f1/export.joblib",
+    "bytes": 337723,
+    "sha256": "f8d586dd21347859f706f1ee071d73ff6fa4c0f28f2ddb406a22dcf070bc7036"
+  },
+  {
+    "file": "src/train_neural.py",
+    "bytes": 6307,
+    "sha256": "935748136544e02c4d6a0982b4ac47c1bf0ba8abdbc469d8461682c16af37603"
+  },
+  {
+    "file": "src/complete_all_dates_eta.py",
+    "bytes": 1323,
+    "sha256": "f57633d091934e19005ff3d0c4d20e66f0371329db8b76cc24da70175bef33c9"
+  },
+  {
+    "file": "src/real28.py",
+    "bytes": 21040,
+    "sha256": "6a5bbc3d0813dc9cc42bfbc9a10e9ffbe3132bdc9d295f885af712cc9d4909c8"
+  },
+  {
+    "file": "src/refit_all_dates.py",
+    "bytes": 2722,
+    "sha256": "e734f28ca8bc3ac6fb6a4d0145966fe2d7048973de897da1b4b76697a7276c46"
+  },
+  {
+    "file": "src/export_neural.py",
+    "bytes": 2858,
+    "sha256": "3b3d324a19aef23402b21a7626c938281d6e6854e6285f5cd8155b95eb79044a"
+  },
+  {
+    "file": "status.json",
+    "bytes": 135,
+    "sha256": "fe91228b201a31d9bc528302f9804d84bbb1c87a3b93dc8d9a64ccb7515ddb1c"
+  },
+  {
+    "file": "export.json",
+    "bytes": 3739,
+    "sha256": "a2e951964384c6084484da0aae00899b4fff3822737f572fb802c780fd629bee"
+  },
+  {
+    "file": "all_dates_refit.json",
+    "bytes": 557,
+    "sha256": "2f6a611fa3058a04c620e067deea0d01a44989ce8477ee3946569b0590938405"
+  },
+  {
+    "file": "hopper_pressure_report.json",
+    "bytes": 7458,
+    "sha256": "4511a2fa530c8eb74a85d4079fed241aaa1194f078b069a11254ab5139dee644"
+  },
+  {
+    "file": "feedrate_report.json",
+    "bytes": 8444,
+    "sha256": "640045722149c1f3d33b2b9aee9241e85e70a55ab340a03e00e2ef2fd34430d5"
+  },
+  {
+    "file": "voltage_report.json",
+    "bytes": 9057,
+    "sha256": "dca03873f7c6cf0a89ef85a9ae51181b770ad0f8c1a2611dd3a83d0b65522f05"
+  },
+  {
+    "file": "protocol.json",
+    "bytes": 1249,
+    "sha256": "ac7b13167741a24a7a010f4012ade92b6c14c9a983a47a91c18bea044c5a9bfe"
+  },
+  {
+    "file": "all_dates_eta.json",
+    "bytes": 410,
+    "sha256": "d29a289006ba64817299bcb3249a9fe60e838e63a430a98a57bef177ebb8c5fe"
+  },
+  {
+    "file": "comparison.json",
+    "bytes": 26849,
+    "sha256": "48746be9cfb7397f662956397b6c8d7649fbe35ff22009fdd26ef61a4cf43e97"
+  },
+  {
+    "file": "voltage_f3.npz",
+    "bytes": 662662,
+    "sha256": "f3266b203f07365a98ff408d5ce066c580d3737414cc9c207ff9ea021f8581ce"
+  },
+  {
+    "file": "feedrate_f4.npz",
+    "bytes": 444094,
+    "sha256": "29181e176b9aac0481ffb2d4e47df89f704bfc162ede1f2ba3dfdfeb2c7e1af5"
+  },
+  {
+    "file": "voltage_f2.npz",
+    "bytes": 336766,
+    "sha256": "69b7528412989283feb11c95e08ec4db704504ecbbd25cc847c93638b460f3cb"
+  },
+  {
+    "file": "feedrate_f1.npz",
+    "bytes": 529558,
+    "sha256": "af19818c459b30153f9ac54ee87abbf9f8d0caf3897f1355f0a470d28a63444f"
+  },
+  {
+    "file": "hopper_pressure_f6.npz",
+    "bytes": 335494,
+    "sha256": "3e3864553445bc394b8fe74a4163536c2c01f553be5fc69e20a053255f3b4351"
+  },
+  {
+    "file": "hopper_pressure_f4.npz",
+    "bytes": 444094,
+    "sha256": "585e967a98f2a5c35068a2b2236dcf5dcc50d11b433f9c57dab049d107f441f8"
+  },
+  {
+    "file": "feedrate_f6.npz",
+    "bytes": 335494,
+    "sha256": "41413c2e65647eab64be70d7515df020d5a9cbaa5ce3d6332c56beb0a4f9e53a"
+  },
+  {
+    "file": "feedrate_f3.npz",
+    "bytes": 662662,
+    "sha256": "1743d8ae3cd5610565513492a740d90f72cf56f582bd9178e547abe62675127b"
+  },
+  {
+    "file": "voltage_f4.npz",
+    "bytes": 444094,
+    "sha256": "5594620741012b6c48be232ec6e6beea5d63015e921fe8b4164a021707df39b6"
+  },
+  {
+    "file": "feedrate_f2.npz",
+    "bytes": 336766,
+    "sha256": "854e074c2fcaf6aa0c8d5795331be8f75b32c21785f8fc072dedf89b3aab0701"
+  },
+  {
+    "file": "hopper_pressure_f2.npz",
+    "bytes": 336766,
+    "sha256": "9cc9832bdccb077d9c7ab02b5e33622b05f8e0811f9c667b5cbcfcbdb254569d"
+  },
+  {
+    "file": "voltage_f6.npz",
+    "bytes": 335494,
+    "sha256": "359aea315cad08dd316fa0e0c6563fa1c919797561b93d60ee0990cf82fabaf5"
+  },
+  {
+    "file": "hopper_pressure_f1.npz",
+    "bytes": 529558,
+    "sha256": "d1483f825b6671a99a3c075d0a985f501fd1eda8357ca2bb15e6128b39f150b0"
+  },
+  {
+    "file": "hopper_pressure_f3.npz",
+    "bytes": 662662,
+    "sha256": "451e71bc16b1627eca21cbf45631ffb350eedecd0d30e5d2839626b73769434e"
+  },
+  {
+    "file": "feedrate_f5.npz",
+    "bytes": 831046,
+    "sha256": "98544dcac3d98727f2f4a26b5638f236cf6bbb643a24200ef141acb43651b5c6"
+  },
+  {
+    "file": "voltage_f1.npz",
+    "bytes": 529558,
+    "sha256": "5942139898449a6f5b641447563e83bf1288110d09dfafbcf6767157855a49b4"
+  },
+  {
+    "file": "voltage_f5.npz",
+    "bytes": 831046,
+    "sha256": "8bcde06438d5a55c7eec0ae43ad4bd2c7e0ae2ee42716c239a3aff324cd3a674"
+  },
+  {
+    "file": "hopper_pressure_f5.npz",
+    "bytes": 831046,
+    "sha256": "33c558960e4aaa81c6e028489f03892686d53ddcb7d117ca1097a8a8619e5889"
+  }
+]

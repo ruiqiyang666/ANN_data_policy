@@ -1,0 +1,2944 @@
+{
+  "frozen_at": "2026-11-04T20:21:26+0800",
+  "risk_choice": "extra_trees",
+  "life_choice": null,
+  "risk_methods": [
+    "logistic",
+    "histgb",
+    "extra_trees",
+    "random_forest",
+    "tcn",
+    "gru",
+    "patch_transformer",
+    "spline_logistic",
+    "rbf_logistic"
+  ],
+  "life_methods": [
+    "constant",
+    "lognormal_aft",
+    "weibull_aft",
+    "spline_aft",
+    "mlp_aft",
+    "logistic_hazard",
+    "boosted_hazard",
+    "forest_hazard"
+  ],
+  "risk_summaries": [
+    {
+      "name": "logistic",
+      "algorithm_family": "logistic",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.0990148649285148,
+          "event_macro_ap": 0.08427761904913167,
+          "roc_auc": 0.4841020876813064,
+          "brier": 0.030544114451501264
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.10212045095798111,
+          "event_macro_ap": 0.014623179774472856,
+          "roc_auc": 0.7094716464847769,
+          "brier": 0.04216553920397791
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.016002105946882242,
+          "event_macro_ap": 0.0029282117049490557,
+          "roc_auc": 0.7309834886979834,
+          "brier": 0.06439796179810331
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.033943003509517865,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.028147197155439178,
+        "event_macro_ap": 0.0038638218186517357,
+        "roc_auc": 0.5581498045496275,
+        "brier": 0.04778922566671209
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.02815413818261568,
+        "event_macro_ap": 0.0038662321663577416,
+        "roc_auc": 0.5581771036978941,
+        "brier": 0.015000027908702838
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 4,
+        "missed_events": 36,
+        "event_recall": 0.1,
+        "alerts": 28,
+        "false_alerts": 24,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 13.592599584670568,
+        "threshold": 0.03444985231083142
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.02708745582927017,
+        "event_macro_ap": 0.021643495845442753,
+        "roc_auc": 0.5949317889983367,
+        "brier": 0.07054181144897476
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "histgb",
+      "algorithm_family": "histgb",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.06998302856200853,
+          "event_macro_ap": 0.03143535658687294,
+          "roc_auc": 0.6467274892213885,
+          "brier": 0.015822181225954298
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.15273535639574065,
+          "event_macro_ap": 0.04448195443007473,
+          "roc_auc": 0.7146420198810263,
+          "brier": 0.02701108209371902
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.018228632189940256,
+          "event_macro_ap": 0.004539212163221712,
+          "roc_auc": 0.7195380897256239,
+          "brier": 0.009178249712865603
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.02681884106005646,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.0324317773938087,
+        "event_macro_ap": 0.002459281610805062,
+        "roc_auc": 0.6007734923376273,
+        "brier": 0.01540043923207777
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.0324317773938087,
+        "event_macro_ap": 0.002459281610805062,
+        "roc_auc": 0.6007734923376273,
+        "brier": 0.014984857535107999
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 6,
+        "missed_events": 34,
+        "event_recall": 0.15,
+        "alerts": 38,
+        "false_alerts": 32,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 18.12346611289409,
+        "threshold": 0.03227120481262026
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.0332802134576864,
+        "event_macro_ap": 0.019163732464659383,
+        "roc_auc": 0.8028253919008592,
+        "brier": 0.008859686582681683
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "extra_trees",
+      "algorithm_family": "extra_trees",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.04749136166778238,
+          "event_macro_ap": 0.021838734165571593,
+          "roc_auc": 0.614217561122415,
+          "brier": 0.016324528155661884
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.06276580373280116,
+          "event_macro_ap": 0.01654505052732249,
+          "roc_auc": 0.5515889389827606,
+          "brier": 0.027882596095567473
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.19874913592478666,
+          "event_macro_ap": 0.10314278034515598,
+          "roc_auc": 0.802149515627856,
+          "brier": 0.0087675902532588
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.04717552167935002,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.08361175807731,
+        "event_macro_ap": 0.02178306667701199,
+        "roc_auc": 0.6003767447161531,
+        "brier": 0.015587837584262083
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.08361175807731,
+        "event_macro_ap": 0.02178306667701199,
+        "roc_auc": 0.600376744716153,
+        "brier": 0.015014273008991825
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 8,
+        "missed_events": 32,
+        "event_recall": 0.2,
+        "alerts": 31,
+        "false_alerts": 23,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 13.026241268642627,
+        "threshold": 0.019516359072098716
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.08179285855924616,
+        "event_macro_ap": 0.055615627981072335,
+        "roc_auc": 0.8652205761955238,
+        "brier": 0.007716336082330753
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "random_forest",
+      "algorithm_family": "random_forest",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.09843942720041725,
+          "event_macro_ap": 0.030338970274627283,
+          "roc_auc": 0.7445987216141421,
+          "brier": 0.016059412014786244
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.05649995468731685,
+          "event_macro_ap": 0.008701997970899409,
+          "roc_auc": 0.6149143740210044,
+          "brier": 0.03611988844964186
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.024745927041886658,
+          "event_macro_ap": 0.006447914903730793,
+          "roc_auc": 0.7020778651069273,
+          "brier": 0.02665855144133032
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.015162961049752495,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03892341122508303,
+        "event_macro_ap": 0.004053387086991465,
+        "roc_auc": 0.6713996582130168,
+        "brier": 0.025070641427972985
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03892341122508303,
+        "event_macro_ap": 0.004053387086991465,
+        "roc_auc": 0.6713996582130166,
+        "brier": 0.014922996063062265
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 9,
+        "missed_events": 31,
+        "event_recall": 0.225,
+        "alerts": 40,
+        "false_alerts": 31,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 17.557107796866152,
+        "threshold": 0.03318917893776676
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.05967632444919185,
+        "event_macro_ap": 0.04615134477052119,
+        "roc_auc": 0.8536212587364376,
+        "brier": 0.009867762612638971
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "tcn",
+      "algorithm_family": "tcn",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.069223202505459,
+          "event_macro_ap": 0.050213703698836654,
+          "roc_auc": 0.5826644596955165,
+          "brier": 0.01570785604417324
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.15597160641450614,
+          "event_macro_ap": 0.019784512501969515,
+          "roc_auc": 0.7699324633819972,
+          "brier": 0.029356129467487335
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.014885915001440682,
+          "event_macro_ap": 0.0027336647632610987,
+          "roc_auc": 0.7057586059830622,
+          "brier": 0.021244050934910774
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.024243960321355756,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03633096953682531,
+        "event_macro_ap": 0.002953298611005003,
+        "roc_auc": 0.6336176617171897,
+        "brier": 0.021111933514475822
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.035812230468869714,
+        "event_macro_ap": 0.0029859946135080877,
+        "roc_auc": 0.6334005943720438,
+        "brier": 0.014941946616270173
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 4,
+        "missed_events": 36,
+        "event_recall": 0.1,
+        "alerts": 34,
+        "false_alerts": 30,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 16.99074948083821,
+        "threshold": 0.081889817781817
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.02140637686706246,
+        "event_macro_ap": 0.008932700526450876,
+        "roc_auc": 0.8047683066608063,
+        "brier": 0.015303215011954308
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "gru",
+      "algorithm_family": "gru",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.09262648535494616,
+          "event_macro_ap": 0.06582135462547423,
+          "roc_auc": 0.5341444824630844,
+          "brier": 0.015498190186917782
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.23493956560687143,
+          "event_macro_ap": 0.055950808033336255,
+          "roc_auc": 0.8073413595329957,
+          "brier": 0.027630969882011414
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.015027525589595688,
+          "event_macro_ap": 0.0031243239156301494,
+          "roc_auc": 0.6893036820406588,
+          "brier": 0.03389541059732437
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.041632162191480214,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03472243689482127,
+        "event_macro_ap": 0.002606548905286043,
+        "roc_auc": 0.6493667585806617,
+        "brier": 0.026149244979023933
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03467506246490707,
+        "event_macro_ap": 0.002592244933152838,
+        "roc_auc": 0.6495068036230212,
+        "brier": 0.015011676693431925
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 2,
+        "missed_events": 38,
+        "event_recall": 0.05,
+        "alerts": 23,
+        "false_alerts": 21,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 11.893524636586747,
+        "threshold": 0.04552160114773375
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.020459792502768304,
+        "event_macro_ap": 0.011579563506838532,
+        "roc_auc": 0.7137645750924275,
+        "brier": 0.027575789019465446
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "patch_transformer",
+      "algorithm_family": "patch_transformer",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.04829779201061238,
+          "event_macro_ap": 0.02664865382275115,
+          "roc_auc": 0.5867054413179019,
+          "brier": 0.01604323647916317
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.13982364139393086,
+          "event_macro_ap": 0.01666713956864348,
+          "roc_auc": 0.8167190674930653,
+          "brier": 0.02799493633210659
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.013660350160112092,
+          "event_macro_ap": 0.002724117706147674,
+          "roc_auc": 0.6533217977619368,
+          "brier": 0.01786656491458416
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.0153466370325141,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.02341033138426907,
+        "event_macro_ap": 0.001200693951146618,
+        "roc_auc": 0.5985787149323294,
+        "brier": 0.019463161006569862
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.022828735287761276,
+        "event_macro_ap": 0.0012444331023794462,
+        "roc_auc": 0.6045344091146708,
+        "brier": 0.015011172424507942
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 2,
+        "missed_events": 38,
+        "event_recall": 0.05,
+        "alerts": 29,
+        "false_alerts": 27,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 15.29167453275439,
+        "threshold": 0.050920308225965806
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.017170800472797145,
+        "event_macro_ap": 0.007050580304895976,
+        "roc_auc": 0.7422494549152425,
+        "brier": 0.009817630052566528
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "spline_logistic",
+      "algorithm_family": "spline_logistic",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.044073778836141796,
+          "event_macro_ap": 0.020992723901152043,
+          "roc_auc": 0.5492821019437484,
+          "brier": 0.02088259102680981
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.07210661350939825,
+          "event_macro_ap": 0.014662490748977988,
+          "roc_auc": 0.6745678715227352,
+          "brier": 0.02849810031155706
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.04678841803222858,
+          "event_macro_ap": 0.015504188687187151,
+          "roc_auc": 0.6832793517333822,
+          "brier": 0.015616467632661965
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.017053134445772392,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03365475655621001,
+        "event_macro_ap": 0.005304268787384143,
+        "roc_auc": 0.5086049303497024,
+        "brier": 0.02027269788131006
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.03365475655621001,
+        "event_macro_ap": 0.005304268787384143,
+        "roc_auc": 0.5086049303497024,
+        "brier": 0.015019905796375696
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 4,
+        "missed_events": 36,
+        "event_recall": 0.1,
+        "alerts": 24,
+        "false_alerts": 20,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 11.327166320558806,
+        "threshold": 0.023313898809240872
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.07244466151169657,
+        "event_macro_ap": 0.0420286361672522,
+        "roc_auc": 0.898325534096883,
+        "brier": 0.01249229664068842
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    },
+    {
+      "name": "rbf_logistic",
+      "algorithm_family": "rbf_logistic",
+      "fold_scores": [
+        {
+          "n": 22003,
+          "positive_windows": 353,
+          "events": 12,
+          "prevalence": 0.01604326682725083,
+          "average_precision": 0.08445801189398539,
+          "event_macro_ap": 0.05073098957936814,
+          "roc_auc": 0.6918993254780863,
+          "brier": 0.01590276437467465
+        },
+        {
+          "n": 13981,
+          "positive_windows": 392,
+          "events": 20,
+          "prevalence": 0.028038051641513483,
+          "average_precision": 0.08556256152742132,
+          "event_macro_ap": 0.010021982661415638,
+          "roc_auc": 0.7495374409974455,
+          "brier": 0.02874609529901718
+        },
+        {
+          "n": 27580,
+          "positive_windows": 225,
+          "events": 8,
+          "prevalence": 0.008158085569253081,
+          "average_precision": 0.030333933388362655,
+          "event_macro_ap": 0.011113682752009236,
+          "roc_auc": 0.6842507768232499,
+          "brier": 0.018600367299540014
+        }
+      ],
+      "mean_fold_event_macro_ap": 0.02395555166426434,
+      "pooled_oof": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.04120330072757329,
+        "event_macro_ap": 0.0035387095140586404,
+        "roc_auc": 0.679722340898258,
+        "brier": 0.01989814695476747
+      },
+      "oof_calibrated": {
+        "n": 63564,
+        "positive_windows": 970,
+        "events": 40,
+        "prevalence": 0.015260210181863949,
+        "average_precision": 0.04120330072757329,
+        "event_macro_ap": 0.0035387095140586404,
+        "roc_auc": 0.679722340898258,
+        "brier": 0.014872763929772421
+      },
+      "development_alarm_policy": {
+        "events": 40,
+        "detected_events": 4,
+        "missed_events": 36,
+        "event_recall": 0.1,
+        "alerts": 37,
+        "false_alerts": 33,
+        "observable_powered_hours": 176.56666666666666,
+        "false_alerts_per_100_hours": 18.68982442892203,
+        "threshold": 0.10950711805937388
+      },
+      "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+      "threshold_selection_is_not_unbiased_validation": true,
+      "selection": {
+        "n": 12983,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006932142031887853,
+        "average_precision": 0.0428514151339138,
+        "event_macro_ap": 0.021587060359189513,
+        "roc_auc": 0.8553220093590836,
+        "brier": 0.01578809645378582
+      },
+      "history_period_accessed": false,
+      "actual_distinct_model": true,
+      "status": "trained"
+    }
+  ],
+  "life_summaries": [
+    {
+      "name": "constant",
+      "status": "trained",
+      "real_algorithm_family": "constant",
+      "constant_is_control_not_counted": true,
+      "forward_cycle_macro_log_distance": 1.1505860415494789,
+      "forward_cycle_macro_hour_distance": 9.23948018739336,
+      "fits": [
+        {
+          "name": "constant",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 0.43180470000152127,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 15.870237270048813,
+                "mean_log_interval_distance": 1.3957880643117033,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 4.384810855845972,
+                "overestimate_fraction": 0.11348856723306062,
+                "model_interval_overlap_fraction": 0.9973428431578212
+              }
+            ],
+            "macro_interval_distance": 15.870237270048813,
+            "macro_log_interval_distance": 1.3957880643117033,
+            "median_prediction_quantiles": [
+              4.518977522512638,
+              4.518977522512638,
+              4.518977522512638,
+              4.518977522512638,
+              4.518977522512638
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "constant",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 0.3434159999997064,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 708.157401580309,
+                "mean_log_interval_distance": 1.4084748605285755,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 193.3,
+                "overestimate_fraction": 0.11747430249632893,
+                "model_interval_overlap_fraction": 0.9983217956786239
+              }
+            ],
+            "macro_interval_distance": 708.157401580309,
+            "macro_log_interval_distance": 1.4084748605285755,
+            "median_prediction_quantiles": [
+              201.0,
+              201.0,
+              201.0,
+              201.0,
+              201.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "constant",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 0.39397420000022976,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 2.608723104737908,
+                "mean_log_interval_distance": 0.9053840187872545,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 1.7523764225589007,
+                "overestimate_fraction": 0.2314275932899692,
+                "model_interval_overlap_fraction": 0.9914412872304006
+              }
+            ],
+            "macro_interval_distance": 2.608723104737908,
+            "macro_log_interval_distance": 0.9053840187872545,
+            "median_prediction_quantiles": [
+              1.886820867003345,
+              1.886820867003345,
+              1.886820867003345,
+              1.886820867003345,
+              1.886820867003345
+            ],
+            "censor_median_below_observed_lower_fraction": 0.8228484565014031,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "constant",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 0.359774100001232,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 126.53098254022595,
+                "mean_log_interval_distance": 0.9021803272220043,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 81.03333333333333,
+                "overestimate_fraction": 0.19958918178705923,
+                "model_interval_overlap_fraction": 0.9931530297843204
+              }
+            ],
+            "macro_interval_distance": 126.53098254022595,
+            "macro_log_interval_distance": 0.9021803272220043,
+            "median_prediction_quantiles": [
+              89.0,
+              89.0,
+              89.0,
+              89.0,
+              89.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.7609915809167446,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "constant",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 0.4615143999981228,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 2.2802999055858866,
+                "mean_log_interval_distance": 4.081895604210038,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 2.2802999055858866,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 2.2802999055858866,
+            "macro_log_interval_distance": 4.081895604210038,
+            "median_prediction_quantiles": [
+              2.3027999055858865,
+              2.3027999055858865,
+              2.3027999055858865,
+              2.3027999055858865,
+              2.3027999055858865
+            ],
+            "censor_median_below_observed_lower_fraction": 0.8763515683545658,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "constant",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 0.421650000000227,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 106.0,
+                "mean_log_interval_distance": 3.9889840465642745,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 106.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 106.0,
+            "macro_log_interval_distance": 3.9889840465642745,
+            "median_prediction_quantiles": [
+              107.0,
+              107.0,
+              107.0,
+              107.0,
+              107.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.8771009527887806,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "lognormal_aft",
+      "status": "trained",
+      "real_algorithm_family": "lognormal_aft",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.4048879184664378,
+      "forward_cycle_macro_hour_distance": 45.943860751640514,
+      "fits": [
+        {
+          "name": "lognormal_aft",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 10.352694299999712,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 87.02024511344084,
+                "mean_log_interval_distance": 1.8106727688863058,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 37.18325119877135,
+                "overestimate_fraction": 0.3057828123907419,
+                "model_interval_overlap_fraction": 0.43108873505349277
+              }
+            ],
+            "macro_interval_distance": 87.02024511344084,
+            "macro_log_interval_distance": 1.8106727688863058,
+            "median_prediction_quantiles": [
+              0.0009826295502240539,
+              0.6739186378747305,
+              2.6094378631730337,
+              259.2945465647478,
+              8653.391441807025
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "lognormal_aft",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 9.945742300002166,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 3917.4009509824486,
+                "mean_log_interval_distance": 1.8259776311911173,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 1653.1888888888889,
+                "overestimate_fraction": 0.31850919516117754,
+                "model_interval_overlap_fraction": 0.39193063422138313
+              }
+            ],
+            "macro_interval_distance": 3917.4009509824486,
+            "macro_log_interval_distance": 1.8259776311911173,
+            "median_prediction_quantiles": [
+              0.0,
+              29.0,
+              114.0,
+              11456.0,
+              406736.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "lognormal_aft",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 9.542715299998235,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 4.867476389840195,
+                "mean_log_interval_distance": 0.9991030680465697,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 6.389471889300507,
+                "overestimate_fraction": 0.5118110236220472,
+                "model_interval_overlap_fraction": 0.8521054433413214
+              }
+            ],
+            "macro_interval_distance": 4.867476389840195,
+            "macro_log_interval_distance": 0.9991030680465697,
+            "median_prediction_quantiles": [
+              0.0010040503948547065,
+              1.6052629426745468,
+              7.959308058341895,
+              15.661479957634862,
+              436.73473100242
+            ],
+            "censor_median_below_observed_lower_fraction": 0.45989242282507015,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "lognormal_aft",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 7.222280699999828,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 178.29921259842519,
+                "mean_log_interval_distance": 0.942588153012971,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 274.2111111111111,
+                "overestimate_fraction": 0.500513522766176,
+                "model_interval_overlap_fraction": 0.8517630948305375
+              }
+            ],
+            "macro_interval_distance": 178.29921259842519,
+            "macro_log_interval_distance": 0.942588153012971,
+            "median_prediction_quantiles": [
+              0.0,
+              73.0,
+              370.0,
+              730.0,
+              11164.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.44539289055191766,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "lognormal_aft",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 4.170030399996904,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 31.29692819351088,
+                "mean_log_interval_distance": 6.685323638160662,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 31.29692819351088,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 31.29692819351088,
+            "macro_log_interval_distance": 6.685323638160662,
+            "median_prediction_quantiles": [
+              0.08429702113888182,
+              2.1286688217305696,
+              5.24596461955852,
+              9.757022840616628,
+              63.151605809124845
+            ],
+            "censor_median_below_observed_lower_fraction": 0.6772294186917889,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "lognormal_aft",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 4.9787008999992395,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 1372.5,
+                "mean_log_interval_distance": 6.532694885008014,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 1372.5,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 1372.5,
+            "macro_log_interval_distance": 6.532694885008014,
+            "median_prediction_quantiles": [
+              3.0,
+              109.0,
+              256.0,
+              455.0,
+              2011.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.6597794668665025,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "weibull_aft",
+      "status": "trained",
+      "real_algorithm_family": "weibull_aft",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.384369279241803,
+      "forward_cycle_macro_hour_distance": 38.356850409594536,
+      "fits": [
+        {
+          "name": "weibull_aft",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 0.7038116999974591,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 69.2234166832832,
+                "mean_log_interval_distance": 1.7962333240996193,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 37.79928568539709,
+                "overestimate_fraction": 0.3088595203132648,
+                "model_interval_overlap_fraction": 0.4963988532270471
+              }
+            ],
+            "macro_interval_distance": 69.2234166832832,
+            "macro_log_interval_distance": 1.7962333240996193,
+            "median_prediction_quantiles": [
+              0.0022295726187873204,
+              0.6607935238616278,
+              2.596126329825132,
+              250.11886861473164,
+              3475.877455889655
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "weibull_aft",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 0.7988909000014246,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 2917.3258513390674,
+                "mean_log_interval_distance": 1.7763052822996228,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 1670.8666666666666,
+                "overestimate_fraction": 0.3137542829172785,
+                "model_interval_overlap_fraction": 0.4903852877421159
+              }
+            ],
+            "macro_interval_distance": 2917.3258513390674,
+            "macro_log_interval_distance": 1.7763052822996228,
+            "median_prediction_quantiles": [
+              0.0,
+              30.0,
+              117.0,
+              10678.0,
+              155802.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "weibull_aft",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 0.9712415000030887,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 7.4902841359058705,
+                "mean_log_interval_distance": 0.9725052343839868,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 6.093623356218927,
+                "overestimate_fraction": 0.5268743580965423,
+                "model_interval_overlap_fraction": 0.8770968846285518
+              }
+            ],
+            "macro_interval_distance": 7.4902841359058705,
+            "macro_log_interval_distance": 0.9725052343839868,
+            "median_prediction_quantiles": [
+              0.003083394627079388,
+              1.8132828222319748,
+              7.758669166111794,
+              13.160818108487184,
+              966.0500856585267
+            ],
+            "censor_median_below_observed_lower_fraction": 0.5160196445275959,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "weibull_aft",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 0.7413790000027802,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 269.272509414584,
+                "mean_log_interval_distance": 0.9116969021489295,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 267.0444444444444,
+                "overestimate_fraction": 0.49263950701814446,
+                "model_interval_overlap_fraction": 0.8856555973981514
+              }
+            ],
+            "macro_interval_distance": 269.272509414584,
+            "macro_log_interval_distance": 0.9116969021489295,
+            "median_prediction_quantiles": [
+              0.0,
+              85.0,
+              354.0,
+              586.0,
+              30398.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.5208138447146866,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "weibull_aft",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 0.7925830000021961,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 43.50420855103812,
+                "mean_log_interval_distance": 7.0142974728938405,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 43.50420855103812,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 43.50420855103812,
+            "macro_log_interval_distance": 7.0142974728938405,
+            "median_prediction_quantiles": [
+              0.1511950079883376,
+              2.856295662694435,
+              6.00264154817501,
+              10.406771072434939,
+              84.3915513014814
+            ],
+            "censor_median_below_observed_lower_fraction": 0.6517503479284873,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "weibull_aft",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 0.7952994000006584,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 1876.5,
+                "mean_log_interval_distance": 6.845068896520559,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 1876.5,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 1876.5,
+            "macro_log_interval_distance": 6.845068896520559,
+            "median_prediction_quantiles": [
+              7.0,
+              142.0,
+              285.0,
+              482.0,
+              2831.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.6437212289904721,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "spline_aft",
+      "status": "trained",
+      "real_algorithm_family": "spline_aft",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.547115885382969,
+      "forward_cycle_macro_hour_distance": 2449.589792455575,
+      "fits": [
+        {
+          "name": "spline_aft",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 54.85542030000215,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 3741.625168538858,
+                "mean_log_interval_distance": 1.9027571206154281,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 503.7315785375492,
+                "overestimate_fraction": 0.3674568212013146,
+                "model_interval_overlap_fraction": 0.29879029438500804
+              }
+            ],
+            "macro_interval_distance": 3741.625168538858,
+            "macro_log_interval_distance": 1.9027571206154281,
+            "median_prediction_quantiles": [
+              0.0009893643261754078,
+              0.8575751738910196,
+              5.072386379946251,
+              669.2098331214399,
+              6704248.551049195
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "spline_aft",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 51.56098500000007,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 105026.30746101671,
+                "mean_log_interval_distance": 1.897818729374608,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 20371.17777777778,
+                "overestimate_fraction": 0.3696944269631494,
+                "model_interval_overlap_fraction": 0.2777428151877491
+              }
+            ],
+            "macro_interval_distance": 105026.30746101671,
+            "macro_log_interval_distance": 1.897818729374608,
+            "median_prediction_quantiles": [
+              0.0,
+              38.0,
+              223.0,
+              27980.0,
+              175263905.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "spline_aft",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 51.878565800001525,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 1157.5544163722923,
+                "mean_log_interval_distance": 1.19147465015051,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 7.719555977871936,
+                "overestimate_fraction": 0.4734679904142417,
+                "model_interval_overlap_fraction": 0.7011297500855871
+              }
+            ],
+            "macro_interval_distance": 1157.5544163722923,
+            "macro_log_interval_distance": 1.19147465015051,
+            "median_prediction_quantiles": [
+              0.001705020634946812,
+              1.1434057565352906,
+              9.919588490394458,
+              32.74760910928423,
+              281270.85499977745
+            ],
+            "censor_median_below_observed_lower_fraction": 0.2632132834424696,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "spline_aft",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 48.3483825000003,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 37833.93700787402,
+                "mean_log_interval_distance": 1.1394900121138685,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 340.0777777777778,
+                "overestimate_fraction": 0.44026018486819585,
+                "model_interval_overlap_fraction": 0.686066415611092
+              }
+            ],
+            "macro_interval_distance": 37833.93700787402,
+            "macro_log_interval_distance": 1.1394900121138685,
+            "median_prediction_quantiles": [
+              0.0,
+              53.0,
+              466.0,
+              1453.800000000001,
+              9634317.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.23550046772684752,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "spline_aft",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 45.8984014000016,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 0.026344718127759223,
+                "mean_log_interval_distance": 0.5150117141808692,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 0.026344718127759223,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 1.0
+              }
+            ],
+            "macro_interval_distance": 0.026344718127759223,
+            "macro_log_interval_distance": 0.5150117141808692,
+            "median_prediction_quantiles": [
+              0.005781602999206305,
+              1.9657561946785165,
+              13.19513885319196,
+              37.31436767686881,
+              213665207.19200176
+            ],
+            "censor_median_below_observed_lower_fraction": 0.3994219034364629,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "spline_aft",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 46.21519199999966,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 2.0,
+                "mean_log_interval_distance": 0.6931471805599453,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 2.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 1.0
+              }
+            ],
+            "macro_interval_distance": 2.0,
+            "macro_log_interval_distance": 0.6931471805599453,
+            "median_prediction_quantiles": [
+              0.0,
+              96.0,
+              589.0,
+              1575.0,
+              7140688426.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.40070656246654535,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "status": "trained",
+      "real_algorithm_family": "mlp_aft",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.420691720493214,
+      "forward_cycle_macro_hour_distance": 156.46284523320716,
+      "fits": [
+        {
+          "name": "mlp_aft",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 3.504378399997222,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 306.9454916948006,
+                "mean_log_interval_distance": 1.9233455483856776,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 439.22221578979105,
+                "overestimate_fraction": 0.4950702748059576,
+                "model_interval_overlap_fraction": 0.20194392000559402
+              }
+            ],
+            "macro_interval_distance": 306.9454916948006,
+            "macro_log_interval_distance": 1.9233455483856776,
+            "median_prediction_quantiles": [
+              0.08178252628593079,
+              1.2764415058234315,
+              8.682922087605979,
+              1410.386221966225,
+              1959.5368228470086
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "mlp_aft",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 1.2314525000001595,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 9765.533319348297,
+                "mean_log_interval_distance": 1.947635532370602,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 10537.511111111111,
+                "overestimate_fraction": 0.48367247045661144,
+                "model_interval_overlap_fraction": 0.12551569820292288
+              }
+            ],
+            "macro_interval_distance": 9765.533319348297,
+            "macro_log_interval_distance": 1.947635532370602,
+            "median_prediction_quantiles": [
+              3.0,
+              56.0,
+              329.0,
+              45428.0,
+              65550.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "mlp_aft",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 1.5506682000013825,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 5.980198771613733,
+                "mean_log_interval_distance": 0.9180378926007503,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 12.396617871135941,
+                "overestimate_fraction": 0.8079424854501883,
+                "model_interval_overlap_fraction": 0.7750770284149264
+              }
+            ],
+            "macro_interval_distance": 5.980198771613733,
+            "macro_log_interval_distance": 0.9180378926007503,
+            "median_prediction_quantiles": [
+              0.03445680846172851,
+              3.1209331719216316,
+              11.251272180707021,
+              63.6716530838727,
+              960.1721934612772
+            ],
+            "censor_median_below_observed_lower_fraction": 0.21889616463985032,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "mlp_aft",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 1.401143499999307,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 126.52208147894557,
+                "mean_log_interval_distance": 0.6483592185540941,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 423.3777777777778,
+                "overestimate_fraction": 0.6740842177336529,
+                "model_interval_overlap_fraction": 0.8486819582334817
+              }
+            ],
+            "macro_interval_distance": 126.52208147894557,
+            "macro_log_interval_distance": 0.6483592185540941,
+            "median_prediction_quantiles": [
+              2.0,
+              121.0,
+              352.0,
+              1832.800000000001,
+              15861.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.3534845650140318,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "mlp_aft",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 1.5679640000016661,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 295.44978560047156,
+                "mean_log_interval_distance": 8.928995277765322,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 295.44978560047156,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 295.44978560047156,
+            "macro_log_interval_distance": 8.928995277765322,
+            "median_prediction_quantiles": [
+              0.085520296851352,
+              6.771156884673777,
+              37.007856856673264,
+              113.05979235264824,
+              333.6464698085379
+            ],
+            "censor_median_below_observed_lower_fraction": 0.21421689326624557,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "mlp_aft",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 1.666329699997732,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 6491.0,
+                "mean_log_interval_distance": 8.085036614959886,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 6491.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 6491.0,
+            "macro_log_interval_distance": 8.085036614959886,
+            "median_prediction_quantiles": [
+              4.0,
+              357.20000000000005,
+              1523.0,
+              4235.600000000002,
+              8625.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.17760411090889627,
+            "median_tail_extrapolation_fraction": 0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "logistic_hazard",
+      "status": "trained",
+      "real_algorithm_family": "logistic_hazard",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 2.5496644675570916,
+      "forward_cycle_macro_hour_distance": 17660.854229857418,
+      "fits": [
+        {
+          "name": "logistic_hazard",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 0.6340589999999793,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 35316.67979392132,
+                "mean_log_interval_distance": 3.8623283839354414,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 6618.765042933277,
+                "overestimate_fraction": 0.3855674428361653,
+                "model_interval_overlap_fraction": 0.2776029648276344
+              }
+            ],
+            "macro_interval_distance": 35316.67979392132,
+            "macro_log_interval_distance": 3.8623283839354414,
+            "median_prediction_quantiles": [
+              0.004800654073195294,
+              0.3585793126269698,
+              2.410633089871577,
+              95898.90990286175,
+              1835519.041056153
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.3619327319767848,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "logistic_hazard",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 0.5946421999979066,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 9886561.008600798,
+                "mean_log_interval_distance": 4.548649227761512,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 740620.1222222223,
+                "overestimate_fraction": 0.3976644989860849,
+                "model_interval_overlap_fraction": 0.28361653031256556
+              }
+            ],
+            "macro_interval_distance": 9886561.008600798,
+            "macro_log_interval_distance": 4.548649227761512,
+            "median_prediction_quantiles": [
+              0.0,
+              15.0,
+              104.0,
+              25991441.0,
+              756802191.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.36878539962240403,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "logistic_hazard",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 0.9197082999999111,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 5.028665793513526,
+                "mean_log_interval_distance": 1.2370005511787423,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 7.872361272539909,
+                "overestimate_fraction": 0.5039370078740157,
+                "model_interval_overlap_fraction": 0.8267716535433071
+              }
+            ],
+            "macro_interval_distance": 5.028665793513526,
+            "macro_log_interval_distance": 1.2370005511787423,
+            "median_prediction_quantiles": [
+              0.005068401623209807,
+              0.8221554440986459,
+              11.798460991883864,
+              23.970347984070653,
+              127.48254068983104
+            ],
+            "censor_median_below_observed_lower_fraction": 0.2152712815715622,
+            "median_tail_extrapolation_fraction": 0.0010459339318399721,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "logistic_hazard",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 1.0805002999986755,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 19495.599794590893,
+                "mean_log_interval_distance": 1.276577768433949,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 338.03333333333336,
+                "overestimate_fraction": 0.4734679904142417,
+                "model_interval_overlap_fraction": 0.797329681615885
+              }
+            ],
+            "macro_interval_distance": 19495.599794590893,
+            "macro_log_interval_distance": 1.276577768433949,
+            "median_prediction_quantiles": [
+              0.0,
+              39.0,
+              571.0,
+              1133.0,
+              5256673.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.13552385406922357,
+            "median_tail_extrapolation_fraction": 0.0032249629565065806,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "logistic_hazard",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 0.6601726000008057,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 37.227404538751195,
+                "mean_log_interval_distance": 6.858653403910846,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 37.227404538751195,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 37.227404538751195,
+            "macro_log_interval_distance": 6.858653403910846,
+            "median_prediction_quantiles": [
+              0.09192310864379641,
+              3.2009259641372605,
+              8.313668361403218,
+              17.12687392604592,
+              39.54469928737274
+            ],
+            "censor_median_below_observed_lower_fraction": 0.5900867144845305,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "logistic_hazard",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 0.7219908000006399,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 1604.0,
+                "mean_log_interval_distance": 6.688351612243461,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 1604.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 1604.0,
+            "macro_log_interval_distance": 6.688351612243461,
+            "median_prediction_quantiles": [
+              5.0,
+              169.0,
+              426.0,
+              868.8000000000011,
+              1609.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.5548656460764372,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "boosted_hazard",
+      "status": "trained",
+      "real_algorithm_family": "boosted_hazard",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.4970815857680972,
+      "forward_cycle_macro_hour_distance": 129.37119711876275,
+      "fits": [
+        {
+          "name": "boosted_hazard",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 2.6117042000005313,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 254.57689261885085,
+                "mean_log_interval_distance": 1.86496167369048,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 453.3441070729431,
+                "overestimate_fraction": 0.47926718411299907,
+                "model_interval_overlap_fraction": 0.38787497377805746
+              }
+            ],
+            "macro_interval_distance": 254.57689261885085,
+            "macro_log_interval_distance": 1.86496167369048,
+            "median_prediction_quantiles": [
+              0.25829772837597115,
+              2.885229695290087,
+              5.640916155811821,
+              1166.1490668491442,
+              1463.7636760293274
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.35291238374938816,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "boosted_hazard",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 1.1441422999996576,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 22602.924480805537,
+                "mean_log_interval_distance": 1.9304419339535577,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 6104.266666666666,
+                "overestimate_fraction": 0.3982938256066009,
+                "model_interval_overlap_fraction": 0.30564296203062724
+              }
+            ],
+            "macro_interval_distance": 22602.924480805537,
+            "macro_log_interval_distance": 1.9304419339535577,
+            "median_prediction_quantiles": [
+              25.0,
+              142.0,
+              256.0,
+              100478.0,
+              109416.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.28019019648975596,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "boosted_hazard",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 1.2115725000003295,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 4.165501618674642,
+                "mean_log_interval_distance": 1.1292014978457146,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 3.9857253602462563,
+                "overestimate_fraction": 0.609038000684697,
+                "model_interval_overlap_fraction": 0.7911674084217734
+              }
+            ],
+            "macro_interval_distance": 4.165501618674642,
+            "macro_log_interval_distance": 1.1292014978457146,
+            "median_prediction_quantiles": [
+              0.10082207600345508,
+              1.6952678235226508,
+              15.212539910013053,
+              22.700018994289067,
+              47.77995799555029
+            ],
+            "censor_median_below_observed_lower_fraction": 0.27666043030869975,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "boosted_hazard",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 1.401536400000623,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 165.93837726805887,
+                "mean_log_interval_distance": 1.014792866641244,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 166.42222222222222,
+                "overestimate_fraction": 0.4857925368024649,
+                "model_interval_overlap_fraction": 0.8476549127011298
+              }
+            ],
+            "macro_interval_distance": 165.93837726805887,
+            "macro_log_interval_distance": 1.014792866641244,
+            "median_prediction_quantiles": [
+              4.0,
+              66.0,
+              953.0,
+              1394.6000000000022,
+              3506.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.11190364826941067,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "boosted_hazard",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 1.3375739000002795,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 2.1967616537693795,
+                "mean_log_interval_distance": 4.0452148684509535,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 2.1967616537693795,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 2.1967616537693795,
+            "macro_log_interval_distance": 4.0452148684509535,
+            "median_prediction_quantiles": [
+              0.08426771369070474,
+              2.556283985091105,
+              27.95257524725571,
+              42.30916055352454,
+              48.30017474796728
+            ],
+            "censor_median_below_observed_lower_fraction": 0.1420618777432823,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "boosted_hazard",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 1.417360200000985,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 464.0,
+                "mean_log_interval_distance": 5.4510384535657,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 464.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 464.0,
+            "macro_log_interval_distance": 5.4510384535657,
+            "median_prediction_quantiles": [
+              14.0,
+              126.0,
+              1230.0,
+              1594.0,
+              4504.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.06840809335188952,
+            "median_tail_extrapolation_fraction": 0.0028898640693567376,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "forest_hazard",
+      "status": "trained",
+      "real_algorithm_family": "forest_hazard",
+      "constant_is_control_not_counted": false,
+      "forward_cycle_macro_log_distance": 1.5838236793369727,
+      "forward_cycle_macro_hour_distance": 487119.4342130499,
+      "fits": [
+        {
+          "name": "forest_hazard",
+          "fit": "cycle1",
+          "task": "hours",
+          "train_windows": 13048,
+          "seconds": 1.892989399999351,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 974236.0378774997,
+                "mean_log_interval_distance": 2.3480722107193652,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 360.3260322357936,
+                "overestimate_fraction": 0.48024613663380183,
+                "model_interval_overlap_fraction": 0.7370113978043493
+              }
+            ],
+            "macro_interval_distance": 974236.0378774997,
+            "macro_log_interval_distance": 2.3480722107193652,
+            "median_prediction_quantiles": [
+              0.17601033434299976,
+              3.491567072535096,
+              9.995456024320156,
+              5580.450651522261,
+              21446965.484495245
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.29788126704426265,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "forest_hazard",
+          "fit": "cycle1",
+          "task": "pieces",
+          "train_windows": 13048,
+          "seconds": 1.896387600001617,
+          "metrics": {
+            "windows": 14301,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R004",
+                "windows": 14301,
+                "mean_interval_distance": 2569931.8715474443,
+                "mean_log_interval_distance": 2.210930294595689,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 23335.61111111111,
+                "overestimate_fraction": 0.45619187469407735,
+                "model_interval_overlap_fraction": 0.7103699042025033
+              }
+            ],
+            "macro_interval_distance": 2569931.8715474443,
+            "macro_log_interval_distance": 2.210930294595689,
+            "median_prediction_quantiles": [
+              12.0,
+              156.0,
+              356.0,
+              212063.0,
+              1353739563.0
+            ],
+            "censor_median_below_observed_lower_fraction": null,
+            "median_tail_extrapolation_fraction": 0.3194881476819803,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "forest_hazard",
+          "fit": "cycle2",
+          "task": "hours",
+          "train_windows": 15455,
+          "seconds": 2.8377553000027547,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 2.8305486000723583,
+                "mean_log_interval_distance": 0.8195751479545803,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 3.6401915955401423,
+                "overestimate_fraction": 0.578226634714139,
+                "model_interval_overlap_fraction": 0.891133173570695
+              }
+            ],
+            "macro_interval_distance": 2.8305486000723583,
+            "macro_log_interval_distance": 0.8195751479545803,
+            "median_prediction_quantiles": [
+              0.21490047910298538,
+              2.6166279067226963,
+              6.51028573951174,
+              16.154128135147207,
+              34.38482078104561
+            ],
+            "censor_median_below_observed_lower_fraction": 0.46632366697848454,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "forest_hazard",
+          "fit": "cycle2",
+          "task": "pieces",
+          "train_windows": 15455,
+          "seconds": 3.0799654999973427,
+          "metrics": {
+            "windows": 11473,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R006",
+                "windows": 2921,
+                "mean_interval_distance": 105.04382060938035,
+                "mean_log_interval_distance": 0.732135541904793,
+                "near_15min_windows": 90,
+                "near_15min_mean_interval_distance": 182.87777777777777,
+                "overestimate_fraction": 0.4765491270112975,
+                "model_interval_overlap_fraction": 0.9332420403971242
+              }
+            ],
+            "macro_interval_distance": 105.04382060938035,
+            "macro_log_interval_distance": 0.732135541904793,
+            "median_prediction_quantiles": [
+              10.0,
+              97.20000000000005,
+              297.0,
+              690.8000000000011,
+              1427.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.5634939195509823,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "forest_hazard",
+          "fit": "final",
+          "task": "hours",
+          "train_windows": 17390,
+          "seconds": 3.435914599998796,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 1.4315394107118715,
+                "mean_log_interval_distance": 3.625708566560829,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 1.4315394107118715,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 1.4315394107118715,
+            "macro_log_interval_distance": 3.625708566560829,
+            "median_prediction_quantiles": [
+              0.2052195188057619,
+              7.328762655651749,
+              32.57172940491542,
+              34.696437309344994,
+              35.93593866773582
+            ],
+            "censor_median_below_observed_lower_fraction": 0.1045926560325447,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        },
+        {
+          "name": "forest_hazard",
+          "fit": "final",
+          "task": "pieces",
+          "train_windows": 17390,
+          "seconds": 3.4802848999970593,
+          "metrics": {
+            "windows": 9343,
+            "weak_endpoints": 1,
+            "per_endpoint": [
+              {
+                "endpoint": "R007",
+                "windows": 2,
+                "mean_interval_distance": 95.0,
+                "mean_log_interval_distance": 3.8815637979434374,
+                "near_15min_windows": 2,
+                "near_15min_mean_interval_distance": 95.0,
+                "overestimate_fraction": 1.0,
+                "model_interval_overlap_fraction": 0.0
+              }
+            ],
+            "macro_interval_distance": 95.0,
+            "macro_log_interval_distance": 3.8815637979434374,
+            "median_prediction_quantiles": [
+              17.0,
+              221.0,
+              1204.0,
+              1697.800000000001,
+              2877.0
+            ],
+            "censor_median_below_observed_lower_fraction": 0.063911786746601,
+            "median_tail_extrapolation_fraction": 0.0,
+            "confirmed_natural_failure_error": null,
+            "calibrated_interval_coverage": null
+          },
+          "optimizer_success": true,
+          "history_period_accessed": false
+        }
+      ],
+      "all_optimizers_converged": true,
+      "history_period_accessed": false
+    }
+  ],
+  "life_review": [
+    {
+      "name": "lognormal_aft",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": false,
+      "mean_near_15min_distance": 21.78636154403593,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "weibull_aft",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": false,
+      "mean_near_15min_distance": 21.946454520808008,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "spline_aft",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": true,
+      "mean_near_15min_distance": 255.72556725771057,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "mlp_aft",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": true,
+      "mean_near_15min_distance": 225.8094168304635,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "logistic_hazard",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": true,
+      "mean_near_15min_distance": 3313.3187021029084,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "boosted_hazard",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": true,
+      "mean_near_15min_distance": 228.66491621659466,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    },
+    {
+      "name": "forest_hazard",
+      "passes_constant_and_extrapolation_review": false,
+      "p90_median_exceeds_400h": true,
+      "mean_near_15min_distance": 181.98311191566688,
+      "constant_mean_near_15min_distance": 3.068593639202436,
+      "reason": "development extrapolation review; 400 h is a support-warning threshold, not a proven physical maximum"
+    }
+  ],
+  "history_already_seen_in_v1": true,
+  "history_used_to_select_v2": false,
+  "selection_rule": "mean forward-fold event-macro AP; lifetime must beat same-weight constant in log-distance and near-failure distance",
+  "model_sha256": {
+    "risk\\extra_trees\\calibration.joblib": "b88b9e7540260fa3f9eaf2b124ecf4526e31d6d03cd9ed1f8f68046561e4f3c6",
+    "risk\\gru\\calibration.joblib": "aaba7b45b7311bd9b115bfd93bb297b83d33963025edcd66a51eb50c067f8a9a",
+    "risk\\histgb\\calibration.joblib": "88ac18f5a0a7486de984fd547dca1877541787d22a6d0ad3c1862e7fcec3b063",
+    "risk\\logistic\\calibration.joblib": "978f230b01cdb0909540075d08298021a4307a469a3a89890766352bd7da7716",
+    "risk\\patch_transformer\\calibration.joblib": "1abbb5274aa3e7cff9e03757b7796cd0ddade425dcab04dd67d00a3406cf267d",
+    "risk\\random_forest\\calibration.joblib": "dfc85723ef068713b46b7a298fe276086028a26938cf345cc3e3441d5b161676",
+    "risk\\rbf_logistic\\calibration.joblib": "10c1fdce69557f107440da71a6baf9a1ef75485f6e4e0af63cc366293549adad",
+    "risk\\spline_logistic\\calibration.joblib": "2869254d54b8a6f846fcb9028d31951c802c170e08c2efc32aea862bce72dc1a",
+    "risk\\tcn\\calibration.joblib": "3a417f376532d9f41a909b338d860028bac3520837968d17aac4c12ef8b78ea8",
+    "risk\\tcn\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\tcn\\f1\\model.pt": "1ff4ee04b4e300ad200b777db0988d97c8019cbf3049b04b90c6b3258641a352",
+    "risk\\tcn\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\tcn\\f1\\sequence_normalization.joblib": "c48a1873c7a3c4fc128db0c5a0eb3e6b6815354dcb858a33580503e127d17608",
+    "risk\\tcn\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\tcn\\f2\\model.pt": "da1884bc7a74db246f2dc4c90db9e7d99ed0f46eb854063e49e1075a164956ac",
+    "risk\\tcn\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\tcn\\f2\\sequence_normalization.joblib": "83156bce163100b6adc430b90f8a50706a2efc9dd5c00d605c88bc360a5ada3e",
+    "risk\\tcn\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\tcn\\f3\\model.pt": "c58499e08718bb8f2a6828f61a747adc2ba85024ceed7e70730e1b9053611cc7",
+    "risk\\tcn\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\tcn\\f3\\sequence_normalization.joblib": "8005c018ded9565ddf880e0d88a9fef2c95fd74cbfde491c98d69c744330e22e",
+    "risk\\tcn\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\tcn\\final\\model.pt": "243eabf98dbff07e2bf6f984e15099ad18f27b5ac92663792e25f022312ccfeb",
+    "risk\\tcn\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\tcn\\final\\sequence_normalization.joblib": "2ed68ec62143de85dd975d1201504579302ff775dc4bcaa0c5925c28a96db504",
+    "risk\\spline_logistic\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\spline_logistic\\f1\\model.joblib": "2ab9f1242cdd9fb20995b5b3a38ac7a0ca6514103857b838550594a410da1b84",
+    "risk\\spline_logistic\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\spline_logistic\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\spline_logistic\\f2\\model.joblib": "e6e2cec42e9b8dfcb3627c01e4d73cff5ce50343ebe651084d9f67aafee246f0",
+    "risk\\spline_logistic\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\spline_logistic\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\spline_logistic\\f3\\model.joblib": "38d7948d334677d6c2186278c795cc7a432174fb0fd5c4899d0711cf5f28abeb",
+    "risk\\spline_logistic\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\spline_logistic\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\spline_logistic\\final\\model.joblib": "cdfd69dfa3a6e93c674eec17cff029903f7f4e701ab2cbe1aba7965fb65cf69e",
+    "risk\\spline_logistic\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\rbf_logistic\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\rbf_logistic\\f1\\model.joblib": "73ff31c878098529a5857da8b6cf73f81c46d9776810aeeb164a52977d4cf175",
+    "risk\\rbf_logistic\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\rbf_logistic\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\rbf_logistic\\f2\\model.joblib": "1314799b2d22f2bcec23b40ce68337896d378651e458f4335373bba080316714",
+    "risk\\rbf_logistic\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\rbf_logistic\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\rbf_logistic\\f3\\model.joblib": "b0d82dc4df5c049c80dcbec90bf74d72e8748793281fee9dfc001fc40a1342b1",
+    "risk\\rbf_logistic\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\rbf_logistic\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\rbf_logistic\\final\\model.joblib": "1c3cad29375bab26c511a6cd5952a898bf3f7814ebab0eb58a63bd41de8e8089",
+    "risk\\rbf_logistic\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\random_forest\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\random_forest\\f1\\model.joblib": "27931d44ebb56f08db79e245a4385850bf37b653a6cfa36e58cf74f72296b8c6",
+    "risk\\random_forest\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\random_forest\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\random_forest\\f2\\model.joblib": "5356358f9ce6e87764c711116e90ef9f6e45a0f0ffa8ab2db15f31e544979d03",
+    "risk\\random_forest\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\random_forest\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\random_forest\\f3\\model.joblib": "07cdbcc037212e7529c7af0ee0f3caa274e9d5e49bb8c04a5644cf5d1002931a",
+    "risk\\random_forest\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\random_forest\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\random_forest\\final\\model.joblib": "cebbf1dd81a90a2595a3fe4f5bea6c375139c8a6690596bcce04e3084605c76a",
+    "risk\\random_forest\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\patch_transformer\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\patch_transformer\\f1\\model.pt": "9b9c2d64978d52329f04b08412a5fb7e679416e104ca1cd1cedce6ded5321b35",
+    "risk\\patch_transformer\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\patch_transformer\\f1\\sequence_normalization.joblib": "c48a1873c7a3c4fc128db0c5a0eb3e6b6815354dcb858a33580503e127d17608",
+    "risk\\patch_transformer\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\patch_transformer\\f2\\model.pt": "86a1e4e4a9201a9e043ebffabad3c21988b59cec85b283de31a292f2704e6c00",
+    "risk\\patch_transformer\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\patch_transformer\\f2\\sequence_normalization.joblib": "83156bce163100b6adc430b90f8a50706a2efc9dd5c00d605c88bc360a5ada3e",
+    "risk\\patch_transformer\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\patch_transformer\\f3\\model.pt": "d5fd9f6e79166a3fc2570b8f8ddae9870b7e718ede854e03c1ba49dc88e93c7f",
+    "risk\\patch_transformer\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\patch_transformer\\f3\\sequence_normalization.joblib": "8005c018ded9565ddf880e0d88a9fef2c95fd74cbfde491c98d69c744330e22e",
+    "risk\\patch_transformer\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\patch_transformer\\final\\model.pt": "0b1dedb71b424f4186f1fc05e8866a9b62075e68a23825f9452b389216221fb8",
+    "risk\\patch_transformer\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\patch_transformer\\final\\sequence_normalization.joblib": "2ed68ec62143de85dd975d1201504579302ff775dc4bcaa0c5925c28a96db504",
+    "risk\\logistic\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\logistic\\f1\\model.joblib": "90f7dfc94cfcc7b59967e19dce95870f2176fb75b9c24bc0cc2326674c0eb74f",
+    "risk\\logistic\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\logistic\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\logistic\\f2\\model.joblib": "a00e7eb33e2c888ef90f70f479529a02c90e47cfac33e627cd8d99a2caba9c3f",
+    "risk\\logistic\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\logistic\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\logistic\\f3\\model.joblib": "93ce12e358a99e877a428d5b7638e0c70916472d6bfa15c600ff4367ce0a157e",
+    "risk\\logistic\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\logistic\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\logistic\\final\\model.joblib": "3c50f28faa407448410299fc413fb30da41d3c72395cd02c40ee3617d1e112f1",
+    "risk\\logistic\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\histgb\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\histgb\\f1\\model.joblib": "f90f67e57be6748c22e34d2d485366907556cd1ebd4cf834e29a4692b633e096",
+    "risk\\histgb\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\histgb\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\histgb\\f2\\model.joblib": "ea662d2fa17cf4978288534e2633c880ad56fa2a669135e9adec5842cb803f70",
+    "risk\\histgb\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\histgb\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\histgb\\f3\\model.joblib": "2647d124af3447cd8f940eaf92eadd4aa0acc05ff28f145afd6362c4ef2b81ee",
+    "risk\\histgb\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\histgb\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\histgb\\final\\model.joblib": "ef925e310bf2c4cc2886a2da1eea9debf77a17c1ef2e62377c0b45451b1da165",
+    "risk\\histgb\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\gru\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\gru\\f1\\model.pt": "1701c4d615b12b0661821958b4f1bf210c2f4b22d57bc9fc828769786ba082c2",
+    "risk\\gru\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\gru\\f1\\sequence_normalization.joblib": "c48a1873c7a3c4fc128db0c5a0eb3e6b6815354dcb858a33580503e127d17608",
+    "risk\\gru\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\gru\\f2\\model.pt": "4003cd137d95e8d0b66fd44fa84a845803a81ba51f8fd952f59ee465322ec513",
+    "risk\\gru\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\gru\\f2\\sequence_normalization.joblib": "83156bce163100b6adc430b90f8a50706a2efc9dd5c00d605c88bc360a5ada3e",
+    "risk\\gru\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\gru\\f3\\model.pt": "766aa7a50bad5062135ec25241e15c5e7c06ec9113df30cd91bf6b72b1ff0c6e",
+    "risk\\gru\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\gru\\f3\\sequence_normalization.joblib": "8005c018ded9565ddf880e0d88a9fef2c95fd74cbfde491c98d69c744330e22e",
+    "risk\\gru\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\gru\\final\\model.pt": "600770edd98077c8ff4012f44ce7b4804c93a0f8159322624f869514f9a0789e",
+    "risk\\gru\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "risk\\gru\\final\\sequence_normalization.joblib": "2ed68ec62143de85dd975d1201504579302ff775dc4bcaa0c5925c28a96db504",
+    "risk\\extra_trees\\f1\\auxiliary.joblib": "46ad82e86333c56187a3adc2ca79bde4d1d254b88d9bcc7747dcce044efea501",
+    "risk\\extra_trees\\f1\\model.joblib": "b2f48dcd884c5e8e100c2bdafadbda8a72e669338971eeafe9a6440417456885",
+    "risk\\extra_trees\\f1\\preprocess.joblib": "1f311821350e424e349d693c1195c0b563ccabb1ea58356d92a365d0289e2b25",
+    "risk\\extra_trees\\f2\\auxiliary.joblib": "96fd17ddae298eb02bda5bf16fc3f5feac63ccf12c63a88dbdcca2aba09da486",
+    "risk\\extra_trees\\f2\\model.joblib": "95dcb60649ccf65eb3cd4fea837ffb73f5f4311ae2f7e163ad509445f81c0692",
+    "risk\\extra_trees\\f2\\preprocess.joblib": "b23896c6c91be356c1bce4fe75261e2938d8945d30a604119a26eae618886818",
+    "risk\\extra_trees\\f3\\auxiliary.joblib": "debbef64aac6dc9391677f93023543345f45ee4f281a57aa4294a7d7198569f8",
+    "risk\\extra_trees\\f3\\model.joblib": "27c5e14e6bf6e08e2386b4154020d6eb56c05dc98d37ab1b877d1852126be201",
+    "risk\\extra_trees\\f3\\preprocess.joblib": "12c0a7c5dd47189720f886c739781a88895739aba3678d4f0f875b393f0ba2b5",
+    "risk\\extra_trees\\final\\auxiliary.joblib": "5521fb92c2833f2bc89b6833b12ce1a30bd4e7bcafecff30d52047c48a8ef77e",
+    "risk\\extra_trees\\final\\model.joblib": "29d7b0bd4b228389cb068ceaa9e85bfb84209a84193458a603a226297702c8d6",
+    "risk\\extra_trees\\final\\preprocess.joblib": "2c6753ce96febd885de1a2e35c592147d09650ada9e7a1508393f589c921c251",
+    "life\\boosted_hazard\\cycle1_hours.joblib": "edb58c3dab1ecac105fd64548ba81fda681a0be48974138e346a156e0aba2fa8",
+    "life\\boosted_hazard\\cycle1_pieces.joblib": "1283c7d59ddf34d686a36619a5ce99d29fad8e55ea4153dc193b8a1ce719589b",
+    "life\\boosted_hazard\\cycle2_hours.joblib": "0473c3d4d2dcc33320b9f8313f997efc807fbd4f327e0508cd3124637a05763a",
+    "life\\boosted_hazard\\cycle2_pieces.joblib": "7ad041b9c2b92b44ffe69d65ae1ab1aecb60b08614a7d24889ea6b3ceb0601cc",
+    "life\\boosted_hazard\\final_hours.joblib": "8906f69f2ee2aff74e6f7374d9dea87f06e65db4d07d8df0f39e690f09143cf8",
+    "life\\boosted_hazard\\final_pieces.joblib": "0a11c616ca7cace11a82132e4c225ef96942ce33079d14019c3605dbdaaff841",
+    "life\\constant\\cycle1_hours.joblib": "6badf238360e7cb3ce070ad1acd22cedd6d41fa5d447bf25a8bccdb66779c872",
+    "life\\constant\\cycle1_pieces.joblib": "051433a5fc4e8c1278bab13c093a50a83e4a5f507481c6f74a94632aa205a0e0",
+    "life\\constant\\cycle2_hours.joblib": "9678f844ead67607f36ec6558926d48190d11bdd37ae5391f15f5f2f2940b306",
+    "life\\constant\\cycle2_pieces.joblib": "60a11254f2aac2053e7d5652a44fd04ec37378954304eafe124e9bc5cfc2f947",
+    "life\\constant\\final_hours.joblib": "7c27b4fb6b8351170b3531b69ee693c4aa65f7377809678fbdf2e59c4b8edd29",
+    "life\\constant\\final_pieces.joblib": "1b6dbdfd07fec4c75b0337a13ce4fdc1fc372cfc8a6620b6384852f22dd65ace",
+    "life\\forest_hazard\\cycle1_hours.joblib": "5765eae3de957e7fc60c857fd83266423b425f5c74875e1acbcabdc3d06272eb",
+    "life\\forest_hazard\\cycle1_pieces.joblib": "ee8bce81aa5b596b60a625df5245172c49a7f2a068dc126a4b2b6f00efc002c3",
+    "life\\forest_hazard\\cycle2_hours.joblib": "98441e3fd9d88ac6fa9bcd6a6a8ea04ef189022ab026ce1c78f1e3a2d04eb274",
+    "life\\forest_hazard\\cycle2_pieces.joblib": "7c747680863d13f792aea063c7245d9d96f420576fb64bff941ffca65a8f1f8c",
+    "life\\forest_hazard\\final_hours.joblib": "906289f756d0044db0d3b14c9a19956c79229b511fabc09d529c7fb4a626d4f1",
+    "life\\forest_hazard\\final_pieces.joblib": "85d5634be23d7001b28b390c53d40040b9b879af579356e81d6d9b0f90636544",
+    "life\\logistic_hazard\\cycle1_hours.joblib": "7f5d7641592fc83db0287beb7d20afcce419c26805ac3e0423122f03b45f23a6",
+    "life\\logistic_hazard\\cycle1_pieces.joblib": "8ca475a57ab14352818586d1ec06f46d5504dda44cb1ce6f2860d8e3f427a4db",
+    "life\\logistic_hazard\\cycle2_hours.joblib": "f052c0c7df51132cceb84f231a08bf6aaa7b0df99b2ab212016ce2b92171d290",
+    "life\\logistic_hazard\\cycle2_pieces.joblib": "2e23b05d41c1aae9bbc419784dd30e0a18020f626a890b7540df78003a08ac89",
+    "life\\logistic_hazard\\final_hours.joblib": "f680c0635d8f2623096a2d01f8be9b1e1bbbf570528b705ff9251bca920c5460",
+    "life\\logistic_hazard\\final_pieces.joblib": "e94ea7176f0af45eb39e262f082e57ea6ec85d7ed8112472d736cd2377e6858f",
+    "life\\lognormal_aft\\cycle1_hours.joblib": "03f1720488bd54956ed7aaab75193091ea34303a09c1780cf9f3ec7b0a01e285",
+    "life\\lognormal_aft\\cycle1_pieces.joblib": "cbee3e7bce0ecef24389655592f92d83e9177f671946a4220b87fcf55baf8d5c",
+    "life\\lognormal_aft\\cycle2_hours.joblib": "039432602e640985190d09c90cad0093891f905a2649f849187a455213a72cb8",
+    "life\\lognormal_aft\\cycle2_pieces.joblib": "3c8d90a8e64d248dde01937d44c5767aa19d4bb1975009eb86aaa74c7aef8752",
+    "life\\lognormal_aft\\final_hours.joblib": "c6cb904129e578c3985f4d14d0829f4681cf7f82a146ffca6c84149a5d880e6b",
+    "life\\lognormal_aft\\final_pieces.joblib": "f2d24340e0df3ce0d17bfb68b12d03d52e0807c5681d168d4768332b0ba84d66",
+    "life\\mlp_aft\\cycle1_hours.joblib": "591650d6cc2008f7b6d723c3328e7296f5204cd5a259a245097ebb7f4eeb7632",
+    "life\\mlp_aft\\cycle1_pieces.joblib": "8937161174324eace80a69786540dbc58369a9be9fb76795e867674cea03b6e0",
+    "life\\mlp_aft\\cycle2_hours.joblib": "1d0051ee9f5eb94fac890728efb2d0aa9ecd58329415c55f591dff739c6abe40",
+    "life\\mlp_aft\\cycle2_pieces.joblib": "dc486cdbe8f7bca67ab554a3becf234dd6e844a5d53120cc7778cef766cc54ce",
+    "life\\mlp_aft\\final_hours.joblib": "c2b0f21e080e8a2412e0064d0b582fba08a37f57670f7d3402f5ad375ed102ed",
+    "life\\mlp_aft\\final_pieces.joblib": "65796ba0e092ec9570c07a0bf12b904aed288d95664e14d597301b7991c46cd5",
+    "life\\spline_aft\\cycle1_hours.joblib": "a61272bd66d045e7ba399d430eaa64783197d28beba11049af8e664bb9870427",
+    "life\\spline_aft\\cycle1_pieces.joblib": "9d8885bde3a4ac62a87df28b489c0599f65d0a9ec430898cbbef9845ec81bf01",
+    "life\\spline_aft\\cycle2_hours.joblib": "f7eaac0f90ff12edc37d6dd5aaa41624d2a33c64b5e7fc042e070b2bdde0d42f",
+    "life\\spline_aft\\cycle2_pieces.joblib": "8d6dfb42c05ee8be3baa6a2f28daaa7d0b9b05ae0ca14d2e912cfdee6ddcf0dc",
+    "life\\spline_aft\\final_hours.joblib": "414f2511519744c7f18bdc6a84a358f533deae0a1da4e08cb4dbdfe58af83cec",
+    "life\\spline_aft\\final_pieces.joblib": "f0d3dcca046da2a5455715156ec994dfae7d6ca2a245ce2e635006ce9c2f83bb",
+    "life\\weibull_aft\\cycle1_hours.joblib": "26230b1a6e447f5b5b5792ce46b90d3df7bc58ccccb9069a43982bf9824d19f8",
+    "life\\weibull_aft\\cycle1_pieces.joblib": "9a5d3f13445df386293504d2890ede0df3726210bf22dd76f5af91a5a493d7e4",
+    "life\\weibull_aft\\cycle2_hours.joblib": "5084da0b051f3f997e9d1e85ec1ce59673c0293a30cd9736e86d12456289ab50",
+    "life\\weibull_aft\\cycle2_pieces.joblib": "3975bec77728d8eac68f549d94ce40a6ee9dd1f341872f0da4b6740c7f06271a",
+    "life\\weibull_aft\\final_hours.joblib": "6c98001fcff1c814ab4790b21bafeb08cab67da718357c4dfbe4f98fbb484e85",
+    "life\\weibull_aft\\final_pieces.joblib": "12a566ff04a16e7cb7dafd6b7e65ae32d0091fd0e240edd6c462be75cf6f6321"
+  },
+  "data_sha256": {
+    "samples.parquet": "92ba1b6e79e23ef33674a8a35359f31dc827c330f2737ac15bf6b2c6e39b1a38",
+    "features.npy": "a76da7fd65f07e8814430dc6a98545181cb76067748e2850ab39737b2ba81217",
+    "targets.npz": "4f2503aee15cd6761df5e53ffbc5cb6034b7244ae35f641b1be94af7da37507f"
+  },
+  "production_ready": false,
+  "automatic_replacement": false
+}

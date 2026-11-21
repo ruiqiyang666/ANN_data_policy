@@ -1,0 +1,39 @@
+{
+  "mode": "final",
+  "passed": true,
+  "checks": [
+    "28-field order and train-only normalization contract",
+    "No context, possible-cycle or supervised event crosses partitions",
+    "Completed-product inputs are available by prediction time and stay within context partition",
+    "300-second event targets and censor masks are consistent",
+    "Lifetime intervals, right censoring and endpoint partition isolation",
+    "Ambiguous maintenance truncates lifetime follow-up",
+    "Other-device Voltage Sample absent from source manifest",
+    "Test used frozen checkpoints, targets, normalization and selection",
+    "All saved held-out predictions are finite and in valid ranges",
+    "Untrained health scores and uncalibrated coverage are not published as valid"
+  ],
+  "window_counts": {
+    "0": 104571,
+    "1": 9445,
+    "3": 34572
+  },
+  "effective_lifetime_counts": {
+    "0": {
+      "windows": 103965,
+      "weak_endpoints": 3
+    },
+    "1": {
+      "windows": 9343,
+      "weak_endpoints": 1
+    },
+    "2": {
+      "windows": 0,
+      "weak_endpoints": 0
+    },
+    "3": {
+      "windows": 34325,
+      "weak_endpoints": 1
+    }
+  }
+}

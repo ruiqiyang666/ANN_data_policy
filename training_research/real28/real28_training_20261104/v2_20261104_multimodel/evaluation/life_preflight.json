@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Interval and right-censored AFT recovers a known synthetic covariate effect",
+    "Censor likelihood rewards survival past observation without fake event labels",
+    "Neural survival likelihood remains differentiable for zero counts, narrow intervals and censoring",
+    "Hazard expansion retains zero pieces and treats boundary-straddling intervals as partial observation",
+    "Piecewise hazard quantiles agree with a known exponential survival law"
+  ],
+  "synthetic_beta": [
+    0.9921974160476638,
+    0.7924603834232568
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "epoch": 1,
+    "masked_huber_loss": 0.2539774957112968,
+    "seconds": 1.5992138999972667,
+    "training_windows_only": true
+  },
+  {
+    "epoch": 2,
+    "masked_huber_loss": 0.16064249887131155,
+    "seconds": 1.5798251000014716,
+    "training_windows_only": true
+  },
+  {
+    "epoch": 3,
+    "masked_huber_loss": 0.11019717692397535,
+    "seconds": 1.3280971999993199,
+    "training_windows_only": true
+  }
+]

@@ -1,0 +1,732 @@
+{
+  "source_scope": {
+    "files": 1505,
+    "rows": 5402169,
+    "all_source_hashes_match": true,
+    "voltage_reference_excluded": true,
+    "invalid_cells": 50,
+    "invalid_by_field": {
+      "Argon": 0,
+      "Nitrogen": 0,
+      "AirJet": 0,
+      "Silvent": 0,
+      "Current": 0,
+      "Power": 0,
+      "Voltage": 0,
+      "Cooling_water_flow": 0,
+      "Conductivity": 0,
+      "Cooling_water_inlet_temp.": 9,
+      "Cooling_water_outlet_temp.": 9,
+      "Feedrate_1": 0,
+      "Disk_1": 0,
+      "Carrier_gas_1": 0,
+      "Feed_Factor_1": 0,
+      "Press._Hopper_1": 0,
+      "Stirrer_1": 0,
+      "Weight_Hopper_1": 9,
+      "Feedrate_2": 0,
+      "Disk_2": 0,
+      "Carrier_gas_2": 0,
+      "Feed_Factor_2": 0,
+      "Press._Hopper_2": 0,
+      "Stirrer_2": 0,
+      "Weight_Hopper_2": 5,
+      "Station_1": 0,
+      "Station_2": 0,
+      "O2_Sensor": 18
+    },
+    "missing_seconds": 591830,
+    "gap_count": 5176,
+    "gaps_over_2_missing_seconds": 13,
+    "duplicates": 0,
+    "raw_cache_crosscheck": {
+      "rows": 36,
+      "critical_channels": 8
+    }
+  },
+  "products": {
+    "total": 19488,
+    "valid": 19481,
+    "failures": {
+      "none": 19367,
+      "voltage": 45,
+      "feedrate": 39,
+      "hopper_pressure": 29,
+      "unknown": 7,
+      "feedrate|hopper_pressure": 1
+    },
+    "averaging_scope_disagreements": 2,
+    "company_corrections": [
+      {
+        "legacy_id": "P003507",
+        "product_id": "DEV1_20260927T105115_S1",
+        "pressure_mean": 250.2,
+        "raw_pressure_fail": 1.0,
+        "hopper_pressure_fail": 0.0,
+        "company_override": "20261103 PLC=250mbar; explicitly not failed; HMI mean retained"
+      }
+    ],
+    "marginal_pressure_failures": 5,
+    "marginal_feed_failures": 13,
+    "recovered_legacy_unknown_count": 131
+  },
+  "event_types": {
+    "feedrate": 36,
+    "voltage": 16,
+    "hopper_pressure": 10
+  },
+  "prediction_target": {
+    "positive_windows": 1565,
+    "positive_windows_after_product_started": 338,
+    "observable_event_types_by_partition": {
+      "0": {
+        "feedrate": 27,
+        "hopper_pressure": 10,
+        "voltage": 9
+      },
+      "1": {
+        "voltage": 2,
+        "feedrate": 1
+      },
+      "2": {
+        "feedrate": 2,
+        "voltage": 2
+      },
+      "3": {
+        "feedrate": 6,
+        "voltage": 3
+      }
+    }
+  },
+  "company_reviewed_wait": {
+    "start": "2026-10-14T13:40:45",
+    "censored_windows": 8481,
+    "affected_from": "2026-10-12T09:51:10",
+    "affected_to": "2026-10-14T13:39:40",
+    "company_evidence": "Company reply paragraph23 and image8/image9: automatic standby after >15min waiting; rising normal voltage is not evidence of gun replacement",
+    "qualification": "Review intervention evidence and censoring policy; this audit does not assert an unobserved physical action or change existing labels"
+  },
+  "feature_availability": {
+    "observed_operation_hours": {
+      "missing_fraction": 0.0,
+      "positive_missing_fraction": 0.0,
+      "finite_median": 1.5663888454437256,
+      "finite_p90": 4.615833282470703
+    },
+    "matched_product_count": {
+      "missing_fraction": 0.04774614848158245,
+      "positive_missing_fraction": 0.23450479233226837,
+      "finite_median": 25.0,
+      "finite_p90": 28.0
+    },
+    "matched_product_voltage_slope_per_hour": {
+      "missing_fraction": 0.04774614848158245,
+      "positive_missing_fraction": 0.23450479233226837,
+      "finite_median": -0.003895539091899991,
+      "finite_p90": 0.7317332029342651
+    },
+    "powered_Voltage_mean_300s": {
+      "missing_fraction": 0.0,
+      "positive_missing_fraction": 0.0,
+      "finite_median": 54.518394470214844,
+      "finite_p90": 55.781944274902344
+    },
+    "powered_Voltage_coverage_3600s": {
+      "missing_fraction": 0.0,
+      "positive_missing_fraction": 0.0,
+      "finite_median": 0.9986110925674438,
+      "finite_p90": 0.9994444251060486
+    }
+  },
+  "endpoint_profiles": [
+    {
+      "candidate": "R003",
+      "eligible": true,
+      "first_low": "2026-09-15T12:24:27",
+      "terminal_voltage": 46.62352941176471,
+      "current": 548.0,
+      "argon": 22.0,
+      "nitrogen": 10.5,
+      "observed_hours_since_previous": 218.34694444444443,
+      "previous_products": 168,
+      "recipe_matched": 168,
+      "pre_15m": {
+        "products": 12,
+        "voltage_median": 54.42878787878788,
+        "slope_v_per_hour": -12.549283179160868
+      },
+      "pre_30m": {
+        "products": 25,
+        "voltage_median": 54.7676923076923,
+        "slope_v_per_hour": -4.572040930422218
+      },
+      "pre_60m": {
+        "products": 47,
+        "voltage_median": 54.887692307692305,
+        "slope_v_per_hour": -1.3266832482748638
+      },
+      "pre_180m": {
+        "products": 147,
+        "voltage_median": 55.49242424242425,
+        "slope_v_per_hour": -0.5676168144676655
+      },
+      "life_event_windows": 3352,
+      "near_15min_windows": 90,
+      "near_matched_trend_missing_fraction": 0.0,
+      "near_operation_history_max_hours": 3.4244444370269775
+    },
+    {
+      "candidate": "R004",
+      "eligible": true,
+      "first_low": "2026-09-20T07:48:58",
+      "terminal_voltage": 50.096666666666664,
+      "current": 549.0,
+      "argon": 22.0,
+      "nitrogen": 10.4,
+      "observed_hours_since_previous": 39.763333333333335,
+      "previous_products": 27,
+      "recipe_matched": 27,
+      "pre_15m": {
+        "products": 12,
+        "voltage_median": 53.43786713286714,
+        "slope_v_per_hour": -6.225419418950315
+      },
+      "pre_30m": {
+        "products": 27,
+        "voltage_median": 52.64923076923077,
+        "slope_v_per_hour": 1.9748936713691072
+      },
+      "pre_60m": {
+        "products": 27,
+        "voltage_median": 52.64923076923077,
+        "slope_v_per_hour": 1.9748936713691072
+      },
+      "pre_180m": {
+        "products": 27,
+        "voltage_median": 52.64923076923077,
+        "slope_v_per_hour": 1.9748936713691072
+      },
+      "life_event_windows": 14301,
+      "near_15min_windows": 90,
+      "near_matched_trend_missing_fraction": 0.0,
+      "near_operation_history_max_hours": 0.504444420337677
+    },
+    {
+      "candidate": "R006",
+      "eligible": true,
+      "first_low": "2026-09-29T15:35:55",
+      "terminal_voltage": 50.33235294117647,
+      "current": 549.0,
+      "argon": 22.0,
+      "nitrogen": 10.5,
+      "observed_hours_since_previous": 32.13722222222222,
+      "previous_products": 195,
+      "recipe_matched": 195,
+      "pre_15m": {
+        "products": 15,
+        "voltage_median": 55.47352941176471,
+        "slope_v_per_hour": -3.8600642431548664
+      },
+      "pre_30m": {
+        "products": 28,
+        "voltage_median": 55.451470588235296,
+        "slope_v_per_hour": -0.8305500467494845
+      },
+      "pre_60m": {
+        "products": 54,
+        "voltage_median": 55.50794871794872,
+        "slope_v_per_hour": -0.9641370860572749
+      },
+      "pre_180m": {
+        "products": 155,
+        "voltage_median": 55.926153846153845,
+        "slope_v_per_hour": -0.26245572097708025
+      },
+      "life_event_windows": 2921,
+      "near_15min_windows": 90,
+      "near_matched_trend_missing_fraction": 0.0,
+      "near_operation_history_max_hours": 3.744166612625122
+    },
+    {
+      "candidate": "R007",
+      "eligible": true,
+      "first_low": "2026-10-06T13:04:01",
+      "terminal_voltage": 50.59076923076923,
+      "current": 548.0,
+      "argon": 22.0,
+      "nitrogen": 10.5,
+      "observed_hours_since_previous": 26.324166666666667,
+      "previous_products": 158,
+      "recipe_matched": 158,
+      "pre_15m": {
+        "products": 3,
+        "voltage_median": 51.013846153846146,
+        "slope_v_per_hour": -0.4583393155972404
+      },
+      "pre_30m": {
+        "products": 9,
+        "voltage_median": 51.82333333333334,
+        "slope_v_per_hour": -2.6379949503311697
+      },
+      "pre_60m": {
+        "products": 31,
+        "voltage_median": 52.01,
+        "slope_v_per_hour": -1.3972568644287378
+      },
+      "pre_180m": {
+        "products": 108,
+        "voltage_median": 52.27331002331002,
+        "slope_v_per_hour": -1.0558025537820714
+      },
+      "life_event_windows": 2,
+      "near_15min_windows": 2,
+      "near_matched_trend_missing_fraction": 0.0,
+      "near_operation_history_max_hours": 1.7575000524520874
+    },
+    {
+      "candidate": "R010",
+      "eligible": true,
+      "first_low": "2026-10-14T17:37:38",
+      "terminal_voltage": 49.495384615384616,
+      "current": 548.0,
+      "argon": 22.0,
+      "nitrogen": 10.5,
+      "observed_hours_since_previous": 61.68638888888889,
+      "previous_products": 132,
+      "recipe_matched": 132,
+      "pre_15m": {
+        "products": 13,
+        "voltage_median": 54.92121212121212,
+        "slope_v_per_hour": -1.094596232810332
+      },
+      "pre_30m": {
+        "products": 24,
+        "voltage_median": 54.89512987012987,
+        "slope_v_per_hour": 0.4959322206528338
+      },
+      "pre_60m": {
+        "products": 49,
+        "voltage_median": 54.18333333333333,
+        "slope_v_per_hour": 1.71687246404574
+      },
+      "pre_180m": {
+        "products": 114,
+        "voltage_median": 53.925000000000004,
+        "slope_v_per_hour": 0.3640943069872006
+      },
+      "life_event_windows": 1073,
+      "near_15min_windows": 90,
+      "near_matched_trend_missing_fraction": 0.0,
+      "near_operation_history_max_hours": 1.8363889455795288
+    },
+    {
+      "candidate": "R011",
+      "eligible": false,
+      "first_low": "2026-10-15T11:58:24",
+      "terminal_voltage": 50.938235294117646,
+      "current": 549.0,
+      "argon": 22.0,
+      "nitrogen": 10.5,
+      "observed_hours_since_previous": 3.1758333333333333,
+      "previous_products": 131,
+      "recipe_matched": 131,
+      "pre_15m": {
+        "products": 10,
+        "voltage_median": 52.65379953379953,
+        "slope_v_per_hour": -9.066851084083233
+      },
+      "pre_30m": {
+        "products": 24,
+        "voltage_median": 53.54397435897435,
+        "slope_v_per_hour": -5.391865276513714
+      },
+      "pre_60m": {
+        "products": 29,
+        "voltage_median": 53.64153846153846,
+        "slope_v_per_hour": -3.8376804756712075
+      },
+      "pre_180m": {
+        "products": 113,
+        "voltage_median": 55.2,
+        "slope_v_per_hour": -0.9209852770991338
+      },
+      "life_event_windows": 0,
+      "near_15min_windows": 0,
+      "near_matched_trend_missing_fraction": null,
+      "near_operation_history_max_hours": null
+    }
+  ],
+  "alerts": {
+    "total": 16,
+    "false_count": 13,
+    "false_with_last_known_bad_product": 1,
+    "false_with_next_event_within_15min": 1,
+    "context": [
+      {
+        "timestamp": "2026-10-13T16:18:10",
+        "is_true": false,
+        "risk": 0.019725667966259,
+        "last_product_type": "none",
+        "last_voltage": 54.69538461538462,
+        "last_feedrate": 9.392307692307693,
+        "last_pressure": 214.3846153846154,
+        "last_product_age_s": 1414.0,
+        "next_event_s": 91233.0,
+        "previous_event_s": 103148.0,
+        "operation_age_s": 1.0
+      },
+      {
+        "timestamp": "2026-10-14T12:50:50",
+        "is_true": false,
+        "risk": 0.0195564819406931,
+        "last_product_type": "none",
+        "last_voltage": 52.37384615384615,
+        "last_feedrate": 10.239999999999998,
+        "last_pressure": 219.01538461538462,
+        "last_product_age_s": 56.0,
+        "next_event_s": 17273.0,
+        "previous_event_s": 177108.0,
+        "operation_age_s": 752.0
+      },
+      {
+        "timestamp": "2026-10-14T15:19:30",
+        "is_true": false,
+        "risk": 0.0195762481335314,
+        "last_product_type": "none",
+        "last_voltage": 52.14545454545455,
+        "last_feedrate": 10.053030303030303,
+        "last_pressure": 219.0,
+        "last_product_age_s": 1.0,
+        "next_event_s": 8353.0,
+        "previous_event_s": 186028.0,
+        "operation_age_s": 1562.0
+      },
+      {
+        "timestamp": "2026-10-14T15:25:00",
+        "is_true": false,
+        "risk": 0.0195254795895852,
+        "last_product_type": "none",
+        "last_voltage": 53.19848484848485,
+        "last_feedrate": 10.072727272727272,
+        "last_pressure": 219.12121212121212,
+        "last_product_age_s": 61.0,
+        "next_event_s": 8023.0,
+        "previous_event_s": 186358.0,
+        "operation_age_s": 1892.0
+      },
+      {
+        "timestamp": "2026-10-14T17:37:20",
+        "is_true": true,
+        "risk": 0.0195557779675519,
+        "last_product_type": "none",
+        "last_voltage": 54.28125,
+        "last_feedrate": 10.2109375,
+        "last_pressure": 220.328125,
+        "last_product_age_s": 7.0,
+        "next_event_s": 83.0,
+        "previous_event_s": 194298.0,
+        "operation_age_s": 6601.0
+      },
+      {
+        "timestamp": "2026-10-15T11:21:30",
+        "is_true": false,
+        "risk": 0.0195626410584446,
+        "last_product_type": "none",
+        "last_voltage": 53.458461538461535,
+        "last_feedrate": 10.55846153846154,
+        "last_pressure": 218.98461538461538,
+        "last_product_age_s": 3.0,
+        "next_event_s": 2248.0,
+        "previous_event_s": 16091.0,
+        "operation_age_s": 464.0
+      },
+      {
+        "timestamp": "2026-10-15T11:29:00",
+        "is_true": false,
+        "risk": 0.0196333895060644,
+        "last_product_type": "none",
+        "last_voltage": 53.93384615384616,
+        "last_feedrate": 10.116923076923078,
+        "last_pressure": 218.36923076923077,
+        "last_product_age_s": 1.0,
+        "next_event_s": 1798.0,
+        "previous_event_s": 16541.0,
+        "operation_age_s": 913.9999389648438
+      },
+      {
+        "timestamp": "2026-10-15T11:34:00",
+        "is_true": false,
+        "risk": 0.0195246894091189,
+        "last_product_type": "none",
+        "last_voltage": 54.198461538461544,
+        "last_feedrate": 10.015384615384615,
+        "last_pressure": 218.35384615384615,
+        "last_product_age_s": 34.0,
+        "next_event_s": 1498.0,
+        "previous_event_s": 16841.0,
+        "operation_age_s": 1214.0
+      },
+      {
+        "timestamp": "2026-10-15T11:40:40",
+        "is_true": false,
+        "risk": 0.0196913345903217,
+        "last_product_type": "none",
+        "last_voltage": 53.84705882352941,
+        "last_feedrate": 10.170588235294119,
+        "last_pressure": 219.5,
+        "last_product_age_s": 2.0,
+        "next_event_s": 1098.0,
+        "previous_event_s": 17241.0,
+        "operation_age_s": 1614.0
+      },
+      {
+        "timestamp": "2026-10-15T11:50:20",
+        "is_true": false,
+        "risk": 0.0195416818515026,
+        "last_product_type": "none",
+        "last_voltage": 52.33692307692307,
+        "last_feedrate": 10.118461538461537,
+        "last_pressure": 219.15384615384616,
+        "last_product_age_s": 5.0,
+        "next_event_s": 518.0,
+        "previous_event_s": 17821.0,
+        "operation_age_s": 2194.0
+      },
+      {
+        "timestamp": "2026-10-15T11:56:50",
+        "is_true": true,
+        "risk": 0.0195817317561866,
+        "last_product_type": "none",
+        "last_voltage": 51.39545454545454,
+        "last_feedrate": 10.222727272727273,
+        "last_pressure": 219.46969696969697,
+        "last_product_age_s": 36.0,
+        "next_event_s": 128.0,
+        "previous_event_s": 18211.0,
+        "operation_age_s": 2584.0
+      },
+      {
+        "timestamp": "2026-10-15T12:02:50",
+        "is_true": false,
+        "risk": 0.0195480959796618,
+        "last_product_type": "voltage",
+        "last_voltage": 50.965151515151504,
+        "last_feedrate": 10.084848484848484,
+        "last_pressure": 219.63636363636363,
+        "last_product_age_s": 20.0,
+        "next_event_s": 164708.0,
+        "previous_event_s": 232.0,
+        "operation_age_s": 2944.0
+      },
+      {
+        "timestamp": "2026-10-16T11:15:30",
+        "is_true": false,
+        "risk": 0.0197650014448596,
+        "last_product_type": "none",
+        "last_voltage": 54.68181818181817,
+        "last_feedrate": 10.215151515151515,
+        "last_pressure": 220.0909090909091,
+        "last_product_age_s": 650.0,
+        "next_event_s": 81148.0,
+        "previous_event_s": 83792.0,
+        "operation_age_s": 100.0
+      },
+      {
+        "timestamp": "2026-10-17T09:47:10",
+        "is_true": true,
+        "risk": 0.0196081026150631,
+        "last_product_type": "none",
+        "last_voltage": 54.675,
+        "last_feedrate": 10.056249999999999,
+        "last_pressure": 219.265625,
+        "last_product_age_s": 2784.0,
+        "next_event_s": 48.0,
+        "previous_event_s": 164892.0,
+        "operation_age_s": 104.0
+      },
+      {
+        "timestamp": "2026-10-17T12:00:30",
+        "is_true": false,
+        "risk": 0.0195821614949948,
+        "last_product_type": "none",
+        "last_voltage": 54.39692307692307,
+        "last_feedrate": 10.058461538461536,
+        "last_pressure": 221.2,
+        "last_product_age_s": 327.0,
+        "next_event_s": 334256.0,
+        "previous_event_s": 7952.0,
+        "operation_age_s": 95.0
+      },
+      {
+        "timestamp": "2026-10-19T10:33:00",
+        "is_true": false,
+        "risk": 0.0195288050903604,
+        "last_product_type": "none",
+        "last_voltage": 55.57575757575757,
+        "last_feedrate": 10.183333333333335,
+        "last_pressure": 218.93939393939394,
+        "last_product_age_s": 331.0,
+        "next_event_s": 166706.0,
+        "previous_event_s": 175502.0,
+        "operation_age_s": 6.0
+      }
+    ],
+    "by_type": {
+      "feedrate": {
+        "events": 6,
+        "detected": 1,
+        "before_product": 0
+      },
+      "voltage": {
+        "events": 3,
+        "detected": 2,
+        "before_product": 2
+      }
+    }
+  },
+  "risk_score_distribution": {
+    "risk": [
+      0.0045738864895271975,
+      0.01451723448595531,
+      0.031220891611444264,
+      0.10206070102972606,
+      0.5393790421880921
+    ],
+    "calibrated_risk": [
+      0.015337940598915682,
+      0.01635733526553322,
+      0.017079464379298484,
+      0.018308447302276598,
+      0.020815602725151084
+    ]
+  },
+  "precursor_summary": {
+    "feedrate": {
+      "events": 36,
+      "with_3_predecessors": 24,
+      "median_voltage_drop": 0.05487179487179361,
+      "predecessor_all_normal": 33
+    },
+    "hopper_pressure": {
+      "events": 10,
+      "with_3_predecessors": 8,
+      "median_voltage_drop": -0.011048951048955757,
+      "predecessor_all_normal": 9
+    },
+    "voltage": {
+      "events": 16,
+      "with_3_predecessors": 15,
+      "median_voltage_drop": -2.6533333333333218,
+      "predecessor_all_normal": 16
+    }
+  },
+  "reference": {
+    "device": "separate device; descriptive voltage reference only",
+    "files": 294,
+    "rows": 1056834,
+    "product_intervals": 1972,
+    "terminal_product_intervals": 106,
+    "terminal_low_products": [
+      {
+        "start": "2026-10-27T13:42:13",
+        "end": "2026-10-27T13:43:17",
+        "voltage_mean": 50.893846153846155
+      },
+      {
+        "start": "2026-10-27T13:58:25",
+        "end": "2026-10-27T13:59:30",
+        "voltage_mean": 50.118181818181824
+      },
+      {
+        "start": "2026-10-27T14:03:22",
+        "end": "2026-10-27T14:04:27",
+        "voltage_mean": 50.53939393939394
+      },
+      {
+        "start": "2026-10-27T14:06:22",
+        "end": "2026-10-27T14:07:26",
+        "voltage_mean": 50.05692307692308
+      },
+      {
+        "start": "2026-10-27T14:07:50",
+        "end": "2026-10-27T14:08:55",
+        "voltage_mean": 49.17121212121212
+      },
+      {
+        "start": "2026-10-27T14:09:21",
+        "end": "2026-10-27T14:10:25",
+        "voltage_mean": 48.621538461538464
+      },
+      {
+        "start": "2026-10-27T14:10:51",
+        "end": "2026-10-27T14:11:24",
+        "voltage_mean": 48.39411764705882
+      },
+      {
+        "start": "2026-10-27T14:11:26",
+        "end": "2026-10-27T14:11:55",
+        "voltage_mean": 47.80333333333333
+      }
+    ],
+    "hour_voltage": {
+      "12": {
+        "products": 37,
+        "median_voltage": 55.043076923076924,
+        "min_voltage": 53.61538461538461
+      },
+      "13": {
+        "products": 37,
+        "median_voltage": 52.10461538461538,
+        "min_voltage": 50.118181818181824
+      },
+      "14": {
+        "products": 9,
+        "median_voltage": 50.05692307692308,
+        "min_voltage": 47.80333333333333
+      },
+      "15": {
+        "products": 23,
+        "median_voltage": 54.1,
+        "min_voltage": 53.45846153846154
+      }
+    },
+    "workday_voltage": {
+      "2026-10-15": {
+        "products": 212,
+        "median_voltage": 53.63130536130536
+      },
+      "2026-10-16": {
+        "products": 302,
+        "median_voltage": 54.08461538461539
+      },
+      "2026-10-17": {
+        "products": 245,
+        "median_voltage": 55.171212121212115
+      },
+      "2026-10-19": {
+        "products": 294,
+        "median_voltage": 55.11860576923077
+      },
+      "2026-10-20": {
+        "products": 266,
+        "median_voltage": 55.11153846153846
+      },
+      "2026-10-21": {
+        "products": 205,
+        "median_voltage": 54.910606060606064
+      },
+      "2026-10-22": {
+        "products": 248,
+        "median_voltage": 54.949230769230766
+      },
+      "2026-10-23": {
+        "products": 82,
+        "median_voltage": 55.31136363636363
+      },
+      "2026-10-27": {
+        "products": 118,
+        "median_voltage": 54.0616317016317
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "mlp_aft",
+  "fit": "cycle2",
+  "task": "hours",
+  "train_windows": 15467,
+  "seconds": 1.2503013999994437,
+  "metrics": {
+    "windows": 11491,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R006",
+        "windows": 2921,
+        "mean_interval_distance": 5.686364542645588,
+        "mean_log_interval_distance": 1.1733621005417043,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 1.61352207572301,
+        "overestimate_fraction": 0.5864429989729545,
+        "model_interval_overlap_fraction": 0.6193084560082164
+      }
+    ],
+    "macro_interval_distance": 5.686364542645588,
+    "macro_log_interval_distance": 1.1733621005417043,
+    "median_prediction_quantiles": [
+      0.17816784382972148,
+      2.582914935191053,
+      10.226787856148492,
+      58.49521353818356,
+      379.46619905410444
+    ],
+    "censor_median_below_observed_lower_fraction": 0.31400233372228703,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

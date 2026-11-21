@@ -1,0 +1,11 @@
+[Unit]
+Description=Phase2 gated candidate training without model publication
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Zhang/Phase2-learning
+ExecStart=/usr/bin/python3 scripts/learning_cycle.py train-once --manifest %h/Zhang/private/continuous_learning/current/dataset.json --recipe %h/.config/phase2-learning/candidate-recipe.json --state-root %h/Zhang/private/continuous_learning
+TimeoutStartSec=7h
+UMask=0077
+NoNewPrivileges=true
+KillMode=control-group

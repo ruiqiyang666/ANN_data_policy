@@ -1,0 +1,247 @@
+{
+  "name": "stage_weibull_r1",
+  "status": "trained",
+  "real_algorithm_family": "weibull_aft",
+  "initialization_variant_not_extra_family": true,
+  "fits": [
+    {
+      "name": "stage_weibull_r1",
+      "fit": "cycle1",
+      "task": "hours",
+      "train_windows": 13060,
+      "seconds": 0.0609450999982073,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 14.495374259740451,
+            "mean_log_interval_distance": 1.145775470692702,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 4.940793282604151,
+            "overestimate_fraction": 0.15047898748339278,
+            "model_interval_overlap_fraction": 0.9964338158170757
+          }
+        ],
+        "macro_interval_distance": 14.495374259740451,
+        "macro_log_interval_distance": 1.145775470692702,
+        "median_prediction_quantiles": [
+          2.172259854595569,
+          5.142821368124444,
+          6.318757436310654,
+          7.053864846314011,
+          7.2266817082489885
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_weibull_r1",
+      "fit": "cycle1",
+      "task": "pieces",
+      "train_windows": 13060,
+      "seconds": 0.06234319999930449,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 643.6529613313754,
+            "mean_log_interval_distance": 1.1475697089429686,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 220.9777777777778,
+            "overestimate_fraction": 0.1530662191455143,
+            "model_interval_overlap_fraction": 0.996293965456961
+          }
+        ],
+        "macro_interval_distance": 643.6529613313754,
+        "macro_log_interval_distance": 1.1475697089429686,
+        "median_prediction_quantiles": [
+          96.0,
+          232.0,
+          286.0,
+          320.0,
+          328.0
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_weibull_r1",
+      "fit": "cycle2",
+      "task": "hours",
+      "train_windows": 15467,
+      "seconds": 0.06323450000127195,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 2.1881495113435117,
+            "mean_log_interval_distance": 0.7342073483870638,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.3292268766794337,
+            "overestimate_fraction": 0.36973639164669636,
+            "model_interval_overlap_fraction": 0.9921259842519685
+          }
+        ],
+        "macro_interval_distance": 2.1881495113435117,
+        "macro_log_interval_distance": 0.7342073483870638,
+        "median_prediction_quantiles": [
+          0.6659521296396724,
+          2.26205892309125,
+          2.94373752992099,
+          3.4453547867191587,
+          3.5939872440816054
+        ],
+        "censor_median_below_observed_lower_fraction": 0.743757292882147,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_weibull_r1",
+      "fit": "cycle2",
+      "task": "pieces",
+      "train_windows": 15467,
+      "seconds": 0.0665143000005628,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 103.63505648750429,
+            "mean_log_interval_distance": 0.7061732855920909,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 106.54444444444445,
+            "overestimate_fraction": 0.31804176651831567,
+            "model_interval_overlap_fraction": 0.9938377268058884
+          }
+        ],
+        "macro_interval_distance": 103.63505648750429,
+        "macro_log_interval_distance": 0.7061732855920909,
+        "median_prediction_quantiles": [
+          30.0,
+          105.0,
+          138.0,
+          162.0,
+          169.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7094515752625438,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_weibull_r1",
+      "fit": "final",
+      "task": "hours",
+      "train_windows": 17406,
+      "seconds": 0.06697569999960251,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1.5154584532855582,
+            "mean_log_interval_distance": 1.364608671655594,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.8128872578524224,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 1.5154584532855582,
+        "macro_log_interval_distance": 1.364608671655594,
+        "median_prediction_quantiles": [
+          0.9382217262476251,
+          2.534918163461738,
+          3.300321353931923,
+          3.8171687189772583,
+          3.907387500773729
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8958587765071611,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "stage_weibull_r1",
+      "fit": "final",
+      "task": "pieces",
+      "train_windows": 17406,
+      "seconds": 0.06815830000050482,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 81.45294117647059,
+            "mean_log_interval_distance": 2.0480701620552595,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 90.44444444444444,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 81.45294117647059,
+        "macro_log_interval_distance": 2.0480701620552595,
+        "median_prediction_quantiles": [
+          41.0,
+          117.0,
+          154.0,
+          179.0,
+          184.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8985233707116687,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    }
+  ],
+  "forward_cycle_macro_log_distance": 0.9399914095398829,
+  "forward_cycle_macro_hour_distance": 8.341761885541981,
+  "all_optimizers_converged": true,
+  "history_period_accessed": false,
+  "features": [
+    "product_voltage_mean",
+    "matched_long_peak_drop",
+    "powered_Voltage_slope_per_hour_300s",
+    "powered_Voltage_std_300s"
+  ],
+  "penalty": 1.0
+}

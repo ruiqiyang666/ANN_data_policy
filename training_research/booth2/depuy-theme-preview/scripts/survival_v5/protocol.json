@@ -1,0 +1,17 @@
+{
+  "version": "booth2-v5-protocol-1",
+  "source_commit": "c49f6c9d50cc3ee4f921aee3f26cedc568557b59",
+  "purpose": "Censor-aware remaining processing life, compared with frozen v3/v4; historical research, not a new blind test",
+  "candidates": ["aft_linear6", "aft_xgb6", "aft_xgb23", "pch_linear6", "pch_mlp6", "pch_mlp23"],
+  "outer": "leave one complete electrode cycle out",
+  "inner": "three deterministic groups of complete cycles; preprocessing fitted on training cycles only",
+  "forward_blocks": [["L005", "L006", "L007"], ["L008", "L009", "L010"], ["L011", "L012", "L013"]],
+  "selection": "inner cycle-macro MAE + 0.5 * MAE in final two processing hours; fixed before this run",
+  "training": "one origin per processing minute; each cycle has equal total training weight",
+  "alarm_false_budget_per_hour": 0.05,
+  "alarm_threshold_grid": [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1.000001],
+  "interval": "raw model q10/q50/q90, no data-dependent smoothing or warning lift",
+  "metrics": ["cycle_macro_mae", "last2h_mae", "last1h_mae", "last2h_bias", "interval_coverage", "interval_width", "IPCW_Brier_1_4_8h", "event_hits20", "false_alarms_per_100h"],
+  "ipcw": "Training-landmark censoring KM only; inverse weights capped by G >= 0.1; assumption-dependent diagnostic, correlated origins are not independent subjects",
+  "limits": ["Only 14 cycles and 10 observed endpoints", "Historical offline product eligibility remains a limitation", "Prior research has inspected all historical cycles", "No automatic promotion or field deployment"]
+}

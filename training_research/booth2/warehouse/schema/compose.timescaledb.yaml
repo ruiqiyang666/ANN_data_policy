@@ -1,0 +1,28 @@
+# TimescaleDB for the Booth2 warehouse. READY TO RUN, NOT STARTED.
+#
+# Nothing here has been started on any machine. Starting it pulls an image and opens a
+# port, so it needs explicit approval first. Before `docker compose up -d`:
+#   1. agree the host port (5433 below is a placeholder; 5432 may be taken);
+#   2. create ./pg.env next to this file with POSTGRES_PASSWORD=<secret>  (never commit it);
+#   3. make sure ./pgdata is on a disk with room (1 Hz x 28 tags is roughly 1-2 GB/year compressed).
+# The schema file is applied automatically on first start of an empty data directory.
+name: booth2-warehouse
+services:
+  timescaledb:
+    image: timescale/timescaledb:2.17.2-pg16
+    restart: unless-stopped
+    env_file: ./pg.env
+    environment:
+      POSTGRES_DB: booth2
+      POSTGRES_USER: booth2
+    ports:
+      - "127.0.0.1:5433:5432"        # loopback only
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./postgres_timescale.sql:/docker-entrypoint-initdb.d/10-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U booth2 -d booth2"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    shm_size: 512m

@@ -1,0 +1,12 @@
+{
+  "cqrnn": {
+    "median_relative_error": 0.014923637091110978,
+    "grid_quantile_mae": 0.0718364796654955,
+    "censored_fraction": 0.29375
+  },
+  "mix": {
+    "median_relative_error": 0.006929641798401332,
+    "grid_quantile_mae": 0.027169836609282988,
+    "censored_fraction": 0.29375
+  }
+}

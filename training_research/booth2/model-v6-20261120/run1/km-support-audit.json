@@ -1,0 +1,206 @@
+[
+  {
+    "fold": "loco-L000",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L001",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L002",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L003",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L004",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L005",
+    "affected_origins": 972,
+    "details": {
+      "unresolved": [
+        0.09865015731249366,
+        0.09865015731249366,
+        0.09865015731249366
+      ],
+      "unsupported_age_fraction": 0.09865015731249366
+    }
+  },
+  {
+    "fold": "loco-L006",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L007",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L008",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L009",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L010",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L011",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L012",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "loco-L013",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "forward-0",
+    "affected_origins": 972,
+    "details": {
+      "unresolved": [
+        0.05387130743224519,
+        0.05387130743224519,
+        0.05387130743224519
+      ],
+      "unsupported_age_fraction": 0.05387130743224519
+    }
+  },
+  {
+    "fold": "forward-1",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  },
+  {
+    "fold": "forward-2",
+    "affected_origins": 0,
+    "details": {
+      "unresolved": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "unsupported_age_fraction": 0.0
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "family": "km_age",
+  "features": [],
+  "training_cycles": [
+    "L000",
+    "L001",
+    "L002",
+    "L003",
+    "L004",
+    "L005",
+    "L006",
+    "L007"
+  ],
+  "details": {
+    "unresolved": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unsupported_age_fraction": 0.0
+  },
+  "history": null,
+  "artifact": "km_age.joblib",
+  "sha256": "ccb6489acfc54eadec042f1dc5e6d28c8363a4c79405190f608e20611a213397"
+}

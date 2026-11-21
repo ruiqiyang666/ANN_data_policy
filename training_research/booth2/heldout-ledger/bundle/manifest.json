@@ -1,0 +1,969 @@
+{
+ "kind": "life_ledger_v1",
+ "created_utc": "2026-11-20T17:52:59+00:00",
+ "status": "research candidates; recorded held-out predictions; not released, not scored live",
+ "source": "booth2 v5 / v6 research runs (leave one cycle out)",
+ "sensors": 28,
+ "horizons_hours": [
+  0.3333333333333333,
+  0.6666666666666666,
+  1.0,
+  1.5,
+  2.0,
+  3.0,
+  4.0,
+  6.0,
+  8.0,
+  12.0,
+  16.0,
+  24.0
+ ],
+ "cap_hours": 40.0,
+ "quantiles": [
+  0.1,
+  0.5,
+  0.9
+ ],
+ "cycle_ids": [
+  "L000",
+  "L001",
+  "L002",
+  "L003",
+  "L004",
+  "L005",
+  "L006",
+  "L007",
+  "L008",
+  "L009",
+  "L010",
+  "L011",
+  "L012",
+  "L013"
+ ],
+ "alarm_policy": {
+  "confirm_origins": 2,
+  "max_confirm_gap_seconds": 90,
+  "release_seconds": 600,
+  "cooldown_seconds": 1800
+ },
+ "products_per_processing_hour": 57.97265277914898,
+ "showcase_segments": [
+  {
+   "name": "electrode_eol_20261101",
+   "label": "11月1日 12:30–13:38 电极末期",
+   "start": 1793536200,
+   "stop": 1793540280
+  },
+  {
+   "name": "electrode_eol_20261028",
+   "label": "10月28日 07:30–08:32 电极末期",
+   "start": 1793172600,
+   "stop": 1793176320
+  }
+ ],
+ "origins": 548,
+ "origins_total": 81235,
+ "models": [
+  {
+   "id": "v5_aft_linear6",
+   "generation": "v5",
+   "source_name": "aft_linear6",
+   "feature_set": "small",
+   "family": "linear",
+   "name": "电极寿命 · 线性 AFT · 6 特征",
+   "name_en": "Electrode life · Linear AFT · 6 features",
+   "short": "线性 AFT v5",
+   "short_en": "Linear AFT v5",
+   "describe": "加速失效时间线性模型：6 项特征 → 剩余寿命分布 · 留出预测回放",
+   "describe_en": "Accelerated-failure-time linear model: 6 features → remaining-life distribution · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 2,
+     "late": 1,
+     "missed": 7,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.351049209447913,
+     "mae_last2h": 3.4704922736898083,
+     "mae_last1h": 2.452408473988098,
+     "coverage": 0.7189371865481122,
+     "width": 28.136638879776
+    }
+   }
+  },
+  {
+   "id": "v5_aft_xgb6",
+   "generation": "v5",
+   "source_name": "aft_xgb6",
+   "feature_set": "small",
+   "family": "trees",
+   "name": "电极寿命 · XGBoost AFT · 6 特征",
+   "name_en": "Electrode life · XGBoost AFT · 6 features",
+   "short": "XGB AFT 6 v5",
+   "short_en": "XGB AFT 6 v5",
+   "describe": "提升树加速失效时间模型：6 项特征 · 留出预测回放",
+   "describe_en": "Boosted-tree accelerated-failure-time model: 6 features · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 1,
+     "late": 1,
+     "missed": 8,
+     "false_alarms": 10,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.5319965174786505,
+     "mae_last2h": 4.0777638834724,
+     "mae_last1h": 2.7970153093937737,
+     "coverage": 0.731466938078561,
+     "width": 35.244838333129884
+    }
+   }
+  },
+  {
+   "id": "v5_aft_xgb23",
+   "generation": "v5",
+   "source_name": "aft_xgb23",
+   "feature_set": "end",
+   "family": "trees",
+   "name": "电极寿命 · XGBoost AFT · 23 特征",
+   "name_en": "Electrode life · XGBoost AFT · 23 features",
+   "short": "XGB AFT 23 v5",
+   "short_en": "XGB AFT 23 v5",
+   "describe": "提升树加速失效时间模型：23 项特征 · 留出预测回放",
+   "describe_en": "Boosted-tree accelerated-failure-time model: 23 features · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 2,
+     "late": 0,
+     "missed": 8,
+     "false_alarms": 7,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.297746125155226,
+     "mae_last2h": 4.087156088948467,
+     "mae_last1h": 2.7593070704476146,
+     "coverage": 0.7066190137655963,
+     "width": 33.6668098449707
+    }
+   }
+  },
+  {
+   "id": "v5_pch_linear6",
+   "generation": "v5",
+   "source_name": "pch_linear6",
+   "feature_set": "small",
+   "family": "linear",
+   "name": "电极寿命 · 分段常数风险 · 线性 6 特征",
+   "name_en": "Electrode life · Piecewise hazard · linear, 6 features",
+   "short": "分段风险线性 v5",
+   "short_en": "PCH linear v5",
+   "describe": "分段常数风险的线性模型：6 项特征 · 留出预测回放",
+   "describe_en": "Piecewise-constant hazard, linear in 6 features · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 0,
+     "late": 0,
+     "missed": 10,
+     "false_alarms": 8,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.393492374292966,
+     "mae_last2h": 4.305791770953408,
+     "mae_last1h": 3.323355969979256,
+     "coverage": 0.6938906755859848,
+     "width": 14.681806278228759
+    }
+   }
+  },
+  {
+   "id": "v5_pch_mlp6",
+   "generation": "v5",
+   "source_name": "pch_mlp6",
+   "feature_set": "small",
+   "family": "network",
+   "name": "电极寿命 · 分段常数风险网络 · 6 特征",
+   "name_en": "Electrode life · Piecewise hazard network · 6 features",
+   "short": "分段风险网络 6 v5",
+   "short_en": "PCH net 6 v5",
+   "describe": "小型网络输出各时间段风险：6 项特征 · 留出预测回放",
+   "describe_en": "Small network giving the hazard per time bin: 6 features · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 2,
+     "late": 1,
+     "missed": 7,
+     "false_alarms": 7,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.44437752825454,
+     "mae_last2h": 4.135775522680616,
+     "mae_last1h": 3.1176109898191546,
+     "coverage": 0.5488003741720372,
+     "width": 12.299502849578857
+    }
+   }
+  },
+  {
+   "id": "v5_pch_mlp23",
+   "generation": "v5",
+   "source_name": "pch_mlp23",
+   "feature_set": "end",
+   "family": "network",
+   "name": "电极寿命 · 分段常数风险网络 · 23 特征",
+   "name_en": "Electrode life · Piecewise hazard network · 23 features",
+   "short": "分段风险网络 23 v5",
+   "short_en": "PCH net 23 v5",
+   "describe": "小型网络输出各时间段风险：23 项特征 · 留出预测回放",
+   "describe_en": "Small network giving the hazard per time bin: 23 features · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h"
+   ],
+   "warning": {
+    "source": "own_curve_1h",
+    "note": "预警评分为模型自身的 1 小时内到寿概率，阈值按折在内层留出预测上选取"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 0,
+     "late": 0,
+     "missed": 10,
+     "false_alarms": 7,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.245265120180099,
+     "mae_last2h": 3.9929072241960997,
+     "mae_last1h": 2.5913692695886636,
+     "coverage": 0.4931656621305465,
+     "width": 10.865158796310425
+    }
+   }
+  },
+  {
+   "id": "v6_ipcw_hgb6",
+   "generation": "v6",
+   "source_name": "ipcw_hgb6",
+   "feature_set": "small",
+   "family": "trees",
+   "name": "电极寿命 · IPCW 分位数树 · 6 特征",
+   "name_en": "Electrode life · IPCW quantile trees · 6 features",
+   "short": "分位数树 6 v6",
+   "short_en": "Quantile trees 6 v6",
+   "describe": "删失加权的分位数提升树：6 项特征 · 留出预测回放",
+   "describe_en": "Censoring-weighted quantile boosted trees: 6 features · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.773396015609842,
+     "mae_last2h": 4.893712785464429,
+     "mae_last1h": 3.869498834840585,
+     "coverage": 0.5015658110779542,
+     "width": 9.259855937957763
+    }
+   }
+  },
+  {
+   "id": "v6_ipcw_hgb32",
+   "generation": "v6",
+   "source_name": "ipcw_hgb32",
+   "feature_set": "phys",
+   "family": "trees",
+   "name": "电极寿命 · IPCW 分位数树 · 32 特征",
+   "name_en": "Electrode life · IPCW quantile trees · 32 features",
+   "short": "分位数树 32 v6",
+   "short_en": "Quantile trees 32 v6",
+   "describe": "删失加权的分位数提升树：32 项特征 · 留出预测回放",
+   "describe_en": "Censoring-weighted quantile boosted trees: 32 features · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h",
+    "age_h",
+    "since_restart_h",
+    "cum_low53_h",
+    "cum_vsd_hi_h",
+    "tte51_h",
+    "v_first1h",
+    "vsd_slope_3h",
+    "v_slope_10h",
+    "v60"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 4.738110097389573,
+     "mae_last2h": 3.9418681592894464,
+     "mae_last1h": 3.554118244101604,
+     "coverage": 0.3916560462648772,
+     "width": 7.782250022888183
+    }
+   }
+  },
+  {
+   "id": "v6_cqrnn6",
+   "generation": "v6",
+   "source_name": "cqrnn6",
+   "feature_set": "small",
+   "family": "network",
+   "name": "电极寿命 · 删失分位数网络 · 6 特征",
+   "name_en": "Electrode life · Censored quantile network · 6 features",
+   "short": "CQRNN 6 v6",
+   "short_en": "CQRNN 6 v6",
+   "describe": "删失分位数回归网络：6 项特征 → 19 个分位数 · 留出预测回放",
+   "describe_en": "Censored quantile regression network: 6 features → 19 quantiles · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 8.092659889614003,
+     "mae_last2h": 6.4093075719465755,
+     "mae_last1h": 5.955434926243291,
+     "coverage": 0.2318594046126182,
+     "width": 8.914714694023132
+    }
+   }
+  },
+  {
+   "id": "v6_cqrnn32",
+   "generation": "v6",
+   "source_name": "cqrnn32",
+   "feature_set": "phys",
+   "family": "network",
+   "name": "电极寿命 · 删失分位数网络 · 32 特征",
+   "name_en": "Electrode life · Censored quantile network · 32 features",
+   "short": "CQRNN 32 v6",
+   "short_en": "CQRNN 32 v6",
+   "describe": "删失分位数回归网络：32 项特征 → 19 个分位数 · 留出预测回放",
+   "describe_en": "Censored quantile regression network: 32 features → 19 quantiles · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h",
+    "age_h",
+    "since_restart_h",
+    "cum_low53_h",
+    "cum_vsd_hi_h",
+    "tte51_h",
+    "v_first1h",
+    "vsd_slope_3h",
+    "v_slope_10h",
+    "v60"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 17.538568516473042,
+     "mae_last2h": 9.142766264779466,
+     "mae_last1h": 9.826003605590744,
+     "coverage": 0.12568555365255418,
+     "width": 6.391021728515625
+    }
+   }
+  },
+  {
+   "id": "v6_mix6",
+   "generation": "v6",
+   "source_name": "mix6",
+   "feature_set": "small",
+   "family": "network",
+   "name": "电极寿命 · 对数正态混合网络 · 6 特征",
+   "name_en": "Electrode life · Lognormal mixture network · 6 features",
+   "short": "混合网络 6 v6",
+   "short_en": "Mixture net 6 v6",
+   "describe": "两分量对数正态混合的小型网络：6 项特征 · 留出预测回放",
+   "describe_en": "Small network with a two-component lognormal mixture: 6 features · held-out predictions",
+   "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 6.422346173976946,
+     "mae_last2h": 4.4918196347569745,
+     "mae_last1h": 3.592869242316227,
+     "coverage": 0.4468547108738128,
+     "width": 13.263242626190186
+    }
+   }
+  },
+  {
+   "id": "v6_mix32",
+   "generation": "v6",
+   "source_name": "mix32",
+   "feature_set": "phys",
+   "family": "network",
+   "name": "电极寿命 · 对数正态混合网络 · 32 特征",
+   "name_en": "Electrode life · Lognormal mixture network · 32 features",
+   "short": "混合网络 32 v6",
+   "short_en": "Mixture net 32 v6",
+   "describe": "两分量对数正态混合的小型网络：32 项特征 · 留出预测回放",
+   "describe_en": "Small network with a two-component lognormal mixture: 32 features · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h",
+    "age_h",
+    "since_restart_h",
+    "cum_low53_h",
+    "cum_vsd_hi_h",
+    "tte51_h",
+    "v_first1h",
+    "vsd_slope_3h",
+    "v_slope_10h",
+    "v60"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 6.4581282340512605,
+     "mae_last2h": 2.82899863317361,
+     "mae_last1h": 2.090905985644432,
+     "coverage": 0.30375355421321415,
+     "width": 10.795299696922303
+    }
+   }
+  },
+  {
+   "id": "v6_rsf32",
+   "generation": "v6",
+   "source_name": "rsf32",
+   "feature_set": "phys",
+   "family": "trees",
+   "name": "电极寿命 · 随机生存森林 · 32 特征",
+   "name_en": "Electrode life · Random survival forest · 32 features",
+   "short": "生存森林 v6",
+   "short_en": "Survival forest v6",
+   "describe": "随机生存森林：32 项特征 · 留出预测回放",
+   "describe_en": "Random survival forest: 32 features · held-out predictions",
+   "features": [
+    "vsd_mean_5m",
+    "vsd_mean_30m",
+    "vsd_mean_3h",
+    "vsd60",
+    "vsd_ratio",
+    "v_std_5m",
+    "v_std_30m",
+    "d_peak_30m",
+    "d_peak_3h",
+    "d_5m_3h",
+    "d_30m_base",
+    "v_slope_30m",
+    "v_slope_3h",
+    "v_low53_30m",
+    "margin51_30m",
+    "margin51_q10",
+    "v_min_30m",
+    "cool_loss_kw_d_base",
+    "cool_dT_d_base",
+    "therm_eff_d_base",
+    "power_d_base",
+    "power_std_30m",
+    "therm_eff_slope_3h",
+    "age_h",
+    "since_restart_h",
+    "cum_low53_h",
+    "cum_vsd_hi_h",
+    "tte51_h",
+    "v_first1h",
+    "vsd_slope_3h",
+    "v_slope_10h",
+    "v60"
+   ],
+   "warning": {
+    "source": "v6_warning_head",
+    "heads": {
+     "L000": "warn_hgb32",
+     "L001": "warn_hgb32",
+     "L002": "warn_logit6",
+     "L003": "warn_logit6",
+     "L004": "warn_logit6",
+     "L005": "warn_hgb32",
+     "L006": "warn_logit6",
+     "L007": "warn_logit6",
+     "L008": "warn_hgb32",
+     "L009": "warn_logit6",
+     "L010": "warn_logit6",
+     "L011": "warn_logit6",
+     "L012": "warn_logit6",
+     "L013": "warn_logit6"
+    },
+    "note": "预警来自 v6 独立预警头（各折内层选型），与寿命模型分开训练"
+   },
+   "evaluation": {
+    "protocol": "leave one electrode cycle out, 14 folds; research run, not a new blind test",
+    "events": {
+     "total_events": 10,
+     "hit20": 4,
+     "late": 2,
+     "missed": 4,
+     "false_alarms": 11,
+     "operating_hours": 237.53944444444448
+    },
+    "life": {
+     "mae": 5.3423581065570165,
+     "mae_last2h": 3.9900981324512834,
+     "mae_last1h": 3.0613055740263726,
+     "coverage": 0.5970247978244878,
+     "width": 11.8850332736969
+    }
+   }
+  }
+ ],
+ "checks": {
+  "origins_equal_v4": true,
+  "life_mae_from_reports": true,
+  "v5_alarm_totals_reproduced": true,
+  "v6_warning_alarms_reproduced": 18,
+  "per_model": {
+   "v5_aft_linear6": {
+    "cycles": 14,
+    "mae": 5.351049209447913,
+    "alarms_emitted": 16
+   },
+   "v5_aft_xgb6": {
+    "cycles": 14,
+    "mae": 5.5319965174786505,
+    "alarms_emitted": 13
+   },
+   "v5_aft_xgb23": {
+    "cycles": 14,
+    "mae": 5.297746125155226,
+    "alarms_emitted": 9
+   },
+   "v5_pch_linear6": {
+    "cycles": 14,
+    "mae": 5.393492374292966,
+    "alarms_emitted": 9
+   },
+   "v5_pch_mlp6": {
+    "cycles": 14,
+    "mae": 5.44437752825454,
+    "alarms_emitted": 11
+   },
+   "v5_pch_mlp23": {
+    "cycles": 14,
+    "mae": 5.245265120180099,
+    "alarms_emitted": 7
+   },
+   "v6_ipcw_hgb6": {
+    "cycles": 14,
+    "mae": 5.773396015609842,
+    "alarms_emitted": 18
+   },
+   "v6_ipcw_hgb32": {
+    "cycles": 14,
+    "mae": 4.738110097389573,
+    "alarms_emitted": 18
+   },
+   "v6_cqrnn6": {
+    "cycles": 14,
+    "mae": 8.092659889614003,
+    "alarms_emitted": 18
+   },
+   "v6_cqrnn32": {
+    "cycles": 14,
+    "mae": 17.538568516473042,
+    "alarms_emitted": 18
+   },
+   "v6_mix6": {
+    "cycles": 14,
+    "mae": 6.422346173976946,
+    "alarms_emitted": 18
+   },
+   "v6_mix32": {
+    "cycles": 14,
+    "mae": 6.4581282340512605,
+    "alarms_emitted": 18
+   },
+   "v6_rsf32": {
+    "cycles": 14,
+    "mae": 5.3423581065570165,
+    "alarms_emitted": 18
+   }
+  }
+ },
+ "limits": [
+  "留出预测回放：页面读取研究运行已写出的逐原点留出预测，不在页面上运行模型权重",
+  "研究候选，未发布；14 个周期均已在历次研究中查看，不是新增盲测",
+  "十次观察到的到寿只能支持较宽的范围；分位区间未校准"
+ ],
+ "sources": {
+  "model-v4-20261119/model_v4/bundle/manifest.json": "563afda461fda3d8c89b2310b628248ec404513e9ea94d269459ecb9d20fb127",
+  "model-v4-20261119/model_v4/bundle/origins.npz": "44987cab76ad6532074e1e9e07c3f735540223614bf7ae788f17b0d659fed796",
+  "model-v5-20261120/run1/report.json": "0540e5be55ba183892887f29ca9409cd8542e87c6dcc1b6ac8ebb37311a1c7fd",
+  "model-v5-20261120/run1/predictions.npz": "8c28b4ad1905eae0be2c43854b51a01979fb038e2cea7b4ac9949dfeafc262c1",
+  "model-v6-20261120/run1/report.json": "faef6dc2e482a5e3e65a5979ad1bb2606c5d9de2bca742bcd99637330f99f852",
+  "model-v6-20261120/run1/predictions.npz": "da1f926f51daba0cada142ae730cb581cc93b824c639c49f56cff65d67119d03",
+  "model-v5-20261120/data/frame.parquet": "e763d445d13b2fbd307dcd9a025e1610394b4761051ad7b6e6f27279b4f927a5",
+  "model-v5-20261120/data/evaluation.py": "832cb572a3b9d2014e6934a174b88de7c8db984d2ca87b264637e2ad57264b45"
+ },
+ "files": {
+  "ledger.npz": "f80fda0ba0272a852ecd09958da5f323eadc3aa878152ac2fe7cac039e5923eb"
+ },
+ "version": "booth2-research-ledger-2c9585134922"
+}

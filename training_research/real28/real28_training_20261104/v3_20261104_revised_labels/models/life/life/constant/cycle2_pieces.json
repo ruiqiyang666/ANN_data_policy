@@ -1,0 +1,38 @@
+{
+  "name": "constant",
+  "fit": "cycle2",
+  "task": "pieces",
+  "train_windows": 15467,
+  "seconds": 0.2175042000017129,
+  "metrics": {
+    "windows": 11491,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R006",
+        "windows": 2921,
+        "mean_interval_distance": 126.53098254022595,
+        "mean_log_interval_distance": 0.9021803272220043,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 81.03333333333333,
+        "overestimate_fraction": 0.19958918178705923,
+        "model_interval_overlap_fraction": 0.9931530297843204
+      }
+    ],
+    "macro_interval_distance": 126.53098254022595,
+    "macro_log_interval_distance": 0.9021803272220043,
+    "median_prediction_quantiles": [
+      89.0,
+      89.0,
+      89.0,
+      89.0,
+      89.0
+    ],
+    "censor_median_below_observed_lower_fraction": 0.7593932322053676,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

@@ -1,0 +1,34 @@
+{
+  "selected": "patch",
+  "models": [
+    {
+      "id": "mlp",
+      "name": "MTL-MLP",
+      "validation_score": 1.0827420002414885,
+      "seconds": 101.66618752479553,
+      "epochs": 16
+    },
+    {
+      "id": "tcn",
+      "name": "Residual-TCN",
+      "validation_score": 1.0126840794794336,
+      "seconds": 145.6523723602295,
+      "epochs": 16
+    },
+    {
+      "id": "patch",
+      "name": "Patch-Attention",
+      "validation_score": 0.9721353840204688,
+      "seconds": 179.05887079238892,
+      "epochs": 16
+    },
+    {
+      "id": "multiscale",
+      "name": "Gated-Multiscale",
+      "validation_score": 1.0632320854270876,
+      "seconds": 149.149329662323,
+      "epochs": 16
+    }
+  ],
+  "criterion": "Fixed multitask validation score; test not used for selection."
+}

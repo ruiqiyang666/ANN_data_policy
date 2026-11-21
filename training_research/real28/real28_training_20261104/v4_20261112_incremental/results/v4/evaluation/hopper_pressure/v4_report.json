@@ -1,0 +1,1675 @@
+{
+  "task": "hopper_pressure",
+  "selected_algorithm": "extra_trees",
+  "folds": {
+    "f1": {
+      "train_end": "2026-09-01",
+      "validation_end": "2026-09-08",
+      "validation_windows": 22034,
+      "validation_events": 5,
+      "validation_first": "2026-09-01T07:13:20",
+      "validation_last": "2026-09-07T17:51:20",
+      "models": {
+        "logistic": {
+          "train_windows": 40677,
+          "train_positive_windows": 120,
+          "train_events": 4,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 2.37607438582927,
+          "model_sha256": "8982de6e0408d481a6f8130fd773d10b60abeda76257bf2ea00dcd3722f775cc"
+        },
+        "histgb": {
+          "train_windows": 40677,
+          "train_positive_windows": 120,
+          "train_events": 4,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 2.365116238594055,
+          "model_sha256": "4e976495d4620fe2c7bd5f2e4b2a902986dd0a420e972a648603151f45227483"
+        },
+        "extra_trees": {
+          "train_windows": 40677,
+          "train_positive_windows": 120,
+          "train_events": 4,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 10.55048275180161,
+          "model_sha256": "9b0b11d8801bc69d29b87b203924cd5e72371e7fb7627e5b041cf2b07f3e53b6"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 21747,
+            "positive_windows": 136,
+            "events": 5,
+            "prevalence": 0.0062537361475146,
+            "average_precision": 0.12829385287149397,
+            "event_macro_ap": 0.09579062344225384,
+            "roc_auc": 0.8186217803025148,
+            "brier": 0.0069889999259055815
+          },
+          "eta_mae_s_all_positive_windows": 92.43161592804341,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "histgb": {
+          "ranking": {
+            "n": 21747,
+            "positive_windows": 136,
+            "events": 5,
+            "prevalence": 0.0062537361475146,
+            "average_precision": 0.045355973664471944,
+            "event_macro_ap": 0.021951054155221417,
+            "roc_auc": 0.7679795079847681,
+            "brier": 0.006243837187602487
+          },
+          "eta_mae_s_all_positive_windows": 92.43161592804341,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 21747,
+            "positive_windows": 136,
+            "events": 5,
+            "prevalence": 0.0062537361475146,
+            "average_precision": 0.21874424681425167,
+            "event_macro_ap": 0.12566506221945078,
+            "roc_auc": 0.8418848856927437,
+            "brier": 0.0053985288917546585
+          },
+          "eta_mae_s_all_positive_windows": 92.43161592804341,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 21747,
+            "positive_windows": 136,
+            "events": 5,
+            "prevalence": 0.0062537361475146,
+            "average_precision": 0.45416243608531814,
+            "event_macro_ap": 0.2506155188132374,
+            "roc_auc": 0.8409410580668342,
+            "brier": 0.0694771494149004
+          },
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        }
+      },
+      "prevalence_baseline_ap": 0.0062537361475146
+    },
+    "f2": {
+      "train_end": "2026-09-08",
+      "validation_end": "2026-09-15",
+      "validation_windows": 14001,
+      "validation_events": 0,
+      "validation_first": "2026-09-09T13:28:00",
+      "validation_last": "2026-09-14T20:44:10",
+      "models": {
+        "logistic": {
+          "train_windows": 62424,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 8.952741421759129,
+          "model_sha256": "ed44d49e636d345b0322b179aebb9383fb92d3203af08e2221e648ba20ac23d6"
+        },
+        "histgb": {
+          "train_windows": 62424,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 5.577626798301935,
+          "model_sha256": "4283a4053181c1e476d62aad7a0067b69fafac2b5f4700f5cc8f55ba6d9ce699"
+        },
+        "extra_trees": {
+          "train_windows": 62424,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 53.28665962163359,
+          "model_sha256": "1cf2a9023a95b928fd176574c499a1ffe57a25936a0485fa0b7cb0932a3bbbea"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13981,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.007837583546595677
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 17,
+            "false_alerts": 17,
+            "observable_powered_hours": 38.83611111111111,
+            "false_alerts_per_100_hours": 43.7736928688935,
+            "threshold": 0.37126552591460965,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-09-09T13:59:30.000000000",
+            "2026-09-10T09:16:00.000000000",
+            "2026-09-10T14:06:20.000000000",
+            "2026-09-10T14:11:40.000000000",
+            "2026-09-10T14:19:30.000000000",
+            "2026-09-11T07:22:40.000000000",
+            "2026-09-11T10:16:00.000000000",
+            "2026-09-11T14:11:20.000000000",
+            "2026-09-11T14:49:10.000000000",
+            "2026-09-11T14:58:20.000000000",
+            "2026-09-11T15:28:10.000000000",
+            "2026-09-12T07:13:10.000000000",
+            "2026-09-12T14:25:50.000000000",
+            "2026-09-14T08:38:30.000000000",
+            "2026-09-14T11:50:50.000000000",
+            "2026-09-14T12:05:40.000000000",
+            "2026-09-14T20:00:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 1,
+            "missed_events": 4,
+            "event_recall": 0.2,
+            "alerts": 2,
+            "false_alerts": 1,
+            "observable_powered_hours": 60.40833333333333,
+            "false_alerts_per_100_hours": 1.6554007449303354,
+            "threshold": 0.37126552591460965
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13981,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.0011327402969655027
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 23,
+            "false_alerts": 23,
+            "observable_powered_hours": 38.83611111111111,
+            "false_alerts_per_100_hours": 59.22323152850297,
+            "threshold": 0.03128023577305622,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-09-09T13:28:10.000000000",
+            "2026-09-09T14:17:30.000000000",
+            "2026-09-09T15:15:20.000000000",
+            "2026-09-09T15:21:10.000000000",
+            "2026-09-09T15:27:20.000000000",
+            "2026-09-09T16:02:10.000000000",
+            "2026-09-09T16:07:20.000000000",
+            "2026-09-09T16:22:40.000000000",
+            "2026-09-09T16:42:40.000000000",
+            "2026-09-09T19:00:10.000000000",
+            "2026-09-09T19:18:10.000000000",
+            "2026-09-09T20:42:00.000000000",
+            "2026-09-09T20:49:20.000000000",
+            "2026-09-09T20:54:20.000000000",
+            "2026-09-09T21:02:00.000000000",
+            "2026-09-10T09:14:30.000000000",
+            "2026-09-11T07:22:50.000000000",
+            "2026-09-11T11:42:40.000000000",
+            "2026-09-11T11:52:00.000000000",
+            "2026-09-14T08:37:50.000000000",
+            "2026-09-14T08:44:50.000000000",
+            "2026-09-14T11:21:30.000000000",
+            "2026-09-14T12:22:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 2,
+            "missed_events": 3,
+            "event_recall": 0.4,
+            "alerts": 7,
+            "false_alerts": 5,
+            "observable_powered_hours": 60.40833333333333,
+            "false_alerts_per_100_hours": 8.277003724651678,
+            "threshold": 0.03128023577305622
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13981,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.0006518430465484954
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 16,
+            "false_alerts": 16,
+            "observable_powered_hours": 38.83611111111111,
+            "false_alerts_per_100_hours": 41.19876975895858,
+            "threshold": 0.050114655594978845,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-09-09T13:28:30.000000000",
+            "2026-09-09T16:22:50.000000000",
+            "2026-09-09T19:00:20.000000000",
+            "2026-09-11T14:47:40.000000000",
+            "2026-09-12T13:13:40.000000000",
+            "2026-09-12T13:43:10.000000000",
+            "2026-09-12T13:59:40.000000000",
+            "2026-09-12T14:11:30.000000000",
+            "2026-09-14T08:37:50.000000000",
+            "2026-09-14T09:31:20.000000000",
+            "2026-09-14T09:37:10.000000000",
+            "2026-09-14T09:42:10.000000000",
+            "2026-09-14T11:50:50.000000000",
+            "2026-09-14T12:16:10.000000000",
+            "2026-09-14T12:24:20.000000000",
+            "2026-09-14T12:33:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 2,
+            "missed_events": 3,
+            "event_recall": 0.4,
+            "alerts": 9,
+            "false_alerts": 7,
+            "observable_powered_hours": 60.40833333333333,
+            "false_alerts_per_100_hours": 11.587805214512347,
+            "threshold": 0.050114655594978845
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13981,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.027940011231602915
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.83611111111111,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 4,
+            "missed_events": 1,
+            "event_recall": 0.8,
+            "alerts": 4,
+            "false_alerts": 0,
+            "observable_powered_hours": 60.40833333333333,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0
+    },
+    "f3": {
+      "train_end": "2026-09-15",
+      "validation_end": "2026-09-30",
+      "validation_windows": 27580,
+      "validation_events": 1,
+      "validation_first": "2026-09-15T07:23:40",
+      "validation_last": "2026-09-29T17:27:10",
+      "models": {
+        "logistic": {
+          "train_windows": 76405,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 8.865613942034543,
+          "model_sha256": "7e8c34a00ee02137787c9acabab02f8fbe81cd9ea9e7d6db8316656c567f4f39"
+        },
+        "histgb": {
+          "train_windows": 76405,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 5.815631527453661,
+          "model_sha256": "dbab0afa67d0bf9f8e1fbed9c93f663b826a16e39c938e3eb0cb774cbe22fcf9"
+        },
+        "extra_trees": {
+          "train_windows": 76405,
+          "train_positive_windows": 256,
+          "train_events": 9,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 60.6804210357368,
+          "model_sha256": "4210688c111cb84790be58dddd51aaaee3398847c400686045f1c934d19cadb6"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 27537,
+            "positive_windows": 29,
+            "events": 1,
+            "prevalence": 0.0010531285179939717,
+            "average_precision": 0.0014049649857154286,
+            "event_macro_ap": 0.0014049649857154286,
+            "roc_auc": 0.6450324169019169,
+            "brier": 0.001063424399707028
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 2,
+            "false_alerts": 2,
+            "observable_powered_hours": 76.49166666666666,
+            "false_alerts_per_100_hours": 2.614663906743654,
+            "threshold": 0.03657661318125355,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "hopper_pressure_010",
+              "type": "hopper_pressure",
+              "event_at": "2026-09-27T10:52:44",
+              "product_start": "2026-09-27T10:52:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:53:49",
+              "failed_products": 3
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-27T08:16:10.000000000",
+            "2026-09-28T07:22:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 56.691175439459236,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 1,
+            "missed_events": 4,
+            "event_recall": 0.2,
+            "alerts": 19,
+            "false_alerts": 18,
+            "observable_powered_hours": 99.24444444444444,
+            "false_alerts_per_100_hours": 18.13703537841469,
+            "threshold": 0.03657661318125355
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 27537,
+            "positive_windows": 29,
+            "events": 1,
+            "prevalence": 0.0010531285179939717,
+            "average_precision": 0.023376738900612908,
+            "event_macro_ap": 0.023376738900612908,
+            "roc_auc": 0.9471714811490577,
+            "brier": 0.0010498737368559539
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 1,
+            "false_alerts": 1,
+            "observable_powered_hours": 76.49166666666666,
+            "false_alerts_per_100_hours": 1.307331953371827,
+            "threshold": 0.03519114086211712,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "hopper_pressure_010",
+              "type": "hopper_pressure",
+              "event_at": "2026-09-27T10:52:44",
+              "product_start": "2026-09-27T10:52:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:53:49",
+              "failed_products": 3
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-29T07:26:10.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 56.691175439459236,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 1,
+            "missed_events": 4,
+            "event_recall": 0.2,
+            "alerts": 18,
+            "false_alerts": 17,
+            "observable_powered_hours": 99.24444444444444,
+            "false_alerts_per_100_hours": 17.129422301836094,
+            "threshold": 0.03519114086211712
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 27537,
+            "positive_windows": 29,
+            "events": 1,
+            "prevalence": 0.0010531285179939717,
+            "average_precision": 0.039716370300730094,
+            "event_macro_ap": 0.039716370300730094,
+            "roc_auc": 0.973961806722057,
+            "brier": 0.0010471723832425498
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 1,
+            "missed_events": 0,
+            "event_recall": 1.0,
+            "alerts": 17,
+            "false_alerts": 16,
+            "observable_powered_hours": 76.49166666666666,
+            "false_alerts_per_100_hours": 20.917311253949233,
+            "threshold": 0.023329569581116722,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "hopper_pressure_010",
+              "type": "hopper_pressure",
+              "event_at": "2026-09-27T10:52:44",
+              "product_start": "2026-09-27T10:52:44",
+              "alert_at": "2026-09-27T10:52:20",
+              "lead_to_result_s": 89.0,
+              "lead_to_product_start_s": 24.0,
+              "first_result_at": "2026-09-27T10:53:49",
+              "failed_products": 3
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-20T14:42:50.000000000",
+            "2026-09-20T14:48:30.000000000",
+            "2026-09-20T14:58:20.000000000",
+            "2026-09-20T15:04:30.000000000",
+            "2026-09-20T15:12:40.000000000",
+            "2026-09-20T15:25:10.000000000",
+            "2026-09-20T15:32:30.000000000",
+            "2026-09-20T15:42:00.000000000",
+            "2026-09-20T15:52:50.000000000",
+            "2026-09-20T16:00:20.000000000",
+            "2026-09-20T16:08:40.000000000",
+            "2026-09-20T16:20:50.000000000",
+            "2026-09-20T16:27:30.000000000",
+            "2026-09-20T16:37:00.000000000",
+            "2026-09-20T16:46:00.000000000",
+            "2026-09-20T16:54:20.000000000",
+            "2026-09-27T10:52:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 56.691175439459236,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 1,
+            "missed_events": 4,
+            "event_recall": 0.2,
+            "alerts": 2,
+            "false_alerts": 1,
+            "observable_powered_hours": 99.24444444444444,
+            "false_alerts_per_100_hours": 1.007613076578594,
+            "threshold": 0.023329569581116722
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 27537,
+            "positive_windows": 29,
+            "events": 1,
+            "prevalence": 0.0010531285179939717,
+            "average_precision": 0.541746575099851,
+            "event_macro_ap": 0.541746575099851,
+            "roc_auc": 0.9956877748416761,
+            "brier": 0.044699878998875384
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 1,
+            "missed_events": 0,
+            "event_recall": 1.0,
+            "alerts": 1,
+            "false_alerts": 0,
+            "observable_powered_hours": 76.49166666666666,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "hopper_pressure_010",
+              "type": "hopper_pressure",
+              "event_at": "2026-09-27T10:52:44",
+              "product_start": "2026-09-27T10:52:44",
+              "alert_at": "2026-09-27T10:52:30",
+              "lead_to_result_s": 79.0,
+              "lead_to_product_start_s": 14.0,
+              "first_result_at": "2026-09-27T10:53:49",
+              "failed_products": 3
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-27T10:52:30.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 5,
+            "detected_events": 4,
+            "missed_events": 1,
+            "event_recall": 0.8,
+            "alerts": 4,
+            "false_alerts": 0,
+            "observable_powered_hours": 99.24444444444444,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0010531285179939717
+    },
+    "f4": {
+      "train_end": "2026-10-04",
+      "validation_end": "2026-10-10",
+      "validation_windows": 18473,
+      "validation_events": 0,
+      "validation_first": "2026-10-04T15:35:20",
+      "validation_last": "2026-10-09T16:56:20",
+      "models": {
+        "logistic": {
+          "train_windows": 103942,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 14.859888954088092,
+          "model_sha256": "debff9361db1f7d0281e5c301c28adf193cd48b203c67a8206684765fa042a44"
+        },
+        "histgb": {
+          "train_windows": 103942,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 6.7203778037801385,
+          "model_sha256": "54772fc83b7d83529e522920cbb2c32aff629855cbc2bb7d60fc11a5659a5901"
+        },
+        "extra_trees": {
+          "train_windows": 103942,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 94.09699280094355,
+          "model_sha256": "15f8b9a3d3543428f02036d61d97f4ed6dfe1ce601cd08cfd8b629c6d9e8e652"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 18443,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 3.895086402463336e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 51.230555555555554,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.030014952461828052,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 1,
+            "missed_events": 5,
+            "event_recall": 0.16666666666666666,
+            "alerts": 22,
+            "false_alerts": 21,
+            "observable_powered_hours": 175.73611111111111,
+            "false_alerts_per_100_hours": 11.94973524065439,
+            "threshold": 0.030014952461828052
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 18443,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 7.944577013197845e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 1,
+            "false_alerts": 1,
+            "observable_powered_hours": 51.230555555555554,
+            "false_alerts_per_100_hours": 1.9519600932603156,
+            "threshold": 0.051456295457799235,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-10-05T06:50:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 1,
+            "missed_events": 5,
+            "event_recall": 0.16666666666666666,
+            "alerts": 19,
+            "false_alerts": 18,
+            "observable_powered_hours": 175.73611111111111,
+            "false_alerts_per_100_hours": 10.24263020627519,
+            "threshold": 0.051456295457799235
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 18443,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 3.861168868699056e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 3,
+            "false_alerts": 3,
+            "observable_powered_hours": 51.230555555555554,
+            "false_alerts_per_100_hours": 5.855880279780947,
+            "threshold": 0.012342927251005187,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-10-04T15:38:20.000000000",
+            "2026-10-05T00:38:30.000000000",
+            "2026-10-05T00:46:30.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 3,
+            "missed_events": 3,
+            "event_recall": 0.5,
+            "alerts": 38,
+            "false_alerts": 35,
+            "observable_powered_hours": 175.73611111111111,
+            "false_alerts_per_100_hours": 19.91622540109065,
+            "threshold": 0.012342927251005187
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 18443,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.03925685918636782
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 51.230555555555554,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4766835648201383,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 5,
+            "missed_events": 1,
+            "event_recall": 0.8333333333333334,
+            "alerts": 5,
+            "false_alerts": 0,
+            "observable_powered_hours": 175.73611111111111,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4766835648201383
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0
+    },
+    "f5": {
+      "train_end": "2026-10-10",
+      "validation_end": "2026-10-24",
+      "validation_windows": 34596,
+      "validation_events": 0,
+      "validation_first": "2026-10-10T07:17:20",
+      "validation_last": "2026-10-23T13:57:00",
+      "models": {
+        "logistic": {
+          "train_windows": 122385,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 14.904042198322713,
+          "model_sha256": "8a7cc2c1aa2f42d023df0ddaa00eaae1d302c9439b4445aafaba73d8610e4eec"
+        },
+        "histgb": {
+          "train_windows": 122385,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 12.28550726082176,
+          "model_sha256": "c108e9d4c3a3ef8ae9d5570179658da897dffd3d319f87063a77f5b51f87383e"
+        },
+        "extra_trees": {
+          "train_windows": 122385,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 135.47450201027095,
+          "model_sha256": "8cf1d37d6b6bb789146c2b4892889011753f30d3fadca2c25212bf834e7286a9"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 34596,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 2.1438903153087084e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 96.1,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.02847250822347472,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 1,
+            "missed_events": 5,
+            "event_recall": 0.16666666666666666,
+            "alerts": 22,
+            "false_alerts": 21,
+            "observable_powered_hours": 226.96666666666667,
+            "false_alerts_per_100_hours": 9.252459979438978,
+            "threshold": 0.02847250822347472
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 34596,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 2.7773424447914226e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 7,
+            "false_alerts": 7,
+            "observable_powered_hours": 96.1,
+            "false_alerts_per_100_hours": 7.284079084287201,
+            "threshold": 0.01016539369675016,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-10-10T07:17:30.000000000",
+            "2026-10-12T09:46:30.000000000",
+            "2026-10-13T07:20:30.000000000",
+            "2026-10-13T07:30:50.000000000",
+            "2026-10-14T07:21:50.000000000",
+            "2026-10-17T07:16:20.000000000",
+            "2026-10-21T07:24:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 2,
+            "missed_events": 4,
+            "event_recall": 0.3333333333333333,
+            "alerts": 41,
+            "false_alerts": 39,
+            "observable_powered_hours": 226.96666666666667,
+            "false_alerts_per_100_hours": 17.183139961815243,
+            "threshold": 0.01016539369675016
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 34596,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 5.551834654725047e-07
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 96.1,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.012004991419980583,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 3,
+            "missed_events": 3,
+            "event_recall": 0.5,
+            "alerts": 41,
+            "false_alerts": 38,
+            "observable_powered_hours": 226.96666666666667,
+            "false_alerts_per_100_hours": 16.742546629461007,
+            "threshold": 0.012004991419980583
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 34596,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.03129061047399479
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 96.1,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4766835648201383,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 5,
+            "missed_events": 1,
+            "event_recall": 0.8333333333333334,
+            "alerts": 5,
+            "false_alerts": 0,
+            "observable_powered_hours": 226.96666666666667,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4766835648201383
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0
+    },
+    "f6": {
+      "train_end": "2026-10-27",
+      "validation_end": "2026-11-02",
+      "validation_windows": 13948,
+      "validation_events": 0,
+      "validation_first": "2026-10-27T07:20:10",
+      "validation_last": "2026-11-01T15:15:00",
+      "models": {
+        "logistic": {
+          "train_windows": 156981,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 21.89334339275956,
+          "model_sha256": "f52761d76ba40b4456892bbfb42adbddd5f362f78f8f58034f24f688b4347dea"
+        },
+        "histgb": {
+          "train_windows": 156981,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 14.82332084607333,
+          "model_sha256": "8208549ab268e24a56cc2a384d3797256e9804641118bcab85f42489d06c60d4"
+        },
+        "extra_trees": {
+          "train_windows": 156981,
+          "train_positive_windows": 285,
+          "train_events": 10,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 244.86620983947068,
+          "model_sha256": "d97eb4dfe65d3e4d49568f1e4b61d05155044c8aa05c5bfefd1b30a986a26b86"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13948,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 1.1239282930573204e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.74444444444445,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.03,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 1,
+            "missed_events": 5,
+            "event_recall": 0.16666666666666666,
+            "alerts": 21,
+            "false_alerts": 20,
+            "observable_powered_hours": 323.06666666666666,
+            "false_alerts_per_100_hours": 6.190672719768882,
+            "threshold": 0.03
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13948,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 2.699432326806109e-06
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 5,
+            "false_alerts": 5,
+            "observable_powered_hours": 38.74444444444445,
+            "false_alerts_per_100_hours": 12.905075996558645,
+            "threshold": 0.008422345208498286,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [
+            "2026-10-27T07:20:20.000000000",
+            "2026-10-28T07:09:40.000000000",
+            "2026-10-29T07:09:00.000000000",
+            "2026-10-30T07:13:30.000000000",
+            "2026-10-31T07:17:00.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 2,
+            "missed_events": 4,
+            "event_recall": 0.3333333333333333,
+            "alerts": 50,
+            "false_alerts": 48,
+            "observable_powered_hours": 323.06666666666666,
+            "false_alerts_per_100_hours": 14.857614527445314,
+            "threshold": 0.008422345208498286
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13948,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 1.8668212921798588e-07
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.74444444444445,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.01198197128827988,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": null,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 3,
+            "missed_events": 3,
+            "event_recall": 0.5,
+            "alerts": 41,
+            "false_alerts": 38,
+            "observable_powered_hours": 323.06666666666666,
+            "false_alerts_per_100_hours": 11.762278167560874,
+            "threshold": 0.01198197128827988
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13948,
+            "positive_windows": 0,
+            "events": 0,
+            "prevalence": 0.0,
+            "average_precision": null,
+            "event_macro_ap": null,
+            "roc_auc": null,
+            "brier": 0.028644910973596963
+          },
+          "alarms": {
+            "events": 0,
+            "detected_events": 0,
+            "missed_events": 0,
+            "event_recall": null,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.74444444444445,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992,
+            "detected_before_product_start": 0
+          },
+          "event_records": [],
+          "alert_timestamps": [],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 5,
+            "missed_events": 1,
+            "event_recall": 0.8333333333333334,
+            "alerts": 5,
+            "false_alerts": 0,
+            "observable_powered_hours": 323.06666666666666,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.4782333704524992
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0
+    }
+  },
+  "blind": {
+    "fold": "f6",
+    "rows": 13948,
+    "partition_rows": 13948,
+    "rows_equal_new_partition": true,
+    "old_v3": {
+      "selected_algorithm": "extra_trees",
+      "isolated_logistic": {
+        "ranking": {
+          "n": 13948,
+          "positive_windows": 0,
+          "events": 0,
+          "prevalence": 0.0,
+          "average_precision": null,
+          "event_macro_ap": null,
+          "roc_auc": null,
+          "brier": 3.597600257660044e-06
+        },
+        "alarms": {
+          "events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "event_recall": null,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.74444444444445,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.03009769777371244,
+          "detected_before_product_start": 0
+        },
+        "event_records": [],
+        "alert_timestamps": [],
+        "eta_mae_s_all_positive_windows": null,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "logistic",
+        "frozen_v3_threshold": 0.03009769777371244,
+        "model_sha256": "ed3ca6e25eb8d274d3b0cf3ab2563239353874509144ab99df9fda4ab7fd1cff",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_histgb": {
+        "ranking": {
+          "n": 13948,
+          "positive_windows": 0,
+          "events": 0,
+          "prevalence": 0.0,
+          "average_precision": null,
+          "event_macro_ap": null,
+          "roc_auc": null,
+          "brier": 3.315940633733214e-05
+        },
+        "alarms": {
+          "events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "event_recall": null,
+          "alerts": 5,
+          "false_alerts": 5,
+          "observable_powered_hours": 38.74444444444445,
+          "false_alerts_per_100_hours": 12.905075996558645,
+          "threshold": 0.05145629545779826,
+          "detected_before_product_start": 0
+        },
+        "event_records": [],
+        "alert_timestamps": [
+          "2026-10-28T07:09:40.000000000",
+          "2026-10-29T07:09:00.000000000",
+          "2026-10-30T07:13:30.000000000",
+          "2026-10-31T07:17:00.000000000",
+          "2026-11-01T14:35:50.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": null,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "histgb",
+        "frozen_v3_threshold": 0.05145629545779826,
+        "model_sha256": "69d7958d37ca4df34cb5e0d4b66c3a76da5e9a35c96737827623a8e158e62e0a",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_extra_trees": {
+        "ranking": {
+          "n": 13948,
+          "positive_windows": 0,
+          "events": 0,
+          "prevalence": 0.0,
+          "average_precision": null,
+          "event_macro_ap": null,
+          "roc_auc": null,
+          "brier": 2.9282653525537496e-06
+        },
+        "alarms": {
+          "events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "event_recall": null,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.74444444444445,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.012342927251004863,
+          "detected_before_product_start": 0
+        },
+        "event_records": [],
+        "alert_timestamps": [],
+        "eta_mae_s_all_positive_windows": null,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "extra_trees",
+        "frozen_v3_threshold": 0.012342927251004863,
+        "model_sha256": "2099540f053dc99cf96cdfda49f8b9b665610ee6b5246a1c05ad6b40d0714446",
+        "trained_through": "2026-09-29"
+      },
+      "full_refit": {
+        "ranking": {
+          "n": 13948,
+          "positive_windows": 0,
+          "events": 0,
+          "prevalence": 0.0,
+          "average_precision": null,
+          "event_macro_ap": null,
+          "roc_auc": null,
+          "brier": 3.6136263488829327e-07
+        },
+        "alarms": {
+          "events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "event_recall": null,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.74444444444445,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.012342927251004863,
+          "detected_before_product_start": 0
+        },
+        "event_records": [],
+        "alert_timestamps": [],
+        "eta_mae_s_all_positive_windows": null,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "extra_trees",
+        "frozen_v3_threshold": 0.012342927251004863,
+        "model_sha256": "fb6f4727175566b42872508a3f89d13dda7438088b6f5a7db0bbb7eb58a07c68",
+        "trained_through": "2026-10-23",
+        "note": "v3 attached no validation score to this refit; frozen calibration/threshold of the same algorithm applied as declared"
+      }
+    }
+  },
+  "final": {
+    "logistic": {
+      "train_windows": 170929,
+      "train_positive_windows": 285,
+      "train_events": 10,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 18.974866811186075,
+      "model_sha256": "49a63906d892173daa5818ec7af1683ea99910c392f11be204112c90c8edadda",
+      "threshold": 0.030905766531259156,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 6,
+        "detected_events": 1,
+        "missed_events": 5,
+        "event_recall": 0.16666666666666666,
+        "alerts": 22,
+        "false_alerts": 21,
+        "observable_powered_hours": 361.81111111111113,
+        "false_alerts_per_100_hours": 5.804133525780794,
+        "threshold": 0.030905766531259156
+      },
+      "pooled_oof": {
+        "n": 130252,
+        "positive_windows": 165,
+        "events": 6,
+        "prevalence": 0.0012667751742775543,
+        "average_precision": 0.012443742455293817,
+        "event_macro_ap": 0.007760888602694177,
+        "roc_auc": 0.8413450578878331,
+        "brier": 0.001268489824342611
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 6,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "histgb": {
+      "train_windows": 170929,
+      "train_positive_windows": 285,
+      "train_events": 10,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 9.929562237113714,
+      "model_sha256": "ab442536fe56edf8a48681cb016a441690dd3253246e429103548d12c9c9ac95",
+      "threshold": 0.007979554808245673,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 6,
+        "detected_events": 2,
+        "missed_events": 4,
+        "event_recall": 0.3333333333333333,
+        "alerts": 55,
+        "false_alerts": 53,
+        "observable_powered_hours": 361.81111111111113,
+        "false_alerts_per_100_hours": 14.648527469827718,
+        "threshold": 0.007979554808245673
+      },
+      "pooled_oof": {
+        "n": 130252,
+        "positive_windows": 165,
+        "events": 6,
+        "prevalence": 0.0012667751742775543,
+        "average_precision": 0.014149632814683873,
+        "event_macro_ap": 0.005565389929289395,
+        "roc_auc": 0.8296218311707946,
+        "brier": 0.001278446178777627
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 6,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "extra_trees": {
+      "train_windows": 170929,
+      "train_positive_windows": 285,
+      "train_events": 10,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 162.2214275058359,
+      "model_sha256": "cb026b3e7e6e8908c894fa2380ad818002049f71c0aa259ba3511cac3b92ed2c",
+      "threshold": 0.012052082705572866,
+      "calibration_kind": "sigmoid",
+      "oof_policy": {
+        "events": 6,
+        "detected_events": 3,
+        "missed_events": 3,
+        "event_recall": 0.5,
+        "alerts": 41,
+        "false_alerts": 38,
+        "observable_powered_hours": 361.81111111111113,
+        "false_alerts_per_100_hours": 10.502717808555722,
+        "threshold": 0.012052082705572866
+      },
+      "pooled_oof": {
+        "n": 130252,
+        "positive_windows": 165,
+        "events": 6,
+        "prevalence": 0.0012667751742775543,
+        "average_precision": 0.03673273547302146,
+        "event_macro_ap": 0.012748893287135668,
+        "roc_auc": 0.8658247592345543,
+        "brier": 0.001246865136464807
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 6,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    }
+  },
+  "partition_counts": {
+    "0": {
+      "windows": 104661,
+      "positive_windows": 285,
+      "events": 10
+    },
+    "1": {
+      "windows": 12983,
+      "positive_windows": 0,
+      "events": 0
+    },
+    "2": {
+      "windows": 5490,
+      "positive_windows": 0,
+      "events": 0
+    },
+    "3": {
+      "windows": 34596,
+      "positive_windows": 0,
+      "events": 0
+    },
+    "4": {
+      "windows": 13948,
+      "positive_windows": 0,
+      "events": 0
+    }
+  },
+  "episodes_total": 10,
+  "finished_at": "2026-11-11T18:41:48+0000",
+  "production_ready": false
+}

@@ -1,0 +1,172 @@
+{
+  "run": "20261112_v4",
+  "files": [
+    {
+      "target": "src/common.py",
+      "source": "src/common.py",
+      "source_sha256": "4596347cce574e735d134e4e95ba16d4d7c70d808eddb7eeb9daf7b41026285f",
+      "edits": 2,
+      "target_sha256": "4d1553df0413878b3df917b3c2b9e10c5927468902bad23a609de3ae2fa837b4"
+    },
+    {
+      "target": "src/prepare_data.py",
+      "source": "src/prepare_data.py",
+      "source_sha256": "eb32131deee65adb4e815f3eb84c1193ef58a65899acd0d0c2dda604f38e4193",
+      "edits": 5,
+      "target_sha256": "cfacd460e9da384c5b4338235069b6256d008e529b029e8b92e3a4d3a578952a"
+    },
+    {
+      "target": "src/build_windows.py",
+      "source": "src/build_windows.py",
+      "source_sha256": "f1eec438f60b07f896a10346866d585e11a0a80788bfb77814c3deac03211bd3",
+      "edits": 3,
+      "target_sha256": "b3e0907fd75334eef4fd213245756f37929fa322b42750a94edaf66bb1299e45"
+    },
+    {
+      "target": "src/lifetime_labels.py",
+      "source": "src/lifetime_labels.py",
+      "source_sha256": "99d8bfc97e5f7ffa32f9bab1b4184938777035e91d2a5e11f5140ea91dc22757",
+      "edits": 1,
+      "target_sha256": "34aca70fe72b39243c28d163ffef6d6de28b47340e6d4ca1e2c9a6b409ee3763"
+    },
+    {
+      "target": "reference/label_ann.py",
+      "source": "reference/label_ann.py",
+      "source_sha256": "ec7786a54f1cfc2e2b3b967197f60db07a6d666c28d449b585becf8dfb4a1b07",
+      "edits": 0,
+      "target_sha256": "b176a2267a1e96244489a8ea57fc22eb7deb348ef92225ff83f1a6a3b26a282e"
+    },
+    {
+      "target": "reference/revise_labels.py",
+      "source": "reference/revise_labels.py",
+      "source_sha256": "f9b6e9691a39826bf28b33a2ed406b0cc48fe583e5725953c6b5593118295d4b",
+      "edits": 0,
+      "target_sha256": "90039fd067f60696a1d969a5eaf1226518a9247118f4f21a960066bcec75fb52"
+    },
+    {
+      "target": "reference/config.json",
+      "source": "reference/config.json",
+      "source_sha256": "cbd244c265177ea73139e87e6563f784f1b3f2fef57a84013c3e16c91463b43c",
+      "edits": 0,
+      "target_sha256": "3ab1880adc02474f81b9f0bc5a4b2c3234ee4a6f9c63b6c661e2cd1fad7602d5"
+    },
+    {
+      "target": "v2_grid/src/common_v2.py",
+      "source": "v2_20261104_multimodel/src/common_v2.py",
+      "source_sha256": "e02eba17b602727959204131f1df4cef905d06042818d47fc860fbb6ab8f2883",
+      "edits": 1,
+      "target_sha256": "6cf7c425823462dad30992407000eafcf64fba4af1b09dfe8b91e0d83fc78b05"
+    },
+    {
+      "target": "v2_grid/src/prepare_v2.py",
+      "source": "v2_20261104_multimodel/src/prepare_v2.py",
+      "source_sha256": "fcfcb05381464e09aea60fefee180fb67900fe5043632744f4ab55357b8d5727",
+      "edits": 2,
+      "target_sha256": "1293eb03c7f75a46fbbc645bc1e9b07486d515a908b54de504dd3e4dd4b6fd44"
+    },
+    {
+      "target": "v4/src/common_v2.py",
+      "source": "v3_20261104_revised_labels/src/common_v2.py",
+      "source_sha256": "84a7d59a6fecdc372a6259d2e58e89279686198181a9bf3c34d4e1e193200238",
+      "edits": 3,
+      "target_sha256": "32b73c709680811e41156629539629c52eb52338c81ae0605aa15a7f47d67d85"
+    },
+    {
+      "target": "v4/src/prepare_v4.py",
+      "source": "v3_20261104_revised_labels/src/prepare_v3.py",
+      "source_sha256": "800ea5ea3e28752e6c1218b3147c36625a17839c35b2228c26868c7301296e19",
+      "edits": 3,
+      "target_sha256": "0cf2be7cae8d723fca11e28951e4945dfcf18da849c69f103751086d6347e2de"
+    },
+    {
+      "target": "v4/src/risk_models.py",
+      "source": "v3_20261104_revised_labels/src/risk_models.py",
+      "source_sha256": "11c182fd93662edb8394c27b591a5eaa6c9001a920c1c76bfb8cbc2312f627bb",
+      "edits": 0,
+      "target_sha256": "8ba3d10d39014bbb48ff99d39a09289a1e5906852c8d9c6983cd1fa7a8d2c95c"
+    },
+    {
+      "target": "v4/src/metrics_v2.py",
+      "source": "v3_20261104_revised_labels/src/metrics_v2.py",
+      "source_sha256": "917ad342e270a6514cf649032a306f39c85a04398e0445d1653005a30ab04ebd",
+      "edits": 0,
+      "target_sha256": "4bf5c9bfe74806ff35d242f0f6b6c7b0af0b1b6f3f1a2a44b597a9bcef3c3771"
+    },
+    {
+      "target": "v4/src/life_models.py",
+      "source": "v3_20261104_revised_labels/src/life_models.py",
+      "source_sha256": "501f8ff444c4ea3af577353e36af3aa149e706c622658e714a05f8a375a4ddec",
+      "edits": 0,
+      "target_sha256": "f8ccf6ea5100f34cce9ed221a842b7fae18c9a01162e10313186664afe65b4ef"
+    },
+    {
+      "target": "v4/src/train_stage_life.py",
+      "source": "v3_20261104_revised_labels/src/train_stage_life.py",
+      "source_sha256": "b2a32fc967a0215ecc6178fad2616c4a3726b494aff6a1790045a1702612a621",
+      "edits": 0,
+      "target_sha256": "b2a32fc967a0215ecc6178fad2616c4a3726b494aff6a1790045a1702612a621"
+    },
+    {
+      "target": "v4/src/train_life_v2.py",
+      "source": "v3_20261104_revised_labels/src/train_life_v2.py",
+      "source_sha256": "eeec98301b732a6c1861d522a738fc5ed3fef8ed7e979434c4255bb7fcf14aec",
+      "edits": 0,
+      "target_sha256": "536549aa1531a02c6f7cbb8ff2a168bd84d0e565674cc17e3f96eca67b2c2bbc"
+    },
+    {
+      "target": "v4/src/probability_guard.py",
+      "source": "v3_20261104_revised_labels/src/probability_guard.py",
+      "source_sha256": "82f1bc3dd6d18383ab3dbbf46620c3c37ef662f218055c646d42b35f7f73ae38",
+      "edits": 0,
+      "target_sha256": "82f1bc3dd6d18383ab3dbbf46620c3c37ef662f218055c646d42b35f7f73ae38"
+    },
+    {
+      "target": "run_stage.sh",
+      "source": "v4_20261112_incremental/authored/run_stage.sh",
+      "source_sha256": "5cc41a494fc99b6f22ebfe9b9915590475e424ab7b774613c806c663c95b49fd",
+      "edits": 0,
+      "target_sha256": "5cc41a494fc99b6f22ebfe9b9915590475e424ab7b774613c806c663c95b49fd",
+      "authored_in_v4": true
+    },
+    {
+      "target": "v2_grid/protocol.json",
+      "source": "v4_20261112_incremental/authored/v2_grid/protocol.json",
+      "source_sha256": "65af82136d8973acb113e67e46d5b945740d6012cb849e9cececa214dd29ba39",
+      "edits": 0,
+      "target_sha256": "65af82136d8973acb113e67e46d5b945740d6012cb849e9cececa214dd29ba39",
+      "authored_in_v4": true
+    },
+    {
+      "target": "v4/protocol.json",
+      "source": "v4_20261112_incremental/authored/v4/protocol.json",
+      "source_sha256": "6d6003a6337f2ffe316c4b5cf4dd90b90429d5f12f0042f6aeb50b290d4e93cc",
+      "edits": 0,
+      "target_sha256": "6d6003a6337f2ffe316c4b5cf4dd90b90429d5f12f0042f6aeb50b290d4e93cc",
+      "authored_in_v4": true
+    },
+    {
+      "target": "v4/src/export_bundle_v4.py",
+      "source": "v4_20261112_incremental/authored/v4/src/export_bundle_v4.py",
+      "source_sha256": "28b9765c79da9542307c3219618f983bee69f1411c2682ce72a07e5ecad4d800",
+      "edits": 0,
+      "target_sha256": "28b9765c79da9542307c3219618f983bee69f1411c2682ce72a07e5ecad4d800",
+      "authored_in_v4": true
+    },
+    {
+      "target": "v4/src/panel_real28.py",
+      "source": "v4_20261112_incremental/authored/v4/src/panel_real28.py",
+      "source_sha256": "1df58705154dc4d19b7a827b8a77f8ddcdd734e3132efd87cebe895bebe439c7",
+      "edits": 0,
+      "target_sha256": "1df58705154dc4d19b7a827b8a77f8ddcdd734e3132efd87cebe895bebe439c7",
+      "authored_in_v4": true
+    },
+    {
+      "target": "v4/src/train_v4.py",
+      "source": "v4_20261112_incremental/authored/v4/src/train_v4.py",
+      "source_sha256": "1de904235ea3a8b07d790eea9ebd82f80f55e3e0411e65e645878b63e92cf199",
+      "edits": 0,
+      "target_sha256": "1de904235ea3a8b07d790eea9ebd82f80f55e3e0411e65e645878b63e92cf199",
+      "authored_in_v4": true
+    }
+  ]
+}

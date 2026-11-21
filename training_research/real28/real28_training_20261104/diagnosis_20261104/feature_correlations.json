@@ -1,0 +1,32 @@
+[
+  {
+    "cycle": 0,
+    "feature": "Voltage_mean_300s",
+    "spearman": -0.33734657541673246
+  },
+  {
+    "cycle": 0,
+    "feature": "last_product_voltage",
+    "spearman": -0.3780067484917772
+  },
+  {
+    "cycle": 1,
+    "feature": "Voltage_mean_300s",
+    "spearman": -0.6972137139561304
+  },
+  {
+    "cycle": 1,
+    "feature": "last_product_voltage",
+    "spearman": -0.7324929464656561
+  },
+  {
+    "cycle": 2,
+    "feature": "Voltage_mean_300s",
+    "spearman": -0.6221939196527234
+  },
+  {
+    "cycle": 2,
+    "feature": "last_product_voltage",
+    "spearman": -0.5936335805889554
+  }
+]

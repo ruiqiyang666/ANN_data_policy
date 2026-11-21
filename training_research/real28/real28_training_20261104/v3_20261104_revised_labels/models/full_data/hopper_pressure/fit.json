@@ -1,0 +1,21 @@
+{
+  "task": "hopper_pressure",
+  "status": "trained_research_candidate",
+  "algorithm": "extra_trees",
+  "main_fits": 1,
+  "train_windows": 156981,
+  "event_or_weak_endpoint_count": 10,
+  "first_timestamp": "2026-08-15T10:27:10",
+  "last_timestamp": "2026-10-23T13:57:00",
+  "seconds": 169.7639713000026,
+  "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+  "validation_metrics": null,
+  "previous_validation_scores_do_not_apply_to_this_refit": true,
+  "output_status": "raw weighted score; calibration on future data not yet verified for this refit",
+  "production_ready": false,
+  "artifact_sha256": {
+    "auxiliary.joblib": "9e6f6120ef4a291040db62beaefefeb3bb7474e5b94ae598f2d7ee9f9d0101ad",
+    "model.joblib": "fb6f4727175566b42872508a3f89d13dda7438088b6f5a7db0bbb7eb58a07c68",
+    "preprocess.joblib": "0caf3cf87448b45c5fe30cb518adaee0773ccc13f736de7b3da9553213e702c7"
+  }
+}

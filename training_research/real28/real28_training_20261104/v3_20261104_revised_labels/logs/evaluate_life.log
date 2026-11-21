@@ -1,0 +1,15 @@
+Compared life constant
+Compared life lognormal_aft
+Compared life weibull_aft
+Compared life spline_aft
+Compared life mlp_aft
+Compared life logistic_hazard
+Compared life boosted_hazard
+Compared life forest_hazard
+Compared life stage_lognormal_r001
+Compared life stage_lognormal_r01
+Compared life stage_lognormal_r1
+Compared life stage_weibull_r001
+Compared life stage_weibull_r01
+Compared life stage_weibull_r1
+Preserving completed comparison life

@@ -1,8 +1,10 @@
 # ANN_data_policy：
 
+2026-11-21：新分支 `research/training-models-20261121` 增加完整训练研究归档，包含 28 参数历史实验、Booth2 v3–v6、已保存权重、逐折预测及学习循环。入口见 [training_research/README.md](training_research/README.md)。权重采用 Git LFS，克隆后执行 `git lfs pull` 与 `python training_research/verify_bundle.py`。原有数据和 v1/v2 保留。
+
 目标：利用Booth2传感器提前预警产品失败，并研究在连续两件失败停机前提醒换枪。历史范围2026-09-12—11-14，使用11_16最新数据处理。Booth1参考未混入训练。
 
-## 只看三个文件夹
+## 原始交付文件夹
 
 | 文件夹 | 放了什么 |
 |---|---|

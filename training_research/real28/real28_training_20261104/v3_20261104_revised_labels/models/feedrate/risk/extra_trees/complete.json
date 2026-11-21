@@ -1,0 +1,83 @@
+{
+  "name": "extra_trees",
+  "algorithm_family": "extra_trees",
+  "fold_scores": [
+    {
+      "n": 21877,
+      "positive_windows": 180,
+      "events": 6,
+      "prevalence": 0.008227819170818667,
+      "average_precision": 0.008700400830326215,
+      "event_macro_ap": 0.0029320506647784327,
+      "roc_auc": 0.47841995565183104,
+      "brier": 0.008255637814351298
+    },
+    {
+      "n": 13606,
+      "positive_windows": 164,
+      "events": 11,
+      "prevalence": 0.012053505806261943,
+      "average_precision": 0.015839051062184778,
+      "event_macro_ap": 0.003882072416335291,
+      "roc_auc": 0.43375763442577137,
+      "brier": 0.012394785248550063
+    },
+    {
+      "n": 27517,
+      "positive_windows": 102,
+      "events": 4,
+      "prevalence": 0.0037067994330777336,
+      "average_precision": 0.010137219996497535,
+      "event_macro_ap": 0.006113828072273659,
+      "roc_auc": 0.6518200641555182,
+      "brier": 0.0050258081491538755
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.004309317051129128,
+  "pooled_oof": {
+    "n": 63000,
+    "positive_windows": 446,
+    "events": 21,
+    "prevalence": 0.007079365079365079,
+    "average_precision": 0.008755126486971212,
+    "event_macro_ap": 0.0016506831520695046,
+    "roc_auc": 0.4341484114675593,
+    "brier": 0.0077388444348667085
+  },
+  "oof_calibrated": {
+    "n": 63000,
+    "positive_windows": 446,
+    "events": 21,
+    "prevalence": 0.007079365079365079,
+    "average_precision": 0.008755126486971212,
+    "event_macro_ap": 0.0016506831520695046,
+    "roc_auc": 0.4341484114675593,
+    "brier": 0.0077388444348667085
+  },
+  "development_alarm_policy": {
+    "events": 21,
+    "detected_events": 1,
+    "missed_events": 20,
+    "event_recall": 0.047619047619047616,
+    "alerts": 14,
+    "false_alerts": 13,
+    "observable_powered_hours": 175.0,
+    "false_alerts_per_100_hours": 7.428571428571429,
+    "threshold": 0.23831261874951262
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12968,
+    "positive_windows": 30,
+    "events": 1,
+    "prevalence": 0.0023133867982726712,
+    "average_precision": 0.0020779332742016624,
+    "event_macro_ap": 0.0020779332742016624,
+    "roc_auc": 0.27669268820528675,
+    "brier": 0.0036500122225498134
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

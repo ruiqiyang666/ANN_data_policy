@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "train.py": "42419784bbde2037343ffbe3b0f610cc7ef40c0e1d3e87b00c14d0f50184cad9",
+    "math_checks.py": "8e2b4d0e1c32c0ffcf776a166d769c9c73b801c6df5e3f8bc50b99ff84ae7c5f",
+    "v5.py": "d0370653cb1ffb1d956871471ec69b0b2ad9c3418438ea82413ff681e90b0d0d"
+  },
+  "protocol_sha256": "518ddacf2aab495734fd906e204ddd5b2a8a859778f0278e657e08f9f3aa7084",
+  "inputs": {
+    "evaluation.py": "832cb572a3b9d2014e6934a174b88de7c8db984d2ca87b264637e2ad57264b45",
+    "events.csv": "1226081ade0d7cee2d1795eec897105977d117de3cba6c88330f1686f19346ba",
+    "frame.parquet": "e763d445d13b2fbd307dcd9a025e1610394b4761051ad7b6e6f27279b4f927a5",
+    "v4-manifest.json": "563afda461fda3d8c89b2310b628248ec404513e9ea94d269459ecb9d20fb127",
+    "products.csv.gz": "d544dbd31b5299455b1d5e71994b27b0616683dae84bea31fac6205923950d68",
+    "v3_predictions.csv.gz": "009b08995c19602d4295d52ee7ee3835747e332476a3d14502c4b405b2ae424a",
+    "products.csv": "e1aa02b82ae365c5bdc54d35a685e57c415be36fd3314ed6dffab0d00dbfb3c1"
+  },
+  "versions": {
+    "python": "3.11.10 | packaged by conda-forge | (main, Oct 16 2024, 01:27:36) [GCC 13.3.0]",
+    "numpy": "2.1.2",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "torch": "2.5.1+cu124",
+    "sksurv": "0.28.0"
+  }
+}

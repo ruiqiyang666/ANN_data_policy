@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-11-04T22:15:59+0800",
+  "raw_parameters": 28,
+  "raw_device": "main only; Voltage Sample excluded",
+  "risk_methods": [
+    "logistic",
+    "histgb",
+    "extra_trees",
+    "random_forest",
+    "tcn",
+    "gru",
+    "patch_transformer"
+  ],
+  "additional_subtype_methods": [
+    "logistic",
+    "histgb",
+    "extra_trees"
+  ],
+  "risk_targets": [
+    "voltage",
+    "feedrate",
+    "hopper_pressure"
+  ],
+  "target_time": "first failed product START, not result; ongoing episodes require two observed normal products to resolve",
+  "life_methods": [
+    "constant",
+    "lognormal_aft",
+    "weibull_aft",
+    "spline_aft",
+    "mlp_aft",
+    "logistic_hazard",
+    "boosted_hazard",
+    "forest_hazard"
+  ],
+  "life_supervision": "weak interval-censored low-voltage-stop/recovery proxies; zero individually confirmed natural failures",
+  "r009": "ordinary wait, excluded from intervention censoring",
+  "r011": "sustained low sequence retained as weak endpoint; no blanket 10h cutoff",
+  "phase_features": "causal 2h matched products, relative peak/drop/rise/fall; prior normal voltage rising allowed",
+  "history_seconds": 120,
+  "max_feature_source_history_seconds": 10800,
+  "validation_purge_seconds": 10800,
+  "selection": "risk mean training-period forward-fold event-macro AP; life must beat constant on forward weak-endpoint log distance and near-terminal distance",
+  "alarm": "OOF-only threshold, two consecutive high scores, 300s cooldown, <=20 false/100h experimental budget",
+  "historical_period": [
+    "2026-10-10",
+    "2026-10-24"
+  ],
+  "historical_already_seen": true,
+  "history_used_for_method_selection": false,
+  "epochs": 6,
+  "seed": 42,
+  "cpu_threads": 4,
+  "gpu_temperature_pause_c": 83,
+  "gpu_temperature_abort_c": 87,
+  "pressure_forecast": false,
+  "health_supervision": false,
+  "automatic_replacement": false,
+  "production_ready": false,
+  "training_outcome_availability_purge_seconds": 3900,
+  "additional_initialization_comparison": {
+    "name": "tcn_ssl",
+    "not_an_extra_algorithm_family": true,
+    "pretraining": "3 epochs x 64 batches x 128 training-only causal windows; 15% observed channel masking, Huber reconstruction",
+    "supervised_epochs": 6,
+    "declared_at": "2026-11-04T22:23:53+0800",
+    "historical_predictions_not_accessed": true
+  },
+  "low_dimensional_aft_sensitivity": {
+    "declared_at": "2026-11-04T22:34:07+0800",
+    "historical_predictions_not_accessed": true,
+    "features": 4,
+    "distributions": [
+      "lognormal",
+      "weibull"
+    ],
+    "ridge_strengths": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "coefficient_signs": [
+      "margin+",
+      "drop-",
+      "decline_speed-",
+      "volatility-"
+    ],
+    "six_variants_not_six_extra_families": true
+  },
+  "all_data_refit": {
+    "declared_at": "2026-11-04T22:38:32+0800",
+    "after_frozen_evaluation_only": true,
+    "choices": "reuse forward-fold chosen algorithms; lifetime only if it passes gate",
+    "training_dates": "all available labeled main-device dates through 2026-10-23",
+    "separate_directory": "models/full_data",
+    "historical_scores_do_not_apply_to_refits": true,
+    "production_ready": false
+  }
+}

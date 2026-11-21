@@ -1,0 +1,4 @@
+﻿timestamp,end_index,partition,event_in_300s,observed_seconds,event_id,eta_seconds,context_start,possible_cycle,rul_valid,rul_event,rul_lower_hours,rul_upper_hours,rul_lower_pieces,rul_upper_pieces,rul_endpoint_id,rul_observation_end,probability
+2026-10-06 10:55:30,4078667,1,False,300,,,2026-10-04 14:00:00,3,True,False,0.7019444444444445,inf,32,inf,,2026-10-06 11:59:11,0.14416439392456862
+2026-10-06 12:08:30,4083047,1,False,300,,,2026-10-04 14:00:00,3,True,True,0.8202777777777778,0.9433333333333334,26,29.0,R007,2026-10-06 12:57:44,0.038336863510923753
+2026-10-06 12:52:40,4085697,1,False,300,,,2026-10-04 14:00:00,3,True,True,0.08416666666666667,0.20722222222222222,0,3.0,R007,2026-10-06 12:57:44,0.04762621300911234

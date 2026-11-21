@@ -1,0 +1,139 @@
+{
+  "models": [
+    "history_mlp",
+    "history_ple",
+    "history_ple_seed2"
+  ],
+  "selected": {
+    "weights": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "validation_mae": 2.2335540233505804
+  },
+  "grid": [
+    {
+      "weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "validation_mae": 2.3902597451280765
+    },
+    {
+      "weights": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "validation_mae": 2.326357194283223
+    },
+    {
+      "weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "validation_mae": 2.2777188010326324
+    },
+    {
+      "weights": [
+        0.0,
+        0.75,
+        0.25
+      ],
+      "validation_mae": 2.2461621857014142
+    },
+    {
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "validation_mae": 2.2335540233505804
+    },
+    {
+      "weights": [
+        0.25,
+        0.0,
+        0.75
+      ],
+      "validation_mae": 2.372003693249221
+    },
+    {
+      "weights": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "validation_mae": 2.3245833832358267
+    },
+    {
+      "weights": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "validation_mae": 2.2901745560282274
+    },
+    {
+      "weights": [
+        0.25,
+        0.75,
+        0.0
+      ],
+      "validation_mae": 2.2701440195548543
+    },
+    {
+      "weights": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "validation_mae": 2.4021520614082785
+    },
+    {
+      "weights": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "validation_mae": 2.3692791987781177
+    },
+    {
+      "weights": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "validation_mae": 2.348743398101705
+    },
+    {
+      "weights": [
+        0.75,
+        0.0,
+        0.25
+      ],
+      "validation_mae": 2.470575483961416
+    },
+    {
+      "weights": [
+        0.75,
+        0.25,
+        0.0
+      ],
+      "validation_mae": 2.4521486661967105
+    },
+    {
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "validation_mae": 2.5710384198828047
+    }
+  ],
+  "criterion": "validation RUL MAE; weights grid fixed at quarters",
+  "test_seen_during_selection": false
+}

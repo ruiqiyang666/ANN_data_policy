@@ -1,0 +1,9 @@
+﻿end_index,timestamp,partition,possible_cycle,event_in_300s,event_id,next_event_at,eta_seconds,observed_seconds,rul_valid,rul_event,rul_lower_hours,rul_upper_hours,rul_lower_pieces,rul_upper_pieces,rul_endpoint_id,predicted_risk
+4113116,2026-10-10 14:36:40,3,4,False,,0,,300,True,False,2.835,inf,110,inf,,0.30928102
+4282404,2026-10-12 13:38:10,3,4,False,,0,,300,True,True,22.97,22.988333333333333,987,988.0,R010,0.3825057
+4346154,2026-10-13 07:20:40,3,4,False,,0,,300,True,True,18.86916666666667,18.8875,801,802.0,R010,0.37104374
+4459744,2026-10-14 14:53:50,3,4,False,,0,,300,True,True,2.3775,2.3958333333333335,105,106.0,R010,0.29632148
+4619444,2026-10-16 11:15:30,3,6,False,,0,,300,True,False,4.750277777777778,inf,216,inf,,0.29547977
+4708462,2026-10-17 11:59:10,3,6,False,,0,,300,True,False,2.643611111111111,inf,125,inf,,0.32049024
+4750101,2026-10-19 10:33:10,3,6,False,,0,,300,True,False,34.26611111111111,inf,1440,inf,,0.31442574
+5026891,2026-10-22 15:26:20,3,6,False,,0,,300,True,False,7.293055555555555,inf,264,inf,,0.35519958

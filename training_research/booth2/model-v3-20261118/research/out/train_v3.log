@@ -1,0 +1,40 @@
+nested leave-one-cycle-out: {"total_events": 10, "hit20": 5, "late": 1, "missed": 4, "false_alarms": 12, "unknown_alarms": 1, "post_event_alarms": 0, "alarms": 21, "operating_hours": 237.53944444444446, "false_alarms_per_hour": 0.050517925677840636}
+one threshold on held-out scores (optimistic): {"total_events": 10, "hit20": 6, "late": 0, "missed": 4, "false_alarms": 19, "unknown_alarms": 1, "post_event_alarms": 0, "alarms": 28, "operating_hours": 237.53944444444446, "false_alarms_per_hour": 0.07998671565658101} threshold 0.8500000000000001
+frozen v2 split: {"train": {"total_events": 5, "hit20": 0, "late": 0, "missed": 5, "false_alarms": 0, "post_event_alarms": 0, "operating_hours": 93.42611111111111, "false_alarms_per_hour": 0.0}, "validation": {"total_events": 2, "hit20": 0, "late": 0, "missed": 2, "false_alarms": 0, "post_event_alarms": 0, "operating_hours": 52.783055555555556, "false_alarms_per_hour": 0.0}, "test": {"total_events": 3, "hit20": 0, "late": 0, "missed": 3, "false_alarms": 0, "post_event_alarms": 0, "operating_hours": 91.33027777777778, "false_alarms_per_hour": 0.0}, "threshold": 1.000001}
+  event_id cycle_id                 time          first_alarm  lead_minutes  hit20   late  missed  threshold  earlier_alarm_count
+0     T001     L000  2026-09-15 12:24:27                 None           NaN  False  False    True       0.70                    5
+1     T002     L001  2026-09-20 07:48:23                 None           NaN  False  False    True       0.95                    0
+2     T004     L002  2026-09-29 15:35:55                 None           NaN  False  False    True       0.90                    0
+3     T005     L003  2026-10-06 13:04:01  2026-10-06 12:46:10     17.850000  False   True   False       0.90                    1
+4     T006     L004  2026-10-09 08:23:43  2026-10-09 07:28:40     55.050000   True  False   False       0.85                    1
+5     T007     L005  2026-10-14 17:37:38                 None           NaN  False  False    True       0.95                    2
+6     T009     L006  2026-10-15 11:58:24  2026-10-15 11:20:40     37.733333   True  False   False       0.90                    1
+7     T010     L008  2026-10-28 08:25:39  2026-10-28 08:03:50     21.816667   True  False   False       0.95                    0
+8     T011     L009  2026-11-01 13:33:02  2026-11-01 12:48:30     44.533333   True  False   False       0.80                    1
+9     T012     L012  2026-11-10 13:28:30  2026-11-10 12:29:40     58.833333   True  False   False       0.90                    0
+                       mae  mae_last5h  mae_last2h  mae_last1h   bias  pinball  cover   width  censored_median_below_bound
+model                                                                                                                     
+constant_quantiles   5.664       6.802       8.122       8.617  1.189    5.013  0.730  17.103                        0.400
+mean_life_minus_age  6.056       4.527       3.898       3.622  0.588    9.084  0.000   0.000                        0.748
+v3                   4.737       5.400       5.236       4.006  1.926    4.443  0.792  19.102                        0.348
+weibull_age          6.413       7.332       8.133       8.414  4.352    6.690  0.732  20.554                        0.393
+model  constant_quantiles  mean_life_minus_age    v3  weibull_age
+cycle                                                            
+L000                 4.13                 0.36  4.68         3.71
+L001                 6.71                 7.83  5.18         4.32
+L002                 4.83                 3.38  2.89         2.30
+L003                 4.30                 1.30  2.72         2.99
+L004                 4.20                 4.98  6.00         7.70
+L005                 7.81                 9.74  5.61         5.91
+L006                 8.29                15.51  6.56        17.28
+L008                 4.24                 1.04  4.31         3.20
+L009                 4.93                 3.69  3.03         2.33
+L012                 7.20                12.72  6.40        14.39
+widen {'L000': 0.032, 'L001': 0.144, 'L002': 0.103, 'L003': 0.117, 'L004': 0.192, 'L005': 0.093, 'L006': 0.0, 'L007': 0.021, 'L008': 0.057, 'L009': 0.102, 'L010': 0.13, 'L011': 0.076, 'L012': 0.069, 'L013': 0.028} final 0.101
+penalty {'L000': 0.0003, 'L001': 0.0003, 'L002': 0.0003, 'L003': 0.0003, 'L004': 0.001, 'L005': 0.001, 'L006': 0.0003, 'L007': 0.0003, 'L008': 0.0003, 'L009': 0.0003, 'L010': 0.001, 'L011': 0.0003, 'L012': 0.0003, 'L013': 0.0003} final 0.0003
+mode {'L000': 'envelope', 'L001': 'envelope', 'L002': 'envelope', 'L003': 'envelope', 'L004': 'envelope', 'L005': 'envelope', 'L006': 'envelope', 'L007': 'envelope', 'L008': 'envelope', 'L009': 'envelope', 'L010': 'envelope', 'L011': 'envelope', 'L012': 'envelope', 'L013': 'envelope'} final envelope
+ hours  prevalence  mean_predicted  brier  brier_constant  skill
+   1.0      0.0452          0.0742 0.0356          0.0432 0.1750
+   4.0      0.1812          0.2069 0.1242          0.1484 0.1633
+   8.0      0.3631          0.3919 0.1722          0.2313 0.2552
+bundle booth2-v3-life-e0cacc9526f1 origins in showcase 253 alarms there ['2026-10-28 08:03:50']

@@ -1,0 +1,83 @@
+{
+  "name": "logistic",
+  "algorithm_family": "logistic",
+  "fold_scores": [
+    {
+      "n": 21877,
+      "positive_windows": 180,
+      "events": 6,
+      "prevalence": 0.008227819170818667,
+      "average_precision": 0.007880047756650292,
+      "event_macro_ap": 0.0019219698879536238,
+      "roc_auc": 0.4894724309044261,
+      "brier": 0.008300108719268234
+    },
+    {
+      "n": 13606,
+      "positive_windows": 164,
+      "events": 11,
+      "prevalence": 0.012053505806261943,
+      "average_precision": 0.009180761217693427,
+      "event_macro_ap": 0.0012269368663196307,
+      "roc_auc": 0.39397129855095603,
+      "brier": 0.01573367918923444
+    },
+    {
+      "n": 27517,
+      "positive_windows": 102,
+      "events": 4,
+      "prevalence": 0.0037067994330777336,
+      "average_precision": 0.008945843812472681,
+      "event_macro_ap": 0.0033361528619409893,
+      "roc_auc": 0.7482450211527251,
+      "brier": 0.030131749154076588
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.0021616865387380814,
+  "pooled_oof": {
+    "n": 63000,
+    "positive_windows": 446,
+    "events": 21,
+    "prevalence": 0.007079365079365079,
+    "average_precision": 0.006531019186366305,
+    "event_macro_ap": 0.0007996302094545127,
+    "roc_auc": 0.417504173255294,
+    "brier": 0.019441099348775883
+  },
+  "oof_calibrated": {
+    "n": 63000,
+    "positive_windows": 446,
+    "events": 21,
+    "prevalence": 0.007079365079365079,
+    "average_precision": 0.006531019186366305,
+    "event_macro_ap": 0.0007996302094545127,
+    "roc_auc": 0.417504173255294,
+    "brier": 0.019441099348775883
+  },
+  "development_alarm_policy": {
+    "events": 21,
+    "detected_events": 0,
+    "missed_events": 21,
+    "event_recall": 0.0,
+    "alerts": 0,
+    "false_alerts": 0,
+    "observable_powered_hours": 175.0,
+    "false_alerts_per_100_hours": 0.0,
+    "threshold": 1.000001
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12968,
+    "positive_windows": 30,
+    "events": 1,
+    "prevalence": 0.0023133867982726712,
+    "average_precision": 0.011883075309713415,
+    "event_macro_ap": 0.011883075309713415,
+    "roc_auc": 0.9001751945174421,
+    "brier": 0.09455666191069624
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

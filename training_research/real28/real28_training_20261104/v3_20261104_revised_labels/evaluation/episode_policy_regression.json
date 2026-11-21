@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "no new failure solely from overnight stop",
+    "ordinary normal products create no event",
+    "two normal results resolve ongoing episode",
+    "isolated spike suppressed",
+    "persistent alert timing exact",
+    "clock gaps cannot create false persistence"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    "voltage: all actual fold/final models, finite probabilities, normalized conditional time distributions, pre-product event leads and training-only selection",
+    "feedrate: all actual fold/final models, finite probabilities, normalized conditional time distributions, pre-product event leads and training-only selection",
+    "hopper_pressure: all actual fold/final models, finite probabilities, normalized conditional time distributions, pre-product event leads and training-only selection",
+    "140 actual main fits plus 4 training-only self-supervised pretraining fits; lifetime quantiles finite and ordered",
+    "390 old source/model/report/provenance artifacts unchanged by SHA-256",
+    "Six synthetic ongoing-episode and persistent-alarm regression checks passed",
+    "Subnormal conditional time probabilities normalized; risks, weights, frozen choice unchanged",
+    "5 separate all-data refits through October23 verified; no historical validation claimed for these fits",
+    "All 1505 main-device source files accounted for; other-device Voltage Sample absent"
+  ],
+  "comparison_main_fits": 140,
+  "all_data_main_fits": 5,
+  "main_fits": 145,
+  "ssl_pretraining_fits": 4,
+  "distinct_risk_algorithms": 7,
+  "risk_initialization_variants": 8,
+  "base_life_model_methods": 7,
+  "learned_life_variants": 13,
+  "gpu_max_recorded_temperature_c": 62,
+  "gpu_max_tensor_mib": 214.66796875,
+  "original_artifacts_verified": 390,
+  "boundary_sensitivity": {
+    "feedrate": {
+      "episodes": 31,
+      "first_failed_products_near_HMI_boundary": 12,
+      "tolerance": 0.1,
+      "original_labels_preserved": true
+    },
+    "hopper_pressure": {
+      "episodes": 10,
+      "first_failed_products_near_HMI_boundary": 2,
+      "tolerance": 0.5,
+      "original_labels_preserved": true
+    }
+  },
+  "verified_at": "2026-11-04T22:55:54+0800"
+}

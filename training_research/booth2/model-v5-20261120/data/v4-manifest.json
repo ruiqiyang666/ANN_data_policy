@@ -1,0 +1,1571 @@
+{
+ "kind": "survival_v4",
+ "version": "booth2-v4-survival-3d14825bdab8",
+ "created_utc": "2026-11-19T17:24:22.173803+00:00",
+ "source": {
+  "repository": "ruiqiyang666/ANN_data_policy",
+  "commit": "c49f6c9d50cc3ee4f921aee3f26cedc568557b59",
+  "tables": [
+   "training_data/features_10s.csv.gz",
+   "model_v2_GRU/data/anchors.csv.gz",
+   "model_v2_GRU/data/targets.csv.gz",
+   "model_v2_GRU/data/cycles.csv",
+   "model_v2_GRU/data/events.csv",
+   "model_v2_GRU/data/products.csv.gz"
+  ]
+ },
+ "files": {
+  "weights.npz": "3d14825bdab87ee1c07078ba36312dc70e8b11fed8c76b8fc7959bad282b1da5",
+  "origins.npz": "44987cab76ad6532074e1e9e07c3f735540223614bf7ae788f17b0d659fed796",
+  "workbench.json": "a96513965e25436f34c3020ae37a873ed219c78aa13288575f1dd2dfbe009971"
+ },
+ "features": [
+  "vsd_mean_5m",
+  "vsd_mean_30m",
+  "vsd_mean_3h",
+  "vsd60",
+  "vsd_ratio",
+  "v_std_5m",
+  "v_std_30m",
+  "d_peak_30m",
+  "d_peak_3h",
+  "d_5m_3h",
+  "d_30m_base",
+  "v_slope_30m",
+  "v_slope_3h",
+  "v_low53_30m",
+  "margin51_30m",
+  "margin51_q10",
+  "v_min_30m",
+  "cool_loss_kw_d_base",
+  "cool_dT_d_base",
+  "therm_eff_d_base",
+  "power_d_base",
+  "power_std_30m",
+  "therm_eff_slope_3h"
+ ],
+ "channels": [
+  "v_c",
+  "log_vsd",
+  "vlast_dev",
+  "therm_eff_c",
+  "cool_dT_c",
+  "power_c",
+  "since_restart_h",
+  "restart"
+ ],
+ "sensors": 28,
+ "members": [
+  "logit3",
+  "logit5",
+  "logit23",
+  "hgb",
+  "net"
+ ],
+ "horizons_hours": [
+  0.3333333333333333,
+  0.6666666666666666,
+  1.0,
+  1.5,
+  2.0,
+  3.0,
+  4.0,
+  6.0,
+  8.0,
+  12.0,
+  16.0,
+  24.0
+ ],
+ "models": [
+  {
+   "id": "life_tree",
+   "members": [
+    "hgb"
+   ],
+   "warn": [
+    "hgb"
+   ],
+   "family": "trees",
+   "architecture": [
+    24,
+    600,
+    12
+   ],
+   "name": "电极寿命 · 提升树 v4",
+   "name_en": "Electrode life · boosted trees v4",
+   "short": "提升树 v4",
+   "short_en": "Trees v4",
+   "describe": "单调梯度提升树：23 项特征 → 12 个时间点的到寿概率",
+   "describe_en": "Monotone boosted trees: 23 features → end-of-life probability at 12 horizons"
+  },
+  {
+   "id": "life_gru",
+   "members": [
+    "net"
+   ],
+   "warn": [
+    "net"
+   ],
+   "family": "neural",
+   "architecture": [
+    9,
+    8,
+    31,
+    12
+   ],
+   "name": "电极寿命 · GRU 网络 v4",
+   "name_en": "Electrode life · GRU network v4",
+   "short": "GRU 网络 v4",
+   "short_en": "GRU net v4",
+   "describe": "循环神经网络：近 2 小时序列 + 23 项特征 → 12 个时间点的到寿概率",
+   "describe_en": "Recurrent network: last 2 h sequence + 23 features → end-of-life probability at 12 horizons"
+  },
+  {
+   "id": "life_fusion",
+   "members": [
+    "logit3",
+    "logit5",
+    "logit23",
+    "hgb",
+    "net"
+   ],
+   "warn": [
+    "hgb",
+    "net"
+   ],
+   "family": "ensemble",
+   "architecture": [
+    5,
+    12
+   ],
+   "name": "电极寿命 · 融合 v4",
+   "name_en": "Electrode life · fusion v4",
+   "short": "融合 v4",
+   "short_en": "Fusion v4",
+   "describe": "五个模型按时间点加权，并与历史基准混合",
+   "describe_en": "Five learners pooled per horizon with the historical base rate"
+  }
+ ],
+ "cycle_ids": [
+  "L000",
+  "L001",
+  "L002",
+  "L003",
+  "L004",
+  "L005",
+  "L006",
+  "L007",
+  "L008",
+  "L009",
+  "L010",
+  "L011",
+  "L012",
+  "L013"
+ ],
+ "smoothing": {
+  "rise_alpha": 0.3,
+  "fade_alpha": 0.005
+ },
+ "alarm_policy": {
+  "confirm_origins": 2,
+  "max_confirm_gap_seconds": 90,
+  "release_seconds": 600,
+  "cooldown_seconds": 1800
+ },
+ "products_per_processing_hour": 57.97265277914898,
+ "showcase_segments": [
+  {
+   "name": "electrode_eol_20261101",
+   "label": "11月1日 12:30–13:38 电极末期",
+   "start": 1793536200,
+   "stop": 1793540280
+  },
+  {
+   "name": "electrode_eol_20261028",
+   "label": "10月28日 07:30–08:32 电极末期",
+   "start": 1793172600,
+   "stop": 1793176320
+  }
+ ],
+ "evaluation": {
+  "life_tree": {
+   "protocol": "nested leave-one-cycle-out: 14 held-out cycles; pool weights, warning calibration, interval widening and threshold from inner out-of-fold predictions",
+   "events": {
+    "total_events": 10,
+    "hit20": 5,
+    "late": 2,
+    "missed": 3,
+    "false_alarms": 17,
+    "unknown_alarms": 2,
+    "post_event_alarms": 0,
+    "alarms": 26,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.0715670613769409
+   },
+   "single_threshold_reference": {
+    "total_events": 10,
+    "hit20": 6,
+    "late": 2,
+    "missed": 2,
+    "false_alarms": 20,
+    "unknown_alarms": 2,
+    "post_event_alarms": 1,
+    "alarms": 31,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.08419654279640106,
+    "threshold": 0.9000000000000001
+   },
+   "processing_time": {
+    "alarms": 26,
+    "processing_hours": 225.0888888888889,
+    "after_end_or_unknown": 0,
+    "end_within_1h": 10,
+    "no_end_within_1h": 15,
+    "cycles_warned_within_1h": 8,
+    "end_within_2h": 13,
+    "no_end_within_2h": 10,
+    "cycles_warned_within_2h": 9,
+    "end_within_4h": 14,
+    "no_end_within_4h": 9,
+    "cycles_warned_within_4h": 9
+   },
+   "life": {
+    "model": {
+     "mae": 5.068233491315352,
+     "mae_8h": 4.702802695233291,
+     "mae_4h": 4.953407871185348,
+     "mae_2h": 4.4857278570622805,
+     "mae_1h": 3.234106816711627,
+     "bias_2h": 4.289626131728285,
+     "cover": 0.7637436571206498,
+     "width": 17.229712238512775,
+     "pinball": 4.583015574988037,
+     "censored_median_below_bound": 0.36365231404645465,
+     "cover_min_cycle": 0.1800878477306003,
+     "origin_mae": 4.799829057209095,
+     "origin_mae_2h": 4.470991944654087,
+     "origin_mae_1h": 3.2341068167116265,
+     "origin_cover": 0.8184668745401674,
+     "origin_width": 16.966433556295396,
+     "origin_pinball": 4.442928314884052
+    },
+    "mae": 5.068233491315352,
+    "mae_last2h": 4.4857278570622805
+   },
+   "cycles": [
+    {
+     "cycle": "L000",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 16.18611111111111,
+     "threshold": 0.7500000000000001,
+     "event": {
+      "id": "T001",
+      "time": "2026-09-15 12:24:27",
+      "first_alarm": "2026-09-15 12:21:10",
+      "lead_minutes": 3.283333333333333,
+      "hit20": false,
+      "late": true,
+      "missed": false
+     },
+     "false_alarms": 4,
+     "life_mae": 6.2285281334012055,
+     "life_mae_last2h": 8.609524416635214,
+     "cover": 0.8620216234769178
+    },
+    {
+     "cycle": "L001",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 24.669444444444444,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T002",
+      "time": "2026-09-20 07:48:23",
+      "first_alarm": "2026-09-20 07:24:00",
+      "lead_minutes": 24.383333333333333,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 1,
+     "life_mae": 5.301287093139392,
+     "life_mae_last2h": 4.020923019678781,
+     "cover": 0.9253462447922531
+    },
+    {
+     "cycle": "L002",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 19.23888888888889,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T004",
+      "time": "2026-09-29 15:35:55",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 1,
+     "life_mae": 2.6103744527856665,
+     "life_mae_last2h": 2.718579881205872,
+     "cover": 0.9767542593127346
+    },
+    {
+     "cycle": "L003",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 17.080555555555556,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T005",
+      "time": "2026-10-06 13:04:01",
+      "first_alarm": "2026-10-06 12:25:40",
+      "lead_minutes": 38.35,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 1,
+     "life_mae": 2.186159731020978,
+     "life_mae_last2h": 3.297487876052966,
+     "cover": 0.9645470808261506
+    },
+    {
+     "cycle": "L004",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 11.372222222222222,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T006",
+      "time": "2026-10-09 08:23:43",
+      "first_alarm": "2026-10-09 07:36:30",
+      "lead_minutes": 47.21666666666667,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 5.801685999903297,
+     "life_mae_last2h": 4.2877674459834045,
+     "cover": 0.7889594528578407
+    },
+    {
+     "cycle": "L005",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 27.316666666666666,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T007",
+      "time": "2026-10-14 17:37:38",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 6,
+     "life_mae": 7.110287912213786,
+     "life_mae_last2h": 0.7295656680046638,
+     "cover": 0.4566809029896278
+    },
+    {
+     "cycle": "L006",
+     "end_type": "short_life_eol",
+     "observed": 1,
+     "life_hours": 1.8972222222222224,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T009",
+      "time": "2026-10-15 11:58:24",
+      "first_alarm": "2026-10-15 11:52:40",
+      "lead_minutes": 5.733333333333333,
+      "hit20": false,
+      "late": true,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 7.338520845707945,
+     "life_mae_last2h": 7.338520845707945,
+     "cover": 0.1800878477306003
+    },
+    {
+     "cycle": "L007",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.802777777777777,
+     "threshold": 0.9000000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L008",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 16.822222222222223,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T010",
+      "time": "2026-10-28 08:25:39",
+      "first_alarm": "2026-10-28 07:57:40",
+      "lead_minutes": 27.983333333333334,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 4.762726393642081,
+     "life_mae_last2h": 6.846618791956055,
+     "cover": 0.8512219286657859
+    },
+    {
+     "cycle": "L009",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 19.583333333333336,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T011",
+      "time": "2026-11-01 13:33:02",
+      "first_alarm": "2026-11-01 12:44:50",
+      "lead_minutes": 48.2,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 1,
+     "life_mae": 3.067157568675652,
+     "life_mae_last2h": 3.553935410619278,
+     "cover": 0.9514893617021276
+    },
+    {
+     "cycle": "L010",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.711111111111112,
+     "threshold": 0.9000000000000001,
+     "event": null,
+     "false_alarms": 2,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L011",
+     "end_type": "replacement_after_reported_damage",
+     "observed": 0,
+     "life_hours": 7.4944444444444445,
+     "threshold": 0.9000000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L012",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 4.405555555555556,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T012",
+      "time": "2026-11-10 13:28:30",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 1,
+     "life_mae": 6.275606782663512,
+     "life_mae_last2h": 3.45435521477862,
+     "cover": 0.680327868852459
+    },
+    {
+     "cycle": "L013",
+     "end_type": "right_censored",
+     "observed": 0,
+     "life_hours": 17.508333333333333,
+     "threshold": 0.9000000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    }
+   ],
+   "nominal_interval": 0.8,
+   "horizons": [
+    {
+     "hours": 1.0,
+     "prevalence": 0.04523067644989446,
+     "mean_predicted": 0.10380939521100196,
+     "brier": 0.05080792827278312,
+     "brier_constant": 0.04318486235777944,
+     "skill": -0.17652171383221815
+    },
+    {
+     "hours": 4.0,
+     "prevalence": 0.1812493357423743,
+     "mean_predicted": 0.24755479677833064,
+     "brier": 0.14020261039546675,
+     "brier_constant": 0.14839801403532238,
+     "skill": 0.05522583097308109
+    },
+    {
+     "hours": 8.0,
+     "prevalence": 0.36314460355267314,
+     "mean_predicted": 0.41917135076031503,
+     "brier": 0.19126988565514447,
+     "brier_constant": 0.23127060046324496,
+     "skill": 0.17296065616631484
+    }
+   ],
+   "pool_final": {
+    "hgb": [
+     0.803874143821074,
+     0.803874143821074,
+     0.803874143821074,
+     0.6206253283568434,
+     0.6206253283568434,
+     0.6206253283568434,
+     0.6206253283568434,
+     0.7083391929128284,
+     0.7083391929128284,
+     0.7083391929128284,
+     0.7083391929128284,
+     0.7083391929128284
+    ]
+   },
+   "pool_final_base": [
+    0.19612585617892608,
+    0.19612585617892608,
+    0.19612585617892608,
+    0.37937467164315647,
+    0.37937467164315647,
+    0.37937467164315647,
+    0.37937467164315647,
+    0.2916608070871715,
+    0.2916608070871715,
+    0.2916608070871715,
+    0.2916608070871715,
+    0.2916608070871715
+   ],
+   "widen_final": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  "life_gru": {
+   "protocol": "nested leave-one-cycle-out: 14 held-out cycles; pool weights, warning calibration, interval widening and threshold from inner out-of-fold predictions",
+   "events": {
+    "total_events": 10,
+    "hit20": 5,
+    "late": 2,
+    "missed": 3,
+    "false_alarms": 19,
+    "unknown_alarms": 2,
+    "post_event_alarms": 1,
+    "alarms": 30,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.07998671565658101
+   },
+   "single_threshold_reference": {
+    "total_events": 10,
+    "hit20": 6,
+    "late": 1,
+    "missed": 3,
+    "false_alarms": 21,
+    "unknown_alarms": 1,
+    "post_event_alarms": 2,
+    "alarms": 33,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.08840636993622111,
+    "threshold": 0.8500000000000001
+   },
+   "processing_time": {
+    "alarms": 30,
+    "processing_hours": 225.0888888888889,
+    "after_end_or_unknown": 1,
+    "end_within_1h": 10,
+    "no_end_within_1h": 17,
+    "cycles_warned_within_1h": 7,
+    "end_within_2h": 15,
+    "no_end_within_2h": 11,
+    "cycles_warned_within_2h": 8,
+    "end_within_4h": 16,
+    "no_end_within_4h": 7,
+    "cycles_warned_within_4h": 8
+   },
+   "life": {
+    "model": {
+     "mae": 4.819885504813257,
+     "mae_8h": 4.291883718215116,
+     "mae_4h": 4.405561142213321,
+     "mae_2h": 3.8340011995086614,
+     "mae_1h": 2.7582705088908517,
+     "bias_2h": 3.7002446880005015,
+     "cover": 0.7061359316770842,
+     "width": 16.507559208902602,
+     "pinball": 4.41737316438321,
+     "censored_median_below_bound": 0.3691736406571342,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.475033475313446,
+     "origin_mae_2h": 3.821126655124088,
+     "origin_mae_1h": 2.758270508890852,
+     "origin_cover": 0.8131941281575167,
+     "origin_width": 16.487579659430153,
+     "origin_pinball": 4.174567110854084
+    },
+    "mae": 4.819885504813257,
+    "mae_last2h": 3.8340011995086614
+   },
+   "cycles": [
+    {
+     "cycle": "L000",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 16.18611111111111,
+     "threshold": 0.8,
+     "event": {
+      "id": "T001",
+      "time": "2026-09-15 12:24:27",
+      "first_alarm": "2026-09-15 12:21:20",
+      "lead_minutes": 3.1166666666666667,
+      "hit20": false,
+      "late": true,
+      "missed": false
+     },
+     "false_alarms": 2,
+     "life_mae": 5.703774227438697,
+     "life_mae_last2h": 6.647700629814537,
+     "cover": 0.8676849150506264
+    },
+    {
+     "cycle": "L001",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 24.669444444444444,
+     "threshold": 0.8500000000000001,
+     "event": {
+      "id": "T002",
+      "time": "2026-09-20 07:48:23",
+      "first_alarm": "2026-09-20 07:20:30",
+      "lead_minutes": 27.883333333333333,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 2,
+     "life_mae": 3.6950789489134874,
+     "life_mae_last2h": 1.5728657715651548,
+     "cover": 0.961040423375746
+    },
+    {
+     "cycle": "L002",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 19.23888888888889,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T004",
+      "time": "2026-09-29 15:35:55",
+      "first_alarm": "2026-09-29 14:44:40",
+      "lead_minutes": 51.25,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 6,
+     "life_mae": 3.569218816457719,
+     "life_mae_last2h": 0.8624220701936232,
+     "cover": 0.981663297718741
+    },
+    {
+     "cycle": "L003",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 17.080555555555556,
+     "threshold": 1.000001,
+     "event": {
+      "id": "T005",
+      "time": "2026-10-06 13:04:01",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 0,
+     "life_mae": 3.3594795958368993,
+     "life_mae_last2h": 3.979409291234617,
+     "cover": 0.9240526914945519
+    },
+    {
+     "cycle": "L004",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 11.372222222222222,
+     "threshold": 0.8500000000000001,
+     "event": {
+      "id": "T006",
+      "time": "2026-10-09 08:23:43",
+      "first_alarm": "2026-10-09 07:27:10",
+      "lead_minutes": 56.55,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 5.821255546502214,
+     "life_mae_last2h": 2.716443278694996,
+     "cover": 0.8111871030776746
+    },
+    {
+     "cycle": "L005",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 27.316666666666666,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T007",
+      "time": "2026-10-14 17:37:38",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 4,
+     "life_mae": 6.101059217638093,
+     "life_mae_last2h": 0.3894214276018884,
+     "cover": 0.5002033760423023
+    },
+    {
+     "cycle": "L006",
+     "end_type": "short_life_eol",
+     "observed": 1,
+     "life_hours": 1.8972222222222224,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T009",
+      "time": "2026-10-15 11:58:24",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 0,
+     "life_mae": 6.326443400230329,
+     "life_mae_last2h": 6.326443400230329,
+     "cover": 0.0
+    },
+    {
+     "cycle": "L007",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.802777777777777,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 3,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L008",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 16.822222222222223,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T010",
+      "time": "2026-10-28 08:25:39",
+      "first_alarm": "2026-10-28 08:23:10",
+      "lead_minutes": 2.4833333333333334,
+      "hit20": false,
+      "late": true,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 4.254857491922466,
+     "life_mae_last2h": 6.779430696600912,
+     "cover": 0.8054821664464994
+    },
+    {
+     "cycle": "L009",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 19.583333333333336,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T011",
+      "time": "2026-11-01 13:33:02",
+      "first_alarm": "2026-11-01 12:52:10",
+      "lead_minutes": 40.86666666666667,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 2.792177090525944,
+     "life_mae_last2h": 4.572129715168502,
+     "cover": 0.9723404255319149
+    },
+    {
+     "cycle": "L010",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.711111111111112,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 2,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L011",
+     "end_type": "replacement_after_reported_damage",
+     "observed": 0,
+     "life_hours": 7.4944444444444445,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L012",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 4.405555555555556,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T012",
+      "time": "2026-11-10 13:28:30",
+      "first_alarm": "2026-11-10 12:35:20",
+      "lead_minutes": 53.166666666666664,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 6.575510712666718,
+     "life_mae_last2h": 4.493745713982049,
+     "cover": 0.23770491803278687
+    },
+    {
+     "cycle": "L013",
+     "end_type": "right_censored",
+     "observed": 0,
+     "life_hours": 17.508333333333333,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    }
+   ],
+   "nominal_interval": 0.8,
+   "horizons": [
+    {
+     "hours": 1.0,
+     "prevalence": 0.04523067644989446,
+     "mean_predicted": 0.0859193231757527,
+     "brier": 0.0382099841847271,
+     "brier_constant": 0.04318486235777944,
+     "skill": 0.11519958386890994
+    },
+    {
+     "hours": 4.0,
+     "prevalence": 0.1812493357423743,
+     "mean_predicted": 0.2321481988720551,
+     "brier": 0.1319343646340769,
+     "brier_constant": 0.14839801403532238,
+     "skill": 0.11094251839062164
+    },
+    {
+     "hours": 8.0,
+     "prevalence": 0.36314460355267314,
+     "mean_predicted": 0.41628464171325247,
+     "brier": 0.18084766674694533,
+     "brier_constant": 0.23127060046324496,
+     "skill": 0.21802569637169755
+    }
+   ],
+   "pool_final": {
+    "net": [
+     0.6410661948110644,
+     0.6410661948110644,
+     0.6410661948110644,
+     0.6002124732704003,
+     0.6002124732704003,
+     0.6002124732704003,
+     0.6002124732704003,
+     0.777364977934116,
+     0.777364977934116,
+     0.777364977934116,
+     0.777364977934116,
+     0.777364977934116
+    ]
+   },
+   "pool_final_base": [
+    0.35893380518893553,
+    0.35893380518893553,
+    0.35893380518893553,
+    0.3997875267295997,
+    0.3997875267295997,
+    0.3997875267295997,
+    0.3997875267295997,
+    0.22263502206588398,
+    0.22263502206588398,
+    0.22263502206588398,
+    0.22263502206588398,
+    0.22263502206588398
+   ],
+   "widen_final": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.04019277008422934
+    ]
+   ]
+  },
+  "life_fusion": {
+   "protocol": "nested leave-one-cycle-out: 14 held-out cycles; pool weights, warning calibration, interval widening and threshold from inner out-of-fold predictions",
+   "events": {
+    "total_events": 10,
+    "hit20": 7,
+    "late": 1,
+    "missed": 2,
+    "false_alarms": 20,
+    "unknown_alarms": 2,
+    "post_event_alarms": 2,
+    "alarms": 33,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.08419654279640106
+   },
+   "single_threshold_reference": {
+    "total_events": 10,
+    "hit20": 6,
+    "late": 2,
+    "missed": 2,
+    "false_alarms": 23,
+    "unknown_alarms": 2,
+    "post_event_alarms": 0,
+    "alarms": 33,
+    "operating_hours": 237.53944444444446,
+    "false_alarms_per_hour": 0.09682602421586121,
+    "threshold": 0.8500000000000001
+   },
+   "processing_time": {
+    "alarms": 33,
+    "processing_hours": 225.0888888888889,
+    "after_end_or_unknown": 2,
+    "end_within_1h": 11,
+    "no_end_within_1h": 18,
+    "cycles_warned_within_1h": 8,
+    "end_within_2h": 16,
+    "no_end_within_2h": 12,
+    "cycles_warned_within_2h": 8,
+    "end_within_4h": 17,
+    "no_end_within_4h": 9,
+    "cycles_warned_within_4h": 8
+   },
+   "life": {
+    "model": {
+     "mae": 5.000102091563635,
+     "mae_8h": 4.574580843241332,
+     "mae_4h": 4.6015067766976285,
+     "mae_2h": 4.027412919878567,
+     "mae_1h": 2.8190653878569423,
+     "bias_2h": 3.872179350755515,
+     "cover": 0.6838317784352294,
+     "width": 16.096434000563402,
+     "pinball": 4.480823386358017,
+     "censored_median_below_bound": 0.4176625179591136,
+     "cover_min_cycle": 0.01171303074670571,
+     "origin_mae": 4.657268710474451,
+     "origin_mae_2h": 4.015835600551817,
+     "origin_mae_1h": 2.819065387856942,
+     "origin_cover": 0.7896857373086221,
+     "origin_width": 16.032456917400776,
+     "origin_pinball": 4.240414789516434
+    },
+    "mae": 5.000102091563635,
+    "mae_last2h": 4.027412919878567
+   },
+   "cycles": [
+    {
+     "cycle": "L000",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 16.18611111111111,
+     "threshold": 0.6000000000000001,
+     "event": {
+      "id": "T001",
+      "time": "2026-09-15 12:24:27",
+      "first_alarm": "2026-09-15 11:54:50",
+      "lead_minutes": 29.616666666666667,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 4,
+     "life_mae": 6.617058408287007,
+     "life_mae_last2h": 4.833930582802706,
+     "cover": 0.7962931182426635
+    },
+    {
+     "cycle": "L001",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 24.669444444444444,
+     "threshold": 0.8,
+     "event": {
+      "id": "T002",
+      "time": "2026-09-20 07:48:23",
+      "first_alarm": "2026-09-20 07:20:30",
+      "lead_minutes": 27.883333333333333,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 2,
+     "life_mae": 3.8722238656780807,
+     "life_mae_last2h": 2.354658668039659,
+     "cover": 0.9590136245918253
+    },
+    {
+     "cycle": "L002",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 19.23888888888889,
+     "threshold": 0.7000000000000001,
+     "event": {
+      "id": "T004",
+      "time": "2026-09-29 15:35:55",
+      "first_alarm": "2026-09-29 14:55:50",
+      "lead_minutes": 40.083333333333336,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 6,
+     "life_mae": 3.80897440541307,
+     "life_mae_last2h": 2.9704577488783497,
+     "cover": 0.9757435749350274
+    },
+    {
+     "cycle": "L003",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 17.080555555555556,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T005",
+      "time": "2026-10-06 13:04:01",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 0,
+     "life_mae": 3.605517785692223,
+     "life_mae_last2h": 3.4401660543628156,
+     "cover": 0.9464953651000163
+    },
+    {
+     "cycle": "L004",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 11.372222222222222,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T006",
+      "time": "2026-10-09 08:23:43",
+      "first_alarm": "2026-10-09 07:33:20",
+      "lead_minutes": 50.38333333333333,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 5.825041710880159,
+     "life_mae_last2h": 2.9912230954588317,
+     "cover": 0.6910112359550562
+    },
+    {
+     "cycle": "L005",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 27.316666666666666,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T007",
+      "time": "2026-10-14 17:37:38",
+      "first_alarm": "2026-10-14 16:46:20",
+      "lead_minutes": 51.3,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 4,
+     "life_mae": 6.131637063064231,
+     "life_mae_last2h": 0.7307528552023967,
+     "cover": 0.4245474883058776
+    },
+    {
+     "cycle": "L006",
+     "end_type": "short_life_eol",
+     "observed": 1,
+     "life_hours": 1.8972222222222224,
+     "threshold": 0.9000000000000001,
+     "event": {
+      "id": "T009",
+      "time": "2026-10-15 11:58:24",
+      "first_alarm": null,
+      "lead_minutes": null,
+      "hit20": false,
+      "late": false,
+      "missed": true
+     },
+     "false_alarms": 0,
+     "life_mae": 6.268719361432867,
+     "life_mae_last2h": 6.268719361432867,
+     "cover": 0.01171303074670571
+    },
+    {
+     "cycle": "L007",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.802777777777777,
+     "threshold": 0.9000000000000001,
+     "event": null,
+     "false_alarms": 2,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L008",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 16.822222222222223,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T010",
+      "time": "2026-10-28 08:25:39",
+      "first_alarm": "2026-10-28 08:21:40",
+      "lead_minutes": 3.9833333333333334,
+      "hit20": false,
+      "late": true,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 4.36651902970223,
+     "life_mae_last2h": 6.645838383402732,
+     "cover": 0.8229854689564069
+    },
+    {
+     "cycle": "L009",
+     "end_type": "low_voltage_then_replacement",
+     "observed": 1,
+     "life_hours": 19.583333333333336,
+     "threshold": 0.9500000000000001,
+     "event": {
+      "id": "T011",
+      "time": "2026-11-01 13:33:02",
+      "first_alarm": "2026-11-01 12:51:20",
+      "lead_minutes": 41.7,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 2.639068458422893,
+     "life_mae_last2h": 4.4848111297764,
+     "cover": 0.9936170212765958
+    },
+    {
+     "cycle": "L010",
+     "end_type": "preventive",
+     "observed": 0,
+     "life_hours": 20.711111111111112,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 2,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L011",
+     "end_type": "replacement_after_reported_damage",
+     "observed": 0,
+     "life_hours": 7.4944444444444445,
+     "threshold": 0.9500000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    },
+    {
+     "cycle": "L012",
+     "end_type": "natural_eol",
+     "observed": 1,
+     "life_hours": 4.405555555555556,
+     "threshold": 0.8500000000000001,
+     "event": {
+      "id": "T012",
+      "time": "2026-11-10 13:28:30",
+      "first_alarm": "2026-11-10 12:31:00",
+      "lead_minutes": 57.5,
+      "hit20": true,
+      "late": false,
+      "missed": false
+     },
+     "false_alarms": 0,
+     "life_mae": 6.8662608270635905,
+     "life_mae_last2h": 5.553571319428913,
+     "cover": 0.21689785624211855
+    },
+    {
+     "cycle": "L013",
+     "end_type": "right_censored",
+     "observed": 0,
+     "life_hours": 17.508333333333333,
+     "threshold": 0.8500000000000001,
+     "event": null,
+     "false_alarms": 0,
+     "life_mae": null,
+     "life_mae_last2h": null,
+     "cover": null
+    }
+   ],
+   "nominal_interval": 0.8,
+   "horizons": [
+    {
+     "hours": 1.0,
+     "prevalence": 0.04523067644989446,
+     "mean_predicted": 0.0954974569740688,
+     "brier": 0.04576575384339062,
+     "brier_constant": 0.04318486235777944,
+     "skill": -0.05976380019991545
+    },
+    {
+     "hours": 4.0,
+     "prevalence": 0.1812493357423743,
+     "mean_predicted": 0.2406044221736817,
+     "brier": 0.13897403374671963,
+     "brier_constant": 0.14839801403532238,
+     "skill": 0.0635047601537283
+    },
+    {
+     "hours": 8.0,
+     "prevalence": 0.36314460355267314,
+     "mean_predicted": 0.40797133607845654,
+     "brier": 0.18733585819277485,
+     "brier_constant": 0.23127060046324496,
+     "skill": 0.18997115146701282
+    }
+   ],
+   "pool_final": {
+    "logit3": [
+     0.087601273211906,
+     0.087601273211906,
+     0.087601273211906,
+     0.2506480933913458,
+     0.2506480933913458,
+     0.2506480933913458,
+     0.2506480933913458,
+     0.5154541426029371,
+     0.5154541426029371,
+     0.5154541426029371,
+     0.5154541426029371,
+     0.5154541426029371
+    ],
+    "logit5": [
+     0.17173515209284285,
+     0.17173515209284285,
+     0.17173515209284285,
+     0.0025426448395343476,
+     0.0025426448395343476,
+     0.0025426448395343476,
+     0.0025426448395343476,
+     0.06054422401911075,
+     0.06054422401911075,
+     0.06054422401911075,
+     0.06054422401911075,
+     0.06054422401911075
+    ],
+    "logit23": [
+     0.11787921499398668,
+     0.11787921499398668,
+     0.11787921499398668,
+     0.268925085774458,
+     0.268925085774458,
+     0.268925085774458,
+     0.268925085774458,
+     0.12915700648661466,
+     0.12915700648661466,
+     0.12915700648661466,
+     0.12915700648661466,
+     0.12915700648661466
+    ],
+    "hgb": [
+     0.11893886743681328,
+     0.11893886743681328,
+     0.11893886743681328,
+     0.01799104480539924,
+     0.01799104480539924,
+     0.01799104480539924,
+     0.01799104480539924,
+     0.08920658730015674,
+     0.08920658730015674,
+     0.08920658730015674,
+     0.08920658730015674,
+     0.08920658730015674
+    ],
+    "net": [
+     0.3851221571024976,
+     0.3851221571024976,
+     0.3851221571024976,
+     0.23354992829846594,
+     0.23354992829846594,
+     0.23354992829846594,
+     0.23354992829846594,
+     0.10141065333016833,
+     0.10141065333016833,
+     0.10141065333016833,
+     0.10141065333016833,
+     0.10141065333016833
+    ]
+   },
+   "pool_final_base": [
+    0.11872333516195359,
+    0.11872333516195359,
+    0.11872333516195359,
+    0.2263432028907966,
+    0.2263432028907966,
+    0.2263432028907966,
+    0.2263432028907966,
+    0.10422738626101245,
+    0.10422738626101245,
+    0.10422738626101245,
+    0.10422738626101245,
+    0.10422738626101245
+   ],
+   "widen_final": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.09834255386243622,
+     0.09116579988485586
+    ],
+    [
+     0.024948161325633822,
+     0.04687924587069814
+    ]
+   ]
+  },
+  "baselines": {
+   "life": {
+    "constant_quantiles": {
+     "mae": 5.663843895110576,
+     "mae_8h": 5.602083333333334,
+     "mae_4h": 7.222361111111111,
+     "mae_2h": 8.122361111111111,
+     "mae_1h": 8.617222222222223,
+     "bias_2h": 8.122361111111111,
+     "cover": 0.7299644588594124,
+     "width": 17.102638888888894,
+     "pinball": 5.012536557555294,
+     "censored_median_below_bound": 0.39989787554764844,
+     "cover_min_cycle": 0.08345534407027819,
+     "origin_mae": 5.519317881013832,
+     "origin_mae_2h": 8.121486574526502,
+     "origin_mae_1h": 8.617222222222223,
+     "origin_cover": 0.7862873559191396,
+     "origin_width": 16.948887954625963,
+     "origin_pinball": 5.0377970732267485
+    },
+    "mean_life_minus_age": {
+     "mae": 6.056018216827418,
+     "mae_8h": 4.960273984053499,
+     "mae_4h": 4.339419152949246,
+     "mae_2h": 3.897680255486969,
+     "mae_1h": 3.6223095850480114,
+     "bias_2h": 2.7468498371056245,
+     "cover": 9.99883868906241e-05,
+     "width": 0.0,
+     "pinball": 9.084027325241117,
+     "censored_median_below_bound": 0.7480816321947816,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.945733943545433,
+     "origin_mae_2h": 3.837691850955615,
+     "origin_mae_1h": 3.6223095850480114,
+     "origin_cover": 0.00012262200889885436,
+     "origin_width": 0.0,
+     "origin_pinball": 7.4186009153191
+    },
+    "v3": {
+     "mae": 4.736826036443561,
+     "mae_8h": 4.94904949404214,
+     "mae_4h": 5.541653923617073,
+     "mae_2h": 5.236016711665494,
+     "mae_1h": 4.005608504770761,
+     "bias_2h": 5.110463513968396,
+     "cover": 0.7923420420131184,
+     "width": 19.1018233804726,
+     "pinball": 4.443161918341611,
+     "censored_median_below_bound": 0.34821586173823704,
+     "cover_min_cycle": 0.10395314787701318,
+     "origin_mae": 4.41068059763891,
+     "origin_mae_2h": 5.2291873261163975,
+     "origin_mae_1h": 4.005608504770762,
+     "origin_cover": 0.8657289002557544,
+     "origin_width": 19.090931173525163,
+     "origin_pinball": 4.243284379824295
+    }
+   },
+   "members_life": {
+    "logit3": {
+     "mae": 5.00106648602496,
+     "mae_8h": 4.900176787136515,
+     "mae_4h": 5.304978956884736,
+     "mae_2h": 4.902959573593045,
+     "mae_1h": 3.71416109626077,
+     "bias_2h": 4.740141097016839,
+     "cover": 0.5283983954518086,
+     "width": 12.295909253344925,
+     "pinball": 4.632358216908844,
+     "censored_median_below_bound": 0.3696641009512737,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.4024755900410835,
+     "origin_mae_2h": 4.894006255230166,
+     "origin_mae_1h": 3.7141610962607703,
+     "origin_cover": 0.6330098447955715,
+     "origin_width": 12.122684122922424,
+     "origin_pinball": 4.108409883082722
+    },
+    "logit5": {
+     "mae": 5.197266670422899,
+     "mae_8h": 4.870527933742474,
+     "mae_4h": 4.948559365057854,
+     "mae_2h": 4.556639138583611,
+     "mae_1h": 3.327215613292992,
+     "bias_2h": 4.487813329897605,
+     "cover": 0.5330591567217199,
+     "width": 11.538790484791157,
+     "pinball": 4.771822366276546,
+     "censored_median_below_bound": 0.3761670551157189,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.751009041496936,
+     "origin_mae_2h": 4.546947876794261,
+     "origin_mae_1h": 3.327215613292992,
+     "origin_cover": 0.6179273377010125,
+     "origin_width": 11.502126067434352,
+     "origin_pinball": 4.391397741223189
+    },
+    "logit23": {
+     "mae": 4.892510802056603,
+     "mae_8h": 4.626296894786818,
+     "mae_4h": 4.585452936728554,
+     "mae_2h": 3.976502087057259,
+     "mae_1h": 2.6379128092113584,
+     "bias_2h": 3.8386849029652197,
+     "cover": 0.5062638326043966,
+     "width": 12.21699511764923,
+     "pinball": 4.801326778012422,
+     "censored_median_below_bound": 0.3160502682985237,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.538274049782009,
+     "origin_mae_2h": 3.970173022990827,
+     "origin_mae_1h": 2.6379128092113584,
+     "origin_cover": 0.6100620117016431,
+     "origin_width": 11.815202844832775,
+     "origin_pinball": 4.314767332790881
+    },
+    "hgb": {
+     "mae": 5.410951321629516,
+     "mae_8h": 5.152083763281252,
+     "mae_4h": 5.24160241829319,
+     "mae_2h": 4.586432728544613,
+     "mae_1h": 3.165523139452464,
+     "bias_2h": 4.444243097664105,
+     "cover": 0.5251215425496357,
+     "width": 13.090764975320415,
+     "pinball": 5.220862617188642,
+     "censored_median_below_bound": 0.2869380517693036,
+     "cover_min_cycle": 0.048316251830161056,
+     "origin_mae": 4.984427132192776,
+     "origin_mae_2h": 4.571432895778186,
+     "origin_mae_1h": 3.165523139452464,
+     "origin_cover": 0.609554006236205,
+     "origin_width": 12.858938947844965,
+     "origin_pinball": 4.778556625709916
+    },
+    "net": {
+     "mae": 5.020916461709698,
+     "mae_8h": 4.721484034569182,
+     "mae_4h": 4.668290232650922,
+     "mae_2h": 3.8712179486237135,
+     "mae_1h": 2.4582839992619427,
+     "bias_2h": 3.6504147737520043,
+     "cover": 0.4792175424190905,
+     "width": 11.661104188109745,
+     "pinball": 4.970818264756792,
+     "censored_median_below_bound": 0.2995897216661609,
+     "cover_min_cycle": 0.0,
+     "origin_mae": 4.506803885699232,
+     "origin_mae_2h": 3.857041472568708,
+     "origin_mae_1h": 2.458283999261943,
+     "origin_cover": 0.5777949059314017,
+     "origin_width": 11.577402047267483,
+     "origin_pinball": 4.342201962927421
+    }
+   }
+  }
+ },
+ "limits": [
+  "实验模型：只有 10 次观察到的电极末期。剩余寿命在最后约 2 个加工小时内才有分辨力，更早时接近历史平均；它是范围估计，不是倒计时，不能作为自动换枪依据。",
+  "预警评分未校准，不是概率；提前量按“连续失败第一件开始加工”计。",
+  "到寿概率按答案已知的原点估计，未做删失加权：12 小时以上的时间点可能偏高约 0.02–0.04。",
+  "回放中每个电极周期由未见过该周期的留一模型评分；这些历史周期此前已被查看，不是新增盲测。",
+  "加工原点沿用离线确认的产品资格，不等同于现场异步数据全链路。"
+ ]
+}

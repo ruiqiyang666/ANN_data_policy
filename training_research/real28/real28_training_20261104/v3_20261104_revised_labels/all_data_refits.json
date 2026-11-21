@@ -1,0 +1,91 @@
+{
+  "fits": {
+    "voltage": {
+      "task": "voltage",
+      "status": "trained_research_candidate",
+      "algorithm": "extra_trees",
+      "main_fits": 1,
+      "train_windows": 156991,
+      "event_or_weak_endpoint_count": 15,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-10-23T13:57:00",
+      "seconds": 91.31709950000004,
+      "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+      "validation_metrics": null,
+      "previous_validation_scores_do_not_apply_to_this_refit": true,
+      "output_status": "raw weighted score; calibration on future data not yet verified for this refit",
+      "production_ready": false,
+      "artifact_sha256": {
+        "auxiliary.joblib": "e3bddb3c5406fa099abd3f2f3e1485905c1c95a13d2d3611423d2f145b165139",
+        "model.joblib": "97f8c39f9d1ec9ab6e60c7906caedc04657c8c1b28dfbef4dd997a78e2de2b3a",
+        "preprocess.joblib": "1131c57a945a2920c1c76062a1f6726df0dd301e76d8ca64e02cd3bfef4a12e5"
+      }
+    },
+    "feedrate": {
+      "task": "feedrate",
+      "status": "trained_research_candidate",
+      "algorithm": "histgb",
+      "main_fits": 1,
+      "train_windows": 156855,
+      "event_or_weak_endpoint_count": 31,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-10-23T13:57:00",
+      "seconds": 10.003175900001224,
+      "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+      "validation_metrics": null,
+      "previous_validation_scores_do_not_apply_to_this_refit": true,
+      "output_status": "raw weighted score; calibration on future data not yet verified for this refit",
+      "production_ready": false,
+      "artifact_sha256": {
+        "auxiliary.joblib": "feffbaf5dccab1258a91fa76ab30ac1d97c14f87ae74563cee84a9dbef839dae",
+        "model.joblib": "5878f864b0ec471f2810a17ce9550027cbd771d0845087605b3245348064663d",
+        "preprocess.joblib": "e126079f837e457755c8ff2331d9110f605a3b842c69d0eb0496d992c2529a4f"
+      }
+    },
+    "hopper_pressure": {
+      "task": "hopper_pressure",
+      "status": "trained_research_candidate",
+      "algorithm": "extra_trees",
+      "main_fits": 1,
+      "train_windows": 156981,
+      "event_or_weak_endpoint_count": 10,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-10-23T13:57:00",
+      "seconds": 169.7639713000026,
+      "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+      "validation_metrics": null,
+      "previous_validation_scores_do_not_apply_to_this_refit": true,
+      "output_status": "raw weighted score; calibration on future data not yet verified for this refit",
+      "production_ready": false,
+      "artifact_sha256": {
+        "auxiliary.joblib": "9e6f6120ef4a291040db62beaefefeb3bb7474e5b94ae598f2d7ee9f9d0101ad",
+        "model.joblib": "fb6f4727175566b42872508a3f89d13dda7438088b6f5a7db0bbb7eb58a07c68",
+        "preprocess.joblib": "0caf3cf87448b45c5fe30cb518adaee0773ccc13f736de7b3da9553213e702c7"
+      }
+    },
+    "life": {
+      "task": "life",
+      "status": "trained_research_candidate",
+      "algorithm": "stage_lognormal_r1",
+      "main_fits": 2,
+      "train_windows": 24765,
+      "event_or_weak_endpoint_count": 6,
+      "first_timestamp": "2026-08-15T10:34:00",
+      "last_timestamp": "2026-10-23T13:56:00",
+      "seconds": 2.584703000000445,
+      "normalization_fit": "all included dates, AFTER method freeze and isolated evaluation",
+      "validation_metrics": null,
+      "previous_validation_scores_do_not_apply_to_this_refit": true,
+      "output_status": "weak interval/censor likelihood; zero individually confirmed natural failures",
+      "production_ready": false,
+      "artifact_sha256": {
+        "hours.joblib": "7dc71af53d9e03dd9815bd78cf185b2d50bc474d1abdc33d169c5de6db9effaf",
+        "pieces.joblib": "f94a4aeb747022cc3a29ea7e3859534cf0b67dcf50cc2fba364a6e480f76182c"
+      }
+    }
+  },
+  "main_fits": 5,
+  "refit_after_frozen_evaluation": true,
+  "production_ready": false,
+  "finished_at": "2026-11-04T22:52:59+0800"
+}

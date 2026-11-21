@@ -1,0 +1,118 @@
+loco-L002 aft_linear6: fit complete
+loco-L000 aft_linear6: fit completeloco-L001 aft_linear6: fit complete
+
+loco-L004 aft_linear6: fit complete
+loco-L007 aft_linear6: fit complete
+loco-L005 aft_linear6: fit complete
+loco-L006 aft_linear6: fit complete
+loco-L003 aft_linear6: fit complete
+loco-L002 aft_xgb6: fit complete
+loco-L000 aft_xgb6: fit complete
+loco-L001 aft_xgb6: fit complete
+loco-L005 aft_xgb6: fit complete
+loco-L004 aft_xgb6: fit complete
+loco-L007 aft_xgb6: fit complete
+loco-L006 aft_xgb6: fit complete
+loco-L003 aft_xgb6: fit complete
+loco-L002 aft_xgb23: fit complete
+loco-L000 aft_xgb23: fit complete
+loco-L005 aft_xgb23: fit complete
+loco-L001 aft_xgb23: fit complete
+loco-L007 aft_xgb23: fit complete
+loco-L004 aft_xgb23: fit complete
+loco-L003 aft_xgb23: fit complete
+loco-L006 aft_xgb23: fit complete
+loco-L002 pch_linear6: fit complete
+loco-L003 pch_linear6: fit complete
+loco-L005 pch_linear6: fit complete
+loco-L001 pch_linear6: fit complete
+loco-L000 pch_linear6: fit complete
+loco-L007 pch_linear6: fit complete
+loco-L004 pch_linear6: fit complete
+loco-L006 pch_linear6: fit complete
+loco-L002 pch_mlp6: fit complete
+loco-L003 pch_mlp6: fit complete
+loco-L005 pch_mlp6: fit complete
+loco-L001 pch_mlp6: fit complete
+loco-L007 pch_mlp6: fit complete
+loco-L000 pch_mlp6: fit complete
+loco-L004 pch_mlp6: fit complete
+loco-L006 pch_mlp6: fit complete
+loco-L002 pch_mlp23: fit complete
+loco-L003 pch_mlp23: fit complete
+loco-L008 aft_linear6: fit complete
+loco-L009 aft_linear6: fit complete
+loco-L005 pch_mlp23: fit complete
+loco-L001 pch_mlp23: fit complete
+loco-L007 pch_mlp23: fit complete
+loco-L008 aft_xgb6: fit complete
+loco-L000 pch_mlp23: fit complete
+loco-L009 aft_xgb6: fit complete
+loco-L004 pch_mlp23: fit complete
+loco-L010 aft_linear6: fit complete
+loco-L011 aft_linear6: fit complete
+loco-L012 aft_linear6: fit complete
+loco-L008 aft_xgb23: fit complete
+loco-L013 aft_linear6: fit complete
+forward-0 aft_linear6: fit complete
+loco-L009 aft_xgb23: fit complete
+forward-0 aft_xgb6: fit complete
+loco-L010 aft_xgb6: fit complete
+loco-L011 aft_xgb6: fit complete
+loco-L012 aft_xgb6: fit complete
+loco-L013 aft_xgb6: fit complete
+forward-0 aft_xgb23: fit complete
+loco-L006 pch_mlp23: fit complete
+loco-L010 aft_xgb23: fit complete
+loco-L011 aft_xgb23: fit complete
+loco-L012 aft_xgb23: fit complete
+loco-L013 aft_xgb23: fit complete
+forward-1 aft_linear6: fit complete
+forward-1 aft_xgb6: fit complete
+loco-L008 pch_linear6: fit complete
+forward-0 pch_linear6: fit complete
+loco-L009 pch_linear6: fit complete
+forward-1 aft_xgb23: fit complete
+loco-L010 pch_linear6: fit complete
+loco-L011 pch_linear6: fit complete
+loco-L013 pch_linear6: fit complete
+loco-L012 pch_linear6: fit complete
+forward-0 pch_mlp6: fit complete
+forward-1 pch_linear6: fit complete
+loco-L008 pch_mlp6: fit complete
+loco-L009 pch_mlp6: fit complete
+forward-0 pch_mlp23: fit complete
+loco-L010 pch_mlp6: fit complete
+forward-2 aft_linear6: fit complete
+loco-L013 pch_mlp6: fit complete
+loco-L011 pch_mlp6: fit complete
+loco-L012 pch_mlp6: fit complete
+forward-2 aft_xgb6: fit complete
+forward-1 pch_mlp6: fit complete
+loco-L008 pch_mlp23: fit complete
+loco-L009 pch_mlp23: fit complete
+forward-2 aft_xgb23: fit complete
+forward-1 pch_mlp23: fit complete
+loco-L010 pch_mlp23: fit complete
+forward-2 pch_linear6: fit complete
+loco-L013 pch_mlp23: fit complete
+loco-L011 pch_mlp23: fit complete
+loco-L012 pch_mlp23: fit complete
+forward-2 pch_mlp6: fit complete
+forward-2 pch_mlp23: fit complete
+loco
+aft_linear6 {'mae': 5.351, 'last2h': 3.47, 'last1h': 2.452, 'bias2h': 3.383, 'coverage': 0.719, 'width': 28.137, 'brier1h': 0.071, 'ipcw_clipped1h': 0.0, 'brier4h': 0.194, 'ipcw_clipped4h': 0.0, 'brier8h': 0.213, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.478} {'total_events': 10.0, 'hit20': 2.0, 'late': 1.0, 'missed': 7.0, 'false_alarms': 11.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 4.630809853802058}
+aft_xgb6 {'mae': 5.532, 'last2h': 4.078, 'last1h': 2.797, 'bias2h': 3.922, 'coverage': 0.731, 'width': 35.245, 'brier1h': 0.07, 'ipcw_clipped1h': 0.0, 'brier4h': 0.182, 'ipcw_clipped4h': 0.0, 'brier8h': 0.209, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.352} {'total_events': 10.0, 'hit20': 1.0, 'late': 1.0, 'missed': 8.0, 'false_alarms': 10.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 4.209827139820052}
+aft_xgb23 {'mae': 5.298, 'last2h': 4.087, 'last1h': 2.759, 'bias2h': 3.909, 'coverage': 0.707, 'width': 33.667, 'brier1h': 0.066, 'ipcw_clipped1h': 0.0, 'brier4h': 0.19, 'ipcw_clipped4h': 0.0, 'brier8h': 0.208, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.294} {'total_events': 10.0, 'hit20': 2.0, 'late': 0.0, 'missed': 8.0, 'false_alarms': 7.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 2.9468789978740366}
+pch_linear6 {'mae': 5.393, 'last2h': 4.306, 'last1h': 3.323, 'bias2h': 4.218, 'coverage': 0.694, 'width': 14.682, 'brier1h': 0.079, 'ipcw_clipped1h': 0.0, 'brier4h': 0.215, 'ipcw_clipped4h': 0.0, 'brier8h': 0.227, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.477} {'total_events': 10.0, 'hit20': 0.0, 'late': 0.0, 'missed': 10.0, 'false_alarms': 8.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 3.367861711856042}
+pch_mlp6 {'mae': 5.444, 'last2h': 4.136, 'last1h': 3.118, 'bias2h': 4.073, 'coverage': 0.549, 'width': 12.3, 'brier1h': 0.072, 'ipcw_clipped1h': 0.0, 'brier4h': 0.229, 'ipcw_clipped4h': 0.0, 'brier8h': 0.25, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.385} {'total_events': 10.0, 'hit20': 2.0, 'late': 1.0, 'missed': 7.0, 'false_alarms': 7.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 2.9468789978740366}
+pch_mlp23 {'mae': 5.245, 'last2h': 3.993, 'last1h': 2.591, 'bias2h': 3.904, 'coverage': 0.493, 'width': 10.865, 'brier1h': 0.073, 'ipcw_clipped1h': 0.0, 'brier4h': 0.236, 'ipcw_clipped4h': 0.0, 'brier8h': 0.265, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.379} {'total_events': 10.0, 'hit20': 0.0, 'late': 0.0, 'missed': 10.0, 'false_alarms': 7.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 2.9468789978740366}
+nested_selected {'mae': 5.302, 'last2h': 3.934, 'last1h': 3.243, 'bias2h': 3.877, 'coverage': 0.636, 'width': 17.422, 'brier1h': 0.076, 'ipcw_clipped1h': 0.0, 'brier4h': 0.207, 'ipcw_clipped4h': 0.0, 'brier8h': 0.233, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.393} {'total_events': 10.0, 'hit20': 3.0, 'late': 1.0, 'missed': 6.0, 'false_alarms': 8.0, 'unknown_alarms': 0.0, 'operating_hours': 237.53944444444448, 'false_per_100h': 3.367861711856042}
+forward
+aft_linear6 {'mae': 6.119, 'last2h': 4.643, 'last1h': 3.535, 'bias2h': 4.36, 'coverage': 0.575, 'width': 23.869, 'brier1h': 0.097, 'ipcw_clipped1h': 0.0, 'brier4h': 0.19, 'ipcw_clipped4h': 0.0, 'brier8h': 0.183, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.549} {'total_events': 5.0, 'hit20': 1.0, 'late': 1.0, 'missed': 3.0, 'false_alarms': 8.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 5.55118656612851}
+aft_xgb6 {'mae': 5.251, 'last2h': 4.171, 'last1h': 3.42, 'bias2h': 3.824, 'coverage': 0.649, 'width': 28.785, 'brier1h': 0.1, 'ipcw_clipped1h': 0.0, 'brier4h': 0.178, 'ipcw_clipped4h': 0.0, 'brier8h': 0.147, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.458} {'total_events': 5.0, 'hit20': 1.0, 'late': 0.0, 'missed': 4.0, 'false_alarms': 7.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 4.8572882453624455}
+aft_xgb23 {'mae': 4.499, 'last2h': 3.612, 'last1h': 2.391, 'bias2h': 3.44, 'coverage': 0.639, 'width': 24.774, 'brier1h': 0.071, 'ipcw_clipped1h': 0.0, 'brier4h': 0.156, 'ipcw_clipped4h': 0.0, 'brier8h': 0.14, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.389} {'total_events': 5.0, 'hit20': 0.0, 'late': 2.0, 'missed': 3.0, 'false_alarms': 1.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 0.6938983207660637}
+pch_linear6 {'mae': 5.921, 'last2h': 5.183, 'last1h': 4.762, 'bias2h': 4.923, 'coverage': 0.524, 'width': 13.485, 'brier1h': 0.1, 'ipcw_clipped1h': 0.0, 'brier4h': 0.21, 'ipcw_clipped4h': 0.0, 'brier8h': 0.183, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.506} {'total_events': 5.0, 'hit20': 0.0, 'late': 0.0, 'missed': 5.0, 'false_alarms': 7.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 4.8572882453624455}
+pch_mlp6 {'mae': 6.224, 'last2h': 5.062, 'last1h': 4.154, 'bias2h': 4.796, 'coverage': 0.438, 'width': 11.384, 'brier1h': 0.095, 'ipcw_clipped1h': 0.0, 'brier4h': 0.22, 'ipcw_clipped4h': 0.0, 'brier8h': 0.205, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.381} {'total_events': 5.0, 'hit20': 0.0, 'late': 0.0, 'missed': 5.0, 'false_alarms': 2.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 1.3877966415321275}
+pch_mlp23 {'mae': 4.69, 'last2h': 4.25, 'last1h': 3.199, 'bias2h': 4.12, 'coverage': 0.468, 'width': 9.926, 'brier1h': 0.045, 'ipcw_clipped1h': 0.0, 'brier4h': 0.168, 'ipcw_clipped4h': 0.0, 'brier8h': 0.149, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.303} {'total_events': 5.0, 'hit20': 1.0, 'late': 0.0, 'missed': 4.0, 'false_alarms': 1.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 0.6938983207660637}
+nested_selected {'mae': 5.158, 'last2h': 4.329, 'last1h': 3.672, 'bias2h': 4.07, 'coverage': 0.512, 'width': 11.891, 'brier1h': 0.092, 'ipcw_clipped1h': 0.0, 'brier4h': 0.181, 'ipcw_clipped4h': 0.0, 'brier8h': 0.165, 'ipcw_clipped8h': 0.0, 'median_below_censor_bound': 0.463} {'total_events': 5.0, 'hit20': 1.0, 'late': 0.0, 'missed': 4.0, 'false_alarms': 8.0, 'unknown_alarms': 0.0, 'operating_hours': 144.11333333333334, 'false_per_100h': 5.55118656612851}

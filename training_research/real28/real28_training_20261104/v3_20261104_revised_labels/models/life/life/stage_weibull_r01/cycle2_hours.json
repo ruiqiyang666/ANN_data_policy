@@ -1,0 +1,38 @@
+{
+  "name": "stage_weibull_r01",
+  "fit": "cycle2",
+  "task": "hours",
+  "train_windows": 15467,
+  "seconds": 0.06102660000033211,
+  "metrics": {
+    "windows": 11491,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R006",
+        "windows": 2921,
+        "mean_interval_distance": 2.3281136475286934,
+        "mean_log_interval_distance": 0.796049833013664,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 1.9829050607499412,
+        "overestimate_fraction": 0.4560082163642588,
+        "model_interval_overlap_fraction": 0.9465936323176994
+      }
+    ],
+    "macro_interval_distance": 2.3281136475286934,
+    "macro_log_interval_distance": 0.796049833013664,
+    "median_prediction_quantiles": [
+      0.029905966056620017,
+      1.6266505324816376,
+      4.018121035792641,
+      6.907383735646087,
+      8.095762075593452
+    ],
+    "censor_median_below_observed_lower_fraction": 0.6976662777129522,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

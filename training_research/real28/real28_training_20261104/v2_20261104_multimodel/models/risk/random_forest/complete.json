@@ -1,0 +1,83 @@
+{
+  "name": "random_forest",
+  "algorithm_family": "random_forest",
+  "fold_scores": [
+    {
+      "n": 22003,
+      "positive_windows": 353,
+      "events": 12,
+      "prevalence": 0.01604326682725083,
+      "average_precision": 0.09843942720041725,
+      "event_macro_ap": 0.030338970274627283,
+      "roc_auc": 0.7445987216141421,
+      "brier": 0.016059412014786244
+    },
+    {
+      "n": 13981,
+      "positive_windows": 392,
+      "events": 20,
+      "prevalence": 0.028038051641513483,
+      "average_precision": 0.05649995468731685,
+      "event_macro_ap": 0.008701997970899409,
+      "roc_auc": 0.6149143740210044,
+      "brier": 0.03611988844964186
+    },
+    {
+      "n": 27580,
+      "positive_windows": 225,
+      "events": 8,
+      "prevalence": 0.008158085569253081,
+      "average_precision": 0.024745927041886658,
+      "event_macro_ap": 0.006447914903730793,
+      "roc_auc": 0.7020778651069273,
+      "brier": 0.02665855144133032
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.015162961049752495,
+  "pooled_oof": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.03892341122508303,
+    "event_macro_ap": 0.004053387086991465,
+    "roc_auc": 0.6713996582130168,
+    "brier": 0.025070641427972985
+  },
+  "oof_calibrated": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.03892341122508303,
+    "event_macro_ap": 0.004053387086991465,
+    "roc_auc": 0.6713996582130166,
+    "brier": 0.014922996063062265
+  },
+  "development_alarm_policy": {
+    "events": 40,
+    "detected_events": 9,
+    "missed_events": 31,
+    "event_recall": 0.225,
+    "alerts": 40,
+    "false_alerts": 31,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 17.557107796866152,
+    "threshold": 0.03318917893776676
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.05967632444919185,
+    "event_macro_ap": 0.04615134477052119,
+    "roc_auc": 0.8536212587364376,
+    "brier": 0.009867762612638971
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

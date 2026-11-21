@@ -1,0 +1,146 @@
+{
+  "version": "real28-neural-f30c545a3d5b",
+  "parity": {
+    "voltage": {
+      "risk_max_abs_error": 0.0,
+      "epochs": 30,
+      "network": [
+        292,
+        64,
+        32,
+        1
+      ],
+      "train_windows": 156991,
+      "historical_comparison": {
+        "ranking": {
+          "n": 13847,
+          "positive_windows": 66,
+          "events": 3,
+          "prevalence": 0.004766375388170723,
+          "average_precision": 0.015325057369399748,
+          "event_macro_ap": 0.005570348548843574,
+          "roc_auc": 0.8562524600185148,
+          "brier": 0.00475788174308487
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.46388888888889,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 1.000001,
+          "detected_before_product_start": 0
+        },
+        "fit_seconds": 22.24983048811555,
+        "epochs": 30,
+        "loss": 0.0032507287355962654,
+        "train_windows": 156991,
+        "train_events": 15,
+        "threshold_from_folds": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+        ]
+      }
+    },
+    "feedrate": {
+      "risk_max_abs_error": 0.0,
+      "epochs": 30,
+      "network": [
+        292,
+        64,
+        32,
+        1
+      ],
+      "train_windows": 156855,
+      "historical_comparison": {
+        "ranking": {
+          "n": 13939,
+          "positive_windows": 30,
+          "events": 1,
+          "prevalence": 0.0021522347370686564,
+          "average_precision": 0.0019075532585184885,
+          "event_macro_ap": 0.0019075532585184885,
+          "roc_auc": 0.2421813214465454,
+          "brier": 0.002189912597958139
+        },
+        "alarms": {
+          "events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "event_recall": 0.0,
+          "alerts": 3,
+          "false_alerts": 3,
+          "observable_powered_hours": 38.71944444444444,
+          "false_alerts_per_100_hours": 7.7480450534471625,
+          "threshold": 0.03684729134681249,
+          "detected_before_product_start": 0
+        },
+        "fit_seconds": 22.34122542012483,
+        "epochs": 30,
+        "loss": 0.008675019456897696,
+        "train_windows": 156855,
+        "train_events": 31,
+        "threshold_from_folds": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+        ]
+      }
+    },
+    "hopper_pressure": {
+      "risk_max_abs_error": 0.0,
+      "epochs": 30,
+      "network": [
+        292,
+        64,
+        32,
+        1
+      ],
+      "train_windows": 156981,
+      "historical_comparison": {
+        "ranking": {
+          "n": 13948,
+          "positive_windows": 0,
+          "events": 0,
+          "prevalence": 0.0,
+          "average_precision": null,
+          "event_macro_ap": null,
+          "roc_auc": null,
+          "brier": 9.848545043564573e-07
+        },
+        "alarms": {
+          "events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "event_recall": null,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.74444444444445,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.18361416252573134,
+          "detected_before_product_start": 0
+        },
+        "fit_seconds": 20.5773554360494,
+        "epochs": 30,
+        "loss": 0.004297961812169562,
+        "train_windows": 156981,
+        "train_events": 10,
+        "threshold_from_folds": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+        ]
+      }
+    }
+  }
+}

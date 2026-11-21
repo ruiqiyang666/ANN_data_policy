@@ -1,0 +1,21 @@
+{
+  "name": "tcn_ssl",
+  "fit": "f2",
+  "train_windows": 62915,
+  "evaluation_windows": 14001,
+  "seconds": 56.434485900001164,
+  "metrics": {
+    "n": 13924,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006463659867854065,
+    "average_precision": 0.0064213652057864175,
+    "event_macro_ap": 0.0029138807759199158,
+    "roc_auc": 0.4632347035484234,
+    "brier": 0.006463713012635708
+  },
+  "epochs": 6,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "ba82422f4fc369bd538999a35367b4abce42cdda61eada69ad0ada42b359e839"
+}

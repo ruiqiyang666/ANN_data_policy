@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-10-10T07:23:00",
+  "model_version": "real28_20261104_v1",
+  "model_name": "hist_tree",
+  "model_type": "real28_experimental",
+  "seq": 114050,
+  "gun_id": null,
+  "history_context": {
+    "seconds": 120,
+    "statistics_max_seconds": 3600,
+    "statistics_coverage_is_masked": true
+  },
+  "deployment_status": "experimental_offline_only",
+  "rul_hours": null,
+  "rul_pieces": null,
+  "rul_interval_hours": null,
+  "rul_interval_pieces": null,
+  "interval_nominal": null,
+  "anomaly_300s_probability": null,
+  "predicted_anomaly_eta_s": null,
+  "next_anomaly_type": null,
+  "anomaly_type": null,
+  "anomaly_probability": null,
+  "gun_health": null,
+  "tank_health": null,
+  "warning_level": null,
+  "root_candidates": [],
+  "root_status": "not_implemented",
+  "sigma_deviations": null,
+  "pressure_now": {
+    "hopper_1_bar": -0.006,
+    "hopper_2_bar": 0.212
+  },
+  "input_parameters": {
+    "Argon": 21.899999618530273,
+    "Nitrogen": 10.399999618530273,
+    "AirJet": 1.0,
+    "Silvent": 5.0,
+    "Current": 548.0,
+    "Power": 30.100000381469727,
+    "Voltage": 54.099998474121094,
+    "Cooling_water_flow": 15.699999809265137,
+    "Conductivity": 0.0,
+    "Cooling_water_inlet_temp.": 19.700000762939453,
+    "Cooling_water_outlet_temp.": 32.70000076293945,
+    "Feedrate_1": 0.0,
+    "Disk_1": 0.0,
+    "Carrier_gas_1": 0.0,
+    "Feed_Factor_1": 38.0,
+    "Press._Hopper_1": -6.0,
+    "Stirrer_1": 0.20000000298023224,
+    "Weight_Hopper_1": -0.04800000041723251,
+    "Feedrate_2": 9.300000190734863,
+    "Disk_2": 32.099998474121094,
+    "Carrier_gas_2": 2.5,
+    "Feed_Factor_2": 45.0,
+    "Press._Hopper_2": 212.0,
+    "Stirrer_2": 59.900001525878906,
+    "Weight_Hopper_2": 2.566999912261963,
+    "Station_1": 1.0,
+    "Station_2": 2.0,
+    "O2_Sensor": 21.1299991607666
+  },
+  "task_status": {
+    "rul_hours": "fitted_weak_proxy_not_natural_failure_validated",
+    "rul_pieces": "fitted_independent_discrete_count_weak_proxy",
+    "rul_interval_hours": "model_10_90_quantiles_not_calibrated_coverage",
+    "anomaly_300s_probability": "fitted_uncalibrated_experimental_probability",
+    "predicted_anomaly_eta_s": "TCN conditional estimate only; unavailable for primary tree/logistic risk",
+    "next_anomaly_type": "TCN conditional multi-label estimate; not paired with a separate tree/logistic probability",
+    "current_anomaly": "last_completed_product_proxy_head; online instantaneous detection not validated",
+    "root_candidates": "not_implemented_no_verified_physical_root_causes",
+    "gun_health": "not_trained_no_independent_score_labels",
+    "tank_health": "not_trained_no_independent_score_labels"
+  },
+  "experimental_estimates": {
+    "rul_hours": 22.724896755097454,
+    "rul_pieces": 1017.0,
+    "rul_model_quantiles_hours": [
+      4.113717091774834,
+      125.53632663811428
+    ],
+    "rul_model_quantiles_pieces": [
+      190.0,
+      5448.0
+    ],
+    "anomaly_300s_probability": 0.003976159110896849,
+    "exploratory_alarm_threshold": 0.14672265371676207
+  },
+  "warning_reasons": [
+    "首轮实验模型，未校准；自然失效寿命仅弱证据拟合，暂不据此自动安排换枪。"
+  ]
+}

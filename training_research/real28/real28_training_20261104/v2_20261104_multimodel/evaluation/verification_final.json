@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "All model, preprocessing and target files match the development freeze",
+    "Nine distinct risk algorithms each have three forward fits and a final fitted artifact",
+    "7 lifetime algorithms plus a constant control each fitted both targets across three cycle-separated fits",
+    "All saved probabilities, conditional distributions and survival quantiles are finite and ordered",
+    "All original V1 model hashes remain unchanged",
+    "No false health scores, pressure forecasts, natural-failure validation or unseen-test claims",
+    "All new source files parse successfully"
+  ],
+  "risk_methods": 9,
+  "lifetime_methods_excluding_constant": 7,
+  "main_fit_count": 84,
+  "retained_model_files": 177
+}

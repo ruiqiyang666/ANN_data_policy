@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "0": {
+      "valid": 103965,
+      "event_windows": 20574,
+      "endpoints": 3
+    },
+    "1": {
+      "valid": 9343,
+      "event_windows": 2,
+      "endpoints": 1
+    },
+    "2": {
+      "valid": 0,
+      "event_windows": 0,
+      "endpoints": 0
+    },
+    "3": {
+      "valid": 14194,
+      "event_windows": 1073,
+      "endpoints": 1
+    },
+    "4": {
+      "valid": 13814,
+      "event_windows": 2372,
+      "endpoints": 1
+    }
+  },
+  "ambiguous_interventions_censor_followup": 6,
+  "normalization_changed": false,
+  "anomaly_targets_changed": false,
+  "true_natural_failures_confirmed": 0,
+  "assumption": "available product normality supports an operational, weak survival prefix; no proven electrode identity",
+  "file_sha256": "2e481279defe505c46edfbf39cad29c0dcc5b479b77f6bfc69338a5ea8020626"
+}
+

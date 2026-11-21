@@ -1,0 +1,25 @@
+{
+  "initial_policy": {
+    "events": 40,
+    "detected_events": 4,
+    "missed_events": 36,
+    "event_recall": 0.1,
+    "alerts": 34,
+    "false_alerts": 30,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 16.99074948083821,
+    "threshold": 0.07944114516982047
+  },
+  "refined_policy": {
+    "events": 40,
+    "detected_events": 4,
+    "missed_events": 36,
+    "event_recall": 0.1,
+    "alerts": 34,
+    "false_alerts": 30,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 16.99074948083821,
+    "threshold": 0.081889817781817
+  },
+  "reason": "The original quantile grid jumped from .9917 to1 and skipped feasible high-score operating points. Dense upper quantiles verified using OOF only."
+}

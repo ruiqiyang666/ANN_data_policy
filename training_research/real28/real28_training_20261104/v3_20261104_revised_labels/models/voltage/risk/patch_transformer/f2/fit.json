@@ -1,0 +1,21 @@
+{
+  "name": "patch_transformer",
+  "fit": "f2",
+  "train_windows": 62915,
+  "evaluation_windows": 14001,
+  "seconds": 44.48790269999881,
+  "metrics": {
+    "n": 13924,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006463659867854065,
+    "average_precision": 0.0062101333076131394,
+    "event_macro_ap": 0.0026563381459367183,
+    "roc_auc": 0.4907739386053684,
+    "brier": 0.006463655270636082
+  },
+  "epochs": 6,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "95f505f4d5578d9eb5bb555065ae991c9398a6fa4e708db720812bb9d3774369"
+}

@@ -1,0 +1,19 @@
+[Unit]
+Description=Phase2 headless history collector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Zhang/Phase2-learning
+EnvironmentFile=%h/.config/phase2-learning/history.env
+ExecStart=/usr/bin/python3 scripts/learning_cycle.py collect --index-root %h/Zhang/private/continuous_learning/index
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=30
+UMask=0077
+NoNewPrivileges=true
+KillMode=control-group
+
+[Install]
+WantedBy=default.target

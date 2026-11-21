@@ -1,0 +1,427 @@
+{
+  "verified_at": "2026-10-07T16:01:23.656146",
+  "active_group": "Lifecycle-PLE + Health-PLE + Patch-Attention",
+  "unit_tests_passed": 12,
+  "layout": {
+    "base": "http://127.0.0.1:18765",
+    "checks": [
+      "Original workbench DOM restored",
+      "No separate experiment tab",
+      "Original workbench fully visible 1280",
+      "Original workbench fully visible 1440",
+      "Original workbench fully visible 1920",
+      "Original selector uses real baseline",
+      "Model report retains original layout",
+      "All feature details without scrolling 1280",
+      "All feature details without scrolling 1440",
+      "All feature details without scrolling 1920",
+      "Redesigned data view loaded trends",
+      "Redesigned data view loaded lifecycle",
+      "Redesigned data view loaded manage",
+      "Full statistics accessible",
+      "All 21 parameter definitions accessible",
+      "No page runtime errors"
+    ],
+    "errors": []
+  },
+  "data_center": {
+    "base": "http://127.0.0.1:18765",
+    "checks": [
+      "Three task-based tabs",
+      "All nineteen numeric channels searchable",
+      "First window is one-second data",
+      "Empty selection has a clear prompt",
+      "Electrical preset selects four channels",
+      "Six-channel limit prevents an unreadable graph",
+      "Parameter search filters groups",
+      "Preset clears search",
+      "Next window advances 600 seconds",
+      "Previous window returns to start",
+      "Timeline slider positions the data window",
+      "Full-cycle CSV limit explicitly disclosed",
+      "Hours-minutes-seconds positioning uses real sample index",
+      "Malformed time rejected inline",
+      "Clicking actual curve updates sample inspector",
+      "Machine message visible",
+      "Raw parameters with different units use separate axes",
+      "Correlation focuses on selected channels",
+      "Statistics scope actually changes sample population",
+      "All 153 cycles visible in fleet chart",
+      "Event opens exact sample and preceding 180 seconds",
+      "Sample inspector hands off exact second to prediction",
+      "Instrument readout enlarged to 46px",
+      "Instrument tick labels enlarged",
+      "Search switches to censored gun",
+      "Censored cycle has no invented replacement event",
+      "Cycle navigation works",
+      "Fleet chart click selects gun nine",
+      "Dictionary collapsed initially",
+      "All twenty-one original fields retained",
+      "Dictionary search retained",
+      "Incomplete input reports missing fields",
+      "Uploaded sample runs genuine prediction",
+      "CSV drag-and-drop updates selected file",
+      "No horizontal overflow trends 1280",
+      "No horizontal overflow lifecycle 1280",
+      "No horizontal overflow manage 1280",
+      "No horizontal overflow trends 900",
+      "No horizontal overflow lifecycle 900",
+      "No horizontal overflow manage 900",
+      "No horizontal overflow trends 390",
+      "No horizontal overflow lifecycle 390",
+      "No horizontal overflow manage 390",
+      "No browser errors",
+      "No external browser requests"
+    ],
+    "errors": [],
+    "external": []
+  },
+  "latency": {
+    "base": "http://127.0.0.1:18765",
+    "requests": 20,
+    "scope": "Warm sequential HTTP /api/detail including full neural trace, normal and anomalous windows; not sustained concurrency benchmark",
+    "median_ms": 45.68470000000002,
+    "p95_ms": 61.367399999999975,
+    "max_ms": 74.06219999999999,
+    "samples": [
+      {
+        "ms": 56.6104,
+        "inference_ms": 8.408900001086295
+      },
+      {
+        "ms": 74.06219999999999,
+        "inference_ms": 7.5474000004760455
+      },
+      {
+        "ms": 36.5813,
+        "inference_ms": 4.221099999995204
+      },
+      {
+        "ms": 55.578100000000006,
+        "inference_ms": 7.392800001980504
+      },
+      {
+        "ms": 30.94530000000003,
+        "inference_ms": 3.9900000010675285
+      },
+      {
+        "ms": 29.063099999999963,
+        "inference_ms": 4.5009000023128465
+      },
+      {
+        "ms": 51.783799999999985,
+        "inference_ms": 4.630399998859502
+      },
+      {
+        "ms": 61.367399999999975,
+        "inference_ms": 8.870400000887457
+      },
+      {
+        "ms": 45.68470000000002,
+        "inference_ms": 4.500400002143579
+      },
+      {
+        "ms": 47.76229999999998,
+        "inference_ms": 6.619499999942491
+      },
+      {
+        "ms": 27.189199999999914,
+        "inference_ms": 3.7696999970648903
+      },
+      {
+        "ms": 32.30819999999994,
+        "inference_ms": 4.006899998785229
+      },
+      {
+        "ms": 27.953399999999988,
+        "inference_ms": 3.9816999997128733
+      },
+      {
+        "ms": 29.410100000000057,
+        "inference_ms": 6.262499999138527
+      },
+      {
+        "ms": 30.985500000000002,
+        "inference_ms": 4.178799998044269
+      },
+      {
+        "ms": 54.48770000000002,
+        "inference_ms": 3.8681000005453825
+      },
+      {
+        "ms": 45.77410000000009,
+        "inference_ms": 6.504900000436464
+      },
+      {
+        "ms": 30.547000000000025,
+        "inference_ms": 4.901399999653222
+      },
+      {
+        "ms": 48.07690000000002,
+        "inference_ms": 4.172600001766114
+      },
+      {
+        "ms": 30.92050000000006,
+        "inference_ms": 5.280499997752486
+      }
+    ]
+  },
+  "unchanged_sha256": {
+    "模拟数据.parquet": "d946751da224eb95224651df86edecdb26a529bcfc1f0a0e3b944355abe626a0",
+    "模型.joblib": "2cf5e1398dff86bec46554c286f8520427f92e150834c091166c0709fdbff44d",
+    "core.py": "babac36df85689a72e9131c366071e3f4380c3c7c037c05848412039de0d5b4d",
+    "contract.json": "325ded06fa9ce25d0a8114963d6a6bd9d5d49e1af6f8179a90c8c6cb9d346498"
+  },
+  "scope": "Local synthetic-data verification; no remote server access.",
+  "ui_refresh_20261007": {
+    "verified_at": "2026-10-07T21:34:42.170937",
+    "base": "http://127.0.0.1:18765",
+    "results": {
+      "restored-workbench.json": {
+        "base": "http://127.0.0.1:18765",
+        "checks": [
+          "Original workbench DOM restored",
+          "No separate experiment tab",
+          "Original workbench fully visible 1280",
+          "Original workbench fully visible 1440",
+          "Original workbench fully visible 1920",
+          "Original selector uses real baseline",
+          "Model report retains original layout",
+          "All feature details without scrolling 1280",
+          "All feature details without scrolling 1440",
+          "All feature details without scrolling 1920",
+          "Redesigned data view loaded trends",
+          "Redesigned data view loaded lifecycle",
+          "Redesigned data view loaded manage",
+          "Full statistics accessible",
+          "All 21 parameter definitions accessible",
+          "No page runtime errors"
+        ],
+        "errors": []
+      },
+      "data-redesign.json": {
+        "base": "http://127.0.0.1:18765",
+        "checks": [
+          "Three task-based tabs",
+          "All nineteen numeric channels searchable",
+          "First window is one-second data",
+          "Empty selection has a clear prompt",
+          "Electrical preset selects four channels",
+          "Six-channel limit prevents an unreadable graph",
+          "Parameter search filters groups",
+          "Preset clears search",
+          "Next window advances 600 seconds",
+          "Previous window returns to start",
+          "Timeline slider positions the data window",
+          "Full-cycle CSV limit explicitly disclosed",
+          "Hours-minutes-seconds positioning uses real sample index",
+          "Malformed time rejected inline",
+          "Clicking actual curve updates sample inspector",
+          "Machine message visible",
+          "Raw parameters with different units use separate axes",
+          "Correlation focuses on selected channels",
+          "Statistics scope actually changes sample population",
+          "All 153 cycles visible in fleet chart",
+          "Event opens exact sample and preceding 180 seconds",
+          "Sample inspector hands off exact second to prediction",
+          "Instrument readout enlarged to 46px",
+          "Instrument tick labels enlarged",
+          "Search switches to censored gun",
+          "Censored cycle has no invented replacement event",
+          "Cycle navigation works",
+          "Fleet chart click selects gun nine",
+          "Dictionary collapsed initially",
+          "All twenty-one original fields retained",
+          "Dictionary search retained",
+          "Incomplete input reports missing fields",
+          "Uploaded sample runs genuine prediction",
+          "CSV drag-and-drop updates selected file",
+          "No horizontal overflow trends 1280",
+          "No horizontal overflow lifecycle 1280",
+          "No horizontal overflow manage 1280",
+          "No horizontal overflow trends 900",
+          "No horizontal overflow lifecycle 900",
+          "No horizontal overflow manage 900",
+          "No horizontal overflow trends 390",
+          "No horizontal overflow lifecycle 390",
+          "No horizontal overflow manage 390",
+          "No browser errors",
+          "No external browser requests"
+        ],
+        "errors": [],
+        "external": []
+      },
+      "refresh-check.json": {
+        "checks": [
+          "21 input sparklines use actual 60-s window",
+          "19 numeric selectors fit without scrolling",
+          "Language roundtrip"
+        ],
+        "errors": [],
+        "missing": [
+          "中文"
+        ]
+      },
+      "final-geometry.json": {
+        "checks": [
+          "English report values fit 1280",
+          "English report values fit 1440",
+          "English report values fit 1920",
+          "All 21 input rows are separate and visible 1280",
+          "All 21 input rows are separate and visible 1440"
+        ],
+        "errors": []
+      }
+    },
+    "passed_checks": 69,
+    "new_model_weights_trained": false,
+    "ensemble_improved": false
+  },
+  "training_repair_20261007": {
+    "verified_at": "2026-10-07T23:30:24.503275",
+    "checks_passed": 106,
+    "results": {
+      "training-reliability.json": {
+        "base": "http://127.0.0.1:18765",
+        "checks": [
+          "Theme/language changes during initial report do not throw",
+          "Preferences during refresh retain complete metrics",
+          "Latest model selection wins out-of-order responses",
+          "Displayed metric matches selected model and output",
+          "Model card has no clipped or overlapping blocks: zh 1280 baseline",
+          "Model card has no clipped or overlapping blocks: zh 1280 mlp",
+          "Model card has no clipped or overlapping blocks: zh 1280 tcn",
+          "Model card has no clipped or overlapping blocks: zh 1280 patch",
+          "Model card has no clipped or overlapping blocks: zh 1280 multiscale",
+          "Model card has no clipped or overlapping blocks: zh 1280 lifetime",
+          "Model card has no clipped or overlapping blocks: zh 1440 baseline",
+          "Model card has no clipped or overlapping blocks: zh 1440 mlp",
+          "Model card has no clipped or overlapping blocks: zh 1440 tcn",
+          "Model card has no clipped or overlapping blocks: zh 1440 patch",
+          "Model card has no clipped or overlapping blocks: zh 1440 multiscale",
+          "Model card has no clipped or overlapping blocks: zh 1440 lifetime",
+          "Model card has no clipped or overlapping blocks: zh 1920 baseline",
+          "Model card has no clipped or overlapping blocks: zh 1920 mlp",
+          "Model card has no clipped or overlapping blocks: zh 1920 tcn",
+          "Model card has no clipped or overlapping blocks: zh 1920 patch",
+          "Model card has no clipped or overlapping blocks: zh 1920 multiscale",
+          "Model card has no clipped or overlapping blocks: zh 1920 lifetime",
+          "Model card has no clipped or overlapping blocks: en 1280 baseline",
+          "Model card has no clipped or overlapping blocks: en 1280 mlp",
+          "Model card has no clipped or overlapping blocks: en 1280 tcn",
+          "Model card has no clipped or overlapping blocks: en 1280 patch",
+          "Model card has no clipped or overlapping blocks: en 1280 multiscale",
+          "Model card has no clipped or overlapping blocks: en 1280 lifetime",
+          "Model card has no clipped or overlapping blocks: en 1440 baseline",
+          "Model card has no clipped or overlapping blocks: en 1440 mlp",
+          "Model card has no clipped or overlapping blocks: en 1440 tcn",
+          "Model card has no clipped or overlapping blocks: en 1440 patch",
+          "Model card has no clipped or overlapping blocks: en 1440 multiscale",
+          "Model card has no clipped or overlapping blocks: en 1440 lifetime",
+          "Model card has no clipped or overlapping blocks: en 1920 baseline",
+          "Model card has no clipped or overlapping blocks: en 1920 mlp",
+          "Model card has no clipped or overlapping blocks: en 1920 tcn",
+          "Model card has no clipped or overlapping blocks: en 1920 patch",
+          "Model card has no clipped or overlapping blocks: en 1920 multiscale",
+          "Model card has no clipped or overlapping blocks: en 1920 lifetime",
+          "Report search accepts displayed English labels",
+          "No runtime errors throughout"
+        ],
+        "errors": []
+      },
+      "restored-workbench.json": {
+        "base": "http://127.0.0.1:18765",
+        "checks": [
+          "Original workbench DOM restored",
+          "No separate experiment tab",
+          "Original workbench fully visible 1280",
+          "Original workbench fully visible 1440",
+          "Original workbench fully visible 1920",
+          "Original selector uses real baseline",
+          "Model report retains original layout",
+          "All feature details without scrolling 1280",
+          "All feature details without scrolling 1440",
+          "All feature details without scrolling 1920",
+          "Redesigned data view loaded trends",
+          "Redesigned data view loaded lifecycle",
+          "Redesigned data view loaded manage",
+          "Full statistics accessible",
+          "All 21 parameter definitions accessible",
+          "No page runtime errors"
+        ],
+        "errors": []
+      },
+      "data-redesign.json": {
+        "base": "http://127.0.0.1:18765",
+        "checks": [
+          "Three task-based tabs",
+          "All nineteen numeric channels searchable",
+          "First window is one-second data",
+          "Empty selection has a clear prompt",
+          "Electrical preset selects four channels",
+          "Six-channel limit prevents an unreadable graph",
+          "Parameter search filters groups",
+          "Preset clears search",
+          "Next window advances 600 seconds",
+          "Previous window returns to start",
+          "Timeline slider positions the data window",
+          "Full-cycle CSV limit explicitly disclosed",
+          "Hours-minutes-seconds positioning uses real sample index",
+          "Malformed time rejected inline",
+          "Clicking actual curve updates sample inspector",
+          "Machine message visible",
+          "Raw parameters with different units use separate axes",
+          "Correlation focuses on selected channels",
+          "Statistics scope actually changes sample population",
+          "All 153 cycles visible in fleet chart",
+          "Event opens exact sample and preceding 180 seconds",
+          "Sample inspector hands off exact second to prediction",
+          "Instrument readout enlarged to 46px",
+          "Instrument tick labels enlarged",
+          "Search switches to censored gun",
+          "Censored cycle has no invented replacement event",
+          "Cycle navigation works",
+          "Fleet chart click selects gun nine",
+          "Dictionary collapsed initially",
+          "All twenty-one original fields retained",
+          "Dictionary search retained",
+          "Incomplete input reports missing fields",
+          "Uploaded sample runs genuine prediction",
+          "CSV drag-and-drop updates selected file",
+          "No horizontal overflow trends 1280",
+          "No horizontal overflow lifecycle 1280",
+          "No horizontal overflow manage 1280",
+          "No horizontal overflow trends 900",
+          "No horizontal overflow lifecycle 900",
+          "No horizontal overflow manage 900",
+          "No horizontal overflow trends 390",
+          "No horizontal overflow lifecycle 390",
+          "No horizontal overflow manage 390",
+          "No browser errors",
+          "No external browser requests"
+        ],
+        "errors": [],
+        "external": []
+      },
+      "refresh-check.json": {
+        "checks": [
+          "21 input sparklines use actual 60-s window",
+          "19 numeric selectors fit without scrolling",
+          "Language roundtrip"
+        ],
+        "errors": [],
+        "missing": [
+          "中文"
+        ]
+      }
+    },
+    "protected_sha256": {
+      "模拟数据.parquet": "d946751da224eb95224651df86edecdb26a529bcfc1f0a0e3b944355abe626a0",
+      "模型.joblib": "2cf5e1398dff86bec46554c286f8520427f92e150834c091166c0709fdbff44d",
+      "core.py": "babac36df85689a72e9131c366071e3f4380c3c7c037c05848412039de0d5b4d",
+      "contract.json": "325ded06fa9ce25d0a8114963d6a6bd9d5d49e1af6f8179a90c8c6cb9d346498"
+    },
+    "model_experiment_selected": "existing_lifetime",
+    "model_release_gate_passed": false
+  }
+}

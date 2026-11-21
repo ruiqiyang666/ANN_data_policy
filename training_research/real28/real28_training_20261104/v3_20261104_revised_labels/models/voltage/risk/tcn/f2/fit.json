@@ -1,0 +1,21 @@
+{
+  "name": "tcn",
+  "fit": "f2",
+  "train_windows": 62915,
+  "evaluation_windows": 14001,
+  "seconds": 66.49543430000267,
+  "metrics": {
+    "n": 13924,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006463659867854065,
+    "average_precision": 0.005517407209501883,
+    "event_macro_ap": 0.002268757110569786,
+    "roc_auc": 0.44377017975037336,
+    "brier": 0.00874980166554451
+  },
+  "epochs": 6,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "1a04267fc7ea080c651913c8083e019db8daf86d149c6c37c2a41d0875585026"
+}

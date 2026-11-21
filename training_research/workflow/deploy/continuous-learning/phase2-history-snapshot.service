@@ -1,0 +1,9 @@
+[Unit]
+Description=Phase2 consistent daily history snapshot
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Zhang/Phase2-learning
+ExecStart=/usr/bin/python3 scripts/learning_cycle.py snapshot --database %h/Zhang/private/continuous_learning/index/history/plasma2.sqlite3 --destination %h/Zhang/private/continuous_learning/snapshots
+UMask=0077
+NoNewPrivileges=true

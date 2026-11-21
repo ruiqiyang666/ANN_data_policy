@@ -1,0 +1,86 @@
+History features gun 10
+History features gun 20
+History features gun 30
+History features gun 40
+History features gun 50
+History features gun 60
+History features gun 70
+History features gun 80
+History features gun 90
+History features gun 100
+History features gun 110
+History features gun 120
+History features gun 130
+History features gun 140
+History features gun 150
+recent_only 1 validation RUL 5.436
+recent_only 2 validation RUL 5.6611
+recent_only 3 validation RUL 5.1719
+recent_only 4 validation RUL 5.4702
+recent_only 5 validation RUL 5.3243
+recent_only 6 validation RUL 5.1913
+recent_only 7 validation RUL 5.0014
+recent_only 8 validation RUL 4.9929
+recent_only 9 validation RUL 5.1858
+recent_only 10 validation RUL 5.0057
+recent_only 11 validation RUL 5.0724
+recent_only 12 validation RUL 5.0382
+recent_only 13 validation RUL 4.9167
+recent_only 14 validation RUL 5.2053
+recent_only 15 validation RUL 5.0228
+recent_only 16 validation RUL 5.0447
+recent_only 17 validation RUL 4.9615
+recent_only 18 validation RUL 4.8
+recent_only 19 validation RUL 4.9422
+recent_only 20 validation RUL 4.8772
+recent_only 21 validation RUL 4.8413
+recent_only 22 validation RUL 4.7713
+recent_only 23 validation RUL 4.7648
+recent_only 24 validation RUL 4.7399
+recent_only 25 validation RUL 4.7444
+recent_only 26 validation RUL 4.7933
+recent_only 27 validation RUL 4.7108
+recent_only 28 validation RUL 4.7151
+recent_only 29 validation RUL 4.7047
+recent_only 30 validation RUL 4.6872
+recent_only 31 validation RUL 4.7164
+recent_only 32 validation RUL 4.6737
+recent_only 33 validation RUL 4.6618
+recent_only 34 validation RUL 4.8048
+recent_only 35 validation RUL 4.6577
+recent_only 36 validation RUL 4.6922
+recent_only 37 validation RUL 4.6374
+recent_only 38 validation RUL 4.6619
+recent_only 39 validation RUL 4.6728
+recent_only 40 validation RUL 4.6218
+history_mlp 1 validation RUL 2.571
+history_mlp 2 validation RUL 2.5786
+history_mlp 3 validation RUL 2.6388
+history_mlp 4 validation RUL 2.6914
+history_mlp 5 validation RUL 2.7001
+history_mlp 6 validation RUL 2.6837
+history_mlp 7 validation RUL 2.7974
+history_mlp 8 validation RUL 2.8878
+history_ple 1 validation RUL 2.6989
+history_ple 2 validation RUL 2.3651
+history_ple 3 validation RUL 2.2336
+history_ple 4 validation RUL 2.332
+history_ple 5 validation RUL 2.4628
+history_ple 6 validation RUL 2.3853
+history_ple 7 validation RUL 2.4417
+history_ple 8 validation RUL 2.4609
+history_ple 9 validation RUL 2.4783
+history_ple 10 validation RUL 2.491
+history_ple_seed2 1 validation RUL 2.6182
+history_ple_seed2 2 validation RUL 2.6248
+history_ple_seed2 3 validation RUL 2.4213
+history_ple_seed2 4 validation RUL 2.427
+history_ple_seed2 5 validation RUL 2.3903
+history_ple_seed2 6 validation RUL 2.5154
+history_ple_seed2 7 validation RUL 2.4822
+history_ple_seed2 8 validation RUL 2.5057
+history_ple_seed2 9 validation RUL 2.5996
+history_ple_seed2 10 validation RUL 2.6578
+history_ple_seed2 11 validation RUL 2.7134
+history_ple_seed2 12 validation RUL 2.5921
+FINAL {"rul_hours": {"mae": 2.907210111618042, "rmse": 5.474246501922607, "r2": 0.6861846446990967, "rows": 57041}, "rul_pieces": {"mae": 202.39280700683594, "rmse": 382.0502014160156, "r2": 0.6853111982345581, "rows": 57041}, "gun_health": {"mae": 3.5398952960968018, "rmse": 5.421202659606934, "r2": 0.9645915031433105, "rows": 57041}}

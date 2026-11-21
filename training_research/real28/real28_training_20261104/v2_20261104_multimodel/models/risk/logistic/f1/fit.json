@@ -1,0 +1,21 @@
+{
+  "name": "logistic",
+  "fit": "f1",
+  "train_windows": 40987,
+  "evaluation_windows": 22034,
+  "seconds": 1.860501999999542,
+  "metrics": {
+    "n": 22003,
+    "positive_windows": 353,
+    "events": 12,
+    "prevalence": 0.01604326682725083,
+    "average_precision": 0.0990148649285148,
+    "event_macro_ap": 0.08427761904913167,
+    "roc_auc": 0.4841020876813064,
+    "brier": 0.030544114451501264
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "90f7dfc94cfcc7b59967e19dce95870f2176fb75b9c24bc0cc2326674c0eb74f"
+}

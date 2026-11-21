@@ -1,0 +1,7 @@
+{
+  "added_methods": ["spline_logistic", "rbf_logistic"],
+  "reason": "Initial logistic and boosted-tree forward-fold results remained weak and variable; add nonlinear additive and kernel feature methods before viewing the second-round historical comparison.",
+  "data_or_selection_rule_changed": false,
+  "history_period_used_to_propose_trials": false,
+  "count_as_distinct_methods_not_seeds": true
+}

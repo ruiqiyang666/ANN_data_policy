@@ -1,0 +1,83 @@
+{
+  "name": "histgb",
+  "algorithm_family": "histgb",
+  "fold_scores": [
+    {
+      "n": 22003,
+      "positive_windows": 353,
+      "events": 12,
+      "prevalence": 0.01604326682725083,
+      "average_precision": 0.06998302856200853,
+      "event_macro_ap": 0.03143535658687294,
+      "roc_auc": 0.6467274892213885,
+      "brier": 0.015822181225954298
+    },
+    {
+      "n": 13981,
+      "positive_windows": 392,
+      "events": 20,
+      "prevalence": 0.028038051641513483,
+      "average_precision": 0.15273535639574065,
+      "event_macro_ap": 0.04448195443007473,
+      "roc_auc": 0.7146420198810263,
+      "brier": 0.02701108209371902
+    },
+    {
+      "n": 27580,
+      "positive_windows": 225,
+      "events": 8,
+      "prevalence": 0.008158085569253081,
+      "average_precision": 0.018228632189940256,
+      "event_macro_ap": 0.004539212163221712,
+      "roc_auc": 0.7195380897256239,
+      "brier": 0.009178249712865603
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.02681884106005646,
+  "pooled_oof": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.0324317773938087,
+    "event_macro_ap": 0.002459281610805062,
+    "roc_auc": 0.6007734923376273,
+    "brier": 0.01540043923207777
+  },
+  "oof_calibrated": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.0324317773938087,
+    "event_macro_ap": 0.002459281610805062,
+    "roc_auc": 0.6007734923376273,
+    "brier": 0.014984857535107999
+  },
+  "development_alarm_policy": {
+    "events": 40,
+    "detected_events": 6,
+    "missed_events": 34,
+    "event_recall": 0.15,
+    "alerts": 38,
+    "false_alerts": 32,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 18.12346611289409,
+    "threshold": 0.03227120481262026
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.0332802134576864,
+    "event_macro_ap": 0.019163732464659383,
+    "roc_auc": 0.8028253919008592,
+    "brier": 0.008859686582681683
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

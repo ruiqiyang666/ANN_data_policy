@@ -1,0 +1,2 @@
+saved ['cdf_gru16', 'cdf_hybrid_gru16', 'cdf_hybrid_gru16_wd', 'cdf_hybrid_gru8', 'cdf_mlp16', 'warn_gru16', 'warn_hybrid_gru16', 'warn_hybrid_gru16_wd', 'warn_hybrid_gru8', 'warn_mlp16']
+exit 0

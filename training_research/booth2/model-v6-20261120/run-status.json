@@ -1,0 +1,16 @@
+{
+  "status": "completed_verified_research_only",
+  "source_original": "42419784bbde2037343ffbe3b0f610cc7ef40c0e1d3e87b00c14d0f50184cad9",
+  "source_corrected": "676631f94b334a56aeada5703c46bf7dcb57dfb588df92c2bf908175cde328ea",
+  "protocol_sha256": "518ddacf2aab495734fd906e204ddd5b2a8a859778f0278e657e08f9f3aa7084",
+  "source_changed_only_for": "empirical KM unsupported-age CDF audit; repair after original training exits",
+  "school_container": "booth2-v6-train-20261120",
+  "data_source": "v5 frozen snapshot read-only",
+  "active_18776_unchanged": true,
+  "training_exit": 0,
+  "audit_exit": 0,
+  "verification_exit": 0,
+  "lifetime_candidates": 9,
+  "warning_candidates": 2,
+  "published": false
+}

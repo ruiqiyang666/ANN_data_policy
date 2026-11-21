@@ -1,0 +1,42 @@
+{
+  "grid_rows": 5875326,
+  "features": 266,
+  "counts": {
+    "0": {
+      "windows": 104661,
+      "positive_windows": 1150,
+      "events": 46,
+      "life_windows": 103965
+    },
+    "1": {
+      "windows": 12983,
+      "positive_windows": 90,
+      "events": 3,
+      "life_windows": 9343
+    },
+    "2": {
+      "windows": 5490,
+      "positive_windows": 101,
+      "events": 4,
+      "life_windows": 0
+    },
+    "3": {
+      "windows": 34596,
+      "positive_windows": 224,
+      "events": 9,
+      "life_windows": 14194
+    },
+    "4": {
+      "windows": 13948,
+      "positive_windows": 90,
+      "events": 3,
+      "life_windows": 13814
+    }
+  },
+  "raw_parameters": 28,
+  "data_source": "/work/real28/data/20261112_v4",
+  "source_manifest_sha256": "891ab4d6ae31b0bb2ce2b36459a5ae67f372135411b5370fce27df7c2a159049",
+  "life_labels_sha256": "2e481279defe505c46edfbf39cad29c0dcc5b479b77f6bfc69338a5ea8020626",
+  "features_sha256": "4489cfdffe3b79a511fe080cf9131b4a7c41a9155e8ae6fdc5396a4358610bdf",
+  "samples_sha256": "30ae77fe0c64e1c3eb5e8e3c707dfb337dbbe9a617efac17bc96e1d9837ecb52"
+}

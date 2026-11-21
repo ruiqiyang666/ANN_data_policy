@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "voltage": {
+      "reload_and_predict_passed": true,
+      "rows": 19,
+      "raw_scores_not_validated_calibrated_probabilities": true
+    },
+    "feedrate": {
+      "reload_and_predict_passed": true,
+      "rows": 19,
+      "raw_scores_not_validated_calibrated_probabilities": true
+    },
+    "hopper_pressure": {
+      "reload_and_predict_passed": true,
+      "rows": 19,
+      "raw_scores_not_validated_calibrated_probabilities": true
+    },
+    "life": {
+      "reload_and_predict_passed": true,
+      "rows": 19,
+      "targets": [
+        "hours",
+        "pieces"
+      ]
+    }
+  },
+  "not_validation_metrics": true,
+  "refit_manifest_sha256": "5760fbfa7c85dac571626782440c36befc72f8b796464580ce4d4b6a7b377d34"
+}

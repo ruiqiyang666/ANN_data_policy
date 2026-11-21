@@ -1,0 +1,38 @@
+{
+  "name": "lognormal_aft",
+  "fit": "final",
+  "task": "hours",
+  "train_windows": 17390,
+  "seconds": 4.170030399996904,
+  "metrics": {
+    "windows": 9343,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R007",
+        "windows": 2,
+        "mean_interval_distance": 31.29692819351088,
+        "mean_log_interval_distance": 6.685323638160662,
+        "near_15min_windows": 2,
+        "near_15min_mean_interval_distance": 31.29692819351088,
+        "overestimate_fraction": 1.0,
+        "model_interval_overlap_fraction": 0.0
+      }
+    ],
+    "macro_interval_distance": 31.29692819351088,
+    "macro_log_interval_distance": 6.685323638160662,
+    "median_prediction_quantiles": [
+      0.08429702113888182,
+      2.1286688217305696,
+      5.24596461955852,
+      9.757022840616628,
+      63.151605809124845
+    ],
+    "censor_median_below_observed_lower_fraction": 0.6772294186917889,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

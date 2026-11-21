@@ -1,0 +1,235 @@
+{
+  "model_name": "28 参数实测模型 v4（实验回放）",
+  "model_kind": "real28",
+  "run": "20261112_v4_incremental",
+  "production_ready": false,
+  "input_mode": "recorded_replay",
+  "input_mode_text": "实测回放：重放 2026-10-27 至 2026-11-01 主设备记录的 28 项读数，不是实时设备数据，也不是代码生成的模拟输入",
+  "replay_period": [
+    "2026-10-27",
+    "2026-11-01"
+  ],
+  "model_trained_through": "2026-10-23",
+  "why_this_fit": "回放使用训练截至 2026-10-23 的第 6 折模型，回放周对模型完全未见；截至 2026-11-01 的全量重拟合没有任何独立验证分数，不用于演示",
+  "inference": "292 项因果特征由训练管线对每个 10 秒预测点离线计算并随包提供；看板在请求时用导出的模型现算分数与分位数，不在线重算特征",
+  "prediction_interval_seconds": 10,
+  "causal_history": "120 秒序列历史，统计特征最长回看 2 小时并受 3 小时来源上限约束",
+  "tasks": {
+    "voltage": {
+      "algorithm": "extra_trees",
+      "threshold": 0.06423689872316114,
+      "calibration": "sigmoid",
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "train_windows": 156991,
+      "train_events": 15,
+      "blind_week": {
+        "events": 3,
+        "windows": 13948,
+        "prevalence": 0.004766375388170723,
+        "average_precision": 0.7154988514584677,
+        "event_macro_ap": 0.45785921928805945,
+        "roc_auc": 0.9991622193929718,
+        "events_alarmed_in_advance": 1,
+        "false_alarms": 2,
+        "false_alarms_per_100_hours": 5.199682241640788,
+        "observable_powered_hours": 38.46388888888889
+      }
+    },
+    "feedrate": {
+      "algorithm": "histgb",
+      "threshold": 0.10456271277453551,
+      "calibration": "identity",
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "train_windows": 156855,
+      "train_events": 31,
+      "blind_week": {
+        "events": 1,
+        "windows": 13948,
+        "prevalence": 0.0021522347370686564,
+        "average_precision": 0.0036835637668888093,
+        "event_macro_ap": 0.0036835637668888093,
+        "roc_auc": 0.6969863637452969,
+        "events_alarmed_in_advance": 0,
+        "false_alarms": 2,
+        "false_alarms_per_100_hours": 5.165363368964775,
+        "observable_powered_hours": 38.71944444444444
+      }
+    },
+    "hopper_pressure": {
+      "algorithm": "extra_trees",
+      "threshold": 0.01198197128827988,
+      "calibration": "sigmoid",
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "train_windows": 156981,
+      "train_events": 10,
+      "blind_week": {
+        "events": 0,
+        "windows": 13948,
+        "prevalence": 0.0,
+        "average_precision": null,
+        "event_macro_ap": null,
+        "roc_auc": null,
+        "events_alarmed_in_advance": 0,
+        "false_alarms": 0,
+        "false_alarms_per_100_hours": 0.0,
+        "observable_powered_hours": 38.74444444444445
+      }
+    }
+  },
+  "alarm_policy": "two consecutive 10 s landmarks above threshold, 300 s cooldown; threshold maximises event recall under <=20 false alarms per 100 observable powered hours on earlier out-of-fold predictions; experimental budget, not a site-approved tolerance",
+  "risk_calibration": "分数经早期折外预测的 sigmoid 校准（送料为恒等），没有独立校准集；三类分数相互独立，不能相加当作总异常概率",
+  "lifetime": {
+    "variant": "stage_lognormal_r1",
+    "supervision": "weak interval-censored low-voltage-stop/recovery proxies; zero individually confirmed natural failures",
+    "blind_week_selected": {
+      "weak_endpoints": 1,
+      "windows": 13826,
+      "median_to_weak_interval_hours": 1.5587460254081704,
+      "near_15min_distance_hours": 0.5101798131038474,
+      "censored_windows_already_outlived_the_median_fraction": 0.9190675746464118,
+      "median_prediction_quantiles_hours": [
+        0.37570688367895294,
+        1.391845459064481,
+        2.001118268325289,
+        2.5154253183673605,
+        2.902348981019667
+      ]
+    },
+    "blind_week_constant_baseline": {
+      "weak_endpoints": 1,
+      "windows": 13826,
+      "median_to_weak_interval_hours": 2.024851672077865,
+      "near_15min_distance_hours": 1.562002802365386,
+      "censored_windows_already_outlived_the_median_fraction": 0.9264012572027239,
+      "median_prediction_quantiles_hours": [
+        1.706169469032053,
+        1.706169469032053,
+        1.706169469032053,
+        1.706169469032053,
+        1.706169469032053
+      ]
+    },
+    "interval_note": "10%–90% 为模型分位，未经独立校准，不是寿命置信区间"
+  },
+  "limits": [
+    "寿命估计来自低压—停机—恢复的弱标签，没有逐次确认的自然失效；回放周内约 92% 的未失效窗口其中位估计已被实际继续运行时间超过，系统性偏低，不能作为换枪依据",
+    "电压预警在回放周 3 个事件中提前命中 1 个、误报 2 次；一周单设备，样本量不足以给出统计结论",
+    "送料预警在回放周 1 个事件中提前命中 0 个，排序接近随机，目前没有可用预警能力",
+    "料斗压力在回放周没有任何事件，召回能力无法评价；无误报不代表有效",
+    "报警阈值按每 100 带电小时不超过 20 次误报的实验预算从早期折外预测选取，不是现场确认的容忍值",
+    "回放周的新增标签完全由自动规则生成，没有公司复核"
+  ],
+  "unavailable_outputs": [
+    {
+      "field": "gun_health",
+      "name": "喷枪健康度",
+      "reason": "没有健康度监督标签，未训练"
+    },
+    {
+      "field": "tank_health",
+      "name": "料斗健康度",
+      "reason": "没有健康度监督标签，未训练"
+    },
+    {
+      "field": "pressure_60s",
+      "name": "60 秒后料斗压力",
+      "reason": "该预测目标已按要求取消，不训练、不输出"
+    },
+    {
+      "field": "pressure_trend",
+      "name": "压力趋势",
+      "reason": "随压力预测一并取消"
+    },
+    {
+      "field": "anomaly_probability",
+      "name": "当前异常概率",
+      "reason": "没有独立的瞬时异常真值；当前状态显示最近完成产品的工艺规则判定"
+    },
+    {
+      "field": "root_candidates",
+      "name": "原因候选",
+      "reason": "未实现参数贡献分析"
+    },
+    {
+      "field": "neural",
+      "name": "神经元激活",
+      "reason": "所选模型为集成树与 AFT，不是神经网络"
+    },
+    {
+      "field": "interval_nominal",
+      "name": "寿命区间覆盖率",
+      "reason": "分位区间未经校准，没有名义覆盖率"
+    }
+  ],
+  "parity_with_training": {
+    "voltage": {
+      "landmarks": 13948,
+      "max_abs_raw_risk_difference": 2.220446049250313e-16,
+      "max_abs_eta_difference_s": 1.0250561388147617e-05,
+      "alarms_reproduced": {
+        "events": true,
+        "detected_events": true,
+        "alerts": true,
+        "false_alerts": true
+      },
+      "average_precision_reproduced": true,
+      "landmarks_above_threshold": 156
+    },
+    "feedrate": {
+      "landmarks": 13948,
+      "max_abs_raw_risk_difference": 0.0,
+      "max_abs_eta_difference_s": 8.695081220366774e-06,
+      "alarms_reproduced": {
+        "events": true,
+        "detected_events": true,
+        "alerts": true,
+        "false_alerts": true
+      },
+      "average_precision_reproduced": true,
+      "landmarks_above_threshold": 14
+    },
+    "hopper_pressure": {
+      "landmarks": 13948,
+      "max_abs_raw_risk_difference": 6.938893903907228e-18,
+      "max_abs_eta_difference_s": 1.0652998270188618e-05,
+      "alarms_reproduced": {
+        "events": true,
+        "detected_events": true,
+        "alerts": true,
+        "false_alerts": true
+      },
+      "average_precision_reproduced": true,
+      "landmarks_above_threshold": 0
+    },
+    "life": {
+      "hours": {
+        "landmarks": 13826,
+        "max_relative_difference": 0.0
+      },
+      "pieces": {
+        "landmarks": 13826,
+        "max_relative_difference": 0.0
+      }
+    }
+  },
+  "sklearn": "1.8.0",
+  "numpy": "2.2.6"
+}

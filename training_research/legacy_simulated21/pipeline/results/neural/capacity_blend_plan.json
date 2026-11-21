@@ -1,0 +1,13 @@
+{
+  "experts": [
+    "capacity_ple",
+    "capacity_noise"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "criterion": "Validation RUL MAE, with RMSE and health nonregression; candidate set fixed before test scoring",
+  "test_previously_seen": true
+}

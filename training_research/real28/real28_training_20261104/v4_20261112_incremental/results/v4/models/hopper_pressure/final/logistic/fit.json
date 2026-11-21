@@ -1,0 +1,45 @@
+{
+  "train_windows": 170929,
+  "train_positive_windows": 285,
+  "train_events": 10,
+  "first_timestamp": "2026-08-15T10:27:10",
+  "last_timestamp": "2026-11-01T15:15:00",
+  "status": "trained",
+  "seconds": 18.974866811186075,
+  "model_sha256": "49a63906d892173daa5818ec7af1683ea99910c392f11be204112c90c8edadda",
+  "threshold": 0.030905766531259156,
+  "calibration_kind": "sigmoid",
+  "oof_policy": {
+    "events": 6,
+    "detected_events": 1,
+    "missed_events": 5,
+    "event_recall": 0.16666666666666666,
+    "alerts": 22,
+    "false_alerts": 21,
+    "observable_powered_hours": 361.81111111111113,
+    "false_alerts_per_100_hours": 5.804133525780794,
+    "threshold": 0.030905766531259156
+  },
+  "pooled_oof": {
+    "n": 130252,
+    "positive_windows": 165,
+    "events": 6,
+    "prevalence": 0.0012667751742775543,
+    "average_precision": 0.012443742455293817,
+    "event_macro_ap": 0.007760888602694177,
+    "roc_auc": 0.8413450578878331,
+    "brier": 0.001268489824342611
+  },
+  "oof_folds": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "oof_events": 6,
+  "validation_metrics": null,
+  "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+  "production_ready": false
+}

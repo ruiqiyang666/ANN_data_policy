@@ -1,0 +1,2865 @@
+{
+  "task": "feedrate",
+  "selected_algorithm": "histgb",
+  "folds": {
+    "f1": {
+      "train_end": "2026-09-01",
+      "validation_end": "2026-09-08",
+      "validation_windows": 22034,
+      "validation_events": 6,
+      "validation_first": "2026-09-01T07:13:20",
+      "validation_last": "2026-09-07T17:51:20",
+      "models": {
+        "logistic": {
+          "train_windows": 40970,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 1.3430780973285437,
+          "model_sha256": "cd013e6d3a7c544c3d893e631ef046e7b897fee7692b7ab5811b4796d747cff1"
+        },
+        "histgb": {
+          "train_windows": 40970,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 2.2266357261687517,
+          "model_sha256": "d1f9ea862bae14a2512f76aa009ffe57890d445c9d1b2d5eed1fd5fc545ad3f8"
+        },
+        "extra_trees": {
+          "train_windows": 40970,
+          "train_positive_windows": 30,
+          "train_events": 1,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-08-31T20:40:40",
+          "status": "trained",
+          "seconds": 5.962942877784371,
+          "model_sha256": "9c505acb7aa8b900ba8de5ff1923cd97ca47e836ccd7d3c1c8b966a841b87907"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 21877,
+            "positive_windows": 180,
+            "events": 6,
+            "prevalence": 0.008227819170818667,
+            "average_precision": 0.007880047756650292,
+            "event_macro_ap": 0.0019219698879536238,
+            "roc_auc": 0.4894724309044261,
+            "brier": 0.008300108719175829
+          },
+          "eta_mae_s_all_positive_windows": 71.58863006867469,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "histgb": {
+          "ranking": {
+            "n": 21877,
+            "positive_windows": 180,
+            "events": 6,
+            "prevalence": 0.008227819170818667,
+            "average_precision": 0.010170799537689968,
+            "event_macro_ap": 0.0035335218927946784,
+            "roc_auc": 0.5703812098958895,
+            "brier": 0.008227211858216055
+          },
+          "eta_mae_s_all_positive_windows": 71.58863006867469,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 21877,
+            "positive_windows": 180,
+            "events": 6,
+            "prevalence": 0.008227819170818667,
+            "average_precision": 0.008700400830326215,
+            "event_macro_ap": 0.0029320506647784327,
+            "roc_auc": 0.47841995565183104,
+            "brier": 0.008255637814351298
+          },
+          "eta_mae_s_all_positive_windows": 71.58863006867469,
+          "eta_is_conditional_on_future_event": true,
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 21877,
+            "positive_windows": 180,
+            "events": 6,
+            "prevalence": 0.008227819170818667,
+            "average_precision": 0.011025060602793839,
+            "event_macro_ap": 0.0042752276611983725,
+            "roc_auc": 0.5326249660731386,
+            "brier": 0.02753786174122377
+          },
+          "alarm_policy": "not available: no earlier out-of-fold events"
+        }
+      },
+      "prevalence_baseline_ap": 0.008227819170818667
+    },
+    "f2": {
+      "train_end": "2026-09-08",
+      "validation_end": "2026-09-15",
+      "validation_windows": 14001,
+      "validation_events": 11,
+      "validation_first": "2026-09-09T13:28:00",
+      "validation_last": "2026-09-14T20:44:10",
+      "models": {
+        "logistic": {
+          "train_windows": 62847,
+          "train_positive_windows": 210,
+          "train_events": 7,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 4.484627251513302,
+          "model_sha256": "6b6eb380669f312c73ab1b50bd423704019c94426fefd7a59d2a0a72ff6b49c3"
+        },
+        "histgb": {
+          "train_windows": 62847,
+          "train_positive_windows": 210,
+          "train_events": 7,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 5.132105765864253,
+          "model_sha256": "576293fe0f366ca3b460d87980022af5931be08639478e6b39b80ff7091cd7d1"
+        },
+        "extra_trees": {
+          "train_windows": 62847,
+          "train_positive_windows": 210,
+          "train_events": 7,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-07T17:51:20",
+          "status": "trained",
+          "seconds": 41.61905824113637,
+          "model_sha256": "8368e0b5033cc48669c3f7c2410db8bbe0e4dcccdbdcd3515f5c5405c840f587"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13606,
+            "positive_windows": 164,
+            "events": 11,
+            "prevalence": 0.012053505806261943,
+            "average_precision": 0.009180761217693427,
+            "event_macro_ap": 0.0012269368663196307,
+            "roc_auc": 0.39397129855095603,
+            "brier": 0.015733679184801407
+          },
+          "alarms": {
+            "events": 11,
+            "detected_events": 0,
+            "missed_events": 11,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 37.794444444444444,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_008",
+              "type": "feedrate",
+              "event_at": "2026-09-09T13:29:21",
+              "product_start": "2026-09-09T13:29:21",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T13:30:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_009",
+              "type": "feedrate",
+              "event_at": "2026-09-09T16:03:18",
+              "product_start": "2026-09-09T16:03:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T16:04:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_010",
+              "type": "feedrate",
+              "event_at": "2026-09-09T21:03:12",
+              "product_start": "2026-09-09T21:03:12",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T21:04:17",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_011",
+              "type": "feedrate",
+              "event_at": "2026-09-10T10:18:16",
+              "product_start": "2026-09-10T10:18:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T10:19:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_012",
+              "type": "feedrate",
+              "event_at": "2026-09-10T13:19:18",
+              "product_start": "2026-09-10T13:19:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T13:20:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_013",
+              "type": "feedrate",
+              "event_at": "2026-09-10T14:06:05",
+              "product_start": "2026-09-10T14:06:05",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T14:07:10",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_014",
+              "type": "feedrate",
+              "event_at": "2026-09-11T07:24:20",
+              "product_start": "2026-09-11T07:24:20",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T07:24:50",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_015",
+              "type": "feedrate",
+              "event_at": "2026-09-11T10:15:35",
+              "product_start": "2026-09-11T10:15:35",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T10:16:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_016",
+              "type": "feedrate",
+              "event_at": "2026-09-11T12:05:32",
+              "product_start": "2026-09-11T12:05:32",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T12:06:06",
+              "failed_products": 5
+            },
+            {
+              "event_id": "feedrate_017",
+              "type": "feedrate",
+              "event_at": "2026-09-11T18:35:16",
+              "product_start": "2026-09-11T18:35:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T18:36:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_018",
+              "type": "feedrate",
+              "event_at": "2026-09-12T14:04:15",
+              "product_start": "2026-09-12T14:04:15",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-12T14:05:21",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 84.0451746235251,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 60.769444444444446,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13606,
+            "positive_windows": 164,
+            "events": 11,
+            "prevalence": 0.012053505806261943,
+            "average_precision": 0.011570592670362078,
+            "event_macro_ap": 0.0017259896403869887,
+            "roc_auc": 0.5099118253308705,
+            "brier": 0.012054780048271525
+          },
+          "alarms": {
+            "events": 11,
+            "detected_events": 0,
+            "missed_events": 11,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 37.794444444444444,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_008",
+              "type": "feedrate",
+              "event_at": "2026-09-09T13:29:21",
+              "product_start": "2026-09-09T13:29:21",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T13:30:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_009",
+              "type": "feedrate",
+              "event_at": "2026-09-09T16:03:18",
+              "product_start": "2026-09-09T16:03:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T16:04:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_010",
+              "type": "feedrate",
+              "event_at": "2026-09-09T21:03:12",
+              "product_start": "2026-09-09T21:03:12",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T21:04:17",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_011",
+              "type": "feedrate",
+              "event_at": "2026-09-10T10:18:16",
+              "product_start": "2026-09-10T10:18:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T10:19:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_012",
+              "type": "feedrate",
+              "event_at": "2026-09-10T13:19:18",
+              "product_start": "2026-09-10T13:19:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T13:20:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_013",
+              "type": "feedrate",
+              "event_at": "2026-09-10T14:06:05",
+              "product_start": "2026-09-10T14:06:05",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T14:07:10",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_014",
+              "type": "feedrate",
+              "event_at": "2026-09-11T07:24:20",
+              "product_start": "2026-09-11T07:24:20",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T07:24:50",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_015",
+              "type": "feedrate",
+              "event_at": "2026-09-11T10:15:35",
+              "product_start": "2026-09-11T10:15:35",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T10:16:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_016",
+              "type": "feedrate",
+              "event_at": "2026-09-11T12:05:32",
+              "product_start": "2026-09-11T12:05:32",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T12:06:06",
+              "failed_products": 5
+            },
+            {
+              "event_id": "feedrate_017",
+              "type": "feedrate",
+              "event_at": "2026-09-11T18:35:16",
+              "product_start": "2026-09-11T18:35:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T18:36:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_018",
+              "type": "feedrate",
+              "event_at": "2026-09-12T14:04:15",
+              "product_start": "2026-09-12T14:04:15",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-12T14:05:21",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 84.0451746235251,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 60.769444444444446,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13606,
+            "positive_windows": 164,
+            "events": 11,
+            "prevalence": 0.012053505806261943,
+            "average_precision": 0.015839051062184778,
+            "event_macro_ap": 0.003882072416335291,
+            "roc_auc": 0.43375763442577137,
+            "brier": 0.012394785248550063
+          },
+          "alarms": {
+            "events": 11,
+            "detected_events": 0,
+            "missed_events": 11,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 37.794444444444444,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_008",
+              "type": "feedrate",
+              "event_at": "2026-09-09T13:29:21",
+              "product_start": "2026-09-09T13:29:21",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T13:30:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_009",
+              "type": "feedrate",
+              "event_at": "2026-09-09T16:03:18",
+              "product_start": "2026-09-09T16:03:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T16:04:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_010",
+              "type": "feedrate",
+              "event_at": "2026-09-09T21:03:12",
+              "product_start": "2026-09-09T21:03:12",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T21:04:17",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_011",
+              "type": "feedrate",
+              "event_at": "2026-09-10T10:18:16",
+              "product_start": "2026-09-10T10:18:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T10:19:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_012",
+              "type": "feedrate",
+              "event_at": "2026-09-10T13:19:18",
+              "product_start": "2026-09-10T13:19:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T13:20:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_013",
+              "type": "feedrate",
+              "event_at": "2026-09-10T14:06:05",
+              "product_start": "2026-09-10T14:06:05",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T14:07:10",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_014",
+              "type": "feedrate",
+              "event_at": "2026-09-11T07:24:20",
+              "product_start": "2026-09-11T07:24:20",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T07:24:50",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_015",
+              "type": "feedrate",
+              "event_at": "2026-09-11T10:15:35",
+              "product_start": "2026-09-11T10:15:35",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T10:16:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_016",
+              "type": "feedrate",
+              "event_at": "2026-09-11T12:05:32",
+              "product_start": "2026-09-11T12:05:32",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T12:06:06",
+              "failed_products": 5
+            },
+            {
+              "event_id": "feedrate_017",
+              "type": "feedrate",
+              "event_at": "2026-09-11T18:35:16",
+              "product_start": "2026-09-11T18:35:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T18:36:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_018",
+              "type": "feedrate",
+              "event_at": "2026-09-12T14:04:15",
+              "product_start": "2026-09-12T14:04:15",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-12T14:05:21",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 84.0451746235251,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 60.769444444444446,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13606,
+            "positive_windows": 164,
+            "events": 11,
+            "prevalence": 0.012053505806261943,
+            "average_precision": 0.008702911494013442,
+            "event_macro_ap": 0.001398757968663248,
+            "roc_auc": 0.2041503514648299,
+            "brier": 0.033226255904108215
+          },
+          "alarms": {
+            "events": 11,
+            "detected_events": 0,
+            "missed_events": 11,
+            "event_recall": 0.0,
+            "alerts": 4,
+            "false_alerts": 4,
+            "observable_powered_hours": 37.794444444444444,
+            "false_alerts_per_100_hours": 10.583566073790974,
+            "threshold": 0.444921608763849,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_008",
+              "type": "feedrate",
+              "event_at": "2026-09-09T13:29:21",
+              "product_start": "2026-09-09T13:29:21",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T13:30:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_009",
+              "type": "feedrate",
+              "event_at": "2026-09-09T16:03:18",
+              "product_start": "2026-09-09T16:03:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T16:04:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_010",
+              "type": "feedrate",
+              "event_at": "2026-09-09T21:03:12",
+              "product_start": "2026-09-09T21:03:12",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-09T21:04:17",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_011",
+              "type": "feedrate",
+              "event_at": "2026-09-10T10:18:16",
+              "product_start": "2026-09-10T10:18:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T10:19:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_012",
+              "type": "feedrate",
+              "event_at": "2026-09-10T13:19:18",
+              "product_start": "2026-09-10T13:19:18",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T13:20:24",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_013",
+              "type": "feedrate",
+              "event_at": "2026-09-10T14:06:05",
+              "product_start": "2026-09-10T14:06:05",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-10T14:07:10",
+              "failed_products": 3
+            },
+            {
+              "event_id": "feedrate_014",
+              "type": "feedrate",
+              "event_at": "2026-09-11T07:24:20",
+              "product_start": "2026-09-11T07:24:20",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T07:24:50",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_015",
+              "type": "feedrate",
+              "event_at": "2026-09-11T10:15:35",
+              "product_start": "2026-09-11T10:15:35",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T10:16:40",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_016",
+              "type": "feedrate",
+              "event_at": "2026-09-11T12:05:32",
+              "product_start": "2026-09-11T12:05:32",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T12:06:06",
+              "failed_products": 5
+            },
+            {
+              "event_id": "feedrate_017",
+              "type": "feedrate",
+              "event_at": "2026-09-11T18:35:16",
+              "product_start": "2026-09-11T18:35:16",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-11T18:36:21",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_018",
+              "type": "feedrate",
+              "event_at": "2026-09-12T14:04:15",
+              "product_start": "2026-09-12T14:04:15",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-12T14:05:21",
+              "failed_products": 2
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-09T16:25:10.000000000",
+            "2026-09-09T19:02:40.000000000",
+            "2026-09-11T07:24:30.000000000",
+            "2026-09-11T11:47:40.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 6,
+            "detected_events": 1,
+            "missed_events": 5,
+            "event_recall": 0.16666666666666666,
+            "alerts": 4,
+            "false_alerts": 3,
+            "observable_powered_hours": 60.769444444444446,
+            "false_alerts_per_100_hours": 4.9366915024912,
+            "threshold": 0.444921608763849
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.012053505806261943
+    },
+    "f3": {
+      "train_end": "2026-09-15",
+      "validation_end": "2026-09-30",
+      "validation_windows": 27580,
+      "validation_events": 4,
+      "validation_first": "2026-09-15T07:23:40",
+      "validation_last": "2026-09-29T17:27:10",
+      "models": {
+        "logistic": {
+          "train_windows": 76453,
+          "train_positive_windows": 374,
+          "train_events": 18,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 17.646722893230617,
+          "model_sha256": "cede37985d1b5687bbe73db5673cc9ab95c6722dfda78b5a672fa144e4a979bc"
+        },
+        "histgb": {
+          "train_windows": 76453,
+          "train_positive_windows": 374,
+          "train_events": 18,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 6.553625364787877,
+          "model_sha256": "66b2797f0ff2e1314b9b781d8df4f3c2f3be2cbde16703764e414dc4702efb8f"
+        },
+        "extra_trees": {
+          "train_windows": 76453,
+          "train_positive_windows": 374,
+          "train_events": 18,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-14T20:44:10",
+          "status": "trained",
+          "seconds": 90.68467216659337,
+          "model_sha256": "59014257a10ff2b293b4a3230fef121e16e85c948ffa0b4fd4e519c849e04e84"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 27517,
+            "positive_windows": 102,
+            "events": 4,
+            "prevalence": 0.0037067994330777336,
+            "average_precision": 0.00897381533589513,
+            "event_macro_ap": 0.0033549663929489204,
+            "roc_auc": 0.7484774686821656,
+            "brier": 0.030145850484652074
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 0,
+            "missed_events": 4,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 76.43611111111112,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_019",
+              "type": "feedrate",
+              "event_at": "2026-09-15T07:55:23",
+              "product_start": "2026-09-15T07:55:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T07:55:57",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_020",
+              "type": "feedrate",
+              "event_at": "2026-09-16T09:31:22",
+              "product_start": "2026-09-16T09:31:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-16T09:31:52",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_021",
+              "type": "feedrate",
+              "event_at": "2026-09-27T10:06:48",
+              "product_start": "2026-09-27T10:06:48",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:07:19",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_022",
+              "type": "feedrate",
+              "event_at": "2026-09-27T15:02:44",
+              "product_start": "2026-09-27T15:02:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T15:03:14",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 62.47482261939451,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 17,
+            "detected_events": 0,
+            "missed_events": 17,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 98.56388888888888,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 27517,
+            "positive_windows": 102,
+            "events": 4,
+            "prevalence": 0.0037067994330777336,
+            "average_precision": 0.014250879563792902,
+            "event_macro_ap": 0.00871199726922118,
+            "roc_auc": 0.8376409436654473,
+            "brier": 0.003739708283926111
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 0,
+            "missed_events": 4,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 76.43611111111112,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_019",
+              "type": "feedrate",
+              "event_at": "2026-09-15T07:55:23",
+              "product_start": "2026-09-15T07:55:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T07:55:57",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_020",
+              "type": "feedrate",
+              "event_at": "2026-09-16T09:31:22",
+              "product_start": "2026-09-16T09:31:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-16T09:31:52",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_021",
+              "type": "feedrate",
+              "event_at": "2026-09-27T10:06:48",
+              "product_start": "2026-09-27T10:06:48",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:07:19",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_022",
+              "type": "feedrate",
+              "event_at": "2026-09-27T15:02:44",
+              "product_start": "2026-09-27T15:02:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T15:03:14",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 62.47482261939451,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "sigmoid",
+          "oof_policy": {
+            "events": 17,
+            "detected_events": 0,
+            "missed_events": 17,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 98.56388888888888,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 27517,
+            "positive_windows": 102,
+            "events": 4,
+            "prevalence": 0.0037067994330777336,
+            "average_precision": 0.010137219996497535,
+            "event_macro_ap": 0.006113828072273659,
+            "roc_auc": 0.6518200641555182,
+            "brier": 0.0050258081491538755
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 1,
+            "missed_events": 3,
+            "event_recall": 0.25,
+            "alerts": 53,
+            "false_alerts": 52,
+            "observable_powered_hours": 76.43611111111112,
+            "false_alerts_per_100_hours": 68.03067194825016,
+            "threshold": 0.0819670688836551,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_019",
+              "type": "feedrate",
+              "event_at": "2026-09-15T07:55:23",
+              "product_start": "2026-09-15T07:55:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T07:55:57",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_020",
+              "type": "feedrate",
+              "event_at": "2026-09-16T09:31:22",
+              "product_start": "2026-09-16T09:31:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-16T09:31:52",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_021",
+              "type": "feedrate",
+              "event_at": "2026-09-27T10:06:48",
+              "product_start": "2026-09-27T10:06:48",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:07:19",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_022",
+              "type": "feedrate",
+              "event_at": "2026-09-27T15:02:44",
+              "product_start": "2026-09-27T15:02:44",
+              "alert_at": "2026-09-27T15:00:30",
+              "lead_to_result_s": 164.0,
+              "lead_to_product_start_s": 134.0,
+              "first_result_at": "2026-09-27T15:03:14",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-15T07:23:50.000000000",
+            "2026-09-15T07:58:10.000000000",
+            "2026-09-15T08:59:10.000000000",
+            "2026-09-15T12:00:30.000000000",
+            "2026-09-15T13:40:30.000000000",
+            "2026-09-15T15:02:00.000000000",
+            "2026-09-15T17:01:20.000000000",
+            "2026-09-15T20:54:40.000000000",
+            "2026-09-16T07:07:50.000000000",
+            "2026-09-16T11:50:10.000000000",
+            "2026-09-16T17:54:10.000000000",
+            "2026-09-16T17:59:10.000000000",
+            "2026-09-16T19:28:50.000000000",
+            "2026-09-17T07:19:50.000000000",
+            "2026-09-17T08:03:30.000000000",
+            "2026-09-17T10:42:40.000000000",
+            "2026-09-17T14:48:20.000000000",
+            "2026-09-17T18:32:20.000000000",
+            "2026-09-18T07:18:50.000000000",
+            "2026-09-18T11:41:30.000000000",
+            "2026-09-18T13:04:20.000000000",
+            "2026-09-18T14:53:20.000000000",
+            "2026-09-18T15:07:40.000000000",
+            "2026-09-18T18:00:10.000000000",
+            "2026-09-20T07:18:50.000000000",
+            "2026-09-20T09:00:20.000000000",
+            "2026-09-20T13:14:50.000000000",
+            "2026-09-20T13:21:20.000000000",
+            "2026-09-20T15:46:40.000000000",
+            "2026-09-23T15:17:00.000000000",
+            "2026-09-24T15:35:50.000000000",
+            "2026-09-24T18:24:10.000000000",
+            "2026-09-24T18:33:10.000000000",
+            "2026-09-24T18:38:50.000000000",
+            "2026-09-26T15:55:30.000000000",
+            "2026-09-26T18:01:00.000000000",
+            "2026-09-26T18:09:10.000000000",
+            "2026-09-26T18:28:00.000000000",
+            "2026-09-26T18:38:20.000000000",
+            "2026-09-26T19:07:10.000000000",
+            "2026-09-27T06:55:20.000000000",
+            "2026-09-27T10:49:40.000000000",
+            "2026-09-27T11:35:00.000000000",
+            "2026-09-27T11:43:50.000000000",
+            "2026-09-27T14:26:20.000000000",
+            "2026-09-27T14:50:20.000000000",
+            "2026-09-27T15:00:30.000000000",
+            "2026-09-28T07:22:10.000000000",
+            "2026-09-28T17:48:30.000000000",
+            "2026-09-29T07:25:10.000000000",
+            "2026-09-29T11:28:00.000000000",
+            "2026-09-29T11:33:50.000000000",
+            "2026-09-29T11:40:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 62.47482261939451,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 17,
+            "detected_events": 1,
+            "missed_events": 16,
+            "event_recall": 0.058823529411764705,
+            "alerts": 14,
+            "false_alerts": 13,
+            "observable_powered_hours": 98.56388888888888,
+            "false_alerts_per_100_hours": 13.189414649268667,
+            "threshold": 0.0819670688836551
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 27517,
+            "positive_windows": 102,
+            "events": 4,
+            "prevalence": 0.0037067994330777336,
+            "average_precision": 0.004121833493005813,
+            "event_macro_ap": 0.0016250138781288743,
+            "roc_auc": 0.4976100817857692,
+            "brier": 0.026321085691930295
+          },
+          "alarms": {
+            "events": 4,
+            "detected_events": 0,
+            "missed_events": 4,
+            "event_recall": 0.0,
+            "alerts": 2,
+            "false_alerts": 2,
+            "observable_powered_hours": 76.43611111111112,
+            "false_alerts_per_100_hours": 2.6165643057019294,
+            "threshold": 0.44378485861062034,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_019",
+              "type": "feedrate",
+              "event_at": "2026-09-15T07:55:23",
+              "product_start": "2026-09-15T07:55:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-15T07:55:57",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_020",
+              "type": "feedrate",
+              "event_at": "2026-09-16T09:31:22",
+              "product_start": "2026-09-16T09:31:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-16T09:31:52",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_021",
+              "type": "feedrate",
+              "event_at": "2026-09-27T10:06:48",
+              "product_start": "2026-09-27T10:06:48",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T10:07:19",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_022",
+              "type": "feedrate",
+              "event_at": "2026-09-27T15:02:44",
+              "product_start": "2026-09-27T15:02:44",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-09-27T15:03:14",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-09-17T18:33:00.000000000",
+            "2026-09-27T11:22:00.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 17,
+            "detected_events": 1,
+            "missed_events": 16,
+            "event_recall": 0.058823529411764705,
+            "alerts": 8,
+            "false_alerts": 7,
+            "observable_powered_hours": 98.56388888888888,
+            "false_alerts_per_100_hours": 7.101992503452357,
+            "threshold": 0.44378485861062034
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0037067994330777336
+    },
+    "f4": {
+      "train_end": "2026-10-04",
+      "validation_end": "2026-10-10",
+      "validation_windows": 18473,
+      "validation_events": 3,
+      "validation_first": "2026-10-04T15:35:20",
+      "validation_last": "2026-10-09T16:56:20",
+      "models": {
+        "logistic": {
+          "train_windows": 103970,
+          "train_positive_windows": 476,
+          "train_events": 22,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 25.295661340467632,
+          "model_sha256": "e671b2e536313a4693c4d01002a2520a3db2cfd71ac5831e512b78fb496f6680"
+        },
+        "histgb": {
+          "train_windows": 103970,
+          "train_positive_windows": 476,
+          "train_events": 22,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 8.144063823856413,
+          "model_sha256": "b3e5cfffcd466a0cafb1d29ab8e7b17e6a905f8cef1a8b01494aec84acb8f1c3"
+        },
+        "extra_trees": {
+          "train_windows": 103970,
+          "train_positive_windows": 476,
+          "train_events": 22,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-09-29T17:27:10",
+          "status": "trained",
+          "seconds": 142.27543034404516,
+          "model_sha256": "ef61689973f2423c470753931cf2fd75dafda77eb3f1ed2f586419c6934cc831"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 18384,
+            "positive_windows": 59,
+            "events": 3,
+            "prevalence": 0.003209312445604874,
+            "average_precision": 0.10580020272319209,
+            "event_macro_ap": 0.13653479340214011,
+            "roc_auc": 0.8061719888084724,
+            "brier": 0.08947875023990966
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 51.06666666666667,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_023",
+              "type": "feedrate",
+              "event_at": "2026-10-07T12:46:42",
+              "product_start": "2026-10-07T12:46:42",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-07T12:47:48",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_024",
+              "type": "feedrate",
+              "event_at": "2026-10-08T10:14:23",
+              "product_start": "2026-10-08T10:14:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-08T10:15:28",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_025",
+              "type": "feedrate",
+              "event_at": "2026-10-09T09:07:17",
+              "product_start": "2026-10-09T09:07:17",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T09:08:22",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 48.75843526298273,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 21,
+            "detected_events": 0,
+            "missed_events": 21,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 175.0,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 1.000001
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 18384,
+            "positive_windows": 59,
+            "events": 3,
+            "prevalence": 0.003209312445604874,
+            "average_precision": 0.08700025136913003,
+            "event_macro_ap": 0.11312132219220465,
+            "roc_auc": 0.6750183827779961,
+            "brier": 0.0032970332778638196
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 15,
+            "false_alerts": 14,
+            "observable_powered_hours": 51.06666666666667,
+            "false_alerts_per_100_hours": 27.415143603133156,
+            "threshold": 0.1,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_023",
+              "type": "feedrate",
+              "event_at": "2026-10-07T12:46:42",
+              "product_start": "2026-10-07T12:46:42",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-07T12:47:48",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_024",
+              "type": "feedrate",
+              "event_at": "2026-10-08T10:14:23",
+              "product_start": "2026-10-08T10:14:23",
+              "alert_at": "2026-10-08T10:12:20",
+              "lead_to_result_s": 188.0,
+              "lead_to_product_start_s": 123.0,
+              "first_result_at": "2026-10-08T10:15:28",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_025",
+              "type": "feedrate",
+              "event_at": "2026-10-09T09:07:17",
+              "product_start": "2026-10-09T09:07:17",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T09:08:22",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-04T15:35:30.000000000",
+            "2026-10-04T19:34:00.000000000",
+            "2026-10-05T11:09:20.000000000",
+            "2026-10-05T14:19:50.000000000",
+            "2026-10-05T17:45:20.000000000",
+            "2026-10-05T18:29:00.000000000",
+            "2026-10-05T18:36:20.000000000",
+            "2026-10-05T21:04:40.000000000",
+            "2026-10-06T07:18:00.000000000",
+            "2026-10-07T10:12:40.000000000",
+            "2026-10-07T13:29:40.000000000",
+            "2026-10-08T10:12:20.000000000",
+            "2026-10-09T11:09:40.000000000",
+            "2026-10-09T14:27:10.000000000",
+            "2026-10-09T16:34:10.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 48.75843526298273,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 21,
+            "detected_events": 1,
+            "missed_events": 20,
+            "event_recall": 0.047619047619047616,
+            "alerts": 23,
+            "false_alerts": 22,
+            "observable_powered_hours": 175.0,
+            "false_alerts_per_100_hours": 12.571428571428573,
+            "threshold": 0.1
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 18384,
+            "positive_windows": 59,
+            "events": 3,
+            "prevalence": 0.003209312445604874,
+            "average_precision": 0.028567765894767103,
+            "event_macro_ap": 0.024196496454496046,
+            "roc_auc": 0.6170088098596435,
+            "brier": 0.004083102549905827
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 1,
+            "missed_events": 2,
+            "event_recall": 0.3333333333333333,
+            "alerts": 17,
+            "false_alerts": 16,
+            "observable_powered_hours": 51.06666666666667,
+            "false_alerts_per_100_hours": 31.331592689295036,
+            "threshold": 0.23831261874951268,
+            "detected_before_product_start": 1
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_023",
+              "type": "feedrate",
+              "event_at": "2026-10-07T12:46:42",
+              "product_start": "2026-10-07T12:46:42",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-07T12:47:48",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_024",
+              "type": "feedrate",
+              "event_at": "2026-10-08T10:14:23",
+              "product_start": "2026-10-08T10:14:23",
+              "alert_at": "2026-10-08T10:12:20",
+              "lead_to_result_s": 188.0,
+              "lead_to_product_start_s": 123.0,
+              "first_result_at": "2026-10-08T10:15:28",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_025",
+              "type": "feedrate",
+              "event_at": "2026-10-09T09:07:17",
+              "product_start": "2026-10-09T09:07:17",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T09:08:22",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-04T15:35:30.000000000",
+            "2026-10-04T19:35:20.000000000",
+            "2026-10-05T06:50:20.000000000",
+            "2026-10-05T11:09:20.000000000",
+            "2026-10-05T14:19:50.000000000",
+            "2026-10-05T17:45:10.000000000",
+            "2026-10-05T18:36:00.000000000",
+            "2026-10-05T21:06:10.000000000",
+            "2026-10-06T07:18:00.000000000",
+            "2026-10-07T08:13:00.000000000",
+            "2026-10-07T13:29:40.000000000",
+            "2026-10-08T07:45:10.000000000",
+            "2026-10-08T10:12:20.000000000",
+            "2026-10-08T13:28:10.000000000",
+            "2026-10-09T07:22:10.000000000",
+            "2026-10-09T11:09:40.000000000",
+            "2026-10-09T16:34:10.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 48.75843526298273,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 21,
+            "detected_events": 1,
+            "missed_events": 20,
+            "event_recall": 0.047619047619047616,
+            "alerts": 14,
+            "false_alerts": 13,
+            "observable_powered_hours": 175.0,
+            "false_alerts_per_100_hours": 7.428571428571429,
+            "threshold": 0.23831261874951268
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 18384,
+            "positive_windows": 59,
+            "events": 3,
+            "prevalence": 0.003209312445604874,
+            "average_precision": 0.002773165581534497,
+            "event_macro_ap": 0.0013109472518162575,
+            "roc_auc": 0.25948112007769325,
+            "brier": 0.024529794877085356
+          },
+          "alarms": {
+            "events": 3,
+            "detected_events": 0,
+            "missed_events": 3,
+            "event_recall": 0.0,
+            "alerts": 2,
+            "false_alerts": 2,
+            "observable_powered_hours": 51.06666666666667,
+            "false_alerts_per_100_hours": 3.9164490861618795,
+            "threshold": 0.444921608763849,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_023",
+              "type": "feedrate",
+              "event_at": "2026-10-07T12:46:42",
+              "product_start": "2026-10-07T12:46:42",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-07T12:47:48",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_024",
+              "type": "feedrate",
+              "event_at": "2026-10-08T10:14:23",
+              "product_start": "2026-10-08T10:14:23",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-08T10:15:28",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_025",
+              "type": "feedrate",
+              "event_at": "2026-10-09T09:07:17",
+              "product_start": "2026-10-09T09:07:17",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-09T09:08:22",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-04T18:20:50.000000000",
+            "2026-10-09T11:14:20.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 21,
+            "detected_events": 1,
+            "missed_events": 20,
+            "event_recall": 0.047619047619047616,
+            "alerts": 10,
+            "false_alerts": 9,
+            "observable_powered_hours": 175.0,
+            "false_alerts_per_100_hours": 5.142857142857142,
+            "threshold": 0.444921608763849
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.003209312445604874
+    },
+    "f5": {
+      "train_end": "2026-10-10",
+      "validation_end": "2026-10-24",
+      "validation_windows": 34596,
+      "validation_events": 6,
+      "validation_first": "2026-10-10T07:17:20",
+      "validation_last": "2026-10-23T13:57:00",
+      "models": {
+        "logistic": {
+          "train_windows": 122354,
+          "train_positive_windows": 535,
+          "train_events": 25,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 36.81258839275688,
+          "model_sha256": "57d53013d44dc2807b9bf6be790ebed5b9c7d9a2db6c2de7b72f0fe86f56b48f"
+        },
+        "histgb": {
+          "train_windows": 122354,
+          "train_positive_windows": 535,
+          "train_events": 25,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 12.629991019144654,
+          "model_sha256": "923c86c8c777b1df1f25b9d213de08892591aec97ab9a07f3ea0dc4f500fdb84"
+        },
+        "extra_trees": {
+          "train_windows": 122354,
+          "train_positive_windows": 535,
+          "train_events": 25,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-09T16:56:20",
+          "status": "trained",
+          "seconds": 152.30692818388343,
+          "model_sha256": "a4084bfc5f890e5d8c0075fe4d74a21e147b4e63f71bf69b9e8d8ec92d2633a9"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 34501,
+            "positive_windows": 141,
+            "events": 6,
+            "prevalence": 0.0040868380626648505,
+            "average_precision": 0.0062916874915164706,
+            "event_macro_ap": 0.001610700789340706,
+            "roc_auc": 0.6553798330567459,
+            "brier": 0.04148841386054002
+          },
+          "alarms": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 95.83611111111111,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.9999188021300621,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_026",
+              "type": "feedrate",
+              "event_at": "2026-10-10T08:17:57",
+              "product_start": "2026-10-10T08:17:57",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T08:18:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_027",
+              "type": "feedrate",
+              "event_at": "2026-10-10T11:12:31",
+              "product_start": "2026-10-10T11:12:31",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T11:13:05",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_028",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:23:52",
+              "product_start": "2026-10-12T11:23:52",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:24:22",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_029",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:38:28",
+              "product_start": "2026-10-12T11:38:28",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:39:02",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_030",
+              "type": "feedrate",
+              "event_at": "2026-10-17T09:46:51",
+              "product_start": "2026-10-17T09:46:51",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-17T09:47:58",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_031",
+              "type": "feedrate",
+              "event_at": "2026-10-21T08:50:56",
+              "product_start": "2026-10-21T08:50:56",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-21T08:51:26",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 65.1032460679094,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 24,
+            "detected_events": 1,
+            "missed_events": 23,
+            "event_recall": 0.041666666666666664,
+            "alerts": 6,
+            "false_alerts": 5,
+            "observable_powered_hours": 226.06666666666666,
+            "false_alerts_per_100_hours": 2.2117369507519906,
+            "threshold": 0.9999188021300621
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 34501,
+            "positive_windows": 141,
+            "events": 6,
+            "prevalence": 0.0040868380626648505,
+            "average_precision": 0.03306359420122578,
+            "event_macro_ap": 0.0587943145038683,
+            "roc_auc": 0.3104775055936724,
+            "brier": 0.004166472107603472
+          },
+          "alarms": {
+            "events": 6,
+            "detected_events": 2,
+            "missed_events": 4,
+            "event_recall": 0.3333333333333333,
+            "alerts": 22,
+            "false_alerts": 20,
+            "observable_powered_hours": 95.83611111111111,
+            "false_alerts_per_100_hours": 20.868960319990727,
+            "threshold": 0.10445312589865095,
+            "detected_before_product_start": 2
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_026",
+              "type": "feedrate",
+              "event_at": "2026-10-10T08:17:57",
+              "product_start": "2026-10-10T08:17:57",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T08:18:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_027",
+              "type": "feedrate",
+              "event_at": "2026-10-10T11:12:31",
+              "product_start": "2026-10-10T11:12:31",
+              "alert_at": "2026-10-10T11:10:40",
+              "lead_to_result_s": 145.0,
+              "lead_to_product_start_s": 111.0,
+              "first_result_at": "2026-10-10T11:13:05",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_028",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:23:52",
+              "product_start": "2026-10-12T11:23:52",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:24:22",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_029",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:38:28",
+              "product_start": "2026-10-12T11:38:28",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:39:02",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_030",
+              "type": "feedrate",
+              "event_at": "2026-10-17T09:46:51",
+              "product_start": "2026-10-17T09:46:51",
+              "alert_at": "2026-10-17T09:45:40",
+              "lead_to_result_s": 138.0,
+              "lead_to_product_start_s": 71.0,
+              "first_result_at": "2026-10-17T09:47:58",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_031",
+              "type": "feedrate",
+              "event_at": "2026-10-21T08:50:56",
+              "product_start": "2026-10-21T08:50:56",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-21T08:51:26",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-10T07:17:30.000000000",
+            "2026-10-10T11:10:40.000000000",
+            "2026-10-10T14:36:40.000000000",
+            "2026-10-12T13:38:00.000000000",
+            "2026-10-12T17:30:30.000000000",
+            "2026-10-13T11:17:10.000000000",
+            "2026-10-13T15:49:20.000000000",
+            "2026-10-13T16:19:30.000000000",
+            "2026-10-14T14:12:00.000000000",
+            "2026-10-15T06:51:00.000000000",
+            "2026-10-15T08:25:10.000000000",
+            "2026-10-15T08:31:20.000000000",
+            "2026-10-15T14:40:20.000000000",
+            "2026-10-17T09:45:40.000000000",
+            "2026-10-19T07:24:50.000000000",
+            "2026-10-20T10:22:20.000000000",
+            "2026-10-20T14:41:50.000000000",
+            "2026-10-21T07:24:30.000000000",
+            "2026-10-22T07:21:10.000000000",
+            "2026-10-22T07:49:10.000000000",
+            "2026-10-23T07:29:40.000000000",
+            "2026-10-23T11:35:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 65.1032460679094,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 24,
+            "detected_events": 2,
+            "missed_events": 22,
+            "event_recall": 0.08333333333333333,
+            "alerts": 38,
+            "false_alerts": 36,
+            "observable_powered_hours": 226.06666666666666,
+            "false_alerts_per_100_hours": 15.924506045414333,
+            "threshold": 0.10445312589865095
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 34501,
+            "positive_windows": 141,
+            "events": 6,
+            "prevalence": 0.0040868380626648505,
+            "average_precision": 0.0032524282343025226,
+            "event_macro_ap": 0.001074885809771022,
+            "roc_auc": 0.3337796918732816,
+            "brier": 0.006211971375625197
+          },
+          "alarms": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 11,
+            "false_alerts": 11,
+            "observable_powered_hours": 95.83611111111111,
+            "false_alerts_per_100_hours": 11.477928175994899,
+            "threshold": 0.2378113539107734,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_026",
+              "type": "feedrate",
+              "event_at": "2026-10-10T08:17:57",
+              "product_start": "2026-10-10T08:17:57",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T08:18:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_027",
+              "type": "feedrate",
+              "event_at": "2026-10-10T11:12:31",
+              "product_start": "2026-10-10T11:12:31",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T11:13:05",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_028",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:23:52",
+              "product_start": "2026-10-12T11:23:52",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:24:22",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_029",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:38:28",
+              "product_start": "2026-10-12T11:38:28",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:39:02",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_030",
+              "type": "feedrate",
+              "event_at": "2026-10-17T09:46:51",
+              "product_start": "2026-10-17T09:46:51",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-17T09:47:58",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_031",
+              "type": "feedrate",
+              "event_at": "2026-10-21T08:50:56",
+              "product_start": "2026-10-21T08:50:56",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-21T08:51:26",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-12T13:38:00.000000000",
+            "2026-10-13T07:22:30.000000000",
+            "2026-10-13T15:14:30.000000000",
+            "2026-10-13T15:47:30.000000000",
+            "2026-10-13T16:18:20.000000000",
+            "2026-10-14T14:53:40.000000000",
+            "2026-10-14T15:47:40.000000000",
+            "2026-10-15T11:14:00.000000000",
+            "2026-10-15T14:40:20.000000000",
+            "2026-10-19T15:26:30.000000000",
+            "2026-10-20T10:22:20.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 65.1032460679094,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 24,
+            "detected_events": 2,
+            "missed_events": 22,
+            "event_recall": 0.08333333333333333,
+            "alerts": 31,
+            "false_alerts": 29,
+            "observable_powered_hours": 226.06666666666666,
+            "false_alerts_per_100_hours": 12.828074314361546,
+            "threshold": 0.2378113539107734
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 34501,
+            "positive_windows": 141,
+            "events": 6,
+            "prevalence": 0.0040868380626648505,
+            "average_precision": 0.004407792104097391,
+            "event_macro_ap": 0.0013489493510923823,
+            "roc_auc": 0.4325452654001436,
+            "brier": 0.023484839871535428
+          },
+          "alarms": {
+            "events": 6,
+            "detected_events": 0,
+            "missed_events": 6,
+            "event_recall": 0.0,
+            "alerts": 3,
+            "false_alerts": 3,
+            "observable_powered_hours": 95.83611111111111,
+            "false_alerts_per_100_hours": 3.1303440479986087,
+            "threshold": 0.4433215543449802,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_026",
+              "type": "feedrate",
+              "event_at": "2026-10-10T08:17:57",
+              "product_start": "2026-10-10T08:17:57",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T08:18:27",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_027",
+              "type": "feedrate",
+              "event_at": "2026-10-10T11:12:31",
+              "product_start": "2026-10-10T11:12:31",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-10T11:13:05",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_028",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:23:52",
+              "product_start": "2026-10-12T11:23:52",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:24:22",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_029",
+              "type": "feedrate",
+              "event_at": "2026-10-12T11:38:28",
+              "product_start": "2026-10-12T11:38:28",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-12T11:39:02",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_030",
+              "type": "feedrate",
+              "event_at": "2026-10-17T09:46:51",
+              "product_start": "2026-10-17T09:46:51",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-17T09:47:58",
+              "failed_products": 1
+            },
+            {
+              "event_id": "feedrate_031",
+              "type": "feedrate",
+              "event_at": "2026-10-21T08:50:56",
+              "product_start": "2026-10-21T08:50:56",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-21T08:51:26",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-13T12:45:40.000000000",
+            "2026-10-13T15:53:20.000000000",
+            "2026-10-16T11:16:30.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 24,
+            "detected_events": 1,
+            "missed_events": 23,
+            "event_recall": 0.041666666666666664,
+            "alerts": 13,
+            "false_alerts": 12,
+            "observable_powered_hours": 226.06666666666666,
+            "false_alerts_per_100_hours": 5.308168681804777,
+            "threshold": 0.4433215543449802
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0040868380626648505
+    },
+    "f6": {
+      "train_end": "2026-10-27",
+      "validation_end": "2026-11-02",
+      "validation_windows": 13948,
+      "validation_events": 1,
+      "validation_first": "2026-10-27T07:20:10",
+      "validation_last": "2026-11-01T15:15:00",
+      "models": {
+        "logistic": {
+          "train_windows": 156855,
+          "train_positive_windows": 676,
+          "train_events": 31,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 44.3839675122872,
+          "model_sha256": "ec0382d8779942ecab0791f6855e6cce609908844d9aa15b706318066e08a9b2"
+        },
+        "histgb": {
+          "train_windows": 156855,
+          "train_positive_windows": 676,
+          "train_events": 31,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 17.472346175462008,
+          "model_sha256": "02f82bcb66a339c888066f906b363df7a3e63f3a6447ef21eb84c4f748519238"
+        },
+        "extra_trees": {
+          "train_windows": 156855,
+          "train_positive_windows": 676,
+          "train_events": 31,
+          "first_timestamp": "2026-08-15T10:27:10",
+          "last_timestamp": "2026-10-23T13:57:00",
+          "status": "trained",
+          "seconds": 185.18181487731636,
+          "model_sha256": "8242d4988132dfab28f9c30acfc9acd68424a5f706cb5f091b4730360aa99541"
+        }
+      },
+      "scores": {
+        "logistic": {
+          "ranking": {
+            "n": 13939,
+            "positive_windows": 30,
+            "events": 1,
+            "prevalence": 0.0021522347370686564,
+            "average_precision": 0.010480595985449532,
+            "event_macro_ap": 0.010480595985449532,
+            "roc_auc": 0.8893905624655498,
+            "brier": 0.015636692128670446
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 0,
+            "false_alerts": 0,
+            "observable_powered_hours": 38.71944444444444,
+            "false_alerts_per_100_hours": 0.0,
+            "threshold": 0.9998172638293353,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_032",
+              "type": "feedrate",
+              "event_at": "2026-10-30T07:58:22",
+              "product_start": "2026-10-30T07:58:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-30T07:59:27",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [],
+          "eta_mae_s_all_positive_windows": 78.13454987294972,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 30,
+            "detected_events": 1,
+            "missed_events": 29,
+            "event_recall": 0.03333333333333333,
+            "alerts": 6,
+            "false_alerts": 5,
+            "observable_powered_hours": 321.90277777777777,
+            "false_alerts_per_100_hours": 1.5532640117357726,
+            "threshold": 0.9998172638293353
+          }
+        },
+        "histgb": {
+          "ranking": {
+            "n": 13939,
+            "positive_windows": 30,
+            "events": 1,
+            "prevalence": 0.0021522347370686564,
+            "average_precision": 0.0036835637668888093,
+            "event_macro_ap": 0.0036835637668888093,
+            "roc_auc": 0.6969863637452969,
+            "brier": 0.0022905641917776477
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 2,
+            "false_alerts": 2,
+            "observable_powered_hours": 38.71944444444444,
+            "false_alerts_per_100_hours": 5.165363368964775,
+            "threshold": 0.10456271277453551,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_032",
+              "type": "feedrate",
+              "event_at": "2026-10-30T07:58:22",
+              "product_start": "2026-10-30T07:58:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-30T07:59:27",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-27T14:34:00.000000000",
+            "2026-10-31T08:59:50.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 78.13454987294972,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 30,
+            "detected_events": 4,
+            "missed_events": 26,
+            "event_recall": 0.13333333333333333,
+            "alerts": 60,
+            "false_alerts": 56,
+            "observable_powered_hours": 321.90277777777777,
+            "false_alerts_per_100_hours": 17.396556931440653,
+            "threshold": 0.10456271277453551
+          }
+        },
+        "extra_trees": {
+          "ranking": {
+            "n": 13939,
+            "positive_windows": 30,
+            "events": 1,
+            "prevalence": 0.0021522347370686564,
+            "average_precision": 0.0019265975918441585,
+            "event_macro_ap": 0.0019265975918441585,
+            "roc_auc": 0.2209864116758933,
+            "brier": 0.002619891326579328
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 1,
+            "false_alerts": 1,
+            "observable_powered_hours": 38.71944444444444,
+            "false_alerts_per_100_hours": 2.5826816844823877,
+            "threshold": 0.24037235043747393,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_032",
+              "type": "feedrate",
+              "event_at": "2026-10-30T07:58:22",
+              "product_start": "2026-10-30T07:58:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-30T07:59:27",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-29T11:29:10.000000000"
+          ],
+          "eta_mae_s_all_positive_windows": 78.13454987294972,
+          "eta_is_conditional_on_future_event": true,
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 30,
+            "detected_events": 2,
+            "missed_events": 28,
+            "event_recall": 0.06666666666666667,
+            "alerts": 40,
+            "false_alerts": 38,
+            "observable_powered_hours": 321.90277777777777,
+            "false_alerts_per_100_hours": 11.804806489191872,
+            "threshold": 0.24037235043747393
+          }
+        },
+        "last_product_rule": {
+          "ranking": {
+            "n": 13939,
+            "positive_windows": 30,
+            "events": 1,
+            "prevalence": 0.0021522347370686564,
+            "average_precision": 0.004997072149902946,
+            "event_macro_ap": 0.004997072149902946,
+            "roc_auc": 0.635311668703717,
+            "brier": 0.022796970345027624
+          },
+          "alarms": {
+            "events": 1,
+            "detected_events": 0,
+            "missed_events": 1,
+            "event_recall": 0.0,
+            "alerts": 1,
+            "false_alerts": 1,
+            "observable_powered_hours": 38.71944444444444,
+            "false_alerts_per_100_hours": 2.5826816844823877,
+            "threshold": 0.444921608763849,
+            "detected_before_product_start": 0
+          },
+          "event_records": [
+            {
+              "event_id": "feedrate_032",
+              "type": "feedrate",
+              "event_at": "2026-10-30T07:58:22",
+              "product_start": "2026-10-30T07:58:22",
+              "alert_at": null,
+              "lead_to_result_s": null,
+              "lead_to_product_start_s": null,
+              "first_result_at": "2026-10-30T07:59:27",
+              "failed_products": 1
+            }
+          ],
+          "alert_timestamps": [
+            "2026-10-27T08:07:20.000000000"
+          ],
+          "threshold_from_folds": [
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ],
+          "calibration_kind": "identity",
+          "oof_policy": {
+            "events": 30,
+            "detected_events": 1,
+            "missed_events": 29,
+            "event_recall": 0.03333333333333333,
+            "alerts": 15,
+            "false_alerts": 14,
+            "observable_powered_hours": 321.90277777777777,
+            "false_alerts_per_100_hours": 4.349139232860163,
+            "threshold": 0.444921608763849
+          }
+        }
+      },
+      "prevalence_baseline_ap": 0.0021522347370686564
+    }
+  },
+  "blind": {
+    "fold": "f6",
+    "rows": 13948,
+    "partition_rows": 13948,
+    "rows_equal_new_partition": true,
+    "old_v3": {
+      "selected_algorithm": "histgb",
+      "isolated_logistic": {
+        "ranking": {
+          "n": 13939,
+          "positive_windows": 30,
+          "events": 1,
+          "prevalence": 0.0021522347370686564,
+          "average_precision": 0.008263072893860423,
+          "event_macro_ap": 0.008263072893860423,
+          "roc_auc": 0.871807223140892,
+          "brier": 0.3000390483244129
+        },
+        "alarms": {
+          "events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "event_recall": 0.0,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 38.71944444444444,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 1.000001,
+          "detected_before_product_start": 0
+        },
+        "event_records": [
+          {
+            "event_id": "feedrate_032",
+            "type": "feedrate",
+            "event_at": "2026-10-30T07:58:22",
+            "product_start": "2026-10-30T07:58:22",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-30T07:59:27",
+            "failed_products": 1
+          }
+        ],
+        "alert_timestamps": [],
+        "eta_mae_s_all_positive_windows": 73.38275167737156,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "logistic",
+        "frozen_v3_threshold": 1.000001,
+        "model_sha256": "7f6d7e2485ffc7a25decd914d7ca2b3b07941cd31e9a2e7467531c2f29e771de",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_histgb": {
+        "ranking": {
+          "n": 13939,
+          "positive_windows": 30,
+          "events": 1,
+          "prevalence": 0.0021522347370686564,
+          "average_precision": 0.007329710833051537,
+          "event_macro_ap": 0.007329710833051537,
+          "roc_auc": 0.8564167086059387,
+          "brier": 0.002606497627301602
+        },
+        "alarms": {
+          "events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "event_recall": 0.0,
+          "alerts": 14,
+          "false_alerts": 14,
+          "observable_powered_hours": 38.71944444444444,
+          "false_alerts_per_100_hours": 36.157543582753426,
+          "threshold": 0.1,
+          "detected_before_product_start": 0
+        },
+        "event_records": [
+          {
+            "event_id": "feedrate_032",
+            "type": "feedrate",
+            "event_at": "2026-10-30T07:58:22",
+            "product_start": "2026-10-30T07:58:22",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-30T07:59:27",
+            "failed_products": 1
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-27T07:20:20.000000000",
+          "2026-10-27T12:29:50.000000000",
+          "2026-10-27T12:36:10.000000000",
+          "2026-10-27T14:34:00.000000000",
+          "2026-10-28T07:10:10.000000000",
+          "2026-10-28T11:27:50.000000000",
+          "2026-10-29T12:21:10.000000000",
+          "2026-10-30T11:41:50.000000000",
+          "2026-10-31T07:38:20.000000000",
+          "2026-10-31T07:43:50.000000000",
+          "2026-10-31T08:58:40.000000000",
+          "2026-10-31T11:22:20.000000000",
+          "2026-11-01T07:24:50.000000000",
+          "2026-11-01T11:14:30.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 73.38275167737156,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "histgb",
+        "frozen_v3_threshold": 0.1,
+        "model_sha256": "084a4fd32d4d52a4d1b3ea118e265c4452f7c627d0f14739d06678be35e318ea",
+        "trained_through": "2026-09-29"
+      },
+      "isolated_extra_trees": {
+        "ranking": {
+          "n": 13939,
+          "positive_windows": 30,
+          "events": 1,
+          "prevalence": 0.0021522347370686564,
+          "average_precision": 0.0016198548557079526,
+          "event_macro_ap": 0.0016198548557079526,
+          "roc_auc": 0.20923023462026982,
+          "brier": 0.005311479564561145
+        },
+        "alarms": {
+          "events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "event_recall": 0.0,
+          "alerts": 16,
+          "false_alerts": 16,
+          "observable_powered_hours": 38.71944444444444,
+          "false_alerts_per_100_hours": 41.3229069517182,
+          "threshold": 0.23831261874951262,
+          "detected_before_product_start": 0
+        },
+        "event_records": [
+          {
+            "event_id": "feedrate_032",
+            "type": "feedrate",
+            "event_at": "2026-10-30T07:58:22",
+            "product_start": "2026-10-30T07:58:22",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-30T07:59:27",
+            "failed_products": 1
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-27T07:20:20.000000000",
+          "2026-10-27T11:59:40.000000000",
+          "2026-10-27T14:34:00.000000000",
+          "2026-10-28T07:09:40.000000000",
+          "2026-10-28T11:27:40.000000000",
+          "2026-10-28T12:55:40.000000000",
+          "2026-10-28T14:29:00.000000000",
+          "2026-10-28T14:35:20.000000000",
+          "2026-10-29T07:09:00.000000000",
+          "2026-10-29T11:29:10.000000000",
+          "2026-10-30T07:13:30.000000000",
+          "2026-10-31T07:17:00.000000000",
+          "2026-10-31T07:47:20.000000000",
+          "2026-10-31T11:22:20.000000000",
+          "2026-11-01T07:24:40.000000000",
+          "2026-11-01T11:14:30.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 73.38275167737156,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "extra_trees",
+        "frozen_v3_threshold": 0.23831261874951262,
+        "model_sha256": "2a3a5ed1c08ca654512ff3b6cb71d5241ec06d38ed0692b0bfbbcadd93c90dfd",
+        "trained_through": "2026-09-29"
+      },
+      "full_refit": {
+        "ranking": {
+          "n": 13939,
+          "positive_windows": 30,
+          "events": 1,
+          "prevalence": 0.0021522347370686564,
+          "average_precision": 0.0036835637668888093,
+          "event_macro_ap": 0.0036835637668888093,
+          "roc_auc": 0.6969863637452969,
+          "brier": 0.0022905641917776477
+        },
+        "alarms": {
+          "events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "event_recall": 0.0,
+          "alerts": 2,
+          "false_alerts": 2,
+          "observable_powered_hours": 38.71944444444444,
+          "false_alerts_per_100_hours": 5.165363368964775,
+          "threshold": 0.1,
+          "detected_before_product_start": 0
+        },
+        "event_records": [
+          {
+            "event_id": "feedrate_032",
+            "type": "feedrate",
+            "event_at": "2026-10-30T07:58:22",
+            "product_start": "2026-10-30T07:58:22",
+            "alert_at": null,
+            "lead_to_result_s": null,
+            "lead_to_product_start_s": null,
+            "first_result_at": "2026-10-30T07:59:27",
+            "failed_products": 1
+          }
+        ],
+        "alert_timestamps": [
+          "2026-10-27T14:34:00.000000000",
+          "2026-10-31T08:59:50.000000000"
+        ],
+        "eta_mae_s_all_positive_windows": 78.15039467578754,
+        "eta_is_conditional_on_future_event": true,
+        "algorithm": "histgb",
+        "frozen_v3_threshold": 0.1,
+        "model_sha256": "5878f864b0ec471f2810a17ce9550027cbd771d0845087605b3245348064663d",
+        "trained_through": "2026-10-23",
+        "note": "v3 attached no validation score to this refit; frozen calibration/threshold of the same algorithm applied as declared"
+      }
+    }
+  },
+  "final": {
+    "logistic": {
+      "train_windows": 170794,
+      "train_positive_windows": 706,
+      "train_events": 32,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 44.844342549331486,
+      "model_sha256": "08982ac8c2bae26e9cefcc8fafe4721d5a66022c1a7947336192a32cf6fd1d9d",
+      "threshold": 0.9999478381851026,
+      "calibration_kind": "identity",
+      "oof_policy": {
+        "events": 31,
+        "detected_events": 1,
+        "missed_events": 30,
+        "event_recall": 0.03225806451612903,
+        "alerts": 5,
+        "false_alerts": 4,
+        "observable_powered_hours": 360.6222222222222,
+        "false_alerts_per_100_hours": 1.1091939857037219,
+        "threshold": 0.9999478381851026
+      },
+      "pooled_oof": {
+        "n": 129824,
+        "positive_windows": 676,
+        "events": 31,
+        "prevalence": 0.005207049543998028,
+        "average_precision": 0.007922208392317845,
+        "event_macro_ap": 0.003909455657291798,
+        "roc_auc": 0.46939305723830815,
+        "brier": 0.034812563530768705
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 31,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "histgb": {
+      "train_windows": 170794,
+      "train_positive_windows": 706,
+      "train_events": 32,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 11.23587420862168,
+      "model_sha256": "33a461b9febea60afbe12ff9918933eea18b6a9dc4884dc3894dc60f247216be",
+      "threshold": 0.1050049076106531,
+      "calibration_kind": "identity",
+      "oof_policy": {
+        "events": 31,
+        "detected_events": 4,
+        "missed_events": 27,
+        "event_recall": 0.12903225806451613,
+        "alerts": 61,
+        "false_alerts": 57,
+        "observable_powered_hours": 360.6222222222222,
+        "false_alerts_per_100_hours": 15.80601429627804,
+        "threshold": 0.1050049076106531
+      },
+      "pooled_oof": {
+        "n": 129824,
+        "positive_windows": 676,
+        "events": 31,
+        "prevalence": 0.005207049543998028,
+        "average_precision": 0.011628165005205002,
+        "event_macro_ap": 0.006511472627172476,
+        "roc_auc": 0.4287438825287918,
+        "brier": 0.0053603643270807326
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 31,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    },
+    "extra_trees": {
+      "train_windows": 170794,
+      "train_positive_windows": 706,
+      "train_events": 32,
+      "first_timestamp": "2026-08-15T10:27:10",
+      "last_timestamp": "2026-11-01T15:15:00",
+      "status": "trained",
+      "seconds": 138.8907436709851,
+      "model_sha256": "be29630ed0f34e4cbc42af57555ad28eb4ac381584e85b80bcc182bf0efa9772",
+      "threshold": 0.23566940634677738,
+      "calibration_kind": "identity",
+      "oof_policy": {
+        "events": 31,
+        "detected_events": 2,
+        "missed_events": 29,
+        "event_recall": 0.06451612903225806,
+        "alerts": 45,
+        "false_alerts": 43,
+        "observable_powered_hours": 360.6222222222222,
+        "false_alerts_per_100_hours": 11.923835346315013,
+        "threshold": 0.23566940634677738
+      },
+      "pooled_oof": {
+        "n": 129824,
+        "positive_windows": 676,
+        "events": 31,
+        "prevalence": 0.005207049543998028,
+        "average_precision": 0.006342709082038453,
+        "event_macro_ap": 0.0011032180746457538,
+        "roc_auc": 0.4155984897744947,
+        "brier": 0.006265781722221667
+      },
+      "oof_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "oof_events": 31,
+      "validation_metrics": null,
+      "note": "refit on all dates through 2026-11-01; out-of-fold figures describe the earlier fold models, not this refit",
+      "production_ready": false
+    }
+  },
+  "partition_counts": {
+    "0": {
+      "windows": 104661,
+      "positive_windows": 476,
+      "events": 22
+    },
+    "1": {
+      "windows": 12983,
+      "positive_windows": 30,
+      "events": 1
+    },
+    "2": {
+      "windows": 5490,
+      "positive_windows": 29,
+      "events": 2
+    },
+    "3": {
+      "windows": 34596,
+      "positive_windows": 141,
+      "events": 6
+    },
+    "4": {
+      "windows": 13948,
+      "positive_windows": 30,
+      "events": 1
+    }
+  },
+  "episodes_total": 32,
+  "finished_at": "2026-11-11T18:43:04+0000",
+  "production_ready": false
+}

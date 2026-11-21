@@ -1,0 +1,83 @@
+{
+  "name": "rbf_logistic",
+  "algorithm_family": "rbf_logistic",
+  "fold_scores": [
+    {
+      "n": 22003,
+      "positive_windows": 353,
+      "events": 12,
+      "prevalence": 0.01604326682725083,
+      "average_precision": 0.08445801189398539,
+      "event_macro_ap": 0.05073098957936814,
+      "roc_auc": 0.6918993254780863,
+      "brier": 0.01590276437467465
+    },
+    {
+      "n": 13981,
+      "positive_windows": 392,
+      "events": 20,
+      "prevalence": 0.028038051641513483,
+      "average_precision": 0.08556256152742132,
+      "event_macro_ap": 0.010021982661415638,
+      "roc_auc": 0.7495374409974455,
+      "brier": 0.02874609529901718
+    },
+    {
+      "n": 27580,
+      "positive_windows": 225,
+      "events": 8,
+      "prevalence": 0.008158085569253081,
+      "average_precision": 0.030333933388362655,
+      "event_macro_ap": 0.011113682752009236,
+      "roc_auc": 0.6842507768232499,
+      "brier": 0.018600367299540014
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.02395555166426434,
+  "pooled_oof": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.04120330072757329,
+    "event_macro_ap": 0.0035387095140586404,
+    "roc_auc": 0.679722340898258,
+    "brier": 0.01989814695476747
+  },
+  "oof_calibrated": {
+    "n": 63564,
+    "positive_windows": 970,
+    "events": 40,
+    "prevalence": 0.015260210181863949,
+    "average_precision": 0.04120330072757329,
+    "event_macro_ap": 0.0035387095140586404,
+    "roc_auc": 0.679722340898258,
+    "brier": 0.014872763929772421
+  },
+  "development_alarm_policy": {
+    "events": 40,
+    "detected_events": 4,
+    "missed_events": 36,
+    "event_recall": 0.1,
+    "alerts": 37,
+    "false_alerts": 33,
+    "observable_powered_hours": 176.56666666666666,
+    "false_alerts_per_100_hours": 18.68982442892203,
+    "threshold": 0.10950711805937388
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12983,
+    "positive_windows": 90,
+    "events": 3,
+    "prevalence": 0.006932142031887853,
+    "average_precision": 0.0428514151339138,
+    "event_macro_ap": 0.021587060359189513,
+    "roc_auc": 0.8553220093590836,
+    "brier": 0.01578809645378582
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

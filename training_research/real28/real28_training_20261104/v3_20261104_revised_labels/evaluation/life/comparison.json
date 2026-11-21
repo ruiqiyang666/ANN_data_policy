@@ -1,0 +1,1940 @@
+{
+  "task": "life",
+  "history_used_for_selection": false,
+  "historical_already_seen": true,
+  "freeze_sha256": "a777f6ea537bda901b148acfcab2c5e4a918432869ad51eae8515af9c060cfd6",
+  "algorithms": {
+    "constant": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1.7082233215057259,
+            "mean_log_interval_distance": 1.4586742639748453,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.0554455437279477,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 1.7082233215057259,
+        "macro_log_interval_distance": 1.4586742639748453,
+        "median_prediction_quantiles": [
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9088486732541357,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 11.205229171114574,
+            "mean_log_interval_distance": 1.6091379333655473,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.159056654839059,
+            "overestimate_fraction": 0.08587547012118679,
+            "model_interval_overlap_fraction": 0.9973882156289177
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 0.9509508121402181,
+            "mean_log_interval_distance": 0.7427443407701136,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.168778877061281,
+            "overestimate_fraction": 0.7405745062836625,
+            "model_interval_overlap_fraction": 0.973967684021544
+          }
+        ],
+        "macro_interval_distance": 6.0780899916273965,
+        "macro_log_interval_distance": 1.1759411370678305,
+        "median_prediction_quantiles": [
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948,
+          2.302945543727948
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8610488948992098,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 92.03529411764706,
+            "mean_log_interval_distance": 2.1589841729390895,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 103.24444444444444,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.8088235294117647
+          }
+        ],
+        "macro_interval_distance": 92.03529411764706,
+        "macro_log_interval_distance": 2.1589841729390895,
+        "median_prediction_quantiles": [
+          107.0,
+          107.0,
+          107.0,
+          107.0,
+          107.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9096258465637838,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 466.3424571667363,
+            "mean_log_interval_distance": 1.5063161651775814,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 99.38888888888889,
+            "overestimate_fraction": 0.09005432511491851,
+            "model_interval_overlap_fraction": 0.9969703301295445
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 49.59245960502693,
+            "mean_log_interval_distance": 0.8520471028647156,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 100.93333333333334,
+            "overestimate_fraction": 0.8213644524236984,
+            "model_interval_overlap_fraction": 0.9721723518850988
+          }
+        ],
+        "macro_interval_distance": 257.9674583858816,
+        "macro_log_interval_distance": 1.1791816340211485,
+        "median_prediction_quantiles": [
+          107.0,
+          107.0,
+          107.0,
+          107.0,
+          107.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8451168490892955,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "lognormal_aft": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.5167041758213264,
+            "mean_log_interval_distance": 0.7341701314281155,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.0567893165593136,
+            "overestimate_fraction": 0.5176470588235295,
+            "model_interval_overlap_fraction": 0.8352941176470589
+          }
+        ],
+        "macro_interval_distance": 0.5167041758213264,
+        "macro_log_interval_distance": 0.7341701314281155,
+        "median_prediction_quantiles": [
+          0.1005389665164857,
+          1.734373589026082,
+          8.326041139346541,
+          20.871200628541374,
+          41.31425953186826
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6781392250471855,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 9.631994750071144,
+            "mean_log_interval_distance": 1.35212752409957,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.2267049779454164,
+            "overestimate_fraction": 0.18836188884245716,
+            "model_interval_overlap_fraction": 0.6886753029669871
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 2.448266955372893,
+            "mean_log_interval_distance": 1.2190384913594183,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.6516459288715672,
+            "overestimate_fraction": 0.7163375224416517,
+            "model_interval_overlap_fraction": 0.8456014362657092
+          }
+        ],
+        "macro_interval_distance": 6.040130852722019,
+        "macro_log_interval_distance": 1.2855830077294943,
+        "median_prediction_quantiles": [
+          0.0037033118081007967,
+          1.3328323485675433,
+          6.228880164289048,
+          17.33703916855378,
+          301.5785488401346
+        ],
+        "censor_median_below_observed_lower_fraction": 0.515023454337996,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 33.773529411764706,
+            "mean_log_interval_distance": 1.2423174457219608,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 66.5111111111111,
+            "overestimate_fraction": 0.8705882352941177,
+            "model_interval_overlap_fraction": 0.6411764705882353
+          }
+        ],
+        "macro_interval_distance": 33.773529411764706,
+        "macro_log_interval_distance": 1.2423174457219608,
+        "median_prediction_quantiles": [
+          5.0,
+          85.0,
+          394.0,
+          1006.3999999999996,
+          1449.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.653380703896969,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 403.7358963643962,
+            "mean_log_interval_distance": 1.3021651122638178,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 114.13333333333334,
+            "overestimate_fraction": 0.2128081905557877,
+            "model_interval_overlap_fraction": 0.6827204346009194
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 132.22172351885098,
+            "mean_log_interval_distance": 1.362115715506904,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 41.01111111111111,
+            "overestimate_fraction": 0.7576301615798923,
+            "model_interval_overlap_fraction": 0.6741472172351886
+          }
+        ],
+        "macro_interval_distance": 267.9788099416236,
+        "macro_log_interval_distance": 1.332140413885361,
+        "median_prediction_quantiles": [
+          0.0,
+          65.0,
+          293.0,
+          796.2000000000007,
+          8876.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.48679372860584036,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "weibull_aft": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1.465972996271794,
+            "mean_log_interval_distance": 1.2378999028912434,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.250637374986712,
+            "overestimate_fraction": 0.9735294117647059,
+            "model_interval_overlap_fraction": 0.8764705882352941
+          }
+        ],
+        "macro_interval_distance": 1.465972996271794,
+        "macro_log_interval_distance": 1.2378999028912434,
+        "median_prediction_quantiles": [
+          0.23960911326994494,
+          3.156400191770844,
+          9.794765362412974,
+          22.378218770227168,
+          130.50162296901536
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5877650716109692,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 17.350165290862652,
+            "mean_log_interval_distance": 1.2184661146767524,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 3.111469770739476,
+            "overestimate_fraction": 0.1759297952361053,
+            "model_interval_overlap_fraction": 0.6838696197241956
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 2.659702518706079,
+            "mean_log_interval_distance": 1.2287195820497896,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.2164904605368734,
+            "overestimate_fraction": 0.7324955116696589,
+            "model_interval_overlap_fraction": 0.881508078994614
+          }
+        ],
+        "macro_interval_distance": 10.004933904784366,
+        "macro_log_interval_distance": 1.223592848363271,
+        "median_prediction_quantiles": [
+          0.013375062024693834,
+          1.9096411702426042,
+          6.339748647702882,
+          15.31793762663417,
+          3842.472519685856
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5280395554240798,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 90.97941176470589,
+            "mean_log_interval_distance": 2.050064548779107,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 123.57777777777778,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.6676470588235294
+          }
+        ],
+        "macro_interval_distance": 90.97941176470589,
+        "macro_log_interval_distance": 2.050064548779107,
+        "median_prediction_quantiles": [
+          13.0,
+          155.0,
+          471.0,
+          1084.0,
+          4354.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5666703674919507,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 625.6141872127038,
+            "mean_log_interval_distance": 1.1613260399139096,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 156.75555555555556,
+            "overestimate_fraction": 0.2023610530714584,
+            "model_interval_overlap_fraction": 0.6907647304638529
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 131.96858168761221,
+            "mean_log_interval_distance": 1.3339467174334037,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 63.544444444444444,
+            "overestimate_fraction": 0.7450628366247756,
+            "model_interval_overlap_fraction": 0.8797127468581688
+          }
+        ],
+        "macro_interval_distance": 378.791384450158,
+        "macro_log_interval_distance": 1.2476363786736566,
+        "median_prediction_quantiles": [
+          0.0,
+          92.0,
+          301.0,
+          713.0,
+          112542.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.48670920846891774,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "spline_aft": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.2596494424492403,
+            "mean_log_interval_distance": 0.8630851795031821,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.05910473342181794,
+            "overestimate_fraction": 0.12941176470588237,
+            "model_interval_overlap_fraction": 0.6705882352941176
+          }
+        ],
+        "macro_interval_distance": 0.2596494424492403,
+        "macro_log_interval_distance": 0.8630851795031821,
+        "median_prediction_quantiles": [
+          0.012853613650948165,
+          2.0545963443210136,
+          23.467108207382932,
+          86.44562034299608,
+          267.25684873077313
+        ],
+        "censor_median_below_observed_lower_fraction": 0.24880648384589762,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 8.972041898533032,
+            "mean_log_interval_distance": 1.1309246179175434,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.4700787038358762,
+            "overestimate_fraction": 0.3030714584203928,
+            "model_interval_overlap_fraction": 0.6255745925616382
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 19.23986476854836,
+            "mean_log_interval_distance": 1.2029874514320713,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.5678908527654047,
+            "overestimate_fraction": 0.829443447037702,
+            "model_interval_overlap_fraction": 0.6472172351885098
+          }
+        ],
+        "macro_interval_distance": 14.105953333540697,
+        "macro_log_interval_distance": 1.1669560346748074,
+        "median_prediction_quantiles": [
+          0.011490703159589806,
+          1.7868567958699502,
+          10.365465103647008,
+          33.74057418015372,
+          544.315360933926
+        ],
+        "censor_median_below_observed_lower_fraction": 0.36588767273802986,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 6.679411764705883,
+            "mean_log_interval_distance": 0.4872281845091864,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 4.8,
+            "overestimate_fraction": 0.2735294117647059,
+            "model_interval_overlap_fraction": 0.8205882352941176
+          }
+        ],
+        "macro_interval_distance": 6.679411764705883,
+        "macro_log_interval_distance": 0.4872281845091864,
+        "median_prediction_quantiles": [
+          0.0,
+          104.0,
+          1037.0,
+          3622.399999999998,
+          10459.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.24691906295103808,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 384.77037191809444,
+            "mean_log_interval_distance": 1.1049932143611731,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 122.91111111111111,
+            "overestimate_fraction": 0.3218763058921855,
+            "model_interval_overlap_fraction": 0.6019640618470539
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 657.640933572711,
+            "mean_log_interval_distance": 1.3512467871169087,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 31.433333333333334,
+            "overestimate_fraction": 0.8509874326750448,
+            "model_interval_overlap_fraction": 0.48114901256732495
+          }
+        ],
+        "macro_interval_distance": 521.2056527454027,
+        "macro_log_interval_distance": 1.228120000739041,
+        "median_prediction_quantiles": [
+          0.0,
+          86.0,
+          467.0,
+          1502.2000000000007,
+          17090.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.344165997548916,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "mlp_aft": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 35.54536071706191,
+            "mean_log_interval_distance": 4.060037553672418,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 14.855423545609908,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.0
+          }
+        ],
+        "macro_interval_distance": 35.54536071706191,
+        "macro_log_interval_distance": 4.060037553672418,
+        "median_prediction_quantiles": [
+          0.479150324936973,
+          10.919329771764348,
+          38.00119429480667,
+          89.03099374920322,
+          925.7202917725831
+        ],
+        "censor_median_below_observed_lower_fraction": 0.15710003330742756,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 21.279574637882558,
+            "mean_log_interval_distance": 1.3403256496445628,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 16.78003079928718,
+            "overestimate_fraction": 0.3997074801504388,
+            "model_interval_overlap_fraction": 0.48276222315085665
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 10.473912782197038,
+            "mean_log_interval_distance": 1.840945272682845,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 34.026502407696945,
+            "overestimate_fraction": 0.8967684021543986,
+            "model_interval_overlap_fraction": 0.35637342908438063
+          }
+        ],
+        "macro_interval_distance": 15.876743710039797,
+        "macro_log_interval_distance": 1.590635461163704,
+        "median_prediction_quantiles": [
+          0.05428407412463791,
+          2.319661714034522,
+          15.510298030054614,
+          94.997372366527,
+          1045.3384477545922
+        ],
+        "censor_median_below_observed_lower_fraction": 0.27756412965389005,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1004.8235294117648,
+            "mean_log_interval_distance": 4.108924018046446,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 342.23333333333335,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.0
+          }
+        ],
+        "macro_interval_distance": 1004.8235294117648,
+        "macro_log_interval_distance": 4.108924018046446,
+        "median_prediction_quantiles": [
+          29.0,
+          555.0,
+          1358.0,
+          2923.0,
+          16886.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.15754413234151216,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 697.4576890931885,
+            "mean_log_interval_distance": 1.2372363925591723,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 461.6777777777778,
+            "overestimate_fraction": 0.38361888842457165,
+            "model_interval_overlap_fraction": 0.4365858754701212
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 321.1077199281867,
+            "mean_log_interval_distance": 1.7091048230495474,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 818.4555555555555,
+            "overestimate_fraction": 0.8922800718132855,
+            "model_interval_overlap_fraction": 0.2612208258527828
+          }
+        ],
+        "macro_interval_distance": 509.2827045106876,
+        "macro_log_interval_distance": 1.4731706078043598,
+        "median_prediction_quantiles": [
+          1.0,
+          107.0,
+          642.0,
+          3208.0,
+          23057.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.282593077800786,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "logistic_hazard": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1.6398091646452182,
+            "mean_log_interval_distance": 1.2380465309526703,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.5121172305537427,
+            "overestimate_fraction": 0.8676470588235294,
+            "model_interval_overlap_fraction": 0.8
+          }
+        ],
+        "macro_interval_distance": 1.6398091646452182,
+        "macro_log_interval_distance": 1.2380465309526703,
+        "median_prediction_quantiles": [
+          0.07447385521853139,
+          3.9199280688405143,
+          17.084649374451995,
+          35.93144424697945,
+          530.1771588027682
+        ],
+        "censor_median_below_observed_lower_fraction": 0.2985455756633729,
+        "median_tail_extrapolation_fraction": 0.0011768481865839307,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 12.070870260391523,
+            "mean_log_interval_distance": 1.295037362840877,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 5.24003341740492,
+            "overestimate_fraction": 0.268178019222733,
+            "model_interval_overlap_fraction": 0.6179481821980777
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 9.056270446989679,
+            "mean_log_interval_distance": 1.5690759387078501,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.6995679892113582,
+            "overestimate_fraction": 0.7845601436265709,
+            "model_interval_overlap_fraction": 0.755834829443447
+          }
+        ],
+        "macro_interval_distance": 10.5635703536906,
+        "macro_log_interval_distance": 1.4320566507743635,
+        "median_prediction_quantiles": [
+          0.02054338650649901,
+          1.8689721183598291,
+          9.058153148888053,
+          28.588785608258327,
+          1001.6182072644028
+        ],
+        "censor_median_below_observed_lower_fraction": 0.37442420656721465,
+        "median_tail_extrapolation_fraction": 0.0034353256281114443,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 86.59705882352941,
+            "mean_log_interval_distance": 1.8161775395087365,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 145.61111111111111,
+            "overestimate_fraction": 0.9588235294117647,
+            "model_interval_overlap_fraction": 0.611764705882353
+          }
+        ],
+        "macro_interval_distance": 86.59705882352941,
+        "macro_log_interval_distance": 1.8161775395087365,
+        "median_prediction_quantiles": [
+          6.0,
+          185.60000000000002,
+          769.0,
+          1424.0,
+          1997574.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.29998889752414787,
+        "median_tail_extrapolation_fraction": 0.000962875789023216,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 38221.425302966985,
+            "mean_log_interval_distance": 1.247487186836598,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 199.1888888888889,
+            "overestimate_fraction": 0.28510238194734644,
+            "model_interval_overlap_fraction": 0.6325741746761387
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 14713.631956912028,
+            "mean_log_interval_distance": 1.701548229607302,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 37.611111111111114,
+            "overestimate_fraction": 0.7764811490125674,
+            "model_interval_overlap_fraction": 0.7414721723518851
+          }
+        ],
+        "macro_interval_distance": 26467.52862993951,
+        "macro_log_interval_distance": 1.47451770822195,
+        "median_prediction_quantiles": [
+          2.0,
+          78.0,
+          435.0,
+          1175.0,
+          22313395.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.347969403710434,
+        "median_tail_extrapolation_fraction": 0.013362834434772482,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "boosted_hazard": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.30662413783843856,
+            "mean_log_interval_distance": 0.4892900261993174,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.369329067624978,
+            "overestimate_fraction": 0.4176470588235294,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.30662413783843856,
+        "macro_log_interval_distance": 0.4892900261993174,
+        "median_prediction_quantiles": [
+          0.30306594412239946,
+          4.541763187550065,
+          27.358980119369697,
+          45.89280689393147,
+          55.09654035092757
+        ],
+        "censor_median_below_observed_lower_fraction": 0.05573442877761741,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 10.146538102709563,
+            "mean_log_interval_distance": 1.1920471462118838,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 5.108693329600443,
+            "overestimate_fraction": 0.2529251984956122,
+            "model_interval_overlap_fraction": 0.7726702883409946
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 3.073416562207852,
+            "mean_log_interval_distance": 1.1471592874335825,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.937704136241129,
+            "overestimate_fraction": 0.7100538599640933,
+            "model_interval_overlap_fraction": 0.9820466786355476
+          }
+        ],
+        "macro_interval_distance": 6.6099773324587074,
+        "macro_log_interval_distance": 1.169603216822733,
+        "median_prediction_quantiles": [
+          0.1681040641183004,
+          2.2752520172960615,
+          16.382388358931436,
+          45.669528992819814,
+          68.4835162684067
+        ],
+        "censor_median_below_observed_lower_fraction": 0.2843680006761611,
+        "median_tail_extrapolation_fraction": 0.006171940958979883,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 40.63529411764706,
+            "mean_log_interval_distance": 1.3449113587460255,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 26.933333333333334,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.711764705882353
+          }
+        ],
+        "macro_interval_distance": 40.63529411764706,
+        "macro_log_interval_distance": 1.3449113587460255,
+        "median_prediction_quantiles": [
+          13.0,
+          180.0,
+          1245.0,
+          1902.0,
+          7090.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.059398245808815364,
+        "median_tail_extrapolation_fraction": 0.021504225954851824,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 444.28781863769325,
+            "mean_log_interval_distance": 1.0912036444768913,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 141.73333333333332,
+            "overestimate_fraction": 0.3076681989134977,
+            "model_interval_overlap_fraction": 0.866276640200585
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 161.10771992818673,
+            "mean_log_interval_distance": 1.2421009402191583,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 103.16666666666667,
+            "overestimate_fraction": 0.90754039497307,
+            "model_interval_overlap_fraction": 0.9461400359066428
+          }
+        ],
+        "macro_interval_distance": 302.69776928294,
+        "macro_log_interval_distance": 1.166652292348025,
+        "median_prediction_quantiles": [
+          7.0,
+          164.0,
+          817.0,
+          1984.0,
+          5362.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.23919198749101975,
+        "median_tail_extrapolation_fraction": 0.01409065766106728,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "forest_hazard": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 18.434617093857035,
+            "mean_log_interval_distance": 3.444884872568752,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 16.271302456246282,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.8764705882352941
+          }
+        ],
+        "macro_interval_distance": 18.434617093857035,
+        "macro_log_interval_distance": 3.444884872568752,
+        "median_prediction_quantiles": [
+          0.9721088902637233,
+          20.43867615318221,
+          33.354112000869506,
+          35.87045429231141,
+          37.50345169475778
+        ],
+        "censor_median_below_observed_lower_fraction": 0.009437104474297768,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 10.700052790033858,
+            "mean_log_interval_distance": 1.1481726537092405,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 11.615290895672112,
+            "overestimate_fraction": 0.3771416631842875,
+            "model_interval_overlap_fraction": 0.8125783535311325
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 4.1578289157636865,
+            "mean_log_interval_distance": 1.4455569276286508,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 11.073674781890942,
+            "overestimate_fraction": 0.8913824057450629,
+            "model_interval_overlap_fraction": 0.6175942549371634
+          }
+        ],
+        "macro_interval_distance": 7.428940852898773,
+        "macro_log_interval_distance": 1.2968647906689457,
+        "median_prediction_quantiles": [
+          0.489957067351973,
+          3.6956788295297613,
+          13.658164518637424,
+          30.58559141916549,
+          37.485346743277354
+        ],
+        "censor_median_below_observed_lower_fraction": 0.40045640873938215,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1558.9705882352941,
+            "mean_log_interval_distance": 4.4926609677866445,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2154.4222222222224,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.3764705882352941
+          }
+        ],
+        "macro_interval_distance": 1558.9705882352941,
+        "macro_log_interval_distance": 4.4926609677866445,
+        "median_prediction_quantiles": [
+          102.0,
+          1085.0,
+          1322.0,
+          1903.0,
+          6755.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.013211946264016877,
+        "median_tail_extrapolation_fraction": 0.004707392746335723,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 453.0040743836189,
+            "mean_log_interval_distance": 1.1088631359973389,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 437.7111111111111,
+            "overestimate_fraction": 0.3900961136648558,
+            "model_interval_overlap_fraction": 0.8936481404095278
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 201.60143626570917,
+            "mean_log_interval_distance": 1.6459605290085504,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 503.4,
+            "overestimate_fraction": 0.8716337522441652,
+            "model_interval_overlap_fraction": 0.5439856373429084
+          }
+        ],
+        "macro_interval_distance": 327.302755324664,
+        "macro_log_interval_distance": 1.3774118325029447,
+        "median_prediction_quantiles": [
+          12.0,
+          168.0,
+          589.0,
+          1195.0,
+          2339.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.3375311668004902,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_lognormal_r001": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.2653894613949849,
+            "mean_log_interval_distance": 0.671390147693205,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.07919558194564527,
+            "overestimate_fraction": 0.11470588235294117,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.2653894613949849,
+        "macro_log_interval_distance": 0.671390147693205,
+        "median_prediction_quantiles": [
+          0.010199801567000243,
+          0.8379821788941735,
+          4.031778681160491,
+          9.242925844898718,
+          10.835363482021288
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9081825247030088,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 9.655340023731938,
+            "mean_log_interval_distance": 1.464532648139225,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 6.605963633055006,
+            "overestimate_fraction": 0.10697868783953197,
+            "model_interval_overlap_fraction": 0.8663811115754283
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 2.365044762824394,
+            "mean_log_interval_distance": 0.7546494280503512,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.06938480198831765,
+            "overestimate_fraction": 0.703770197486535,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 6.010192393278166,
+        "macro_log_interval_distance": 1.109591038094788,
+        "median_prediction_quantiles": [
+          0.0061342274466630155,
+          1.1783580416697008,
+          4.6477481896804935,
+          9.483854299460422,
+          11.876131579495206
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7353674512952711,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 8.214705882352941,
+            "mean_log_interval_distance": 0.6601541394928906,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 9.488888888888889,
+            "overestimate_fraction": 0.4852941176470588,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 8.214705882352941,
+        "macro_log_interval_distance": 0.6601541394928906,
+        "median_prediction_quantiles": [
+          0.0,
+          40.0,
+          189.0,
+          415.0,
+          475.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.90829354946153,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 406.33232344337654,
+            "mean_log_interval_distance": 1.4039201628477753,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 290.18888888888887,
+            "overestimate_fraction": 0.11857501044713749,
+            "model_interval_overlap_fraction": 0.8513372335979942
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 109.86445242369838,
+            "mean_log_interval_distance": 0.8089577217485648,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.3777777777777778,
+            "overestimate_fraction": 0.7737881508078994,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 258.0983879335375,
+        "macro_log_interval_distance": 1.10643894229817,
+        "median_prediction_quantiles": [
+          0.0,
+          55.0,
+          211.0,
+          414.0,
+          525.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6960655876262519,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_lognormal_r01": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.19750063196743375,
+            "mean_log_interval_distance": 0.44419298889253367,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.12818459932271736,
+            "overestimate_fraction": 0.27058823529411763,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.19750063196743375,
+        "macro_log_interval_distance": 0.44419298889253367,
+        "median_prediction_quantiles": [
+          0.023929238522358995,
+          1.0224082794055311,
+          3.2916209248214288,
+          6.137462971832471,
+          7.192416991700645
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9300544021316753,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 10.123623994483577,
+            "mean_log_interval_distance": 1.4737073088307695,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 4.8371677644419595,
+            "overestimate_fraction": 0.07783117425825324,
+            "model_interval_overlap_fraction": 0.9175720852486419
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 1.5791398430000219,
+            "mean_log_interval_distance": 0.6077462804793151,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.08365494117496504,
+            "overestimate_fraction": 0.7872531418312387,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 5.851381918741799,
+        "macro_log_interval_distance": 1.0407267946550423,
+        "median_prediction_quantiles": [
+          0.014968052964053492,
+          1.3360268946658838,
+          3.860740964070417,
+          6.675880602666968,
+          8.126244303708175
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7929256645395766,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 9.323529411764707,
+            "mean_log_interval_distance": 0.6761276984067219,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 13.344444444444445,
+            "overestimate_fraction": 0.6441176470588236,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 9.323529411764707,
+        "macro_log_interval_distance": 0.6761276984067219,
+        "median_prediction_quantiles": [
+          1.0,
+          49.0,
+          154.0,
+          282.0,
+          326.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9292772288220273,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 422.56498119515254,
+            "mean_log_interval_distance": 1.397427164149319,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 218.98888888888888,
+            "overestimate_fraction": 0.08462181362306728,
+            "model_interval_overlap_fraction": 0.9102590890096114
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 79.10053859964093,
+            "mean_log_interval_distance": 0.7070865924062207,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 3.7777777777777777,
+            "overestimate_fraction": 0.8581687612208259,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 250.83275989739673,
+        "macro_log_interval_distance": 1.05225687827777,
+        "median_prediction_quantiles": [
+          1.0,
+          64.0,
+          178.0,
+          301.0,
+          360.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7675273633943287,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_lognormal_r1": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.7786443438506574,
+            "mean_log_interval_distance": 0.9343601648253896,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.0220035106337673,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.7786443438506574,
+        "macro_log_interval_distance": 0.9343601648253896,
+        "median_prediction_quantiles": [
+          0.566671217923226,
+          1.791133578594946,
+          2.4625749825281233,
+          2.8969080635333393,
+          3.0488933495878907
+        ],
+        "censor_median_below_observed_lower_fraction": 0.9222826690351948,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 11.048879528933902,
+            "mean_log_interval_distance": 1.5654948508249038,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.574961859030606,
+            "overestimate_fraction": 0.05505641454241538,
+            "model_interval_overlap_fraction": 0.9951943167572085
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 0.7573924482399514,
+            "mean_log_interval_distance": 0.6150047998263368,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.9328111425664342,
+            "overestimate_fraction": 0.8931777378815081,
+            "model_interval_overlap_fraction": 0.9919210053859964
+          }
+        ],
+        "macro_interval_distance": 5.903135988586927,
+        "macro_log_interval_distance": 1.0902498253256203,
+        "median_prediction_quantiles": [
+          0.48484530919666835,
+          1.9426591424936974,
+          2.589120229552737,
+          3.012062014015905,
+          3.200785159014858
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8404682415585514,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 48.04117647058823,
+            "mean_log_interval_distance": 1.6237349983133647,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 54.53333333333333,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.9264705882352942
+          }
+        ],
+        "macro_interval_distance": 48.04117647058823,
+        "macro_log_interval_distance": 1.6237349983133647,
+        "median_prediction_quantiles": [
+          26.0,
+          83.0,
+          115.0,
+          136.0,
+          144.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.922393693793716,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 458.701316339323,
+            "mean_log_interval_distance": 1.4615125453948559,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 119.83333333333333,
+            "overestimate_fraction": 0.05369828666945257,
+            "model_interval_overlap_fraction": 0.9947764312578353
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 44.10771992818672,
+            "mean_log_interval_distance": 0.7521487952345866,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 42.63333333333333,
+            "overestimate_fraction": 0.940754039497307,
+            "model_interval_overlap_fraction": 0.9973070017953322
+          }
+        ],
+        "macro_interval_distance": 251.40451813375486,
+        "macro_log_interval_distance": 1.1068306703147213,
+        "median_prediction_quantiles": [
+          22.0,
+          90.0,
+          121.0,
+          142.0,
+          151.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8290580230739973,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_weibull_r001": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.23018486340290703,
+            "mean_log_interval_distance": 0.4767031188745726,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.3121397387162296,
+            "overestimate_fraction": 0.3764705882352941,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.23018486340290703,
+        "macro_log_interval_distance": 0.4767031188745726,
+        "median_prediction_quantiles": [
+          0.020179859918947152,
+          1.284942299508412,
+          5.031048055929901,
+          10.798832558834368,
+          11.862050202590396
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8481181303430665,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 9.336924616257807,
+            "mean_log_interval_distance": 1.300883037468376,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 7.496673977568646,
+            "overestimate_fraction": 0.13549937317175095,
+            "model_interval_overlap_fraction": 0.8394274968658587
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 2.7877351193834077,
+            "mean_log_interval_distance": 0.8039494078153291,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.07967654386178871,
+            "overestimate_fraction": 0.8402154398563735,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 6.0623298678206075,
+        "macro_log_interval_distance": 1.0524162226418525,
+        "median_prediction_quantiles": [
+          0.012993405389440719,
+          1.5780010732793281,
+          5.290777421131806,
+          10.203445331079347,
+          12.687155516421742
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6793728605840341,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 13.064705882352941,
+            "mean_log_interval_distance": 0.8113021033445701,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 22.477777777777778,
+            "overestimate_fraction": 0.6882352941176471,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 13.064705882352941,
+        "macro_log_interval_distance": 0.8113021033445701,
+        "median_prediction_quantiles": [
+          1.0,
+          61.0,
+          232.0,
+          482.0,
+          528.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8483401798601088,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 389.65837860426245,
+            "mean_log_interval_distance": 1.2318566455850393,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 335.7111111111111,
+            "overestimate_fraction": 0.14490179690764732,
+            "model_interval_overlap_fraction": 0.8433974091099039
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 134.024236983842,
+            "mean_log_interval_distance": 0.9204723052834644,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 3.611111111111111,
+            "overestimate_fraction": 0.8904847396768402,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 261.8413077940522,
+        "macro_log_interval_distance": 1.0761644754342519,
+        "median_prediction_quantiles": [
+          0.0,
+          75.0,
+          243.0,
+          456.0,
+          566.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6365211511642649,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_weibull_r01": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 0.310020690945739,
+            "mean_log_interval_distance": 0.5208955298164549,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.54805725943156,
+            "overestimate_fraction": 0.65,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 0.310020690945739,
+        "macro_log_interval_distance": 0.5208955298164549,
+        "median_prediction_quantiles": [
+          0.03869063763537593,
+          1.526529546801986,
+          4.436915632679752,
+          8.15564427173888,
+          8.759999860348724
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8816476074164539,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 9.670714704124444,
+            "mean_log_interval_distance": 1.3001718522410977,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 5.918616330449289,
+            "overestimate_fraction": 0.09203928123694108,
+            "model_interval_overlap_fraction": 0.8780819055578771
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 2.1221815497899206,
+            "mean_log_interval_distance": 0.7666174403870974,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.19483220308815632,
+            "overestimate_fraction": 0.9201077199281867,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 5.896448126957182,
+        "macro_log_interval_distance": 1.0333946463140975,
+        "median_prediction_quantiles": [
+          0.025232280002766592,
+          1.7532960155608779,
+          4.615499331516682,
+          7.803847569864069,
+          9.231215007027576
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7408612601952416,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 22.064705882352943,
+            "mean_log_interval_distance": 1.0491114519928446,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 33.355555555555554,
+            "overestimate_fraction": 0.9205882352941176,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 22.064705882352943,
+        "macro_log_interval_distance": 1.0491114519928446,
+        "median_prediction_quantiles": [
+          2.0,
+          71.0,
+          206.0,
+          375.0,
+          403.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8814255578994116,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 399.9802549101546,
+            "mean_log_interval_distance": 1.220563076336195,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 272.1666666666667,
+            "overestimate_fraction": 0.10593397409109905,
+            "model_interval_overlap_fraction": 0.8813205181780193
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 107.8213644524237,
+            "mean_log_interval_distance": 0.9069715094243045,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 9.366666666666667,
+            "overestimate_fraction": 0.9551166965888689,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 253.90080968128916,
+        "macro_log_interval_distance": 1.0637672928802497,
+        "median_prediction_quantiles": [
+          1.0,
+          83.0,
+          215.0,
+          359.0,
+          426.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6895575370832101,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "stage_weibull_r1": {
+      "development_hours": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1.5154584532855582,
+            "mean_log_interval_distance": 1.364608671655594,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.8128872578524224,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 1.5154584532855582,
+        "macro_log_interval_distance": 1.364608671655594,
+        "median_prediction_quantiles": [
+          0.9382217262476251,
+          2.534918163461738,
+          3.300321353931923,
+          3.8171687189772583,
+          3.907387500773729
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8958587765071611,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_hours": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 10.415660459802522,
+            "mean_log_interval_distance": 1.3343129337225836,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 3.3816675221754573,
+            "overestimate_fraction": 0.08201002925198496,
+            "model_interval_overlap_fraction": 0.9956122022565816
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 1.3952947596101541,
+            "mean_log_interval_distance": 0.8765286523604313,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.5086057448801966,
+            "overestimate_fraction": 0.9865350089766607,
+            "model_interval_overlap_fraction": 0.992818671454219
+          }
+        ],
+        "macro_interval_distance": 5.905477609706338,
+        "macro_log_interval_distance": 1.1054207930415074,
+        "median_prediction_quantiles": [
+          0.8265724643184433,
+          2.63883619595796,
+          3.3570442192327024,
+          3.823315251517681,
+          3.9561272536819954
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8141824789756159,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "development_pieces": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 81.45294117647059,
+            "mean_log_interval_distance": 2.0480701620552595,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 90.44444444444444,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 81.45294117647059,
+        "macro_log_interval_distance": 2.0480701620552595,
+        "median_prediction_quantiles": [
+          41.0,
+          117.0,
+          154.0,
+          179.0,
+          184.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8985233707116687,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "historical_pieces": {
+        "windows": 34349,
+        "weak_endpoints": 2,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 9572,
+            "mean_interval_distance": 429.7961763476807,
+            "mean_log_interval_distance": 1.2344314589965435,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 157.36666666666667,
+            "overestimate_fraction": 0.09433765148349352,
+            "model_interval_overlap_fraction": 0.9942540743836189
+          },
+          {
+            "endpoint": "R011",
+            "windows": 1114,
+            "mean_interval_distance": 74.95062836624776,
+            "mean_log_interval_distance": 1.0213052795034316,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 68.18888888888888,
+            "overestimate_fraction": 0.9883303411131059,
+            "model_interval_overlap_fraction": 1.0
+          }
+        ],
+        "macro_interval_distance": 252.37340235696425,
+        "macro_log_interval_distance": 1.1278683692499876,
+        "median_prediction_quantiles": [
+          36.0,
+          122.0,
+          157.0,
+          179.0,
+          186.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.7955035287157165,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    }
+  }
+}

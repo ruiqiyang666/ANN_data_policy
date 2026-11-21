@@ -1,0 +1,10 @@
+{
+  "conditional_distribution_archives_normalized": [
+    "tcn_f1.npz",
+    "tcn_f2.npz",
+    "tcn_f3.npz",
+    "tcn_oof.npz"
+  ],
+  "weights_changed": false,
+  "reason": "same float32 boundary fix verified by probability_regression.json"
+}

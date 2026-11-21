@@ -1,0 +1,21 @@
+{
+  "name": "random_forest",
+  "fit": "f1",
+  "train_windows": 40948,
+  "evaluation_windows": 22034,
+  "seconds": 8.285858899998857,
+  "metrics": {
+    "n": 21967,
+    "positive_windows": 60,
+    "events": 2,
+    "prevalence": 0.002731369781945646,
+    "average_precision": 0.0034457275952532993,
+    "event_macro_ap": 0.0017887773933816652,
+    "roc_auc": 0.5432179212123979,
+    "brier": 0.0067777600272944894
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "771c812247f8a0d362ecac7086ad67435ba95045f18ee019c217dbf5f42f3f55"
+}

@@ -1,0 +1,150 @@
+{
+  "scope": "V1 diagnosis; no new deployment model selected",
+  "life_feature_count": 2,
+  "life_features": [
+    "Voltage_mean_300s",
+    "Current_mean_300s"
+  ],
+  "life_features_missing_from_v1": [
+    "powered-time voltage slope",
+    "recipe-adjusted voltage margin",
+    "observed usage history"
+  ],
+  "original_regularization": 10.0,
+  "original_coefficients": [
+    3.124006281356346,
+    -0.005158333367131219,
+    -0.0004749312430853448
+  ],
+  "original_train_prediction_hours": {
+    "min": 22.660869261458675,
+    "p10": 22.690410068658128,
+    "median": 22.714365480219186,
+    "p90": 22.751719322260048,
+    "max": 23.857030787145465
+  },
+  "train_event_target_lower_hours": {
+    "min": 0.0011111111111111111,
+    "p10": 1.9064722222222223,
+    "median": 11.161111111111111,
+    "p90": 34.03194444444445,
+    "max": 39.7475
+  },
+  "train_cycles": [
+    {
+      "cycle": 0,
+      "start": "2026-08-15T10:33:50",
+      "end": "2026-09-15T12:24:20",
+      "windows": 78191,
+      "event_windows": 3352,
+      "event_windows_last_5_minutes": 30,
+      "weak_endpoints": [
+        "R003"
+      ]
+    },
+    {
+      "cycle": 1,
+      "start": "2026-09-15T13:43:00",
+      "end": "2026-09-20T07:48:50",
+      "windows": 14301,
+      "event_windows": 14301,
+      "event_windows_last_5_minutes": 30,
+      "weak_endpoints": [
+        "R004"
+      ]
+    },
+    {
+      "cycle": 2,
+      "start": "2026-09-20T09:02:10",
+      "end": "2026-09-29T15:35:50",
+      "windows": 11473,
+      "event_windows": 2921,
+      "event_windows_last_5_minutes": 30,
+      "weak_endpoints": [
+        "R006"
+      ]
+    }
+  ],
+  "event_type_distribution": {
+    "train": {
+      "feedrate": 27,
+      "hopper_pressure": 10,
+      "voltage": 9
+    },
+    "selection": {
+      "voltage": 2
+    }
+  },
+  "past_300s_operating_state": {
+    "fraction_powered": {
+      "min": 0.0033333333333333335,
+      "p10": 1.0,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "windows_with_unpowered_history_fraction": 0.03907393063086324,
+    "rolling_voltage_vs_powered_fraction_correlation": 0.9745301514676042,
+    "interpretation": "The V1 rolling mean mixes powered and unpowered rows. This is an observed feature property, not proof that all predictive failures have this cause."
+  },
+  "regularization_ablation_train_only": {
+    "penalty": 0.1,
+    "optimizer_success": true,
+    "coefficients": [
+      3.134112825159303,
+      -0.2664324469115606,
+      0.1798943848301375
+    ],
+    "prediction_hours": {
+      "min": 10.6674333072163,
+      "p10": 21.415150012385375,
+      "median": 22.63843150777927,
+      "p90": 24.61502177692045,
+      "max": 47.95338058202366
+    },
+    "baseline_train_event_mean_interval_distance": 12.618956605700436,
+    "ablation_train_event_mean_interval_distance": 11.838407918351166,
+    "near_failure_windows": 90,
+    "near_failure_baseline_hours": {
+      "min": 22.69239979951493,
+      "p10": 22.692796952388928,
+      "median": 22.729189878679584,
+      "p90": 22.74336144805771,
+      "max": 22.766475255674283
+    },
+    "near_failure_ablation_hours": {
+      "min": 21.57502336705199,
+      "p10": 21.594535247972136,
+      "median": 23.41958053367754,
+      "p90": 24.17460026003988,
+      "max": 25.450148744623107
+    },
+    "validation_or_test_used": false,
+    "deployment_claim": false
+  },
+  "multitask_gradient_audit": {
+    "sample_count": 1024,
+    "sampled_event_windows": 102,
+    "checkpoint": "b1_ssl_tcn",
+    "scope": "single deterministic training-only stratified batch; gradient imbalance is a diagnostic, not causal proof of generalization error",
+    "components": {
+      "future_hazard": {
+        "weighted_loss": 0.00617334945127368,
+        "encoder_gradient_norm": 0.0057419780641794205
+      },
+      "future_type_weighted": {
+        "weighted_loss": 0.0003333109198138118,
+        "encoder_gradient_norm": 0.02393483556807041
+      },
+      "last_product_weighted": {
+        "weighted_loss": 0.0004924876848235726,
+        "encoder_gradient_norm": 0.002735601272433996
+      }
+    },
+    "gradient_cosines": {
+      "future_type_weighted": 0.09404484927654266,
+      "last_product_weighted": -0.6684635877609253
+    }
+  },
+  "v1_frozen_artifacts_unchanged": true
+}

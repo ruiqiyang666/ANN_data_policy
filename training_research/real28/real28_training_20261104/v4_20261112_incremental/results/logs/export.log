@@ -1,0 +1,133 @@
+{
+ "version": "real28-v4-ca469075e6ba",
+ "files": 13,
+ "bytes": 91068823,
+ "checks": {
+  "voltage": {
+   "landmarks": 13948,
+   "max_abs_raw_risk_difference": 2.220446049250313e-16,
+   "max_abs_eta_difference_s": 1.0250561388147617e-05,
+   "alarms_reproduced": {
+    "events": true,
+    "detected_events": true,
+    "alerts": true,
+    "false_alerts": true
+   },
+   "average_precision_reproduced": true,
+   "landmarks_above_threshold": 156
+  },
+  "feedrate": {
+   "landmarks": 13948,
+   "max_abs_raw_risk_difference": 0.0,
+   "max_abs_eta_difference_s": 8.695081220366774e-06,
+   "alarms_reproduced": {
+    "events": true,
+    "detected_events": true,
+    "alerts": true,
+    "false_alerts": true
+   },
+   "average_precision_reproduced": true,
+   "landmarks_above_threshold": 14
+  },
+  "hopper_pressure": {
+   "landmarks": 13948,
+   "max_abs_raw_risk_difference": 6.938893903907228e-18,
+   "max_abs_eta_difference_s": 1.0652998270188618e-05,
+   "alarms_reproduced": {
+    "events": true,
+    "detected_events": true,
+    "alerts": true,
+    "false_alerts": true
+   },
+   "average_precision_reproduced": true,
+   "landmarks_above_threshold": 0
+  },
+  "life": {
+   "hours": {
+    "landmarks": 13826,
+    "max_relative_difference": 0.0
+   },
+   "pieces": {
+    "landmarks": 13826,
+    "max_relative_difference": 0.0
+   }
+  }
+ },
+ "segments": [
+  {
+   "name": "normal_20261029",
+   "label": "10月29日 09:30–11:00 常规生产",
+   "start": 1793266200,
+   "stop": 1793271600,
+   "rows": 5400,
+   "landmarks": 540,
+   "contents": {
+    "voltage": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.0036992784811624786
+    },
+    "feedrate": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.006124624525050185
+    },
+    "hopper_pressure": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.00016590211359650048
+    }
+   }
+  },
+  {
+   "name": "voltage_onset_20261028",
+   "label": "10月28日 07:55–08:35 低压出现前后",
+   "start": 1793174100,
+   "stop": 1793176500,
+   "rows": 2400,
+   "landmarks": 222,
+   "contents": {
+    "voltage": {
+     "episodes_starting_within_300s_of_a_landmark": 1,
+     "landmarks_above_threshold": 76,
+     "max_score": 0.18403059302169256
+    },
+    "feedrate": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.0012046676066927969
+    },
+    "hopper_pressure": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.00016590211359650048
+    }
+   }
+  },
+  {
+   "name": "voltage_events_20261101",
+   "label": "11月1日 13:05–13:40 两次低压事件",
+   "start": 1793538300,
+   "stop": 1793540400,
+   "rows": 2100,
+   "landmarks": 197,
+   "contents": {
+    "voltage": {
+     "episodes_starting_within_300s_of_a_landmark": 2,
+     "landmarks_above_threshold": 80,
+     "max_score": 0.1574218489313001
+    },
+    "feedrate": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.0009469504833689127
+    },
+    "hopper_pressure": {
+     "episodes_starting_within_300s_of_a_landmark": 0,
+     "landmarks_above_threshold": 0,
+     "max_score": 0.00016590211359650048
+    }
+   }
+  }
+ ]
+}

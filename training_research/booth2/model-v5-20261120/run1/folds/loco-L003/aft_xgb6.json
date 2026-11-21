@@ -1,0 +1,43 @@
+{
+  "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+  ],
+  "median": [
+    3.8458334999999977,
+    0.025818999999998482,
+    -1.4045722235621718,
+    0.011805608630328226,
+    1.1100457620923208,
+    9.016666666666667
+  ],
+  "spread": [
+    1.4316769999999988,
+    0.46545149999999325,
+    0.3173792001784115,
+    0.8485824595190778,
+    0.24310803312282614,
+    10.366666666666667
+  ],
+  "family": "aft_xgb6",
+  "sigma": 1.0,
+  "params": {
+    "objective": "survival:aft",
+    "aft_loss_distribution": "normal",
+    "aft_loss_distribution_scale": 1.0,
+    "eval_metric": "aft-nloglik",
+    "max_depth": 2,
+    "eta": 0.035,
+    "min_child_weight": 40,
+    "reg_lambda": 8,
+    "subsample": 1,
+    "colsample_bytree": 1,
+    "nthread": 1,
+    "seed": 20261120,
+    "tree_method": "hist"
+  }
+}

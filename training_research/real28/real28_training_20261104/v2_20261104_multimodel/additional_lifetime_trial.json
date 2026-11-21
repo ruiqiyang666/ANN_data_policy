@@ -1,0 +1,8 @@
+{
+  "added_method": "forest_hazard",
+  "algorithm": "ExtraTrees pooled discrete-time hazard with censored exposures and interval-coarsening masks",
+  "reason": "The six initial lifetime families did not beat the same-weight constant control on forward-cycle log-distance; spline AFT also extrapolated extremely. Test a random-tree hazard model whose bin probabilities stay bounded.",
+  "not_claimed_to_be_standard_random_survival_forest": true,
+  "training_labels_and_forward_folds_unchanged": true,
+  "historical_comparison_not_yet_accessed": true
+}

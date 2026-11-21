@@ -1,0 +1,20 @@
+{
+  "coefficients": [
+    3.134112825159303,
+    -0.2664324469115606,
+    0.1798943848301375
+  ],
+  "sigma": 1.306412335359607,
+  "optimizer_success": true,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "objective": 4.023302777648765,
+  "iterations": 11,
+  "penalty": 0.1,
+  "groups": 3,
+  "event_windows": 20574,
+  "interval_quantiles": [
+    0.1,
+    0.9
+  ],
+  "independent_interval_calibration": false
+}

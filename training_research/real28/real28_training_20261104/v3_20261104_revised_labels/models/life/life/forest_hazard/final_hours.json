@@ -1,0 +1,38 @@
+{
+  "name": "forest_hazard",
+  "fit": "final",
+  "task": "hours",
+  "train_windows": 17406,
+  "seconds": 8.186681099999987,
+  "metrics": {
+    "windows": 9347,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R007",
+        "windows": 340,
+        "mean_interval_distance": 18.434617093857035,
+        "mean_log_interval_distance": 3.444884872568752,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 16.271302456246282,
+        "overestimate_fraction": 1.0,
+        "model_interval_overlap_fraction": 0.8764705882352941
+      }
+    ],
+    "macro_interval_distance": 18.434617093857035,
+    "macro_log_interval_distance": 3.444884872568752,
+    "median_prediction_quantiles": [
+      0.9721088902637233,
+      20.438676153182215,
+      33.354112000869506,
+      35.87045429231141,
+      37.50345169475778
+    ],
+    "censor_median_below_observed_lower_fraction": 0.009437104474297768,
+    "median_tail_extrapolation_fraction": 0.0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

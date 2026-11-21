@@ -1,0 +1,38 @@
+{
+  "name": "stage_lognormal_r001",
+  "fit": "cycle1",
+  "task": "hours",
+  "train_windows": 13060,
+  "seconds": 0.4837396000002627,
+  "metrics": {
+    "windows": 14301,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R004",
+        "windows": 14301,
+        "mean_interval_distance": 10.190315733724802,
+        "mean_log_interval_distance": 0.7644324185009768,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 9.086292884352952,
+        "overestimate_fraction": 0.3489266484861199,
+        "model_interval_overlap_fraction": 0.9552478847633032
+      }
+    ],
+    "macro_interval_distance": 10.190315733724802,
+    "macro_log_interval_distance": 0.7644324185009768,
+    "median_prediction_quantiles": [
+      0.05348863685801666,
+      3.4751137569867887,
+      13.462000029195952,
+      23.758242583801287,
+      27.861348708405618
+    ],
+    "censor_median_below_observed_lower_fraction": null,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

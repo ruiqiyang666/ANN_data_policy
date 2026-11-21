@@ -1,0 +1,69 @@
+Waiting for: selected_model.json
+Running train_lifetime.py
+{"variant": "physical", "task": "hours", "objective": 4.0296959576894125, "selection": {"windows": 9343, "possible_cycles": 1, "event_windows": 2, "weak_endpoints": 1, "group_mean_interval_censor_nll": 0.3729835969130222, "confirmed_natural_failure_mae": null, "independent_interval_coverage": null, "prediction_median_min": 22.704521413230204, "prediction_median_max": 23.851827390000018, "per_weak_endpoint": [{"endpoint": "R007", "windows": 2, "median_distance_to_weak_interval": 22.760433040170902, "mean_distance_to_weak_interval": 22.760433040170902, "model_interval_overlap_fraction": 0.0, "mean_model_interval_width": 121.73270632072462, "mean_true_lower": 0.004166666666666667, "mean_true_upper": 0.0225, "mean_prediction": 22.7829330401709}]}}
+{"variant": "physical", "task": "pieces", "objective": 3.3269133053924125, "selection": {"windows": 9343, "possible_cycles": 1, "event_windows": 2, "weak_endpoints": 1, "group_mean_interval_censor_nll": 0.37567802601683603, "confirmed_natural_failure_mae": null, "independent_interval_coverage": null, "prediction_median_min": 1016.0, "prediction_median_max": 1068.0, "per_weak_endpoint": [{"endpoint": "R007", "windows": 2, "median_distance_to_weak_interval": 1019.0, "mean_distance_to_weak_interval": 1019.0, "model_interval_overlap_fraction": 0.0, "mean_model_interval_width": 5272.0, "mean_true_lower": 0.0, "mean_true_upper": 1.0, "mean_prediction": 1020.0}]}}
+{"variant": "frozen_tcn", "task": "hours", "objective": 4.0293653980049395, "selection": {"windows": 9343, "possible_cycles": 1, "event_windows": 2, "weak_endpoints": 1, "group_mean_interval_censor_nll": 0.375515261513646, "confirmed_natural_failure_mae": null, "independent_interval_coverage": null, "prediction_median_min": 22.453015448460178, "prediction_median_max": 24.610677169799807, "per_weak_endpoint": [{"endpoint": "R007", "windows": 2, "median_distance_to_weak_interval": 22.611891805649194, "mean_distance_to_weak_interval": 22.611891805649194, "model_interval_overlap_fraction": 0.0, "mean_model_interval_width": 120.57575021739981, "mean_true_lower": 0.004166666666666667, "mean_true_upper": 0.0225, "mean_prediction": 22.634391805649194}]}}
+{"variant": "frozen_tcn", "task": "pieces", "objective": 3.3265716954752445, "selection": {"windows": 9343, "possible_cycles": 1, "event_windows": 2, "weak_endpoints": 1, "group_mean_interval_censor_nll": 0.37830324249539055, "confirmed_natural_failure_mae": null, "independent_interval_coverage": null, "prediction_median_min": 1005.0, "prediction_median_max": 1102.0, "per_weak_endpoint": [{"endpoint": "R007", "windows": 2, "median_distance_to_weak_interval": 1012.0, "mean_distance_to_weak_interval": 1012.0, "model_interval_overlap_fraction": 0.0, "mean_model_interval_width": 5220.5, "mean_true_lower": 0.0, "mean_true_upper": 1.0, "mean_prediction": 1013.0}]}}
+Lifetime experiments fitted. Natural-failure reliability remains unverified.
+Waiting for: b1_ssl_tcn_seed43_metrics.json, b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed43_metrics.json, b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed43_metrics.json, b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed43_metrics.json, b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Waiting for: b1_ssl_tcn_seed44_metrics.json
+Running evaluate_run.py
+{"stage": "heldout_evaluation_started", "updated_at": "2026-11-04T19:15:10+0800", "selected": "hist_tree", "freeze_sha256": "cfe090d56e00258573223396a2f31641d97704b2629fb454137d628561029e96"}
+{"model": "logistic", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.03255918012153247, "roc_auc": 0.7378453881698248, "brier": 0.0068620323741923235, "log_loss": 0.03718613642751023}, "alarm_score": {"threshold": 0.2936804734857744, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 2, "events_alerted_before_product_start": 2, "event_recall_observable": 0.2222222222222222, "event_recall_all": 0.2222222222222222, "alert_episodes": 13, "false_alert_episodes": 11, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 11.454356126345019, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"model": "hist_tree", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.029819870351083026, "roc_auc": 0.5486205268761749, "brier": 0.006430551287250181, "log_loss": 0.041510556297884665}, "alarm_score": {"threshold": 0.14672265371676207, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 1, "events_alerted_before_product_start": 1, "event_recall_observable": 0.1111111111111111, "event_recall_all": 0.1111111111111111, "alert_episodes": 8, "false_alert_episodes": 7, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 7.289135716765012, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"model": "b0_tcn", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.031597669861963745, "roc_auc": 0.5153454947470428, "brier": 0.006402679719030857, "log_loss": 0.03924935912669564}, "alarm_score": {"threshold": 0.1147085651755333, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 2, "events_alerted_before_product_start": 2, "event_recall_observable": 0.2222222222222222, "event_recall_all": 0.2222222222222222, "alert_episodes": 24, "false_alert_episodes": 22, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 22.908712252690037, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"model": "b1_ssl_tcn", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.020991472244901756, "roc_auc": 0.6891992567668735, "brier": 0.006795657332986593, "log_loss": 0.03942421198393662}, "alarm_score": {"threshold": 0.29533734917640686, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 0, "events_alerted_before_product_start": 0, "event_recall_observable": 0.0, "event_recall_all": 0.0, "alert_episodes": 8, "false_alert_episodes": 8, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 8.330440819160014, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"model": "b1_ssl_tcn_seed43", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.03159033625922335, "roc_auc": 0.6778079717679548, "brier": 0.006653754971921444, "log_loss": 0.04313812761269673}, "alarm_score": {"threshold": 0.13624265789985657, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 0, "events_alerted_before_product_start": 0, "event_recall_observable": 0.0, "event_recall_all": 0.0, "alert_episodes": 7, "false_alert_episodes": 7, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 7.289135716765012, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"model": "b1_ssl_tcn_seed44", "window_score": {"n": 34572, "positives": 224, "prevalence": 0.006479231748235567, "average_precision": 0.028632372431186753, "roc_auc": 0.7530041778269477, "brier": 0.0065373703837394714, "log_loss": 0.03894522995324339}, "alarm_score": {"threshold": 0.1235988661646843, "threshold_status": "exploratory; selection-negative 99.5 percentile, no independent calibration", "alert_policy": "rising edge; minimum 300 natural seconds between emitted alerts; >10 s landmark gap resets high state", "total_events_in_retained_time_partition": 9, "events_with_observable_prediction_windows": 9, "events_alerted": 2, "events_alerted_before_product_start": 2, "event_recall_observable": 0.2222222222222222, "event_recall_all": 0.2222222222222222, "alert_episodes": 16, "false_alert_episodes": 14, "observable_powered_landmark_hours": 96.03333333333333, "false_alerts_per_100_observable_powered_hours": 14.578271433530023, "exposure_method": "10 seconds per eligible powered landmark; excludes warm-up, gaps and censored horizons"}}
+{"stage": "first_training_run_complete", "updated_at": "2026-11-04T19:15:29+0800", "selected": "hist_tree", "test_evaluated": true, "production_ready": false, "results": "D:\\Learning\\GC\\IPP\\Phase2\\real28_training_20261104\\evaluation\\20261104_v1\\final_metrics.json"}
+Running verify_run.py
+{
+  "mode": "final",
+  "passed": true,
+  "checks": [
+    "28-field order and train-only normalization contract",
+    "No context, possible-cycle or supervised event crosses partitions",
+    "Completed-product inputs are available by prediction time and stay within context partition",
+    "300-second event targets and censor masks are consistent",
+    "Lifetime intervals, right censoring and endpoint partition isolation",
+    "Ambiguous maintenance truncates lifetime follow-up",
+    "Other-device Voltage Sample absent from source manifest",
+    "Test used frozen checkpoints, targets, normalization and selection",
+    "All saved held-out predictions are finite and in valid ranges",
+    "Untrained health scores and uncalibrated coverage are not published as valid"
+  ],
+  "window_counts": {
+    "0": 104571,
+    "1": 9445,
+    "3": 34572
+  },
+  "effective_lifetime_counts": {
+    "0": {
+      "windows": 103965,
+      "weak_endpoints": 3
+    },
+    "1": {
+      "windows": 9343,
+      "weak_endpoints": 1
+    },
+    "2": {
+      "windows": 0,
+      "weak_endpoints": 0
+    },
+    "3": {
+      "windows": 34325,
+      "weak_endpoints": 1
+    }
+  }
+}
+Running write_report.py
+D:\Learning\GC\IPP\Phase2\real28_training_20261104\����ѵ�����.md
+Completed first run and verified report.

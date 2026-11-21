@@ -1,0 +1,458 @@
+[
+  {
+    "source": "real28_training_20261104/data/20261104_v1/daily.parquet",
+    "bytes": 3686,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "1e1074248cb8a550d640d9f184ffe5918ee0213e1907f6bf15643f8b4e0a707f"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/events.parquet",
+    "bytes": 13112,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "a4fcb5151f5180b46c499072a73fe9fc372161849a9e0608c228aca1d035dd51"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_block_start.npy",
+    "bytes": 40980208,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "9d8a4c68a7f023c6662732d82021c89324551950a27a654b23734f59f51b5b77"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_group.npy",
+    "bytes": 10245148,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b6e026648b42e1013e52ef962b77e77c09d62c113e4f6c4548d444612aee141e"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_observed.npy",
+    "bytes": 143430408,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "51b2be7cf69376e34c3fde92004001528f1dd8c901bf3b088dd816ba87645ce4"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_part.npy",
+    "bytes": 5122638,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "d346ef437368474095ad2b5a325fd62e5ce9c35ad40e7287ff3c1e6651274f87"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_t.npy",
+    "bytes": 40980208,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b0c5a418f2b93dc00e8b27416cef2da098cb24c642a366f8aad4bd87bdc4814b"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/grid_values.npy",
+    "bytes": 573721248,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "19eb5cdd908e55d5c07bc160e30b6e721595d251b48cb48ed88733f15f2fe211"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/natural_endpoint_evidence.parquet",
+    "bytes": 8383,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "d509f2260f65126064efef40106a4f5b8540ccca568f9067935ff884e63a6104"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/power_states.parquet",
+    "bytes": 17668,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "1df52bbe54f8848e2619eb392e0307f83bac5295821df26a89b37dd5f30fb391"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/products.parquet",
+    "bytes": 1629081,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "8349e3ba98c7f26c846db798a8588b49887d36dea4226ad85ddcf07703b7dbdb"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/raw_values.npy",
+    "bytes": 605043056,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cc3b45226d912e3e70b7042cda246e625a6a0b2cffc6aa03ec995deb773286d2"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/replacement_candidates.parquet",
+    "bytes": 26484,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "f052b56e9d848511441daf6ebac33d34767aaaab3b62751061807dcd78a5e48b"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/rul_samples.parquet",
+    "bytes": 3164805,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "c76c56fc4519453b83417eb1f4ad9db3de11e4af4712600679f69be47b29f16f"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/samples.parquet",
+    "bytes": 3225845,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "14cc6fe778071e717c9aaca687717075b2a5c0a55cdc3beff25be65832bdd88d"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/sample_stats.npy",
+    "bytes": 64190144,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "ef3e725f64cc70099998abbbde4da68315eabfa48a4160165d46a63541c84260"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/sources.parquet",
+    "bytes": 134198,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6a6946c020f959c02e6fa62628155e69437d225551f5c7792eb7dffef42bf241"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/stop_audit.parquet",
+    "bytes": 74590,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "32d926b6c786dc2f5d357a64157d014f24709a03b6330361ad421773eb6ddbc7"
+  },
+  {
+    "source": "real28_training_20261104/data/20261104_v1/timestamps.npy",
+    "bytes": 43217480,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5735bb138506485cee45ea965c019409b9d775acd9c18c2d8149774709a526ad"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/features.npy",
+    "bytes": 167824848,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "a76da7fd65f07e8814430dc6a98545181cb76067748e2850ab39737b2ba81217"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_block.npy",
+    "bytes": 43258744,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6078baeece7abdccb56456439e963223547af948b3287da7ba63c8d9e4a96420"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_operation_start.npy",
+    "bytes": 43258744,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "73dc0db2d60ef2cbad81028744704ec4fe0b4e5d9d413311bd05a8ca7f15b7f0"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_part.npy",
+    "bytes": 5407455,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b9aa9cc028ec41db97fbe9c1381bec9a69d1cdda4a7f7bf035723521a7644e55"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_seen.npy",
+    "bytes": 151405284,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "a56f992c28f398f3a1885897051bce1b926d7a9847841467caf007d3ef46453e"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_t.npy",
+    "bytes": 43258744,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "1793d9c3365817a047355bb76b1edd8418804e5a8c0838a8feee7525d4fcec28"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/grid_x.npy",
+    "bytes": 605620752,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "64c092b3bc028efff2ba5192b170c480f852ec31b7d80387a2f81eaf07be51af"
+  },
+  {
+    "source": "real28_training_20261104/v2_20261104_multimodel/data/samples.parquet",
+    "bytes": 3266148,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "92ba1b6e79e23ef33674a8a35359f31dc827c330f2737ac15bf6b2c6e39b1a38"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/features.npy",
+    "bytes": 184228768,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "f826df7060e4683919574ed10b32395f617ee2cf7ae82f74590188749a2e7b11"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/natural_endpoint_evidence.parquet",
+    "bytes": 9370,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "4c752b0111f8337a59933bf0da6c3735fe3af4619ba216b3e19e907de486b089"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/feedrate/events.parquet",
+    "bytes": 7040,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "176da663df0409ad0034c96dfe694d3c252038bd12700884796d17d37cd82b68"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/feedrate/samples.parquet",
+    "bytes": 3365478,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "adb1c73f6308826a764b023970d41e7df06541074709cb87609bedf9ee4dcdf1"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/hopper_pressure/events.parquet",
+    "bytes": 6013,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "9cd033994354c060bfc73856fce26454a09fdd313dea7f329d8a69258ec4f5a2"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/hopper_pressure/samples.parquet",
+    "bytes": 3364071,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "2780176f77da90662f49561579a8cb27ad5cd4838b6a3f4e196d24e3a85a8c1e"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/life/samples.parquet",
+    "bytes": 3366673,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "0f5bef1d1ae7b604477fce184dc400709a7df3c15d0ab90ed00253ed89bee614"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/voltage/events.parquet",
+    "bytes": 6175,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "88841a1a1a8da5c11881938f60a9734acaa46651f2efb1e1035976a54d221be9"
+  },
+  {
+    "source": "real28_training_20261104/v3_20261104_revised_labels/data/voltage/samples.parquet",
+    "bytes": 3364347,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cc78898ec7c43193b10f7dc4cda389d594cb280f67db4a27f34e295bc2e22adc"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/features.npy",
+    "bytes": 16291392,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6071a293158519b95607db4c84ef26183bbab27b944c64da7dad010e12999ff3"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/landmarks.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "27730f5ce63de354b423ebf5516b6e89d9b54fff812f61e47fbcb444807cba42"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/landmark_block.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "ae97b1725516d634eecd1ece422e88265584dd49164b7683fbdd3273ee2cb1a7"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/raw.npy",
+    "bytes": 52416016,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cf98f2c273d408510ddf42a7da4b0d570204ebddc04fec7a8fce546227e94d7e"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/raw_block.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5c7c19e64db852dc5d272dfaa08ed49f83d9659d0506b062f270ea05d1a1e67e"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/raw_seen.npy",
+    "bytes": 13104100,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b7b51a20b9c2814c3a07786c24b8e97095643fdc0bee6201a3b29b642091bedc"
+  },
+  {
+    "source": "real28_training_20261104/v4_20261112_incremental/results/v4/bundle/replay/raw_t.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "961cdea67255e5ed637086d92be96b26731121ce1dff7e20dc33d2fba14d4b6f"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/features.npy",
+    "bytes": 16291392,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6071a293158519b95607db4c84ef26183bbab27b944c64da7dad010e12999ff3"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/landmarks.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "27730f5ce63de354b423ebf5516b6e89d9b54fff812f61e47fbcb444807cba42"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/landmark_block.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "ae97b1725516d634eecd1ece422e88265584dd49164b7683fbdd3273ee2cb1a7"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/raw.npy",
+    "bytes": 52416016,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cf98f2c273d408510ddf42a7da4b0d570204ebddc04fec7a8fce546227e94d7e"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/raw_block.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5c7c19e64db852dc5d272dfaa08ed49f83d9659d0506b062f270ea05d1a1e67e"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/raw_seen.npy",
+    "bytes": 13104100,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b7b51a20b9c2814c3a07786c24b8e97095643fdc0bee6201a3b29b642091bedc"
+  },
+  {
+    "source": "real28_training_20261112_neural/real28-neural-f30c545a3d5b/replay/raw_t.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "961cdea67255e5ed637086d92be96b26731121ce1dff7e20dc33d2fba14d4b6f"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/features.npy",
+    "bytes": 81399216,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "85527404541a7d0a6c3fdf8e6245fbcd9e7dfe898b7db1feefc3facdca2f79f3"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/landmarks.npy",
+    "bytes": 557656,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "4e3aaa6c7b2d551d8085c3d460f3dbf9d61fac78f7000142229a45aaae994913"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/landmark_block.npy",
+    "bytes": 557656,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6aa668a71da7a551f9b0ef2584365af648e27103540fe4f4e5dfb9620e899f1c"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/raw.npy",
+    "bytes": 52416016,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cf98f2c273d408510ddf42a7da4b0d570204ebddc04fec7a8fce546227e94d7e"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/raw_block.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5c7c19e64db852dc5d272dfaa08ed49f83d9659d0506b062f270ea05d1a1e67e"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/raw_seen.npy",
+    "bytes": 13104100,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b7b51a20b9c2814c3a07786c24b8e97095643fdc0bee6201a3b29b642091bedc"
+  },
+  {
+    "source": ".phase2-release/.tmp/electrode-gru-20261118/real28-2s/replay/raw_t.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "961cdea67255e5ed637086d92be96b26731121ce1dff7e20dc33d2fba14d4b6f"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/features.npy",
+    "bytes": 16291392,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6071a293158519b95607db4c84ef26183bbab27b944c64da7dad010e12999ff3"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/landmarks.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "27730f5ce63de354b423ebf5516b6e89d9b54fff812f61e47fbcb444807cba42"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/landmark_block.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "ae97b1725516d634eecd1ece422e88265584dd49164b7683fbdd3273ee2cb1a7"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/raw.npy",
+    "bytes": 52416016,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cf98f2c273d408510ddf42a7da4b0d570204ebddc04fec7a8fce546227e94d7e"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/raw_block.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5c7c19e64db852dc5d272dfaa08ed49f83d9659d0506b062f270ea05d1a1e67e"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/raw_seen.npy",
+    "bytes": 13104100,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b7b51a20b9c2814c3a07786c24b8e97095643fdc0bee6201a3b29b642091bedc"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-neural-3head-bba87e7a561b/replay/raw_t.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "961cdea67255e5ed637086d92be96b26731121ce1dff7e20dc33d2fba14d4b6f"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/features.npy",
+    "bytes": 16291392,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "6071a293158519b95607db4c84ef26183bbab27b944c64da7dad010e12999ff3"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/landmarks.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "27730f5ce63de354b423ebf5516b6e89d9b54fff812f61e47fbcb444807cba42"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/landmark_block.npy",
+    "bytes": 111712,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "ae97b1725516d634eecd1ece422e88265584dd49164b7683fbdd3273ee2cb1a7"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/raw.npy",
+    "bytes": 52416016,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "cf98f2c273d408510ddf42a7da4b0d570204ebddc04fec7a8fce546227e94d7e"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/raw_block.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "5c7c19e64db852dc5d272dfaa08ed49f83d9659d0506b062f270ea05d1a1e67e"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/raw_seen.npy",
+    "bytes": 13104100,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "b7b51a20b9c2814c3a07786c24b8e97095643fdc0bee6201a3b29b642091bedc"
+  },
+  {
+    "source": ".phase2-release/.runtime/demo/real28/real28-v4-ca469075e6ba/replay/raw_t.npy",
+    "bytes": 3744120,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "961cdea67255e5ed637086d92be96b26731121ce1dff7e20dc33d2fba14d4b6f"
+  },
+  {
+    "source": "simulation/pipeline/results/neural/flat.npy",
+    "bytes": 117561792,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "a274e7ec78ea7fdcf090ce8bb456a5671bc5e7a5ec405b91df05ae8a52d7dde4"
+  },
+  {
+    "source": "simulation/pipeline/results/neural/history.npy",
+    "bytes": 81491736,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "a7ebec497db6f919c5b5d183fdcd97a78d91ef2283661dbd7ffcf0d940a6628a"
+  },
+  {
+    "source": "simulation/pipeline/results/neural/sequence.npy",
+    "bytes": 1202335328,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "7bb015b17aa7248bc2d14af98b0342ca918fed44b96495913fab69714894da6a"
+  },
+  {
+    "source": "simulation/pipeline/results/neural/split.npy",
+    "bytes": 334110,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "d41447da6f0d3a1285a72d3e62de4a575e99169530f62f9e0c04f82c0ffcff55"
+  },
+  {
+    "source": "simulation/pipeline/results/neural/targets.npy",
+    "bytes": 42749824,
+    "reason": "input cache, duplicate transport/archive, UI or non-training material",
+    "sha256": "4f514d5b6994c2d8d8696c479c413726b0adc7ad501a897409c4ae0e058bdbce"
+  }
+]

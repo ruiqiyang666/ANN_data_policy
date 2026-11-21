@@ -1,0 +1,102 @@
+{
+  "name": "b1_ssl_tcn_seed43",
+  "seed": 43,
+  "pretrained": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 0.04908340103637012,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.05025062967005043,
+        "roc_auc": 0.9428112235837328,
+        "brier": 0.006848776247352362,
+        "log_loss": 0.04793316328031219
+      },
+      "seconds": 28.338807999998608,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 2,
+      "loss": 0.009309457607608347,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.045954996945183624,
+        "roc_auc": 0.9390676611614278,
+        "brier": 0.007258692290633917,
+        "log_loss": 0.03925439459175568
+      },
+      "seconds": 30.369320699999662,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 3,
+      "loss": 0.007531537664108061,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.02227216889581889,
+        "roc_auc": 0.8681548570413781,
+        "brier": 0.011839592829346657,
+        "log_loss": 0.049154739505006
+      },
+      "seconds": 28.79950909999934,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 4,
+      "loss": 0.005882413184664678,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.014076147578797268,
+        "roc_auc": 0.7916853134434382,
+        "brier": 0.012946931645274162,
+        "log_loss": 0.05568463712131752
+      },
+      "seconds": 28.26512890000049,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 5,
+      "loss": 0.0055460082056431725,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.015890350138983378,
+        "roc_auc": 0.8007156810513231,
+        "brier": 0.019220205023884773,
+        "log_loss": 0.09811339854669805
+      },
+      "seconds": 27.813385400000698,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 6,
+      "loss": 0.004367395530704459,
+      "selection": {
+        "n": 9445,
+        "positives": 60,
+        "prevalence": 0.006352567496029645,
+        "average_precision": 0.01906490299518382,
+        "roc_auc": 0.8355372047593679,
+        "brier": 0.01745106838643551,
+        "log_loss": 0.09086376952118701
+      },
+      "seconds": 28.004597099999955,
+      "peak_gpu_MiB": 61.7451171875
+    }
+  ],
+  "best_selection_AP": 0.05025062967005043,
+  "parameter_count": 46028,
+  "checkpoint_sha256": "670cb5ccddeab6b4efaeb2de14bcca8eb60809b4bcad84a5819a6b08b3beccbf",
+  "probability_calibration": "not independently calibrated; no independent calibration group remained",
+  "initial_pretraining_seed": 42
+}

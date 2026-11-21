@@ -1,0 +1,149 @@
+{
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.11837460911508811,
+      "validation_reconstruction_loss": 0.1336558465845883,
+      "seconds": 20.000484300000608,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.07602927734589447,
+      "validation_reconstruction_loss": 0.12492779735475779,
+      "seconds": 19.561156599998867,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.07008491711610038,
+      "validation_reconstruction_loss": 0.11052225111052394,
+      "seconds": 19.250705099999323,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.06589472448736754,
+      "validation_reconstruction_loss": 0.10265508270822465,
+      "seconds": 19.471876199999315,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.06399930863762679,
+      "validation_reconstruction_loss": 0.09393511712551117,
+      "seconds": 19.78560639999887,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.06176662669800546,
+      "validation_reconstruction_loss": 0.09247427759692073,
+      "seconds": 17.71900950000054,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.060260983523102885,
+      "validation_reconstruction_loss": 0.09281424921937287,
+      "seconds": 19.257203499999378,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.059338604140540825,
+      "validation_reconstruction_loss": 0.08630880806595087,
+      "seconds": 20.195128999999724,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.0585323164553341,
+      "validation_reconstruction_loss": 0.08521202648989856,
+      "seconds": 20.33550389999982,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.05775123954315305,
+      "validation_reconstruction_loss": 0.08150049857795238,
+      "seconds": 20.499440200001118,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.05695541277932732,
+      "validation_reconstruction_loss": 0.07989432360045612,
+      "seconds": 20.055790000000343,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0562847026335278,
+      "validation_reconstruction_loss": 0.07815372780896723,
+      "seconds": 18.83935779999956,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.05570558561821994,
+      "validation_reconstruction_loss": 0.0740773614961654,
+      "seconds": 18.31011160000162,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.05589890733371367,
+      "validation_reconstruction_loss": 0.07362719508819282,
+      "seconds": 20.437118499999997,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.053593770335124725,
+      "validation_reconstruction_loss": 0.07312631048262119,
+      "seconds": 20.055341499999486,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.054701530802286354,
+      "validation_reconstruction_loss": 0.07341135875321925,
+      "seconds": 20.00939760000074,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.053417424648575,
+      "validation_reconstruction_loss": 0.07343963766470551,
+      "seconds": 20.054852400000527,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.05381749360062911,
+      "validation_reconstruction_loss": 0.07073738449253142,
+      "seconds": 19.233848500000022,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.05352342145962884,
+      "validation_reconstruction_loss": 0.07063783588819206,
+      "seconds": 19.965278100000432,
+      "peak_gpu_MiB": 61.7451171875
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.053391671787603234,
+      "validation_reconstruction_loss": 0.06918018870055676,
+      "seconds": 20.328359799999816,
+      "peak_gpu_MiB": 61.7451171875
+    }
+  ],
+  "train_windows": 94113,
+  "monitor_windows": 2048,
+  "monitor_partition": "internal training time block",
+  "best_loss": 0.06918018870055676,
+  "parameters": 46028
+}

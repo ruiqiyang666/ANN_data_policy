@@ -1,0 +1,26 @@
+{
+  "voltage": {
+    "train_windows": 170838,
+    "train_events": 18,
+    "trained_through": "2026-11-01",
+    "validation_metrics": null,
+    "deployed": false,
+    "epochs": 30
+  },
+  "feedrate": {
+    "train_windows": 170794,
+    "train_events": 32,
+    "trained_through": "2026-11-01",
+    "validation_metrics": null,
+    "deployed": false,
+    "epochs": 30
+  },
+  "hopper_pressure": {
+    "train_windows": 170929,
+    "train_events": 10,
+    "trained_through": "2026-11-01",
+    "validation_metrics": null,
+    "deployed": false,
+    "epochs": 30
+  }
+}

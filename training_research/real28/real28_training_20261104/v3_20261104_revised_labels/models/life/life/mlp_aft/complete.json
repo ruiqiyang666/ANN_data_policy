@@ -1,0 +1,240 @@
+{
+  "name": "mlp_aft",
+  "status": "trained",
+  "real_algorithm_family": "mlp_aft",
+  "constant_is_control_not_counted": false,
+  "forward_cycle_macro_log_distance": 1.8146825709114374,
+  "forward_cycle_macro_hour_distance": 126.90938705211204,
+  "fits": [
+    {
+      "name": "mlp_aft",
+      "fit": "cycle1",
+      "task": "hours",
+      "train_windows": 13060,
+      "seconds": 5.534680100001424,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 248.1324095615785,
+            "mean_log_interval_distance": 2.4560030412811704,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 633.4465194408049,
+            "overestimate_fraction": 0.45954828333682957,
+            "model_interval_overlap_fraction": 0.10509754562617998
+          }
+        ],
+        "macro_interval_distance": 248.1324095615785,
+        "macro_log_interval_distance": 2.4560030412811704,
+        "median_prediction_quantiles": [
+          0.023353608103292216,
+          0.34234819308375497,
+          7.9002566517277195,
+          951.4525225897737,
+          1089.269199242906
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "fit": "cycle1",
+      "task": "pieces",
+      "train_windows": 13060,
+      "seconds": 1.4251775000011548,
+      "metrics": {
+        "windows": 14301,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R004",
+            "windows": 14301,
+            "mean_interval_distance": 8706.233410251032,
+            "mean_log_interval_distance": 2.309165637338224,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 24394.133333333335,
+            "overestimate_fraction": 0.44912943150828616,
+            "model_interval_overlap_fraction": 0.10237046360394378
+          }
+        ],
+        "macro_interval_distance": 8706.233410251032,
+        "macro_log_interval_distance": 2.309165637338224,
+        "median_prediction_quantiles": [
+          1.0,
+          18.0,
+          409.0,
+          32957.0,
+          36810.0
+        ],
+        "censor_median_below_observed_lower_fraction": null,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "fit": "cycle2",
+      "task": "hours",
+      "train_windows": 15467,
+      "seconds": 1.2503013999994437,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 5.686364542645588,
+            "mean_log_interval_distance": 1.1733621005417043,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.61352207572301,
+            "overestimate_fraction": 0.5864429989729545,
+            "model_interval_overlap_fraction": 0.6193084560082164
+          }
+        ],
+        "macro_interval_distance": 5.686364542645588,
+        "macro_log_interval_distance": 1.1733621005417043,
+        "median_prediction_quantiles": [
+          0.17816784382972148,
+          2.582914935191053,
+          10.226787856148492,
+          58.49521353818356,
+          379.46619905410444
+        ],
+        "censor_median_below_observed_lower_fraction": 0.31400233372228703,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "fit": "cycle2",
+      "task": "pieces",
+      "train_windows": 15467,
+      "seconds": 1.064337499999965,
+      "metrics": {
+        "windows": 11491,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R006",
+            "windows": 2921,
+            "mean_interval_distance": 221.83533036631292,
+            "mean_log_interval_distance": 0.9410884463631192,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 70.75555555555556,
+            "overestimate_fraction": 0.7374186922286888,
+            "model_interval_overlap_fraction": 0.5819924683327627
+          }
+        ],
+        "macro_interval_distance": 221.83533036631292,
+        "macro_log_interval_distance": 0.9410884463631192,
+        "median_prediction_quantiles": [
+          7.0,
+          182.0,
+          548.0,
+          4116.0,
+          16524.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.2658109684947491,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "fit": "final",
+      "task": "hours",
+      "train_windows": 17406,
+      "seconds": 1.5585906000014802,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 35.545360694378154,
+            "mean_log_interval_distance": 4.060037552971548,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 14.85542345991571,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.0
+          }
+        ],
+        "macro_interval_distance": 35.545360694378154,
+        "macro_log_interval_distance": 4.060037552971548,
+        "median_prediction_quantiles": [
+          0.479150324936973,
+          10.919329771764348,
+          38.00119429480667,
+          89.03099374920322,
+          925.7202917725831
+        ],
+        "censor_median_below_observed_lower_fraction": 0.15710003330742756,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    },
+    {
+      "name": "mlp_aft",
+      "fit": "final",
+      "task": "pieces",
+      "train_windows": 17406,
+      "seconds": 1.5094320999996853,
+      "metrics": {
+        "windows": 9347,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R007",
+            "windows": 340,
+            "mean_interval_distance": 1004.8235294117648,
+            "mean_log_interval_distance": 4.108924018046446,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 342.23333333333335,
+            "overestimate_fraction": 1.0,
+            "model_interval_overlap_fraction": 0.0
+          }
+        ],
+        "macro_interval_distance": 1004.8235294117648,
+        "macro_log_interval_distance": 4.108924018046446,
+        "median_prediction_quantiles": [
+          29.0,
+          555.0,
+          1358.0,
+          2923.0,
+          16886.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.15754413234151216,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "optimizer_success": true,
+      "history_period_accessed": false
+    }
+  ],
+  "all_optimizers_converged": true,
+  "history_period_accessed": false
+}

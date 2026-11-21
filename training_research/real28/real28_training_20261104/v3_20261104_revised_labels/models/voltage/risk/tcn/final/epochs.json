@@ -1,0 +1,44 @@
+[
+  {
+    "epoch": 1,
+    "loss": 0.06731815475002662,
+    "seconds": 13.79250040000261,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 58
+  },
+  {
+    "epoch": 2,
+    "loss": 0.028622206985293067,
+    "seconds": 11.952260999998543,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 58
+  },
+  {
+    "epoch": 3,
+    "loss": 0.017319162841886282,
+    "seconds": 12.587178100002347,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 59
+  },
+  {
+    "epoch": 4,
+    "loss": 0.009358830375633403,
+    "seconds": 12.308209899998474,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 60
+  },
+  {
+    "epoch": 5,
+    "loss": 0.004687200365165778,
+    "seconds": 10.893721299999015,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 62
+  },
+  {
+    "epoch": 6,
+    "loss": 0.0028707465098705143,
+    "seconds": 15.11230770000111,
+    "gpu_tensor_peak_mib": 86.83935546875,
+    "temperature_c": 61
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "research_only_not_approved",
+  "auto_publish": false,
+  "research_selection": "aft_linear6",
+  "evaluation": "report.json; final weights are fitted on all cycles and are not evaluation predictions",
+  "models": [
+    "aft_linear6",
+    "aft_xgb6",
+    "aft_xgb23",
+    "pch_linear6",
+    "pch_mlp6",
+    "pch_mlp23"
+  ],
+  "features_source": "versioned historical frame; live causal compiler not validated",
+  "units": "remaining_processing_hours",
+  "files": {
+    "aft_linear6.json": "81af3a5df27f9a683930a5ea1ea56b82ebc5f8097e58f0b6c67df83ecbc533c5",
+    "aft_xgb23.json": "5695acc45b144f54f1080f30957cf905f6160ea7a1f6fe2178aaf51ab7b2bba8",
+    "aft_xgb23.ubj": "8e10c0c8296503f5b18cbd5fc58064969ebc0db6a60852887bff1642fb97b7ec",
+    "aft_xgb6.json": "14886b97c85c9f674a7fc36894247edfb0d8b9a9509fdb46625a5bbdd06456dd",
+    "aft_xgb6.ubj": "220e9621a4044975e0d93756d0615957c942f86858534f81349fcdb0de7f2511",
+    "pch_linear6.json": "e7b4a66bfa1efb7dbef80eba321bce5cc81d8a576daa54f53172c830de14ca13",
+    "pch_mlp23.json": "5eb2bdab5c2c09b28e1d4a39082131e1edacc0e99e7569e923c2d36db12d25cf",
+    "pch_mlp6.json": "800ad45faab0e796b210eb09f0965de88ccb599079e334b19eb9c2ca1679bb30"
+  }
+}

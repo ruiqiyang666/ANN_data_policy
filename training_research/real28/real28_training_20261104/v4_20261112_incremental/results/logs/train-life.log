@@ -1,0 +1,10 @@
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:25:57+0000", "fold": "cycle1", "train_windows": 13060, "evaluation_windows": 14301}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:02+0000", "fold": "cycle2", "train_windows": 15467, "evaluation_windows": 11491}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:08+0000", "fold": "cycle3", "train_windows": 17406, "evaluation_windows": 9347}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:13+0000", "fold": "cycle4", "train_windows": 18988, "evaluation_windows": 13104}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:19+0000", "fold": "cycle5", "train_windows": 21199, "evaluation_windows": 1114}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:24+0000", "fold": "cycle6", "train_windows": 21410, "evaluation_windows": 2372}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:32+0000", "fold": "cycle7", "train_windows": 21831, "evaluation_windows": 11454}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:38+0000", "fold": "blind_new_week", "train_windows": 21410, "evaluation_windows": 13826}
+{"stage": "v4_life_fold", "updated_at": "2026-11-11T18:26:44+0000", "fold": "final", "train_windows": 23741, "evaluation_windows": 0}
+{"stage": "v4_life_complete", "updated_at": "2026-11-11T18:26:45+0000"}

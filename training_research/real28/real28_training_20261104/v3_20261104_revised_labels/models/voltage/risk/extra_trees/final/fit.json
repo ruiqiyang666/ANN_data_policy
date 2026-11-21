@@ -1,0 +1,21 @@
+{
+  "name": "extra_trees",
+  "fit": "final",
+  "train_windows": 104254,
+  "evaluation_windows": 12983,
+  "seconds": 45.64782600000035,
+  "metrics": {
+    "n": 12882,
+    "positive_windows": 60,
+    "events": 2,
+    "prevalence": 0.004657661853749418,
+    "average_precision": 0.14978896476418524,
+    "event_macro_ap": 0.10031536173306362,
+    "roc_auc": 0.9860701658607601,
+    "brier": 0.004211537953141028
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "427ddb98c6521f04b4407d587f021e2b1c24b11fc8840d08de0c0a078949fd90"
+}

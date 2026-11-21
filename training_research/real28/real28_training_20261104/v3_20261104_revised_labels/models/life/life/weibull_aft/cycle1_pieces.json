@@ -1,0 +1,38 @@
+{
+  "name": "weibull_aft",
+  "fit": "cycle1",
+  "task": "pieces",
+  "train_windows": 13060,
+  "seconds": 1.2278033999973559,
+  "metrics": {
+    "windows": 14301,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R004",
+        "windows": 14301,
+        "mean_interval_distance": 15394.599538493812,
+        "mean_log_interval_distance": 1.7376757521460275,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 12183.977777777778,
+        "overestimate_fraction": 0.32298440668484724,
+        "model_interval_overlap_fraction": 0.3978742745262569
+      }
+    ],
+    "macro_interval_distance": 15394.599538493812,
+    "macro_log_interval_distance": 1.7376757521460275,
+    "median_prediction_quantiles": [
+      0.0,
+      29.0,
+      120.0,
+      9566.0,
+      16746199.0
+    ],
+    "censor_median_below_observed_lower_fraction": null,
+    "median_tail_extrapolation_fraction": 0,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

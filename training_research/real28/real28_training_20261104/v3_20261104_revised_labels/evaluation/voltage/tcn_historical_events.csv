@@ -1,0 +1,3 @@
+﻿event_id,type,event_at,product_start,alert_at,lead_to_result_s,lead_to_product_start_s,result_available_at
+voltage_014,voltage,2026-10-14 17:37:38,2026-10-14 17:37:38,,,,2026-10-14 17:38:43
+voltage_015,voltage,2026-10-15 11:58:24,2026-10-15 11:58:24,,,,2026-10-15 11:58:58

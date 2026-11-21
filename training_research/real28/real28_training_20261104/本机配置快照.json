@@ -1,0 +1,46 @@
+{
+  "observed_at_approx": "2026-11-04T18:31:02+08:00",
+  "scope": "read-only hardware and Python/CUDA metadata inspection; no training or GPU kernel benchmark",
+  "machine": "ASUS ROG Strix G16 G615LR_G615LR",
+  "cpu": {
+    "name": "Intel Core Ultra 9 275HX",
+    "physical_cores": 24,
+    "logical_processors": 24
+  },
+  "ram": {"total_GiB": 31.38, "free_GiB_at_query": 15.03},
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "driver": "610.74",
+    "total_MiB": 12227,
+    "free_MiB_at_query": 9243,
+    "used_MiB_at_query": 2702,
+    "utilization_percent_at_query": 2,
+    "compute_capability": "12.0"
+  },
+  "os": {"name": "Windows 11 Home Chinese", "version": "10.0.26300"},
+  "storage": [
+    {"drive": "C:", "size_GiB": 298.52, "free_GiB_at_query": 54.13},
+    {"drive": "D:", "size_GiB": 311.52, "free_GiB_at_query": 44.97},
+    {"drive": "E:", "size_GiB": 312.5, "free_GiB_at_query": 44.83}
+  ],
+  "python": {
+    "version": "3.13.7",
+    "torch": "2.11.0+cu128",
+    "cuda_build": "12.8",
+    "cuda_available": true,
+    "cudnn": 91900,
+    "compiled_arches": ["sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120"],
+    "bf16_supported": true,
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit_learn": "1.8.0",
+    "pyarrow": "18.1.0",
+    "transformers": "5.13.1"
+  },
+  "server_inspected": false,
+  "data_processing_executed": false,
+  "training_executed": false,
+  "gpu_compute_benchmark_executed": false,
+  "packages_installed_this_turn": false
+}

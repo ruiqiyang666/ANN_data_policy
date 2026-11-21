@@ -1,0 +1,100 @@
+{
+  "frozen_at": "2026-11-04T19:15:10+0800",
+  "selection_scores": {
+    "logistic": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.04059682615529514,
+      "roc_auc": 0.9211933937133725,
+      "brier": 0.008862209968248248,
+      "log_loss": 0.046751619782362475
+    },
+    "hist_tree": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.06895869305555168,
+      "roc_auc": 0.9526869117385899,
+      "brier": 0.006304447653961671,
+      "log_loss": 0.028726356319466573
+    },
+    "b0_tcn": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.0218149216861822,
+      "roc_auc": 0.839199076540579,
+      "brier": 0.006509911734610796,
+      "log_loss": 0.03868537237515571
+    },
+    "b1_ssl_tcn": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.027110709276205278,
+      "roc_auc": 0.8949866808737347,
+      "brier": 0.00759985251352191,
+      "log_loss": 0.03920967277326411
+    },
+    "b1_ssl_tcn_seed43": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.05025062967005043,
+      "roc_auc": 0.9428112235837328,
+      "brier": 0.006848776247352362,
+      "log_loss": 0.04793316328031219
+    },
+    "b1_ssl_tcn_seed44": {
+      "n": 9445,
+      "positives": 60,
+      "prevalence": 0.006352567496029645,
+      "average_precision": 0.0328533387291056,
+      "roc_auc": 0.9125146510388918,
+      "brier": 0.0065224142745137215,
+      "log_loss": 0.038369122087046875
+    }
+  },
+  "primary_risk_model": "hist_tree",
+  "primary_survival_model": "physical",
+  "primary_basis": "highest seed42 selection average precision across four candidates; repeat seeds are sensitivity only",
+  "neural_reference": "b1_ssl_tcn",
+  "evaluated_models": [
+    "logistic",
+    "hist_tree",
+    "b0_tcn",
+    "b1_ssl_tcn",
+    "b1_ssl_tcn_seed43",
+    "b1_ssl_tcn_seed44"
+  ],
+  "thresholds": {
+    "logistic": 0.2936804734857744,
+    "hist_tree": 0.14672265371676207,
+    "b0_tcn": 0.1147085651755333,
+    "b1_ssl_tcn": 0.29533734917640686,
+    "b1_ssl_tcn_seed43": 0.13624265789985657,
+    "b1_ssl_tcn_seed44": 0.1235988661646843
+  },
+  "threshold_method": "99.5 percentile of fully observed selection negatives; fixed exploratory rule, not independent probability calibration",
+  "independent_calibration_windows": 0,
+  "automated_replacement_enabled": false,
+  "test_used_for_selection": false,
+  "artifact_sha256": {
+    "logistic.joblib": "7084a01d42e0672893fa84c9db333b224c4a6a1efc7d354906e7076d40a68d82",
+    "hist_tree.joblib": "41b983bfeaf6da9f59696c61ad01f8234f9f000c0f913c0c98037299543e4cc9",
+    "lifetime_models.joblib": "494160f335e6c528fe80de724907703fd5c9a201831005e4eb3b0e39da4070a9",
+    "b0_tcn.pt": "021d13ec96c56de311332022075af38e018a2c2a7c030765ebd49f3d9f33811f",
+    "b1_ssl_tcn.pt": "23657f2b2c7ca7cea029d9771b5d81c218e4ed8ebfbd3748d2187f8522d5d834",
+    "b1_ssl_tcn_seed43.pt": "670cb5ccddeab6b4efaeb2de14bcca8eb60809b4bcad84a5819a6b08b3beccbf",
+    "b1_ssl_tcn_seed44.pt": "d00f8efe8ef6be9449dceb6daaac7664404c5c034de2787b3ecbaee5d0c28be8"
+  },
+  "data_sha256": {
+    "samples.parquet": "14cc6fe778071e717c9aaca687717075b2a5c0a55cdc3beff25be65832bdd88d",
+    "rul_samples.parquet": "c76c56fc4519453b83417eb1f4ad9db3de11e4af4712600679f69be47b29f16f",
+    "normalization.json": "f0f950d2dc0096f4fcfa89cab7818cceb40413bdbbebfc573afaca37a1b390d8",
+    "targets.npz": "7075207d2df40ed29f9f3db223987b725259a7ed5363d980a66eaeb3c12259af"
+  },
+  "release_decision_predeclared": "research/retrospective use only; no confirmed natural-failure labels and no independent calibration",
+  "additional_architectures": "PatchTST, Chronos and 60 s ablation deferred; two selection events cannot support further model search in this first run"
+}

@@ -1,0 +1,25 @@
+{
+  "_comment": "示例配置，未部署。endpoint / 命名空间 / 安全策略 / 账号均为待现场确认的占位值；密码与数据库口令只从环境变量读取，不写入文件。",
+  "tags_file": "tags.json",
+  "asset": {"opcua_namespace_index": 2, "opcua_path": "HA.Booth2.Plasma2"},
+  "opcua": {
+    "endpoint": "opc.tcp://KEPWARE-HOST:49320",
+    "security_string": "Basic256Sha256,SignAndEncrypt,certs/collector_cert.der,certs/collector_key.pem",
+    "application_uri": "urn:booth2:collector",
+    "username": "booth2_reader",
+    "password_env": "BOOTH2_OPCUA_PASSWORD",
+    "publishing_interval_ms": 1000,
+    "sampling_interval_ms": 1000,
+    "queue_size": 10,
+    "check_seconds": 5,
+    "timeout_seconds": 10,
+    "subscribe_reserved": false
+  },
+  "spool_path": "spool/collector_spool.sqlite",
+  "flush_seconds": 0.5,
+  "batch_rows": 2000,
+  "retry_min_seconds": 1,
+  "retry_max_seconds": 60,
+  "heartbeat_seconds": 10,
+  "sink": {"kind": "postgres", "dsn_env": "BOOTH2_PG_DSN"}
+}

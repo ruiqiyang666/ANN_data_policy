@@ -1,0 +1,8 @@
+{
+  "stage": "first_training_run_complete",
+  "updated_at": "2026-11-04T19:15:29+0800",
+  "selected": "hist_tree",
+  "test_evaluated": true,
+  "production_ready": false,
+  "results": "D:\\Learning\\GC\\IPP\\Phase2\\real28_training_20261104\\evaluation\\20261104_v1\\final_metrics.json"
+}

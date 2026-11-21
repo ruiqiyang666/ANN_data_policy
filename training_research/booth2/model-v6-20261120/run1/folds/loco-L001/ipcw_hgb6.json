@@ -1,0 +1,30 @@
+{
+  "family": "ipcw_hgb6",
+  "features": [
+    "margin51_30m",
+    "d_peak_30m",
+    "log_vsd_30m",
+    "v_slope_30m",
+    "vsd_ratio",
+    "age_h"
+  ],
+  "training_cycles": [
+    "L000",
+    "L002",
+    "L003",
+    "L004",
+    "L005",
+    "L006",
+    "L007",
+    "L008",
+    "L009",
+    "L010",
+    "L011",
+    "L012",
+    "L013"
+  ],
+  "details": {},
+  "history": null,
+  "artifact": "ipcw_hgb6.joblib",
+  "sha256": "738a5a635dc84d8deb8fbf2d7f97410d3ac7db131ec873e0c1b380752bbd6891"
+}

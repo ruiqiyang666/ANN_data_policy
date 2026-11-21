@@ -1,0 +1,208 @@
+{
+  "train_windows": 103965,
+  "selection_windows": 9343,
+  "fit_partition": "train",
+  "test_accessed": false,
+  "encoder": "b1_ssl_tcn",
+  "true_natural_failures_confirmed": 0,
+  "penalty": 10.0,
+  "primary": "physical",
+  "primary_basis": "predeclared simple two-feature model; one weak selection endpoint is insufficient to select complex survival models",
+  "piece_distribution": "floor of independent lognormal latent count; interval upper edge U+1",
+  "weighting": "each possible cycle has equal total likelihood weight; windows within each cycle share that weight",
+  "censor_assumption": "weak normal-product observation prefix, interrupted by gaps, unknown labels, low voltage or ambiguous maintenance; not confirmed electrode identity",
+  "label_sha256": "c76c56fc4519453b83417eb1f4ad9db3de11e4af4712600679f69be47b29f16f",
+  "variants": {
+    "physical": {
+      "hours": {
+        "fit": {
+          "coefficients": [
+            3.124006281356346,
+            -0.005158333367131219,
+            -0.0004749312430853448
+          ],
+          "sigma": 1.3336444050782377,
+          "optimizer_success": true,
+          "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "objective": 4.0296959576894125,
+          "iterations": 10,
+          "penalty": 10.0,
+          "groups": 3,
+          "event_windows": 20574,
+          "interval_quantiles": [
+            0.1,
+            0.9
+          ],
+          "independent_interval_calibration": false
+        },
+        "selection": {
+          "windows": 9343,
+          "possible_cycles": 1,
+          "event_windows": 2,
+          "weak_endpoints": 1,
+          "group_mean_interval_censor_nll": 0.3729835969130222,
+          "confirmed_natural_failure_mae": null,
+          "independent_interval_coverage": null,
+          "prediction_median_min": 22.704521413230204,
+          "prediction_median_max": 23.851827390000018,
+          "per_weak_endpoint": [
+            {
+              "endpoint": "R007",
+              "windows": 2,
+              "median_distance_to_weak_interval": 22.760433040170902,
+              "mean_distance_to_weak_interval": 22.760433040170902,
+              "model_interval_overlap_fraction": 0.0,
+              "mean_model_interval_width": 121.73270632072462,
+              "mean_true_lower": 0.004166666666666667,
+              "mean_true_upper": 0.0225,
+              "mean_prediction": 22.7829330401709
+            }
+          ]
+        }
+      },
+      "pieces": {
+        "fit": {
+          "coefficients": [
+            6.92591388464838,
+            -0.005209630102920394,
+            -0.00043698154974025204
+          ],
+          "sigma": 1.3090985946840263,
+          "optimizer_success": true,
+          "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "objective": 3.3269133053924125,
+          "iterations": 10,
+          "penalty": 10.0,
+          "groups": 3,
+          "event_windows": 20574,
+          "interval_quantiles": [
+            0.1,
+            0.9
+          ],
+          "independent_interval_calibration": false
+        },
+        "selection": {
+          "windows": 9343,
+          "possible_cycles": 1,
+          "event_windows": 2,
+          "weak_endpoints": 1,
+          "group_mean_interval_censor_nll": 0.37567802601683603,
+          "confirmed_natural_failure_mae": null,
+          "independent_interval_coverage": null,
+          "prediction_median_min": 1016.0,
+          "prediction_median_max": 1068.0,
+          "per_weak_endpoint": [
+            {
+              "endpoint": "R007",
+              "windows": 2,
+              "median_distance_to_weak_interval": 1019.0,
+              "mean_distance_to_weak_interval": 1019.0,
+              "model_interval_overlap_fraction": 0.0,
+              "mean_model_interval_width": 5272.0,
+              "mean_true_lower": 0.0,
+              "mean_true_upper": 1.0,
+              "mean_prediction": 1020.0
+            }
+          ]
+        }
+      }
+    },
+    "frozen_tcn": {
+      "hours": {
+        "fit": {
+          "coefficients": [
+            3.1223458511390003,
+            -0.007592263628369882,
+            -0.0005636532652962651,
+            -0.008686094381580717
+          ],
+          "sigma": 1.3314463655134228,
+          "optimizer_success": true,
+          "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "objective": 4.0293653980049395,
+          "iterations": 10,
+          "penalty": 10.0,
+          "groups": 3,
+          "event_windows": 20574,
+          "interval_quantiles": [
+            0.1,
+            0.9
+          ],
+          "independent_interval_calibration": false
+        },
+        "selection": {
+          "windows": 9343,
+          "possible_cycles": 1,
+          "event_windows": 2,
+          "weak_endpoints": 1,
+          "group_mean_interval_censor_nll": 0.375515261513646,
+          "confirmed_natural_failure_mae": null,
+          "independent_interval_coverage": null,
+          "prediction_median_min": 22.453015448460178,
+          "prediction_median_max": 24.610677169799807,
+          "per_weak_endpoint": [
+            {
+              "endpoint": "R007",
+              "windows": 2,
+              "median_distance_to_weak_interval": 22.611891805649194,
+              "mean_distance_to_weak_interval": 22.611891805649194,
+              "model_interval_overlap_fraction": 0.0,
+              "mean_model_interval_width": 120.57575021739981,
+              "mean_true_lower": 0.004166666666666667,
+              "mean_true_upper": 0.0225,
+              "mean_prediction": 22.634391805649194
+            }
+          ]
+        }
+      },
+      "pieces": {
+        "fit": {
+          "coefficients": [
+            6.924250833893857,
+            -0.007665682455307345,
+            -0.0005028984184820087,
+            -0.008839292725110215
+          ],
+          "sigma": 1.3068021176871973,
+          "optimizer_success": true,
+          "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "objective": 3.3265716954752445,
+          "iterations": 10,
+          "penalty": 10.0,
+          "groups": 3,
+          "event_windows": 20574,
+          "interval_quantiles": [
+            0.1,
+            0.9
+          ],
+          "independent_interval_calibration": false
+        },
+        "selection": {
+          "windows": 9343,
+          "possible_cycles": 1,
+          "event_windows": 2,
+          "weak_endpoints": 1,
+          "group_mean_interval_censor_nll": 0.37830324249539055,
+          "confirmed_natural_failure_mae": null,
+          "independent_interval_coverage": null,
+          "prediction_median_min": 1005.0,
+          "prediction_median_max": 1102.0,
+          "per_weak_endpoint": [
+            {
+              "endpoint": "R007",
+              "windows": 2,
+              "median_distance_to_weak_interval": 1012.0,
+              "mean_distance_to_weak_interval": 1012.0,
+              "model_interval_overlap_fraction": 0.0,
+              "mean_model_interval_width": 5220.5,
+              "mean_true_lower": 0.0,
+              "mean_true_upper": 1.0,
+              "mean_prediction": 1013.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "artifact_sha256": "494160f335e6c528fe80de724907703fd5c9a201831005e4eb3b0e39da4070a9"
+}

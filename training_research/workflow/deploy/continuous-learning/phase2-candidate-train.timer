@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly Phase2 candidate admission check
+
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00 Asia/Shanghai
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+﻿timestamp,end_index,partition,event_in_300s,observed_seconds,event_id,eta_seconds,context_start,possible_cycle,rul_valid,rul_event,rul_lower_hours,rul_upper_hours,rul_lower_pieces,rul_upper_pieces,rul_endpoint_id,rul_observation_end,predicted_risk
+2026-10-08 07:45:10,4240046,2,False,300,,,2026-10-08 00:00:00,,False,False,,,,,,,0.05825247182171131
+2026-10-08 10:12:10,4248866,2,True,300,EV0050,198.0,2026-10-08 00:00:00,,False,False,,,,,,,0.04798680412052141
+2026-10-08 13:28:00,4260616,2,False,300,,,2026-10-08 00:00:00,,False,False,,,,,,,0.04977969790450809
+2026-10-09 07:22:10,4325064,2,False,300,,,2026-10-08 14:00:01,,False,False,,,,,,,0.047285762038057164
+2026-10-09 09:05:20,4331254,2,True,300,EV0053,182.0,2026-10-08 14:00:01,,False,False,,,,,,,0.048220359206440855
+2026-10-09 11:09:40,4338714,2,False,300,,,2026-10-08 14:00:01,,False,False,,,,,,,0.06045033956644208
+2026-10-09 14:27:00,4350554,2,False,300,,,2026-10-08 14:00:01,,False,False,,,,,,,0.05495137986084425
+2026-10-09 16:34:50,4358224,2,False,300,,,2026-10-08 14:00:01,,False,False,,,,,,,0.05898013707303241

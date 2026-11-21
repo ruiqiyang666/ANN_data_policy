@@ -1,0 +1,23 @@
+{
+  "training_processes": [
+    {
+      "worker": "life",
+      "exit_code": 0
+    },
+    {
+      "worker": "feedrate",
+      "exit_code": 0
+    },
+    {
+      "worker": "hopper_pressure",
+      "exit_code": 0
+    },
+    {
+      "worker": "voltage",
+      "exit_code": 0
+    }
+  ],
+  "main_fit_count": 136,
+  "elapsed_seconds": 1100.9951331615448,
+  "finished_at": "2026-11-04T22:37:39+0800"
+}

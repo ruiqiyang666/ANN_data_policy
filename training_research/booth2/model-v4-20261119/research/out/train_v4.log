@@ -1,0 +1,127 @@
+
+===== life_tree
+nested: {"total_events": 10, "hit20": 5, "late": 2, "missed": 3, "false_alarms": 17, "unknown_alarms": 2, "post_event_alarms": 0, "alarms": 26, "operating_hours": 237.53944444444446, "false_alarms_per_hour": 0.0715670613769409}
+single threshold (optimistic): {"hit20": 6, "late": 2, "missed": 2, "false_alarms": 20, "unknown_alarms": 2} 0.9000000000000001
+processing time: {"alarms": 26, "processing_hours": 225.0888888888889, "after_end_or_unknown": 0, "end_within_1h": 10, "no_end_within_1h": 15, "cycles_warned_within_1h": 8, "end_within_2h": 13, "no_end_within_2h": 10, "cycles_warned_within_2h": 9, "end_within_4h": 14, "no_end_within_4h": 9, "cycles_warned_within_4h": 9}
+event_id cycle_id         first_alarm  lead_minutes  hit20  late  missed  threshold  earlier_alarm_count
+    T001     L000 2026-09-15 12:21:10           3.3  False  True   False        0.8                    4
+    T002     L001 2026-09-20 07:24:00          24.4   True False   False        0.9                    1
+    T004     L002                None           NaN  False False    True        0.9                    1
+    T005     L003 2026-10-06 12:25:40          38.4   True False   False        0.9                    1
+    T006     L004 2026-10-09 07:36:30          47.2   True False   False        0.9                    1
+    T007     L005                None           NaN  False False    True        1.0                    6
+    T009     L006 2026-10-15 11:52:40           5.7  False  True   False        0.9                    0
+    T010     L008 2026-10-28 07:57:40          28.0   True False   False        0.9                    0
+    T011     L009 2026-11-01 12:44:50          48.2   True False   False        1.0                    1
+    T012     L012                None           NaN  False False    True        0.9                    1
+life: {'mae': 5.07, 'mae_8h': 4.7, 'mae_4h': 4.95, 'mae_2h': 4.49, 'mae_1h': 3.23, 'bias_2h': 4.29, 'cover': 0.76, 'width': 17.23, 'pinball': 4.58, 'censored_median_below_bound': 0.36, 'cover_min_cycle': 0.18, 'origin_mae': 4.8, 'origin_mae_2h': 4.47, 'origin_mae_1h': 3.23, 'origin_cover': 0.82, 'origin_width': 16.97, 'origin_pinball': 4.44}
+cycle  mae  mae_2h  mae_1h  cover  width
+ L000 6.23    8.61    6.63   0.86  17.28
+ L001 5.30    4.02    3.11   0.93  17.81
+ L002 2.61    2.72    4.72   0.98  17.68
+ L003 2.19    3.30    1.59   0.96  17.82
+ L004 5.80    4.29    1.49   0.79  18.07
+ L005 7.11    0.73    0.35   0.46  12.81
+ L006 7.34    7.34    4.36   0.18  17.57
+ L008 4.76    6.85    5.54   0.85  19.46
+ L009 3.07    3.55    2.61   0.95  17.24
+ L012 6.28    3.45    1.94   0.68  16.55
+ hours  prevalence  mean_predicted  brier  brier_constant   skill
+   1.0      0.0452          0.1038 0.0508          0.0432 -0.1765
+   4.0      0.1812          0.2476 0.1402          0.1484  0.0552
+   8.0      0.3631          0.4192 0.1913          0.2313  0.1730
+pool (final), rows = horizons [0.33, 0.67, 1.0, 1.5, 2.0, 3.0, 4.0, 6.0, 8.0, 12.0, 16.0, 24.0]
+       0    1    2     3     4     5     6     7     8     9     10    11
+base  0.2  0.2  0.2  0.38  0.38  0.38  0.38  0.29  0.29  0.29  0.29  0.29
+hgb   0.8  0.8  0.8  0.62  0.62  0.62  0.62  0.71  0.71  0.71  0.71  0.71
+band shift [lower, upper] per size of median, final: [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0]]
+
+===== life_gru
+nested: {"total_events": 10, "hit20": 5, "late": 2, "missed": 3, "false_alarms": 19, "unknown_alarms": 2, "post_event_alarms": 1, "alarms": 30, "operating_hours": 237.53944444444446, "false_alarms_per_hour": 0.07998671565658101}
+single threshold (optimistic): {"hit20": 6, "late": 1, "missed": 3, "false_alarms": 21, "unknown_alarms": 1} 0.8500000000000001
+processing time: {"alarms": 30, "processing_hours": 225.0888888888889, "after_end_or_unknown": 1, "end_within_1h": 10, "no_end_within_1h": 17, "cycles_warned_within_1h": 7, "end_within_2h": 15, "no_end_within_2h": 11, "cycles_warned_within_2h": 8, "end_within_4h": 16, "no_end_within_4h": 7, "cycles_warned_within_4h": 8}
+event_id cycle_id         first_alarm  lead_minutes  hit20  late  missed  threshold  earlier_alarm_count
+    T001     L000 2026-09-15 12:21:20           3.1  False  True   False        0.8                    2
+    T002     L001 2026-09-20 07:20:30          27.9   True False   False        0.8                    2
+    T004     L002 2026-09-29 14:44:40          51.2   True False   False        1.0                    6
+    T005     L003                None           NaN  False False    True        1.0                    0
+    T006     L004 2026-10-09 07:27:10          56.6   True False   False        0.8                    1
+    T007     L005                None           NaN  False False    True        0.9                    4
+    T009     L006                None           NaN  False False    True        0.9                    0
+    T010     L008 2026-10-28 08:23:10           2.5  False  True   False        1.0                    0
+    T011     L009 2026-11-01 12:52:10          40.9   True False   False        1.0                    0
+    T012     L012 2026-11-10 12:35:20          53.2   True False   False        0.9                    0
+life: {'mae': 4.82, 'mae_8h': 4.29, 'mae_4h': 4.41, 'mae_2h': 3.83, 'mae_1h': 2.76, 'bias_2h': 3.7, 'cover': 0.71, 'width': 16.51, 'pinball': 4.42, 'censored_median_below_bound': 0.37, 'cover_min_cycle': 0.0, 'origin_mae': 4.48, 'origin_mae_2h': 3.82, 'origin_mae_1h': 2.76, 'origin_cover': 0.81, 'origin_width': 16.49, 'origin_pinball': 4.17}
+cycle  mae  mae_2h  mae_1h  cover  width
+ L000 5.70    6.65    4.64   0.87  16.03
+ L001 3.70    1.57    1.09   0.96  18.65
+ L002 3.57    0.86    1.30   0.98  14.14
+ L003 3.36    3.98    2.03   0.92  17.30
+ L004 5.82    2.72    0.24   0.81  16.70
+ L005 6.10    0.39    0.32   0.50  14.38
+ L006 6.33    6.33    5.66   0.00  16.57
+ L008 4.25    6.78    6.24   0.81  15.72
+ L009 2.79    4.57    3.45   0.97  19.24
+ L012 6.58    4.49    2.61   0.24  16.34
+ hours  prevalence  mean_predicted  brier  brier_constant  skill
+   1.0      0.0452          0.0859 0.0382          0.0432 0.1152
+   4.0      0.1812          0.2321 0.1319          0.1484 0.1109
+   8.0      0.3631          0.4163 0.1808          0.2313 0.2180
+pool (final), rows = horizons [0.33, 0.67, 1.0, 1.5, 2.0, 3.0, 4.0, 6.0, 8.0, 12.0, 16.0, 24.0]
+        0     1     2    3    4    5    6     7     8     9     10    11
+base  0.36  0.36  0.36  0.4  0.4  0.4  0.4  0.22  0.22  0.22  0.22  0.22
+net   0.64  0.64  0.64  0.6  0.6  0.6  0.6  0.78  0.78  0.78  0.78  0.78
+band shift [lower, upper] per size of median, final: [[0.0, 0.0], [0.0, 0.0], [0.0, 0.04]]
+
+===== life_fusion
+nested: {"total_events": 10, "hit20": 7, "late": 1, "missed": 2, "false_alarms": 20, "unknown_alarms": 2, "post_event_alarms": 2, "alarms": 33, "operating_hours": 237.53944444444446, "false_alarms_per_hour": 0.08419654279640106}
+single threshold (optimistic): {"hit20": 6, "late": 2, "missed": 2, "false_alarms": 23, "unknown_alarms": 2} 0.8500000000000001
+processing time: {"alarms": 33, "processing_hours": 225.0888888888889, "after_end_or_unknown": 2, "end_within_1h": 11, "no_end_within_1h": 18, "cycles_warned_within_1h": 8, "end_within_2h": 16, "no_end_within_2h": 12, "cycles_warned_within_2h": 8, "end_within_4h": 17, "no_end_within_4h": 9, "cycles_warned_within_4h": 8}
+event_id cycle_id         first_alarm  lead_minutes  hit20  late  missed  threshold  earlier_alarm_count
+    T001     L000 2026-09-15 11:54:50          29.6   True False   False        0.6                    4
+    T002     L001 2026-09-20 07:20:30          27.9   True False   False        0.8                    2
+    T004     L002 2026-09-29 14:55:50          40.1   True False   False        0.7                    6
+    T005     L003                None           NaN  False False    True        1.0                    0
+    T006     L004 2026-10-09 07:33:20          50.4   True False   False        1.0                    1
+    T007     L005 2026-10-14 16:46:20          51.3   True False   False        1.0                    4
+    T009     L006                None           NaN  False False    True        0.9                    0
+    T010     L008 2026-10-28 08:21:40           4.0  False  True   False        1.0                    0
+    T011     L009 2026-11-01 12:51:20          41.7   True False   False        1.0                    0
+    T012     L012 2026-11-10 12:31:00          57.5   True False   False        0.8                    0
+life: {'mae': 5.0, 'mae_8h': 4.57, 'mae_4h': 4.6, 'mae_2h': 4.03, 'mae_1h': 2.82, 'bias_2h': 3.87, 'cover': 0.68, 'width': 16.1, 'pinball': 4.48, 'censored_median_below_bound': 0.42, 'cover_min_cycle': 0.01, 'origin_mae': 4.66, 'origin_mae_2h': 4.02, 'origin_mae_1h': 2.82, 'origin_cover': 0.79, 'origin_width': 16.03, 'origin_pinball': 4.24}
+cycle  mae  mae_2h  mae_1h  cover  width
+ L000 6.62    4.83    2.81   0.80  15.63
+ L001 3.87    2.35    1.70   0.96  19.43
+ L002 3.81    2.97    3.19   0.98  13.31
+ L003 3.61    3.44    1.82   0.95  16.53
+ L004 5.83    2.99    0.22   0.69  15.83
+ L005 6.13    0.73    0.36   0.42  12.12
+ L006 6.27    6.27    4.79   0.01  15.56
+ L008 4.37    6.65    5.94   0.82  16.29
+ L009 2.64    4.48    3.88   0.99  19.57
+ L012 6.87    5.55    3.48   0.22  16.68
+ hours  prevalence  mean_predicted  brier  brier_constant   skill
+   1.0      0.0452          0.0955 0.0458          0.0432 -0.0598
+   4.0      0.1812          0.2406 0.1390          0.1484  0.0635
+   8.0      0.3631          0.4080 0.1873          0.2313  0.1900
+pool (final), rows = horizons [0.33, 0.67, 1.0, 1.5, 2.0, 3.0, 4.0, 6.0, 8.0, 12.0, 16.0, 24.0]
+           0     1     2     3     4     5     6     7     8     9     10    11
+base     0.12  0.12  0.12  0.23  0.23  0.23  0.23  0.10  0.10  0.10  0.10  0.10
+logit3   0.09  0.09  0.09  0.25  0.25  0.25  0.25  0.52  0.52  0.52  0.52  0.52
+logit5   0.17  0.17  0.17  0.00  0.00  0.00  0.00  0.06  0.06  0.06  0.06  0.06
+logit23  0.12  0.12  0.12  0.27  0.27  0.27  0.27  0.13  0.13  0.13  0.13  0.13
+hgb      0.12  0.12  0.12  0.02  0.02  0.02  0.02  0.09  0.09  0.09  0.09  0.09
+net      0.39  0.39  0.39  0.23  0.23  0.23  0.23  0.10  0.10  0.10  0.10  0.10
+band shift [lower, upper] per size of median, final: [[0.0, 0.0], [0.1, 0.09], [0.02, 0.05]]
+
+baselines {"constant_quantiles": {"mae": 5.66, "mae_8h": 5.6, "mae_4h": 7.22, "mae_2h": 8.12, "mae_1h": 8.62, "bias_2h": 8.12, "cover": 0.73, "width": 17.1, "pinball": 5.01, "censored_median_below_bound": 0.4, "cover_min_cycle": 0.08, "origin_mae": 5.52, "origin_mae_2h": 8.12, "origin_mae_1h": 8.62, "origin_cover": 0.79, "origin_width": 16.95, "origin_pinball": 5.04}, "mean_life_minus_age": {"mae": 6.06, "mae_8h": 4.96, "mae_4h": 4.34, "mae_2h": 3.9, "mae_1h": 3.62, "bias_2h": 2.75, "cover": 0.0, "width": 0.0, "pinball": 9.08, "censored_median_below_bound": 0.75, "cover_min_cycle": 0.0, "origin_mae": 4.95, "origin_mae_2h": 3.84, "origin_mae_1h": 3.62, "origin_cover": 0.0, "origin_width": 0.0, "origin_pinball": 7.42}, "v3": {"mae": 4.74, "mae_8h": 4.95, "mae_4h": 5.54, "mae_2h": 5.24, "mae_1h": 4.01, "bias_2h": 5.11, "cover": 0.79, "width": 19.1, "pinball": 4.44, "censored_median_below_bound": 0.35, "cover_min_cycle": 0.1, "origin_mae": 4.41, "origin_mae_2h": 5.23, "origin_mae_1h": 4.01, "origin_cover": 0.87, "origin_width": 19.09, "origin_pinball": 4.24}}
+members (raw curves, no post-processing) {"logit3": {"mae": 5.0, "mae_8h": 4.9, "mae_4h": 5.3, "mae_2h": 4.9, "mae_1h": 3.71, "bias_2h": 4.74, "cover": 0.53, "width": 12.3, "pinball": 4.63, "censored_median_below_bound": 0.37, "cover_min_cycle": 0.0, "origin_mae": 4.4, "origin_mae_2h": 4.89, "origin_mae_1h": 3.71, "origin_cover": 0.63, "origin_width": 12.12, "origin_pinball": 4.11}, "logit5": {"mae": 5.2, "mae_8h": 4.87, "mae_4h": 4.95, "mae_2h": 4.56, "mae_1h": 3.33, "bias_2h": 4.49, "cover": 0.53, "width": 11.54, "pinball": 4.77, "censored_median_below_bound": 0.38, "cover_min_cycle": 0.0, "origin_mae": 4.75, "origin_mae_2h": 4.55, "origin_mae_1h": 3.33, "origin_cover": 0.62, "origin_width": 11.5, "origin_pinball": 4.39}, "logit23": {"mae": 4.89, "mae_8h": 4.63, "mae_4h": 4.59, "mae_2h": 3.98, "mae_1h": 2.64, "bias_2h": 3.84, "cover": 0.51, "width": 12.22, "pinball": 4.8, "censored_median_below_bound": 0.32, "cover_min_cycle": 0.0, "origin_mae": 4.54, "origin_mae_2h": 3.97, "origin_mae_1h": 2.64, "origin_cover": 0.61, "origin_width": 11.82, "origin_pinball": 4.31}, "hgb": {"mae": 5.41, "mae_8h": 5.15, "mae_4h": 5.24, "mae_2h": 4.59, "mae_1h": 3.17, "bias_2h": 4.44, "cover": 0.53, "width": 13.09, "pinball": 5.22, "censored_median_below_bound": 0.29, "cover_min_cycle": 0.05, "origin_mae": 4.98, "origin_mae_2h": 4.57, "origin_mae_1h": 3.17, "origin_cover": 0.61, "origin_width": 12.86, "origin_pinball": 4.78}, "net": {"mae": 5.02, "mae_8h": 4.72, "mae_4h": 4.67, "mae_2h": 3.87, "mae_1h": 2.46, "bias_2h": 3.65, "cover": 0.48, "width": 11.66, "pinball": 4.97, "censored_median_below_bound": 0.3, "cover_min_cycle": 0.0, "origin_mae": 4.51, "origin_mae_2h": 3.86, "origin_mae_1h": 2.46, "origin_cover": 0.58, "origin_width": 11.58, "origin_pinball": 4.34}}
+
+bundle booth2-v4-survival-3d14825bdab8 member parity 2.978822100097034e-08
+  electrode_eol_20261101 277 origins life_tree alarms ['12:44:50']
+  electrode_eol_20261101 277 origins life_gru alarms ['12:52:10']
+  electrode_eol_20261101 277 origins life_fusion alarms ['12:51:20']
+  electrode_eol_20261028 253 origins life_tree alarms ['07:57:40']
+  electrode_eol_20261028 253 origins life_gru alarms ['08:23:10']
+  electrode_eol_20261028 253 origins life_fusion alarms ['08:21:40']
+exit 0

@@ -1,0 +1,10 @@
+{
+  "role": "stage 2 of run 20261112_v4_incremental: complete chronological 1 s grid and the 277 causal operating-state features",
+  "note": "No model is trained in this directory. Folds, selection and evaluation are declared in ../v4/protocol.json.",
+  "raw_parameters": 28,
+  "history_seconds": 120,
+  "max_feature_history_seconds": 7200,
+  "forecast_seconds": 300,
+  "stride_seconds": 10,
+  "pressure_forecast": false
+}

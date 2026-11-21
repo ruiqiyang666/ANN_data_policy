@@ -1,0 +1,327 @@
+{
+  "folds": {
+    "f1": {
+      "ranking": {
+        "n": 21967,
+        "positive_windows": 60,
+        "events": 2,
+        "prevalence": 0.002731369781945646,
+        "average_precision": 0.0060744591601914685,
+        "event_macro_ap": 0.004880885619454293,
+        "roc_auc": 0.5400769921334124,
+        "brier": 0.002731460666877242
+      },
+      "alarms": {
+        "events": 2,
+        "detected_events": 0,
+        "missed_events": 2,
+        "event_recall": 0.0,
+        "alerts": 0,
+        "false_alerts": 0,
+        "observable_powered_hours": 61.019444444444446,
+        "false_alerts_per_100_hours": 0.0,
+        "threshold": 1.000001,
+        "detected_before_product_start": 0
+      },
+      "fit_seconds": 5.502813826315105,
+      "epochs": 30,
+      "loss": 0.001982881257645611,
+      "train_windows": 40948,
+      "train_events": 1,
+      "threshold_from_folds": []
+    },
+    "f2": {
+      "ranking": {
+        "n": 13924,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.006463659867854065,
+        "average_precision": 0.005685508717246325,
+        "event_macro_ap": 0.002564686887605048,
+        "roc_auc": 0.4561426758549789,
+        "brier": 0.006437290082189806
+      },
+      "alarms": {
+        "events": 3,
+        "detected_events": 1,
+        "missed_events": 2,
+        "event_recall": 0.3333333333333333,
+        "alerts": 74,
+        "false_alerts": 73,
+        "observable_powered_hours": 38.67777777777778,
+        "false_alerts_per_100_hours": 188.73886814133868,
+        "threshold": 0.003797836615207426,
+        "detected_before_product_start": 1
+      },
+      "fit_seconds": 8.972907004877925,
+      "epochs": 30,
+      "loss": 0.0017752942127513807,
+      "train_windows": 62915,
+      "train_events": 3,
+      "threshold_from_folds": [
+        "f1"
+      ]
+    },
+    "f3": {
+      "ranking": {
+        "n": 27415,
+        "positive_windows": 90,
+        "events": 3,
+        "prevalence": 0.0032828743388655843,
+        "average_precision": 0.026740709859343147,
+        "event_macro_ap": 0.011944625588368951,
+        "roc_auc": 0.8199778387719834,
+        "brier": 0.0037693308084736335
+      },
+      "alarms": {
+        "events": 3,
+        "detected_events": 0,
+        "missed_events": 3,
+        "event_recall": 0.0,
+        "alerts": 0,
+        "false_alerts": 0,
+        "observable_powered_hours": 76.15277777777777,
+        "false_alerts_per_100_hours": 0.0,
+        "threshold": 1.000001,
+        "detected_before_product_start": 0
+      },
+      "fit_seconds": 10.943678529933095,
+      "epochs": 30,
+      "loss": 0.0019979952676055152,
+      "train_windows": 76839,
+      "train_events": 6,
+      "threshold_from_folds": [
+        "f1",
+        "f2"
+      ]
+    },
+    "f4": {
+      "ranking": {
+        "n": 18280,
+        "positive_windows": 119,
+        "events": 4,
+        "prevalence": 0.0065098468271334795,
+        "average_precision": 0.037822007782043095,
+        "event_macro_ap": 0.029403421660374355,
+        "roc_auc": 0.7433742727860375,
+        "brier": 0.006472740707477751
+      },
+      "alarms": {
+        "events": 4,
+        "detected_events": 0,
+        "missed_events": 4,
+        "event_recall": 0.0,
+        "alerts": 0,
+        "false_alerts": 0,
+        "observable_powered_hours": 50.77777777777778,
+        "false_alerts_per_100_hours": 0.0,
+        "threshold": 1.000001,
+        "detected_before_product_start": 0
+      },
+      "fit_seconds": 14.456647168844938,
+      "epochs": 30,
+      "loss": 0.005213162971145785,
+      "train_windows": 104254,
+      "train_events": 9,
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3"
+      ]
+    },
+    "f5": {
+      "ranking": {
+        "n": 34457,
+        "positive_windows": 60,
+        "events": 2,
+        "prevalence": 0.0017413007516614912,
+        "average_precision": 0.01785123455245284,
+        "event_macro_ap": 0.014224704461299103,
+        "roc_auc": 0.8926386506575188,
+        "brier": 0.0017379429418675177
+      },
+      "alarms": {
+        "events": 2,
+        "detected_events": 0,
+        "missed_events": 2,
+        "event_recall": 0.0,
+        "alerts": 0,
+        "false_alerts": 0,
+        "observable_powered_hours": 95.71388888888889,
+        "false_alerts_per_100_hours": 0.0,
+        "threshold": 1.000001,
+        "detected_before_product_start": 0
+      },
+      "fit_seconds": 17.08381269965321,
+      "epochs": 30,
+      "loss": 0.00437434178280803,
+      "train_windows": 122534,
+      "train_events": 13,
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ]
+    },
+    "f6": {
+      "ranking": {
+        "n": 13847,
+        "positive_windows": 66,
+        "events": 3,
+        "prevalence": 0.004766375388170723,
+        "average_precision": 0.015325057369399748,
+        "event_macro_ap": 0.005570348548843574,
+        "roc_auc": 0.8562524600185148,
+        "brier": 0.00475788174308487
+      },
+      "alarms": {
+        "events": 3,
+        "detected_events": 0,
+        "missed_events": 3,
+        "event_recall": 0.0,
+        "alerts": 0,
+        "false_alerts": 0,
+        "observable_powered_hours": 38.46388888888889,
+        "false_alerts_per_100_hours": 0.0,
+        "threshold": 1.000001,
+        "detected_before_product_start": 0
+      },
+      "fit_seconds": 22.24983048811555,
+      "epochs": 30,
+      "loss": 0.0032507287355962654,
+      "train_windows": 156991,
+      "train_events": 15,
+      "threshold_from_folds": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ]
+    }
+  },
+  "production_ready": false,
+  "algorithm": "mlp_64_32",
+  "tree_holdout": {
+    "ranking": {
+      "n": 13847,
+      "positive_windows": 66,
+      "events": 3,
+      "prevalence": 0.004766375388170723,
+      "average_precision": 0.7154988514584677,
+      "event_macro_ap": 0.45785921928805945,
+      "roc_auc": 0.9991622193929718,
+      "brier": 0.003701970433163495
+    },
+    "alarms": {
+      "events": 3,
+      "detected_events": 1,
+      "missed_events": 2,
+      "event_recall": 0.3333333333333333,
+      "alerts": 3,
+      "false_alerts": 2,
+      "observable_powered_hours": 38.46388888888889,
+      "false_alerts_per_100_hours": 5.199682241640788,
+      "threshold": 0.06423689872316114,
+      "detected_before_product_start": 1
+    },
+    "event_records": [
+      {
+        "event_id": "voltage_016",
+        "type": "voltage",
+        "event_at": "2026-10-28T08:25:39",
+        "product_start": "2026-10-28T08:25:39",
+        "alert_at": null,
+        "lead_to_result_s": null,
+        "lead_to_product_start_s": null,
+        "first_result_at": "2026-10-28T08:26:44",
+        "failed_products": 4
+      },
+      {
+        "event_id": "voltage_017",
+        "type": "voltage",
+        "event_at": "2026-11-01T13:30:06",
+        "product_start": "2026-11-01T13:30:06",
+        "alert_at": null,
+        "lead_to_result_s": null,
+        "lead_to_product_start_s": null,
+        "first_result_at": "2026-11-01T13:30:40",
+        "failed_products": 1
+      },
+      {
+        "event_id": "voltage_018",
+        "type": "voltage",
+        "event_at": "2026-11-01T13:33:02",
+        "product_start": "2026-11-01T13:33:02",
+        "alert_at": "2026-11-01T13:32:50",
+        "lead_to_result_s": 77.0,
+        "lead_to_product_start_s": 12.0,
+        "first_result_at": "2026-11-01T13:34:07",
+        "failed_products": 2
+      }
+    ],
+    "alert_timestamps": [
+      "2026-10-28T08:19:30.000000000",
+      "2026-11-01T13:24:40.000000000",
+      "2026-11-01T13:32:50.000000000"
+    ],
+    "eta_mae_s_all_positive_windows": 90.91702421210357,
+    "eta_is_conditional_on_future_event": true,
+    "threshold_from_folds": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5"
+    ],
+    "calibration_kind": "sigmoid",
+    "oof_policy": {
+      "events": 14,
+      "detected_events": 8,
+      "missed_events": 6,
+      "event_recall": 0.5714285714285714,
+      "alerts": 25,
+      "false_alerts": 17,
+      "observable_powered_hours": 322.34166666666664,
+      "false_alerts_per_100_hours": 5.273907086166335,
+      "threshold": 0.06423689872316114
+    }
+  },
+  "neural_holdout": {
+    "ranking": {
+      "n": 13847,
+      "positive_windows": 66,
+      "events": 3,
+      "prevalence": 0.004766375388170723,
+      "average_precision": 0.015325057369399748,
+      "event_macro_ap": 0.005570348548843574,
+      "roc_auc": 0.8562524600185148,
+      "brier": 0.00475788174308487
+    },
+    "alarms": {
+      "events": 3,
+      "detected_events": 0,
+      "missed_events": 3,
+      "event_recall": 0.0,
+      "alerts": 0,
+      "false_alerts": 0,
+      "observable_powered_hours": 38.46388888888889,
+      "false_alerts_per_100_hours": 0.0,
+      "threshold": 1.000001,
+      "detected_before_product_start": 0
+    },
+    "fit_seconds": 22.24983048811555,
+    "epochs": 30,
+    "loss": 0.0032507287355962654,
+    "train_windows": 156991,
+    "train_events": 15,
+    "threshold_from_folds": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5"
+    ]
+  }
+}

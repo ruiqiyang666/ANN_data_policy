@@ -1,0 +1,170 @@
+[
+  {
+    "cycle": "L000",
+    "prefix_origins": 121,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L000",
+    "prefix_origins": 361,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L000",
+    "prefix_origins": 1200,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L006",
+    "prefix_origins": 121,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L006",
+    "prefix_origins": 361,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L006",
+    "prefix_origins": 701,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L008",
+    "prefix_origins": 121,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L008",
+    "prefix_origins": 361,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L008",
+    "prefix_origins": 1200,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L012",
+    "prefix_origins": 121,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L012",
+    "prefix_origins": 361,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  },
+  {
+    "cycle": "L012",
+    "prefix_origins": 1200,
+    "columns": [
+      "v60",
+      "vsd_mean_30m",
+      "margin51_30m",
+      "v_slope_30m",
+      "v_first1h",
+      "age_h",
+      "since_restart_h"
+    ],
+    "passed": true
+  }
+]

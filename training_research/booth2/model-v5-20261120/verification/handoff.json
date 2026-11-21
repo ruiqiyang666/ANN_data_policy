@@ -1,0 +1,35 @@
+{
+  "status": "research_and_candidate_code_only",
+  "deployed": false,
+  "timers_enabled": false,
+  "server": "ANN-Server",
+  "active_release": "suite-20261118-dcfa178bed6c",
+  "model_training_exit": 0,
+  "model_finalize_exit": 0,
+  "checks": {
+    "learning_windows": 10,
+    "learning_linux": 10,
+    "history": 20,
+    "survival": 12,
+    "systemd_verify_exit": 0
+  },
+  "files": {
+    "scripts\\learning_cycle.py": "826823f39a04b59d3c6a9adc2775092e351c6a70cb47d54e506db6449ac843ca",
+    "checks\\learning_cycle_regression.py": "99e8f074093c3854a92b4d0edb99ef9a922e4e326e3d68ecfdd5c05f4f053d88",
+    "scripts\\survival_v5\\finalize.py": "33cda8026e0bd0dc123d79982b58a474860db6bf0eee7b303ed1ece8a3349d77",
+    "scripts\\survival_v5\\protocol.json": "a5f033d0f1e3f778f214e0f54d18e4140ac092d600e6f55905556811f1501f78",
+    "scripts\\survival_v5\\README.md": "408e92230d3001eff3667f326e747485900d66ad270cb8ba8f463d15ae6c3b09",
+    "scripts\\survival_v5\\runtime.py": "93e7d5ee0621ebea1de073b4439d4853914f16534e02c782f9e877891df3ee6a",
+    "scripts\\survival_v5\\train.py": "d0370653cb1ffb1d956871471ec69b0b2ad9c3418438ea82413ff681e90b0d0d",
+    "deploy\\continuous-learning\\history.env.example": "bd2827b7d16292259f3ea89d9e60d295a62de45fde3e26cfb4f9e6558abed669",
+    "deploy\\continuous-learning\\phase2-candidate-train.service": "c43f6ad425fdcb1b00cd241495be7a405ddc6a42889ac9d9fc5268ef693f14b0",
+    "deploy\\continuous-learning\\phase2-candidate-train.timer": "ab9c459aea4e9c09913cc7fdba625221142478064ea5b73bd0f69e11d37537dc",
+    "deploy\\continuous-learning\\phase2-history-snapshot.service": "bda6d25873a0668814a58a47debca9538e87da2856b8de8a8a08ee31dbf13222",
+    "deploy\\continuous-learning\\phase2-history-snapshot.timer": "a22072e8318664231d18678a455a4cd2cce7550bea798ca7fe4e7d3c88126e58",
+    "deploy\\continuous-learning\\phase2-history.service": "5125c536768444d218cf3f7a083d1adeda6ec1a02e041b550b4b92eb75540ba4",
+    "deploy\\continuous-learning\\README.md": "1ce91b92e86fdaa8e79e8503edc2235ee421eda216b79b3a316e995fddf4d09e",
+    "docs\\continuous-learning.md": "09586dcfc75c5489508c69ca993b43b2bfb3016768cf2f3c9c0dc1d7a8ba3263",
+    "docs\\model-v5-evaluation.md": "e65e631fba0fb6e9b4fcea4a27068f472a9ea65c8779c3e093201aebf5441b20",
+    "docs\\site-data-index-design.md": "b32217b0b238c5981aa00e989391da6cd72eedd22930c2ad7f47df16c3a2e110"
+  }
+}

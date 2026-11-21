@@ -1,0 +1,1970 @@
+{
+  "risk_choice": "extra_trees",
+  "life_choice": null,
+  "risk": {
+    "logistic": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.02708745582927017,
+          "event_macro_ap": 0.021643495845442753,
+          "roc_auc": 0.5949317889983367,
+          "brier": 0.00703221813187101
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.03444985231083142,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.12450701877785786,
+          "event_macro_ap": 0.046943716328438426,
+          "roc_auc": 0.8736464428305118,
+          "brier": 0.017996937988639623
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 0,
+          "missed_events": 4,
+          "event_recall": 0.0,
+          "alerts": 0,
+          "false_alerts": 0,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 0.0,
+          "threshold": 0.03444985231083142,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.03159742919725738,
+          "event_macro_ap": 0.010670151507455917,
+          "roc_auc": 0.7316602176189922,
+          "brier": 0.0065225220255088305
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 0,
+          "missed_events": 9,
+          "event_recall": 0.0,
+          "alerts": 2,
+          "false_alerts": 2,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 2.081165452653486,
+          "threshold": 0.03444985231083142,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.03166450789498673,
+            "event_macro_ap": 0.010683103746369453,
+            "roc_auc": 0.7319705139829309,
+            "brier": 0.006526652729348533
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 0,
+            "missed_events": 9,
+            "event_recall": 0.0,
+            "alerts": 2,
+            "false_alerts": 2,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 2.0826102047900035,
+            "threshold": 0.03444985231083142,
+            "detected_before_product_start": 0
+          }
+        }
+      }
+    },
+    "histgb": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.0332802134576864,
+          "event_macro_ap": 0.019163732464659383,
+          "roc_auc": 0.8028253919008592,
+          "brier": 0.0070331737499870015
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 19,
+          "false_alerts": 19,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 52.68427944234768,
+          "threshold": 0.03227120481262026,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.18066634352338834,
+          "event_macro_ap": 0.08780392221980698,
+          "roc_auc": 0.947126976179611,
+          "brier": 0.017874441082438738
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 2,
+          "missed_events": 2,
+          "event_recall": 0.5,
+          "alerts": 8,
+          "false_alerts": 6,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 39.56043956043956,
+          "threshold": 0.03227120481262026,
+          "detected_before_product_start": 2
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.018243415694602402,
+          "event_macro_ap": 0.00735951746779553,
+          "roc_auc": 0.5235540036740869,
+          "brier": 0.006643935643040009
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 4,
+          "missed_events": 5,
+          "event_recall": 0.4444444444444444,
+          "alerts": 60,
+          "false_alerts": 56,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 58.27263267429761,
+          "threshold": 0.03227120481262026,
+          "detected_before_product_start": 4
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.018388617425997764,
+            "event_macro_ap": 0.00740408447260087,
+            "roc_auc": 0.5238150692907884,
+            "brier": 0.0066478193927289745
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 4,
+            "missed_events": 5,
+            "event_recall": 0.4444444444444444,
+            "alerts": 58,
+            "false_alerts": 54,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 56.23047552933009,
+            "threshold": 0.03227120481262026,
+            "detected_before_product_start": 4
+          }
+        }
+      }
+    },
+    "extra_trees": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.08179285855924616,
+          "event_macro_ap": 0.055615627981072335,
+          "roc_auc": 0.8652205761955238,
+          "brier": 0.006958396230017916
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 2,
+          "missed_events": 1,
+          "event_recall": 0.6666666666666666,
+          "alerts": 8,
+          "false_alerts": 6,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 16.637140876530847,
+          "threshold": 0.019516359072098716,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.5399124447455876,
+          "event_macro_ap": 0.3139145865899612,
+          "roc_auc": 0.9653086599945682,
+          "brier": 0.01807649639053189
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 3,
+          "missed_events": 1,
+          "event_recall": 0.75,
+          "alerts": 4,
+          "false_alerts": 1,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 6.593406593406594,
+          "threshold": 0.019516359072098716,
+          "detected_before_product_start": 3
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.06769209528011663,
+          "event_macro_ap": 0.04314639708786325,
+          "roc_auc": 0.5431374660230087,
+          "brier": 0.006543087611872981
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 3,
+          "missed_events": 6,
+          "event_recall": 0.3333333333333333,
+          "alerts": 16,
+          "false_alerts": 13,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 13.527575442247661,
+          "threshold": 0.019516359072098716,
+          "detected_before_product_start": 2
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.06770568238073905,
+            "event_macro_ap": 0.04314932809524601,
+            "roc_auc": 0.543268335960505,
+            "brier": 0.00654739363284223
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 3,
+            "missed_events": 6,
+            "event_recall": 0.3333333333333333,
+            "alerts": 16,
+            "false_alerts": 13,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 13.536966331135023,
+            "threshold": 0.019516359072098716,
+            "detected_before_product_start": 2
+          }
+        }
+      }
+    },
+    "random_forest": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.05967632444919185,
+          "event_macro_ap": 0.04615134477052119,
+          "roc_auc": 0.8536212587364376,
+          "brier": 0.007043753630660818
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 1,
+          "missed_events": 2,
+          "event_recall": 0.3333333333333333,
+          "alerts": 5,
+          "false_alerts": 4,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 11.091427251020566,
+          "threshold": 0.03318917893776676,
+          "detected_before_product_start": 1
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.2800008283088745,
+          "event_macro_ap": 0.12233853193121683,
+          "roc_auc": 0.9736041340652072,
+          "brier": 0.017942448104369922
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 0,
+          "missed_events": 4,
+          "event_recall": 0.0,
+          "alerts": 1,
+          "false_alerts": 1,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 6.593406593406594,
+          "threshold": 0.03318917893776676,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.007031631429853156,
+          "event_macro_ap": 0.001156236587138972,
+          "roc_auc": 0.5473631594861266,
+          "brier": 0.006807350274614383
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 0,
+          "missed_events": 9,
+          "event_recall": 0.0,
+          "alerts": 18,
+          "false_alerts": 18,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 18.730489073881373,
+          "threshold": 0.03318917893776676,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.007037778385062969,
+            "event_macro_ap": 0.001157030395284784,
+            "roc_auc": 0.5474184788259662,
+            "brier": 0.0068115785203599535
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 0,
+            "missed_events": 9,
+            "event_recall": 0.0,
+            "alerts": 18,
+            "false_alerts": 18,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 18.743491843110032,
+            "threshold": 0.03318917893776676,
+            "detected_before_product_start": 0
+          }
+        }
+      }
+    },
+    "tcn": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.02140637686706246,
+          "event_macro_ap": 0.008932700526450876,
+          "roc_auc": 0.8047683066608065,
+          "brier": 0.007217951789730614
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 19,
+          "false_alerts": 19,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 52.68427944234768,
+          "threshold": 0.081889817781817,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 87.51917010044374,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.11741916063614345,
+          "event_macro_ap": 0.06913496335354714,
+          "roc_auc": 0.8776703943952895,
+          "brier": 0.017571664086083252
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 1,
+          "missed_events": 3,
+          "event_recall": 0.25,
+          "alerts": 6,
+          "false_alerts": 5,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 32.967032967032964,
+          "threshold": 0.081889817781817,
+          "detected_before_product_start": 1
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 60.608165634504175,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.017118128676401403,
+          "event_macro_ap": 0.004513358022574691,
+          "roc_auc": 0.5635784707444598,
+          "brier": 0.006666487111347801
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 2,
+          "missed_events": 7,
+          "event_recall": 0.2222222222222222,
+          "alerts": 40,
+          "false_alerts": 38,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 39.54214360041624,
+          "threshold": 0.081889817781817,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 65.87327717147049,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.017365739867227475,
+            "event_macro_ap": 0.004592721536126317,
+            "roc_auc": 0.563925080374819,
+            "brier": 0.006667328275179051
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 2,
+            "missed_events": 7,
+            "event_recall": 0.2222222222222222,
+            "alerts": 38,
+            "false_alerts": 36,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 37.486983686220064,
+            "threshold": 0.081889817781817,
+            "detected_before_product_start": 0
+          }
+        }
+      }
+    },
+    "gru": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.020459792502768304,
+          "event_macro_ap": 0.011579563506838532,
+          "roc_auc": 0.7137645750924274,
+          "brier": 0.007073895398197977
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 23,
+          "false_alerts": 23,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 63.77570669336825,
+          "threshold": 0.04552160114773375,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 102.13766840473582,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.09891990573649674,
+          "event_macro_ap": 0.04698767293971225,
+          "roc_auc": 0.8778773193609715,
+          "brier": 0.017861221280194246
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 2,
+          "missed_events": 2,
+          "event_recall": 0.5,
+          "alerts": 8,
+          "false_alerts": 6,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 39.56043956043956,
+          "threshold": 0.04552160114773375,
+          "detected_before_product_start": 2
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 95.2884504378438,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.02418370914679203,
+          "event_macro_ap": 0.009100676113855986,
+          "roc_auc": 0.7024102622982162,
+          "brier": 0.006483930106285857
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 4,
+          "missed_events": 5,
+          "event_recall": 0.4444444444444444,
+          "alerts": 49,
+          "false_alerts": 45,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 46.82622268470344,
+          "threshold": 0.04552160114773375,
+          "detected_before_product_start": 3
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 71.78177360256741,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.024674519535195963,
+            "event_macro_ap": 0.00930895989462232,
+            "roc_auc": 0.7028467294831058,
+            "brier": 0.006486514188445103
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 4,
+            "missed_events": 5,
+            "event_recall": 0.4444444444444444,
+            "alerts": 47,
+            "false_alerts": 43,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 44.776119402985074,
+            "threshold": 0.04552160114773375,
+            "detected_before_product_start": 3
+          }
+        }
+      }
+    },
+    "patch_transformer": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.017165055424823068,
+          "event_macro_ap": 0.007048645955640538,
+          "roc_auc": 0.7421244947732188,
+          "brier": 0.006997492528273044
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 12,
+          "false_alerts": 12,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 33.27428175306169,
+          "threshold": 0.050920308225965806,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 103.3920030986257,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.09171629557731528,
+          "event_macro_ap": 0.0450642332354723,
+          "roc_auc": 0.8485623333745952,
+          "brier": 0.01789307776154219
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 1,
+          "missed_events": 3,
+          "event_recall": 0.25,
+          "alerts": 5,
+          "false_alerts": 4,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 26.373626373626376,
+          "threshold": 0.050920308225965806,
+          "detected_before_product_start": 1
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 85.66232895730172,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.031334189361345105,
+          "event_macro_ap": 0.014370655895141329,
+          "roc_auc": 0.6551014582051836,
+          "brier": 0.006499677211089031
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 2,
+          "missed_events": 7,
+          "event_recall": 0.2222222222222222,
+          "alerts": 34,
+          "false_alerts": 32,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 33.29864724245578,
+          "threshold": 0.050920308225965806,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 71.48634036902163,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.031478941570929626,
+            "event_macro_ap": 0.014411057367356614,
+            "roc_auc": 0.6554328646708479,
+            "brier": 0.006503304756654886
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 2,
+            "missed_events": 7,
+            "event_recall": 0.2222222222222222,
+            "alerts": 33,
+            "false_alerts": 31,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 32.280458174245055,
+            "threshold": 0.050920308225965806,
+            "detected_before_product_start": 0
+          }
+        }
+      }
+    },
+    "spline_logistic": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.07244466151169657,
+          "event_macro_ap": 0.0420286361672522,
+          "roc_auc": 0.898325534096883,
+          "brier": 0.0069529625485102746
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 18,
+          "false_alerts": 18,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 49.91142262959254,
+          "threshold": 0.023313898809240872,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.1825425235581837,
+          "event_macro_ap": 0.0702942842953991,
+          "roc_auc": 0.9411427800738648,
+          "brier": 0.01807318251771418
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 2,
+          "missed_events": 2,
+          "event_recall": 0.5,
+          "alerts": 9,
+          "false_alerts": 7,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 46.15384615384615,
+          "threshold": 0.023313898809240872,
+          "detected_before_product_start": 2
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.01847710008210767,
+          "event_macro_ap": 0.0054520141277492945,
+          "roc_auc": 0.7253166769879138,
+          "brier": 0.0065352177553671086
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 3,
+          "missed_events": 6,
+          "event_recall": 0.3333333333333333,
+          "alerts": 52,
+          "false_alerts": 49,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 50.98855359001041,
+          "threshold": 0.023313898809240872,
+          "detected_before_product_start": 3
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.018830591646486892,
+            "event_macro_ap": 0.005713849492633647,
+            "roc_auc": 0.7257315876158312,
+            "brier": 0.00653943177716405
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 3,
+            "missed_events": 6,
+            "event_recall": 0.3333333333333333,
+            "alerts": 50,
+            "false_alerts": 47,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 48.94133981256508,
+            "threshold": 0.023313898809240872,
+            "detected_before_product_start": 3
+          }
+        }
+      }
+    },
+    "rbf_logistic": {
+      "selection": {
+        "ranking": {
+          "n": 12983,
+          "positive_windows": 90,
+          "events": 3,
+          "prevalence": 0.006932142031887853,
+          "average_precision": 0.0428514151339138,
+          "event_macro_ap": 0.021587060359189513,
+          "roc_auc": 0.8553220093590836,
+          "brier": 0.006911107200861434
+        },
+        "alarms": {
+          "events": 3,
+          "detected_events": 0,
+          "missed_events": 3,
+          "event_recall": 0.0,
+          "alerts": 16,
+          "false_alerts": 16,
+          "observable_powered_hours": 36.06388888888889,
+          "false_alerts_per_100_hours": 44.36570900408226,
+          "threshold": 0.10950711805937388,
+          "detected_before_product_start": 0
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 60,
+              "events": 2,
+              "conditional_type_accuracy": 0.9833333333333333
+            },
+            "feedrate": {
+              "positive_windows": 30,
+              "events": 1,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 68.18632513639538,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "calibration_diagnostic": {
+        "ranking": {
+          "n": 5460,
+          "positive_windows": 101,
+          "events": 4,
+          "prevalence": 0.0184981684981685,
+          "average_precision": 0.238287948549798,
+          "event_macro_ap": 0.10145712056827563,
+          "roc_auc": 0.9527490535954136,
+          "brier": 0.016680335454446034
+        },
+        "alarms": {
+          "events": 4,
+          "detected_events": 2,
+          "missed_events": 2,
+          "event_recall": 0.5,
+          "alerts": 6,
+          "false_alerts": 4,
+          "observable_powered_hours": 15.166666666666666,
+          "false_alerts_per_100_hours": 26.373626373626376,
+          "threshold": 0.10950711805937388,
+          "detected_before_product_start": 2
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 59,
+              "events": 2,
+              "conditional_type_accuracy": 1.0
+            },
+            "feedrate": {
+              "positive_windows": 42,
+              "events": 2,
+              "conditional_type_accuracy": 0.9761904761904762
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 67.32221875523668,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        }
+      },
+      "historical_comparison": {
+        "ranking": {
+          "n": 34596,
+          "positive_windows": 224,
+          "events": 9,
+          "prevalence": 0.006474736963810845,
+          "average_precision": 0.025833281799935978,
+          "event_macro_ap": 0.00878970267034825,
+          "roc_auc": 0.6378554076407706,
+          "brier": 0.006589034288901261
+        },
+        "alarms": {
+          "events": 9,
+          "detected_events": 4,
+          "missed_events": 5,
+          "event_recall": 0.4444444444444444,
+          "alerts": 44,
+          "false_alerts": 40,
+          "observable_powered_hours": 96.1,
+          "false_alerts_per_100_hours": 41.623309053069725,
+          "threshold": 0.10950711805937388,
+          "detected_before_product_start": 3
+        },
+        "auxiliary": {
+          "by_type": {
+            "voltage": {
+              "positive_windows": 75,
+              "events": 3,
+              "conditional_type_accuracy": 0.8
+            },
+            "feedrate": {
+              "positive_windows": 149,
+              "events": 6,
+              "conditional_type_accuracy": 1.0
+            },
+            "hopper_pressure": {
+              "positive_windows": 0,
+              "events": 0,
+              "conditional_type_accuracy": null
+            }
+          },
+          "conditional_eta_mae_all_event_windows_s": 55.42291592985275,
+          "eta_includes_missed_events": true,
+          "current_product_state_is_observation_not_trained_instantaneous_detector": true
+        },
+        "same_v1_landmarks": {
+          "ranking": {
+            "n": 34572,
+            "positive_windows": 224,
+            "events": 9,
+            "prevalence": 0.006479231748235567,
+            "average_precision": 0.026229093031270027,
+            "event_macro_ap": 0.008953237208231705,
+            "roc_auc": 0.6382042674557887,
+            "brier": 0.006587658085610167
+          },
+          "alarms": {
+            "events": 9,
+            "detected_events": 4,
+            "missed_events": 5,
+            "event_recall": 0.4444444444444444,
+            "alerts": 43,
+            "false_alerts": 39,
+            "observable_powered_hours": 96.03333333333333,
+            "false_alerts_per_100_hours": 40.61089899340507,
+            "threshold": 0.10950711805937388,
+            "detected_before_product_start": 3
+          }
+        }
+      }
+    }
+  },
+  "life": {
+    "constant": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 0.9518973396352678,
+            "mean_log_interval_distance": 0.7467149955232197,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 2.158911016696998,
+            "overestimate_fraction": 0.766076421248835,
+            "model_interval_overlap_fraction": 0.9767008387698043
+          }
+        ],
+        "macro_interval_distance": 0.9518973396352678,
+        "macro_log_interval_distance": 0.7467149955232197,
+        "median_prediction_quantiles": [
+          2.3027999055858865,
+          2.3027999055858865,
+          2.3027999055858865,
+          2.3027999055858865,
+          2.3027999055858865
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8516780945507038,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 41.14165890027959,
+            "mean_log_interval_distance": 0.6882980238093143,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 99.38888888888889,
+            "overestimate_fraction": 0.8033550792171482,
+            "model_interval_overlap_fraction": 0.972972972972973
+          }
+        ],
+        "macro_interval_distance": 41.14165890027959,
+        "macro_log_interval_distance": 0.6882980238093143,
+        "median_prediction_quantiles": [
+          107.0,
+          107.0,
+          107.0,
+          107.0,
+          107.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.8280103452423915,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "lognormal_aft": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 1.5886215541678408,
+            "mean_log_interval_distance": 1.7729444296866381,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.3971030533366863,
+            "overestimate_fraction": 0.1668219944082013,
+            "model_interval_overlap_fraction": 0.6533084808946877
+          }
+        ],
+        "macro_interval_distance": 1.5886215541678408,
+        "macro_log_interval_distance": 1.7729444296866381,
+        "median_prediction_quantiles": [
+          0.0006468269472809512,
+          1.0644491824260964,
+          5.068734685651249,
+          11.106064096092744,
+          723.4264426485412
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6641705762059426,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 66.92730661696179,
+            "mean_log_interval_distance": 1.7892374420628554,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 21.322222222222223,
+            "overestimate_fraction": 0.16402609506057783,
+            "model_interval_overlap_fraction": 0.6234855545200373
+          }
+        ],
+        "macro_interval_distance": 66.92730661696179,
+        "macro_log_interval_distance": 1.7892374420628554,
+        "median_prediction_quantiles": [
+          0.0,
+          48.0,
+          241.0,
+          487.0,
+          19566.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6145495007819078,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "weibull_aft": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 2.160862557614943,
+            "mean_log_interval_distance": 1.533614740623761,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.5822391963033396,
+            "overestimate_fraction": 0.287977632805219,
+            "model_interval_overlap_fraction": 0.6896551724137931
+          }
+        ],
+        "macro_interval_distance": 2.160862557614943,
+        "macro_log_interval_distance": 1.533614740623761,
+        "median_prediction_quantiles": [
+          0.0018728282127346305,
+          1.287112663961211,
+          5.490590491814564,
+          11.38143317598692,
+          1164.5046197218471
+        ],
+        "censor_median_below_observed_lower_fraction": 0.6318416937327078,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 83.57968313140726,
+            "mean_log_interval_distance": 1.4818887161719156,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 29.77777777777778,
+            "overestimate_fraction": 0.2479030754892824,
+            "model_interval_overlap_fraction": 0.6952469711090401
+          }
+        ],
+        "macro_interval_distance": 83.57968313140726,
+        "macro_log_interval_distance": 1.4818887161719156,
+        "median_prediction_quantiles": [
+          0.0,
+          62.0,
+          257.0,
+          503.0,
+          36677.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5841453145675448,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "spline_aft": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 6.734967889974374,
+            "mean_log_interval_distance": 0.8653054881190452,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.2570890456317151,
+            "overestimate_fraction": 0.31127679403541475,
+            "model_interval_overlap_fraction": 0.8667287977632805
+          }
+        ],
+        "macro_interval_distance": 6.734967889974374,
+        "macro_log_interval_distance": 0.8653054881190452,
+        "median_prediction_quantiles": [
+          5.93166061222822e-05,
+          0.7300609601838062,
+          6.938873936225039,
+          25.408569950698137,
+          369931858.588037
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5043305665824612,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 215.28984156570363,
+            "mean_log_interval_distance": 0.8407075165017251,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 14.244444444444444,
+            "overestimate_fraction": 0.25629077353215285,
+            "model_interval_overlap_fraction": 0.8704566635601119
+          }
+        ],
+        "macro_interval_distance": 215.28984156570363,
+        "macro_log_interval_distance": 0.8407075165017251,
+        "median_prediction_quantiles": [
+          0.0,
+          35.0,
+          314.0,
+          1077.0,
+          11275447628.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.4652953205822206,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "mlp_aft": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 4.364186460499016,
+            "mean_log_interval_distance": 1.2346816010111512,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 1.4021214317053972,
+            "overestimate_fraction": 0.7250698974836906,
+            "model_interval_overlap_fraction": 0.5079217148182665
+          }
+        ],
+        "macro_interval_distance": 4.364186460499016,
+        "macro_log_interval_distance": 1.2346816010111512,
+        "median_prediction_quantiles": [
+          0.012738555906650734,
+          1.6212098699458986,
+          8.007806815640395,
+          72.05624827453168,
+          470.827105836651
+        ],
+        "censor_median_below_observed_lower_fraction": 0.4573860218934199,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 91.73904939422181,
+            "mean_log_interval_distance": 1.0191565765447437,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 46.12222222222222,
+            "overestimate_fraction": 0.4846225535880708,
+            "model_interval_overlap_fraction": 0.5265610438024231
+          }
+        ],
+        "macro_interval_distance": 91.73904939422181,
+        "macro_log_interval_distance": 1.0191565765447437,
+        "median_prediction_quantiles": [
+          0.0,
+          66.0,
+          331.0,
+          2805.0,
+          29237.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.4379285456513894,
+        "median_tail_extrapolation_fraction": 0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "logistic_hazard": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 1.7592212035439856,
+            "mean_log_interval_distance": 1.9190176928514657,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.390697170453022,
+            "overestimate_fraction": 0.15936626281453867,
+            "model_interval_overlap_fraction": 0.4659832246039143
+          }
+        ],
+        "macro_interval_distance": 1.7592212035439856,
+        "macro_log_interval_distance": 1.9190176928514657,
+        "median_prediction_quantiles": [
+          0.007068125972488049,
+          0.7544231740546726,
+          6.539241991489553,
+          17.530439273237825,
+          130.5527785872075
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5258330325995428,
+        "median_tail_extrapolation_fraction": 0.000786598689002185,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 73.13886300093196,
+            "mean_log_interval_distance": 1.731337903838049,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 20.266666666666666,
+            "overestimate_fraction": 0.1724137931034483,
+            "model_interval_overlap_fraction": 0.4538676607642125
+          }
+        ],
+        "macro_interval_distance": 73.13886300093196,
+        "macro_log_interval_distance": 1.731337903838049,
+        "median_prediction_quantiles": [
+          1.0,
+          36.0,
+          331.0,
+          792.0,
+          1122863.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.45410802357752916,
+        "median_tail_extrapolation_fraction": 0.0016023306627822287,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "boosted_hazard": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 1.3426672545597556,
+            "mean_log_interval_distance": 1.7417291725616815,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 0.9528196748500114,
+            "overestimate_fraction": 0.1798695246971109,
+            "model_interval_overlap_fraction": 0.7949673811742777
+          }
+        ],
+        "macro_interval_distance": 1.3426672545597556,
+        "macro_log_interval_distance": 1.7417291725616815,
+        "median_prediction_quantiles": [
+          0.011892753690340974,
+          0.6710714773992452,
+          10.227629751992595,
+          51.635604159976836,
+          71.85637947263282
+        ],
+        "censor_median_below_observed_lower_fraction": 0.41892217009503185,
+        "median_tail_extrapolation_fraction": 0.02112163146394756,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 49.69151910531221,
+            "mean_log_interval_distance": 1.0746883194268637,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 38.82222222222222,
+            "overestimate_fraction": 0.18173345759552656,
+            "model_interval_overlap_fraction": 0.9524697110904008
+          }
+        ],
+        "macro_interval_distance": 49.69151910531221,
+        "macro_log_interval_distance": 1.0746883194268637,
+        "median_prediction_quantiles": [
+          4.0,
+          45.0,
+          554.0,
+          4057.0,
+          11919.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.38599182004089977,
+        "median_tail_extrapolation_fraction": 0.10825928623452294,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    },
+    "forest_hazard": {
+      "hours": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 1.3289640311941118,
+            "mean_log_interval_distance": 1.1014924726198527,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 3.5147579429758715,
+            "overestimate_fraction": 0.3597390493942218,
+            "model_interval_overlap_fraction": 0.9366262814538676
+          }
+        ],
+        "macro_interval_distance": 1.3289640311941118,
+        "macro_log_interval_distance": 1.1014924726198527,
+        "median_prediction_quantiles": [
+          0.08121986436945723,
+          1.7950850488385923,
+          7.1588070566095725,
+          23.568140543537446,
+          35.4907475066813
+        ],
+        "censor_median_below_observed_lower_fraction": 0.5006014675808974,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      },
+      "pieces": {
+        "windows": 34325,
+        "weak_endpoints": 1,
+        "per_endpoint": [
+          {
+            "endpoint": "R010",
+            "windows": 1073,
+            "mean_interval_distance": 50.99906803355079,
+            "mean_log_interval_distance": 0.9290857318201413,
+            "near_15min_windows": 90,
+            "near_15min_mean_interval_distance": 139.03333333333333,
+            "overestimate_fraction": 0.2190121155638397,
+            "model_interval_overlap_fraction": 0.9254426840633737
+          }
+        ],
+        "macro_interval_distance": 50.99906803355079,
+        "macro_log_interval_distance": 0.9290857318201413,
+        "median_prediction_quantiles": [
+          6.0,
+          81.0,
+          358.0,
+          1141.0,
+          1785.0
+        ],
+        "censor_median_below_observed_lower_fraction": 0.4814747985083604,
+        "median_tail_extrapolation_fraction": 0.0,
+        "confirmed_natural_failure_error": null,
+        "calibrated_interval_coverage": null
+      }
+    }
+  },
+  "history_already_seen": true,
+  "history_used_for_selection": false,
+  "freeze_sha256": "1ee359a76717402b08d71ea9131e1581cabc4441337fa6adf11556f06ff7a6c0",
+  "trained_risk_algorithms": 9,
+  "trained_lifetime_algorithms_excluding_constant": 7,
+  "production_ready": false
+}

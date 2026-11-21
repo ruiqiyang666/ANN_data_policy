@@ -1,0 +1,38 @@
+{
+  "name": "boosted_hazard",
+  "fit": "cycle1",
+  "task": "hours",
+  "train_windows": 13060,
+  "seconds": 1.671580999998696,
+  "metrics": {
+    "windows": 14301,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R004",
+        "windows": 14301,
+        "mean_interval_distance": 330.96089397356496,
+        "mean_log_interval_distance": 2.0598135471817955,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 328.3515160508167,
+        "overestimate_fraction": 0.4740227956086987,
+        "model_interval_overlap_fraction": 0.30389483252919375
+      }
+    ],
+    "macro_interval_distance": 330.96089397356496,
+    "macro_log_interval_distance": 2.0598135471817955,
+    "median_prediction_quantiles": [
+      0.6633244785227831,
+      2.241624675570504,
+      3.554167460178309,
+      1310.019328454989,
+      1604.5741362418787
+    ],
+    "censor_median_below_observed_lower_fraction": null,
+    "median_tail_extrapolation_fraction": 0.4058457450527935,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

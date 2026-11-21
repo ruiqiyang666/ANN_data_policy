@@ -1,0 +1,41 @@
+{
+  "features": [
+    "powered_Voltage_mean_300s",
+    "powered_Voltage_std_300s",
+    "powered_Voltage_slope_per_hour_900s",
+    "powered_Voltage_slope_per_hour_3600s",
+    "powered_Current_mean_300s",
+    "powered_Argon_mean_300s",
+    "powered_Nitrogen_mean_300s",
+    "powered_Cooling_water_inlet_temp._mean_900s",
+    "powered_Cooling_water_outlet_temp._mean_900s",
+    "product_voltage_mean",
+    "product_voltage_std",
+    "matched_product_voltage_delta",
+    "matched_product_voltage_slope_per_hour",
+    "matched_product_count",
+    "observed_operation_hours",
+    "observed_operation_amp_hours"
+  ],
+  "folds": [
+    {
+      "name": "cycle1",
+      "train_windows": 13048,
+      "evaluation_windows": 14301
+    },
+    {
+      "name": "cycle2",
+      "train_windows": 15455,
+      "evaluation_windows": 11473
+    },
+    {
+      "name": "final",
+      "train_windows": 17390,
+      "evaluation_windows": 9343
+    }
+  ],
+  "weighting": "equal possible-cycle and event/censor x remaining-observation stratum; near terminal retained at10s, ordinary sampled60s",
+  "selection": "forward-cycle mean log distance to weak interval, requiring superiority to same-weight constant control; not history scores",
+  "physical_constraints": "positive survival and censor likelihood; no forced monotonic raw voltage",
+  "history_accessed": false
+}

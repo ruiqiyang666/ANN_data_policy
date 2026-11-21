@@ -1,0 +1,47 @@
+{
+  "repairs": [
+    {
+      "archive": "voltage\\tcn_calibration_diagnostic.npz",
+      "rows": 1,
+      "min_raw_risk": 6.054601485195952e-39,
+      "max_raw_risk": 6.054601485195952e-39,
+      "original_sha256": "322dbc82732b1f0e5f51d464a0a8ca3f755b24d86b965710c7e64442b71b14d3",
+      "normalized_sha256": "f93d3470b1e87c53a42a09faa034669395511ad4e1a939af05bb5fcf84fc15c3",
+      "risk_unchanged": true
+    },
+    {
+      "archive": "voltage\\tcn_historical.npz",
+      "rows": 2,
+      "min_raw_risk": 9.982351397596697e-39,
+      "max_raw_risk": 9.982351397596697e-39,
+      "original_sha256": "5a2b42c688bc0ee149785b39688b2bfd300e01bf1e32a11d2022cf523277ad78",
+      "normalized_sha256": "f142ff6953d7a0eaa90521e8b19d7ef89686ea24a0be0e6c18a60be2c47e97c3",
+      "risk_unchanged": true
+    },
+    {
+      "archive": "voltage\\tcn_ssl_f2.npz",
+      "rows": 243,
+      "min_raw_risk": 3.672301610145117e-39,
+      "max_raw_risk": 9.982351397596697e-39,
+      "original_sha256": "fe084e3f5a2b11b2b497359f1ebbfa366452acc962948474467b4179c49b9b80",
+      "normalized_sha256": "b228861abae318eb424ac491d9ffe1b8af56b053a809a9ba852f052001de9e55",
+      "risk_unchanged": true
+    },
+    {
+      "archive": "voltage\\tcn_ssl_oof.npz",
+      "rows": 243,
+      "min_raw_risk": 3.672301610145117e-39,
+      "max_raw_risk": 9.982351397596697e-39,
+      "original_sha256": "017698556191c4e0b196a4e17dd912b3c5cef3293751e0af7aa1c2506be12071",
+      "normalized_sha256": "cb0f2117b021865ad336c21aa873f90c6bdcdd0f4971554841241fb49e0bda1f",
+      "risk_unchanged": true
+    }
+  ],
+  "regression_passed": true,
+  "model_weights_changed": false,
+  "risk_values_changed": false,
+  "method_selection_changed": false,
+  "freeze_changed": false,
+  "cause": "subnormal probability mass divided by float32.tiny; normalized at inference boundary",
+  "updated_at": "2026-11-04T22:54:45+0800"
+}

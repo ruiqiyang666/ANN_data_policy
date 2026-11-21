@@ -1,0 +1,83 @@
+{
+  "name": "histgb",
+  "algorithm_family": "histgb",
+  "fold_scores": [
+    {
+      "n": 21747,
+      "positive_windows": 136,
+      "events": 5,
+      "prevalence": 0.0062537361475146,
+      "average_precision": 0.045355973664471944,
+      "event_macro_ap": 0.021951054155221417,
+      "roc_auc": 0.7679795079847681,
+      "brier": 0.006243837187602487
+    },
+    {
+      "n": 13981,
+      "positive_windows": 0,
+      "events": 0,
+      "prevalence": 0.0,
+      "average_precision": null,
+      "event_macro_ap": null,
+      "roc_auc": null,
+      "brier": 7.279444051160485e-05
+    },
+    {
+      "n": 27537,
+      "positive_windows": 29,
+      "events": 1,
+      "prevalence": 0.0010531285179939717,
+      "average_precision": 0.023376738900612908,
+      "event_macro_ap": 0.023376738900612908,
+      "roc_auc": 0.9471714811490577,
+      "brier": 0.0010523910105310452
+    }
+  ],
+  "mean_fold_event_macro_ap": 0.022663896527917164,
+  "pooled_oof": {
+    "n": 63265,
+    "positive_windows": 165,
+    "events": 6,
+    "prevalence": 0.002608077135857109,
+    "average_precision": 0.018051159468303875,
+    "event_macro_ap": 0.006899092720363112,
+    "roc_auc": 0.7552719108677904,
+    "brier": 0.00262044033270493
+  },
+  "oof_calibrated": {
+    "n": 63265,
+    "positive_windows": 165,
+    "events": 6,
+    "prevalence": 0.002608077135857109,
+    "average_precision": 0.018051159468303875,
+    "event_macro_ap": 0.006899092720363112,
+    "roc_auc": 0.7552719108677904,
+    "brier": 0.002635052242541232
+  },
+  "development_alarm_policy": {
+    "events": 6,
+    "detected_events": 1,
+    "missed_events": 5,
+    "event_recall": 0.16666666666666666,
+    "alerts": 19,
+    "false_alerts": 18,
+    "observable_powered_hours": 175.73611111111111,
+    "false_alerts_per_100_hours": 10.24263020627519,
+    "threshold": 0.05145629545779826
+  },
+  "calibration_status": "fit on OOF development labels; Oct8-9 untouched for diagnostics",
+  "threshold_selection_is_not_unbiased_validation": true,
+  "selection": {
+    "n": 12983,
+    "positive_windows": 0,
+    "events": 0,
+    "prevalence": 0.0,
+    "average_precision": null,
+    "event_macro_ap": null,
+    "roc_auc": null,
+    "brier": 2.7301027834481227e-07
+  },
+  "history_period_accessed": false,
+  "actual_distinct_model": true,
+  "status": "trained"
+}

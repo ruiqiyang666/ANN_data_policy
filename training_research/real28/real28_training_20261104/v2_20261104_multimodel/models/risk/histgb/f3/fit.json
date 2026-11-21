@@ -1,0 +1,21 @@
+{
+  "name": "histgb",
+  "fit": "f3",
+  "train_windows": 76971,
+  "evaluation_windows": 27580,
+  "seconds": 5.782739900001616,
+  "metrics": {
+    "n": 27580,
+    "positive_windows": 225,
+    "events": 8,
+    "prevalence": 0.008158085569253081,
+    "average_precision": 0.018228632189940256,
+    "event_macro_ap": 0.004539212163221712,
+    "roc_auc": 0.7195380897256239,
+    "brier": 0.009178249712865603
+  },
+  "epochs": 0,
+  "positive_cost": 8,
+  "normalization_fit": "this fold training only",
+  "model_sha256": "2647d124af3447cd8f940eaf92eadd4aa0acc05ff28f145afd6362c4ef2b81ee"
+}

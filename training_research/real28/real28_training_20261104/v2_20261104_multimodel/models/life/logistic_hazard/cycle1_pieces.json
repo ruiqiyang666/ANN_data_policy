@@ -1,0 +1,38 @@
+{
+  "name": "logistic_hazard",
+  "fit": "cycle1",
+  "task": "pieces",
+  "train_windows": 13048,
+  "seconds": 0.5946421999979066,
+  "metrics": {
+    "windows": 14301,
+    "weak_endpoints": 1,
+    "per_endpoint": [
+      {
+        "endpoint": "R004",
+        "windows": 14301,
+        "mean_interval_distance": 9886561.008600798,
+        "mean_log_interval_distance": 4.548649227761512,
+        "near_15min_windows": 90,
+        "near_15min_mean_interval_distance": 740620.1222222223,
+        "overestimate_fraction": 0.3976644989860849,
+        "model_interval_overlap_fraction": 0.28361653031256556
+      }
+    ],
+    "macro_interval_distance": 9886561.008600798,
+    "macro_log_interval_distance": 4.548649227761512,
+    "median_prediction_quantiles": [
+      0.0,
+      15.0,
+      104.0,
+      25991441.0,
+      756802191.0
+    ],
+    "censor_median_below_observed_lower_fraction": null,
+    "median_tail_extrapolation_fraction": 0.36878539962240403,
+    "confirmed_natural_failure_error": null,
+    "calibrated_interval_coverage": null
+  },
+  "optimizer_success": true,
+  "history_period_accessed": false
+}

@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "name": "capacity_ple",
+      "capacity": true,
+      "mse_weight": 0.0
+    },
+    {
+      "name": "capacity_balanced",
+      "capacity": true,
+      "mse_weight": 0.4
+    },
+    {
+      "name": "rul_balanced",
+      "capacity": false,
+      "mse_weight": 0.4
+    }
+  ],
+  "seed": 20261008,
+  "epochs": 40,
+  "patience": 8,
+  "validation_baseline": {
+    "mae": [
+      2.2335593700408936,
+      155.32867431640625,
+      3.349907159805298
+    ],
+    "rmse": [
+      3.2606568336486816,
+      227.1980438232422,
+      4.38026237487793
+    ],
+    "r2": [
+      0.8904085159301758,
+      0.8899703621864319,
+      0.9769343733787537
+    ],
+    "near_end_mae": 1.1136642694473267,
+    "rows": 34891
+  },
+  "selection": "validation RUL MAE; validation RUL RMSE cannot exceed baseline; health MAE <= baseline * 1.03",
+  "release_gate": "selected candidate test MAE and RMSE must improve, health MAE <= baseline * 1.03, near-end MAE <= baseline * 1.10",
+  "test_previously_seen": true
+}

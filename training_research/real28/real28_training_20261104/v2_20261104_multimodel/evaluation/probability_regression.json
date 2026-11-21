@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "cases": 10004,
+  "max_probability": 1.0,
+  "min_probability": 0.0,
+  "regression": "float32 event masses must not produce probability above1; conditional time remains normalized under underflow"
+}
